@@ -1,0 +1,59 @@
+{
+    "url": "https://en.wikipedia.org/wiki/John_Mylopoulos",
+    "title": "John Mylopoulos",
+    "table_of_contents": [
+        "1 Biography",
+        "2 Work",
+        "3 Selected publications",
+        "4 References",
+        "5 External links"
+    ],
+    "content": [
+        {
+            "paragraph1": "John P. Mylopoulos (born 12 July 1943) is a Greek-Canadian computer scientist, Professor at the University of Toronto, Canada, and at the University of Trento, Italy. He is known for his work in the field of conceptual modeling, specifically the development an agent-oriented software development methodology. called TROPOS.\n"
+        },
+        {
+            "title": "Biography",
+            "paragraph1": "Born in Greece in 1943, Mylopoulos in 1966 received his Bachelor of Engineering from Brown University. In 1970 he received his PhD from Princeton University under supervision of Theodosios Pavlidis with the thesis, entitled \"On the Definition and Recognition of Patterns in Discrete Spaces.\"\n",
+            "paragraph2": "In 1966 he started his academic career as Assistant Professor at the University of Toronto, where he in 1971 he was appointed Professor in Computer Science. In 2009 he was also appointed Professor of Computer Science at the University of Trento.\n",
+            "paragraph3": "In 1986, Mylopoulos was elected President of the Greek Community of Toronto. He served for 2 years until 1988.\n",
+            "paragraph4": "Mylopoulos was awarded the Peter P. Chen Award for outstanding contributions to the field of conceptual modeling in 2010. In 2012 he also received an honorary doctorate from the RWTH Aachen University in recognition of \"his excellent and distinctive contributions on the methodology of conceptual modeling as a basis for databases, software technology and artificial intelligence, as well as its interdisciplinary applications.\".\n"
+        },
+        {
+            "title": "Work",
+            "paragraph1": "Mylopoulos' research interest ranges from information modelling techniques, specifically semantic data models, to knowledge based systems and information system design and to the field of requirements engineering.\" Borgida et al. (2009) summarized, that Mylopoulos made four mayor contributions in these fields:\n"
+        },
+        {
+            "title": "Selected publications",
+            "ul1": "L. Chung, B. Nixon, E. Yu, J. Mylopoulos. Non-functional requirements in software engineering, Springer, 2000.\nAnne Banks Pidduck, John Mylopoulos, Carson C. Woo. Advanced Information Systems Engineering, 2002.\nDieter Fensel, Katia Sycara, John Mylopoulos eds. The Semantic Web. ISWC 2003, Springer-Verlag, 2004.\nLyytinen, K., Loucopoulos, P., Mylopoulos, J., and Robinson, W., (eds.), Design Requirements Engineering: A Ten-Year Perspective. Springer-Verlag, 2009.\nManfred A. Jeusfeld, Matthias Jarke and John Mylopoulos eds., Metamodeling for Method Engineering. Cambridge (USA): The MIT Press, 2009.\n",
+            "paragraph1": "Articles, a selection:\n",
+            "ul2": "Mylopoulos, John, et al. \"Telos: Representing knowledge about information systems.\" ACM Transactions on Information Systems (TOIS) 8.4 (1990): 325-362.\nMylopoulos, John, Lawrence Chung, and Brian Nixon. \"Representing and using nonfunctional requirements: A process-oriented approach.\" Software Engineering, IEEE Transactions on 18.6 (1992): 483-497.\nCastro, Jaelson, Manuel Kolp, and John Mylopoulos. \"Towards requirements-driven information systems engineering: the Tropos project.\" Information systems 27.6 (2002): 365-389.\nBresciani, Paolo, et al. \"Tropos: An agent-oriented software development methodology.\" Autonomous Agents and Multi-Agent Systems 8.3 (2004): 203-236.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Computer_scientist",
+        "https://en.wikipedia.org/wiki/University_of_Toronto",
+        "https://en.wikipedia.org/wiki/University_of_Trento",
+        "https://en.wikipedia.org/wiki/Conceptual_modeling",
+        "https://en.wikipedia.org/wiki/Software_development_methodology",
+        "https://en.wikipedia.org/wiki/Bachelor_of_Engineering",
+        "https://en.wikipedia.org/wiki/Brown_University",
+        "https://en.wikipedia.org/wiki/Princeton_University",
+        "https://en.wikipedia.org/wiki/University_of_Toronto",
+        "https://en.wikipedia.org/wiki/University_of_Trento",
+        "https://en.wikipedia.org/wiki/RWTH_Aachen_University",
+        "https://en.wikipedia.org/wiki/Information_modelling",
+        "https://en.wikipedia.org/wiki/Semantic_data_model",
+        "https://en.wikipedia.org/wiki/Knowledge_based_system",
+        "https://en.wikipedia.org/wiki/System_design",
+        "https://en.wikipedia.org/wiki/Requirements_engineering",
+        "https://en.wikipedia.org/wiki/Semantic_network",
+        "https://en.wikipedia.org/wiki/Dieter_Fensel",
+        "https://en.wikipedia.org/wiki/Matthias_Jarke",
+        "https://en.wikipedia.org/wiki/Mathematics_Genealogy_Project",
+        "https://en.wikipedia.org/wiki/John_Mylopoulos",
+        "https://en.wikipedia.org/wiki/John_Mylopoulos",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

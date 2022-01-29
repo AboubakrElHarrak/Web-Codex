@@ -1,0 +1,82 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Pageview",
+    "title": "Pageview",
+    "table_of_contents": [
+        "1 Feature",
+        "2 Advertisement",
+        "3 Measurement",
+        "4 Criticism and concerns",
+        "4.1 Manipulation",
+        "4.2 Humans vs. machines",
+        "5 Wikipedia pageviews",
+        "6 See also",
+        "7 References",
+        "8 Further reading"
+    ],
+    "content": [
+        {
+            "paragraph1": "A pageview or page view, abbreviated in business to PV and occasionally called page impression, is a request to load a single HTML file (web page) of an Internet site. On the World Wide Web, a page request would result from a web surfer clicking on a link on another page pointing to the page in question.\n",
+            "paragraph2": "In contrast, a hit refers to a request for any file from a web server. Therefore, there may be many hits per page view since an HTML page can contain multiple files—images, CSS, etc.\nOn balance, page views refer to a number of pages viewed or clicked on the site during the given time.\n",
+            "paragraph3": "Page views may be counted as part of web analytics. For the owner of the site, this information can be useful to see if any change in the \"page\" (such as the information or the way it is presented) results in more visits. If there are any advertisements on the page, the publishers would also be interested in the number of page views to determine their expected revenue from the ads. For this reason, it is a term that is used widely for Internet marketing and advertising.\n"
+        },
+        {
+            "title": "Feature",
+            "paragraph1": "The page impression has long been a measure of user activity on a website. However, the activity is not necessarily associated with loading a complete HTML page. Modern programming techniques can serve pages by other means that don't show as HTTP requests.\n"
+        },
+        {
+            "title": "Advertisement",
+            "paragraph1": "Since page views help estimate the popularity of sites, it helps determine their value for advertising revenue. The most common metric is CPM. It stands for 'Cost per thousand'(the M is the Roman numeral for 1,000) and it is commonly used metrics to measure page views divided by the thousands, that is, cost per 1000 views, used for the ad rates and thus, the less CPM is, the better deal it offers to advertisers.\nHowever, there has been a growing concern that CPM is not as trustworthy as it looks in the advertising market because, although, with CPM arrangement, everyone who visits a site makes publishers’ money, for an advertiser's view, CPM is being challenged in comparison to CPC or CPA in terms of adverts’ efficiency because visiting does not mean clicking the ads.\n"
+        },
+        {
+            "title": "Measurement",
+            "paragraph1": "The preferred way to count page views is using a web analytics software. They can measure the number of pages on any site and therefore, it helps people to receive a rough estimate of page views on web sites. There are also many other page view measurement tools available including open source ones as well as licensed products.\n"
+        },
+        {
+            "title": "Criticism and concerns",
+            "paragraph1": "Despite a wide range of use of page view, it has come in for criticisms.\n",
+            "subtitle1": "Manipulation",
+            "paragraph2": "Page view can be manipulated or boosted for specific purposes. For example, a recent incident, called 'page view fraud', compromised the accuracy of measurement of page view by boosting the page view. Perpetrators used a tool called 'a bot' to buy fake page-views for attention, recognition, and feedback, increasing the site's value.\nAs a result, some people already started building alternatives to measure audiences, such as \"Ophan\", saying that the page view is becoming passe.\n",
+            "subtitle2": "Humans vs. machines",
+            "paragraph3": "Fake page views can reflect bots instead of humans.\n"
+        },
+        {
+            "title": "Wikipedia pageviews",
+            "paragraph1": "Wikipedia provides tools that allow one to see how many people have visited a Wikipedia article during a given time period. Such have been used for tools that for instance display the most popular articles of the day. Wikipedia pageviews of certain types of articles correlate with changes in stock market prices, box office success of movies, spread of disease among other applications of datamining. Since search engines directly influence what is popular on Wikipedia such statistics may provide a more unfiltered and real-time view into what people are searching for on the Web and societal interests. For instance they can be used to gain insights into public anxiety and information seeking after or during events or for the identification of concepts with significant increase of interest from the public. A 2015 study examines the influence of Reddit posts on Wikipedia pageviews.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/HTML",
+        "https://en.wikipedia.org/wiki/Web_page",
+        "https://en.wikipedia.org/wiki/Internet_site",
+        "https://en.wikipedia.org/wiki/World_Wide_Web",
+        "https://en.wikipedia.org/wiki/Hyperlink",
+        "https://en.wikipedia.org/wiki/Computer_file",
+        "https://en.wikipedia.org/wiki/Web_server",
+        "https://en.wikipedia.org/wiki/CSS",
+        "https://en.wikipedia.org/wiki/Web_analytics",
+        "https://en.wikipedia.org/wiki/Revenue",
+        "https://en.wikipedia.org/wiki/Internet_marketing",
+        "https://en.wikipedia.org/wiki/Advertising",
+        "https://en.wikipedia.org/wiki/Pay_per_click",
+        "https://en.wikipedia.org/wiki/Cost_per_action",
+        "https://en.wikipedia.org/wiki/Web_analytics",
+        "https://en.wikipedia.org/wiki/Internet_manipulation",
+        "https://en.wikipedia.org/wiki/Internet_bot",
+        "https://en.wikipedia.org/wiki/Digital_sociology",
+        "https://en.wikipedia.org/wiki/Correlate",
+        "https://en.wikipedia.org/wiki/Datamining",
+        "https://en.wikipedia.org/wiki/Search_engine",
+        "https://en.wikipedia.org/wiki/Reddit",
+        "https://en.wikipedia.org/wiki/Project_COUNTER",
+        "https://en.wikipedia.org/wiki/Unique_user",
+        "https://en.wikipedia.org/wiki/Web_traffic",
+        "https://en.wikipedia.org/wiki/Website_monitoring",
+        "https://en.wikipedia.org/wiki/Google_Trends",
+        "https://en.wikipedia.org/wiki/Internet_manipulation",
+        "https://en.wikipedia.org/wiki/Click_bot",
+        "https://en.wikipedia.org/wiki/Pageview",
+        "https://en.wikipedia.org/wiki/Pageview",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

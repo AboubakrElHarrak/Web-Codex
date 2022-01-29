@@ -1,0 +1,50 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Multistability",
+    "title": "Multistability",
+    "table_of_contents": [
+        "1 Bistability",
+        "2 Initial instability",
+        "3 Multistable perception",
+        "4 External links"
+    ],
+    "content": [
+        {
+            "paragraph1": "In a dynamical system, multistability is the property of having multiple stable equilibrium points in the vector space spanned by the states in the system. By mathematical necessity, there must also be unstable equilibrium points between the stable points. Points that are stable in some dimensions and unstable in others are termed unstable, as is the case with the first three Lagrangian points.\n"
+        },
+        {
+            "title": "Bistability",
+            "paragraph1": "Bistability is the special case with two stable equilibrium points. It is the simplest form of multistability, and can occur in systems with only one state variable, as it only takes a one-dimensional space to separate two points.\n"
+        },
+        {
+            "title": "Initial instability",
+            "paragraph1": "Near an unstable equilibrium, any system will be sensitive to noise, initial conditions and system parameters,\nwhich can cause it to develop in one of multiple divergent directions. \nIn economics and social sciences, path dependence gives rise to divergent directions of development.\nSome path dependent processes are adequately described by multistability,\nby being initially sensitive to input, before reaching a stagnant state – \nfor example market share instability, which can develop into a stable monopoly for one of multiple possible vendors.\n"
+        },
+        {
+            "title": "Multistable perception",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/4/46/Multistability.svg/520px-Multistability.svg.png",
+                "caption": "\n\t\tAmbiguous images\n\t"
+            },
+            "paragraph1": "In vision science, multistable perception characterizes the wavering percepts that can be brought about by certain visually ambiguous pattern such as the Necker cube, monocular rivalry or binocular rivalry.\nThrough lateral inhibition, a pattern in which one image, when stimulated, inhibit the activity of neighboring images.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Dynamical_system",
+        "https://en.wikipedia.org/wiki/Stability_theory",
+        "https://en.wikipedia.org/wiki/Vector_space",
+        "https://en.wikipedia.org/wiki/Lagrangian_points",
+        "https://en.wikipedia.org/wiki/Bistability",
+        "https://en.wikipedia.org/wiki/Path_dependence",
+        "https://en.wikipedia.org/wiki/Market_share",
+        "https://en.wikipedia.org/wiki/Monopoly",
+        "https://en.wikipedia.org/wiki/Multistable_perception",
+        "https://en.wikipedia.org/wiki/Multistable_perception",
+        "https://en.wikipedia.org/wiki/Necker_cube",
+        "https://en.wikipedia.org/wiki/Monocular_rivalry",
+        "https://en.wikipedia.org/wiki/Binocular_rivalry",
+        "https://en.wikipedia.org/wiki/Multistability",
+        "https://en.wikipedia.org/wiki/Multistability",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

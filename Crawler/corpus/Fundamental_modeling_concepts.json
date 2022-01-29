@@ -1,0 +1,54 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Fundamental_Modeling_Concepts",
+    "title": "Fundamental modeling concepts",
+    "table_of_contents": [
+        "1 Introduction",
+        "2 Diagram Types",
+        "2.1 Compositional Structure Diagram",
+        "2.2 Dynamic Structure Diagram",
+        "2.3 Value Range Structure Diagram",
+        "3 References",
+        "4 External links"
+    ],
+    "content": [
+        {
+            "paragraph1": "Fundamental modeling concepts (FMC) provide a framework to describe software-intensive systems. It strongly emphasizes the communication about software-intensive systems by using a semi-formal graphical notation that can easily be understood.\n"
+        },
+        {
+            "title": "Introduction",
+            "paragraph1": "FMC distinguishes three perspectives to look at a software system:\n",
+            "ul1": "Structure of the system\nProcesses in the system\nValue domains of the system\n",
+            "paragraph2": "FMC defines a dedicated diagram type for each perspective. FMC diagrams use a simple and lean notation. The purpose of FMC diagrams is to facilitate the communication about a software system, not only between technical experts but also between technical experts and business or domain experts. The comprehensibility of FMC diagrams has made them famous among its supporters.\n",
+            "paragraph3": "The common approach when working with FMC is to start with a high-level diagram of the compositional structure of a system. This “big picture” diagram serves as a reference in the communication with all involved stakeholders of the project. Later on, the high-level diagram is iteratively refined to model technical details of the system. Complementary diagrams for processes observed in the system or value domains found in the system are introduced as needed.\n"
+        },
+        {
+            "title": "Diagram Types",
+            "paragraph1": "FMC uses three diagram types to model different aspects of a system:\n",
+            "ul1": "Compositional Structure Diagram depicts the static structure of a system. This diagram type is also known as FMC Block Diagram\nDynamic Structure Diagram depicts processes that can be observed in a system. This diagram type is also known as FMC Petri-net\nValue Range Structure Diagram depicts structures of values found in the system. This diagram type is also known as FMC E/R Diagram\n",
+            "paragraph2": "All FMC diagrams are bipartite graphs. Each bipartite graph consists of two disjoint sets of vertices with the condition that no vertex is connected to another vertex of the same set. In FMC diagrams, members of one set are represented by angular shapes, and members of the other set are represented by curved shapes. Each element in an FMC diagram can be refined by another diagram of the same type, provided that the combined graph is also bipartite. This mechanism allows modeling all relevant layers of abstraction with the same notation.\n",
+            "subtitle1": "Compositional Structure Diagram",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/4/44/FMCBlockDiagram.png",
+                "caption": "\n\t\tExample of FMC Compositional Structure Diagram\n\t"
+            },
+            "paragraph3": "Compositional structure diagrams depict the static structure of a system, and the relationships between system components. System components can be active or passive. Agents are active system components. They perform activities in the system. Storages and channels are passive components which store or transmit information.\n",
+            "paragraph4": "The image to the right is an example of a compositional structure diagram. It contains the agents Order Processor, Supplier Manager, Supplier, Online Shop and an unnamed human agent. Agents are represented by rectangles. The dots and the shadow of the agent Supplier indicate that this agent has multiple instances, i.e. the Supplier Manager communicates with one or many suppliers. The so-called human agent represents a user interacting with the system.\n",
+            "paragraph5": "The diagram contains the storages Orders, Purchase Order and Product Catalog. Storages are represented by curved shapes. Agents can read from storages, write to storages or modify the content of storages. The directions of the arrows indicate which operation is performed by an agent. In the diagram, the Supplier Manager can modify the content of the Product Catalog, whereas the Order Processor can only read the content of the Product Catalog.\n",
+            "paragraph6": "Agents communicate via channels. The direction of information flow is either indicated by arrows (not shown in the picture), by a request-response-symbol (e.g. between Supplier Manager and Supplier) or omitted (e.g. between Order Processor and Supplier Manager).\n",
+            "subtitle2": "Dynamic Structure Diagram",
+            "paragraph7": "Dynamic structures are derived from petri nets.\n",
+            "subtitle3": "Value Range Structure Diagram",
+            "paragraph8": "Value range structure diagrams (also known as FMC Entity Relationship Diagrams) can be compared with the Entity-relationship model.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Formal_semantics_of_programming_languages",
+        "https://en.wikipedia.org/wiki/Bipartite_graph",
+        "https://en.wikipedia.org/wiki/Disjoint_sets",
+        "https://en.wikipedia.org/wiki/Petri_net",
+        "https://en.wikipedia.org/wiki/Fundamental_modeling_concepts",
+        "https://en.wikipedia.org/wiki/Fundamental_modeling_concepts",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

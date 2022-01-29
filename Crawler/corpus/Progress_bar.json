@@ -1,0 +1,97 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Progress_bar",
+    "title": "Progress bar",
+    "table_of_contents": [
+        "1 History",
+        "2 Perception",
+        "3 See also",
+        "4 References"
+    ],
+    "content": [
+        {
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/a/af/Progress_bar_gnome_ubuntu.png",
+                "caption": "\n\t\tExample of a progress bar\n\t"
+            },
+            "image2": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/2/2d/Pbar.gif",
+                "caption": "\n\t\tA simple animated progress bar\n\t"
+            },
+            "paragraph1": "A progress bar is a graphical control element used to visualize the progression of an extended computer operation, such as a download, file transfer, or installation. Sometimes, the graphic is accompanied by a textual representation of the progress in a percent format. The concept can also be regarded to include \"playback bars\" in media players that keep track of the current location in the duration of a media file.\n",
+            "paragraph2": "A more recent development is the indeterminate progress bar, which is used in situations where the extent of the task is unknown or the progress of the task cannot be determined in a way that could be expressed as a percentage. This bar uses motion or some other indicator to show that progress is taking place, rather than using the size of the filled portion to show the total amount of progress, making it more like a throbber than a progress bar (see also barber's pole). There are also indeterminate progress indicators, which are not bar shaped.\n"
+        },
+        {
+            "title": "History",
+            "paragraph1": "The concept of a progress bar was invented before digital computing. In 1896 Karol Adamiecki developed a chart named a harmonogram, but better known today as a Gantt chart. Adamiecki did not publish his chart until 1931, however, and then only in Polish. The chart thus now bears the name of Henry Gantt (1861–1919), who designed his chart around the years 1910–1915 and popularized it in the west.\n",
+            "paragraph2": "Adopting the concept to computing, the first graphical progress bar appeared in Mitchell Model's 1979 Ph. D. thesis, Monitoring System Behavior in a Complex Computational Environment. In 1985, Brad Myers presented a paper on “percent-done progress indicators” at a conference on computer-human interactions.\n"
+        },
+        {
+            "title": "Perception",
+            "paragraph1": "Myers' research involved asking people to run database searches, some with a progress bar and some without. Those who waited whilst watching a progress bar described an overall more positive experience. Myers concluded that the use of a progress bar reduced anxiety and was more efficient.\n",
+            "paragraph2": "Typically, progress bars use a linear function, such that the advancement of a progress bar is directly proportional to the amount of work that has been completed. However, varying disk, memory, processor, bandwidth and other factors complicate this estimate. Consequently, progress bars often exhibit non-linear behaviors, such as acceleration, deceleration, and pauses. These behaviors, coupled with humans' non-linear perception of time passing, produces a variable perception of how long progress bars take to complete.\nThis also means that progress bars can be designed to \"feel\" faster.\n",
+            "paragraph3": "Finally, the graphical design of progress bars has also been shown to influence humans' perception of duration.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Graphical_control_element",
+        "https://en.wikipedia.org/wiki/Throbber",
+        "https://en.wikipedia.org/wiki/Progress_indicators",
+        "https://en.wikipedia.org/wiki/Karol_Adamiecki",
+        "https://en.wikipedia.org/wiki/Gantt_chart",
+        "https://en.wikipedia.org/wiki/Polish_language",
+        "https://en.wikipedia.org/wiki/Henry_Gantt",
+        "https://en.wikipedia.org/wiki/Progress_indicator",
+        "https://en.wikipedia.org/wiki/Adjustment_handle",
+        "https://en.wikipedia.org/wiki/Context_menu",
+        "https://en.wikipedia.org/wiki/Hamburger_button",
+        "https://en.wikipedia.org/wiki/Pie_menu",
+        "https://en.wikipedia.org/wiki/Checkbox",
+        "https://en.wikipedia.org/wiki/Color_picker",
+        "https://en.wikipedia.org/wiki/Combo_box",
+        "https://en.wikipedia.org/wiki/Cycle_button",
+        "https://en.wikipedia.org/wiki/Date_picker",
+        "https://en.wikipedia.org/wiki/Grid_view",
+        "https://en.wikipedia.org/wiki/List_box",
+        "https://en.wikipedia.org/wiki/List_builder",
+        "https://en.wikipedia.org/wiki/Radio_button",
+        "https://en.wikipedia.org/wiki/Scrollbar",
+        "https://en.wikipedia.org/wiki/Search_box",
+        "https://en.wikipedia.org/wiki/Text_box",
+        "https://en.wikipedia.org/wiki/Balloon_help",
+        "https://en.wikipedia.org/wiki/Infobar",
+        "https://en.wikipedia.org/wiki/Loading_screen",
+        "https://en.wikipedia.org/wiki/Progress_indicator",
+        "https://en.wikipedia.org/wiki/Splash_screen",
+        "https://en.wikipedia.org/wiki/Throbber",
+        "https://en.wikipedia.org/wiki/Status_bar",
+        "https://en.wikipedia.org/wiki/Tooltip",
+        "https://en.wikipedia.org/wiki/Tree_view",
+        "https://en.wikipedia.org/wiki/Disclosure_widget",
+        "https://en.wikipedia.org/wiki/Menu_bar",
+        "https://en.wikipedia.org/wiki/Toolbar",
+        "https://en.wikipedia.org/wiki/Window_decoration",
+        "https://en.wikipedia.org/wiki/Workspace",
+        "https://en.wikipedia.org/wiki/Address_bar",
+        "https://en.wikipedia.org/wiki/Breadcrumb_navigation",
+        "https://en.wikipedia.org/wiki/Hyperlink",
+        "https://en.wikipedia.org/wiki/Navigation_bar",
+        "https://en.wikipedia.org/wiki/Virtual_desktop",
+        "https://en.wikipedia.org/wiki/Alert_dialog_box",
+        "https://en.wikipedia.org/wiki/Dialog_box",
+        "https://en.wikipedia.org/wiki/File_dialog",
+        "https://en.wikipedia.org/wiki/Inspector_window",
+        "https://en.wikipedia.org/wiki/Modal_window",
+        "https://en.wikipedia.org/wiki/Palette_window",
+        "https://en.wikipedia.org/wiki/File_viewer",
+        "https://en.wikipedia.org/wiki/List_of_graphical_user_interface_elements",
+        "https://en.wikipedia.org/wiki/Layout_manager",
+        "https://en.wikipedia.org/wiki/Look_and_feel",
+        "https://en.wikipedia.org/wiki/Mouseover",
+        "https://en.wikipedia.org/wiki/Widget_toolkit",
+        "https://en.wikipedia.org/wiki/Zoomable_user_interface",
+        "https://en.wikipedia.org/wiki/Progress_bar",
+        "https://en.wikipedia.org/wiki/Progress_bar",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

@@ -1,0 +1,185 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Belief_revision",
+    "title": "Belief revision",
+    "table_of_contents": [
+        "1 Revision and update",
+        "1.1 Example",
+        "2 Contraction, expansion, revision, consolidation, and merging",
+        "3 The AGM postulates",
+        "4 Conditions equivalent to the AGM postulates",
+        "5 Contraction",
+        "6 The Ramsey test",
+        "7 Non-monotonic inference relation",
+        "8 Foundational revision",
+        "9 Model-based revision and update",
+        "10 Iterated revision",
+        "11 Merging",
+        "12 Social choice theory",
+        "13 Complexity",
+        "14 Relevance",
+        "15 Implementations",
+        "16 See also",
+        "17 Notes",
+        "18 References",
+        "19 External links"
+    ],
+    "content": [
+        {
+            "paragraph1": "Belief revision is the process of changing beliefs to take into account a new piece of information. The logical formalization of belief revision is researched in philosophy, in databases, and in artificial intelligence for the design of rational agents.\n",
+            "paragraph2": "What makes belief revision non-trivial is that several different ways for performing this operation may be possible. For example, if the current knowledge includes the three facts \"\n\n\n\nA\n\n\n{\\displaystyle A}\n\n is true\", \"\n\n\n\nB\n\n\n{\\displaystyle B}\n\n is true\" and \"if \n\n\n\nA\n\n\n{\\displaystyle A}\n\n and \n\n\n\nB\n\n\n{\\displaystyle B}\n\n are true then \n\n\n\nC\n\n\n{\\displaystyle C}\n\n is true\", the introduction of the new information \"\n\n\n\nC\n\n\n{\\displaystyle C}\n\n is false\" can be done preserving consistency only by removing at least one of the three facts. In this case, there are at least three different ways for performing revision. In general, there may be several different ways for changing knowledge.\n"
+        },
+        {
+            "title": "Revision and update",
+            "paragraph1": "Two kinds of changes are usually distinguished:\n",
+            "paragraph2": "The main assumption of belief revision is that of minimal change: the knowledge before and after the change should be as similar as possible. In the case of update, this principle formalizes the assumption of inertia. In the case of revision, this principle enforces as much information as possible to be preserved by the change.\n",
+            "subtitle1": "Example",
+            "paragraph3": "The following classical example shows that the operations to perform in the two settings of update and revision are not the same. The example is based on two different interpretations of the set of beliefs \n\n\n\n{\na\n∨\nb\n}\n\n\n{\\displaystyle \\{a\\vee b\\))\n\n and the new piece of information \n\n\n\n¬\na\n\n\n{\\displaystyle \\neg a}\n\n:\n",
+            "paragraph4": "This example shows that revising the belief \n\n\n\na\n∨\nb\n\n\n{\\displaystyle a\\vee b}\n\n with the new information \n\n\n\n¬\na\n\n\n{\\displaystyle \\neg a}\n\n produces two different results \n\n\n\n¬\na\n\n\n{\\displaystyle \\neg a}\n\n and \n\n\n\n¬\na\n∧\nb\n\n\n{\\displaystyle \\neg a\\wedge b}\n\n depending on whether the setting is that of update or revision.\n"
+        },
+        {
+            "title": "Contraction, expansion, revision, consolidation, and merging",
+            "paragraph1": "In the setting in which all beliefs refer to the same situation, a distinction between various operations that can be performed is made:\n",
+            "paragraph2": "Revision and merging differ in that the first operation is done when the new belief to incorporate is considered more reliable than the old ones; therefore, consistency is maintained by removing some of the old beliefs. Merging is a more general operation, in that the priority among the belief sets may or may not be the same.\n",
+            "paragraph3": "Revision can be performed by first incorporating the new fact and then restoring consistency via consolidation. This is actually a form of merging rather than revision, as the new information is not always treated as more reliable than the old knowledge.\n"
+        },
+        {
+            "title": "The AGM postulates",
+            "paragraph1": "The AGM postulates (named after their proponents Alchourrón, Gärdenfors, and Makinson) are properties that an operator that performs revision should satisfy in order for that operator to be considered rational. The considered setting is that of revision, that is, different pieces of information referring to the same situation. Three operations are considered: expansion (addition of a belief without a consistency check), revision (addition of a belief while maintaining consistency), and contraction (removal of a belief).\n",
+            "paragraph2": "The first six postulates are called \"the basic AGM postulates\". In the settings considered by Alchourrón, Gärdenfors, and Makinson, the current set of beliefs is represented by a deductively closed set of logical formulae \n\n\n\nK\n\n\n{\\displaystyle K}\n\n called belief set, the new piece of information is a logical formula \n\n\n\nP\n\n\n{\\displaystyle P}\n\n, and revision is performed by a binary operator \n\n\n\n∗\n\n\n{\\displaystyle *}\n\n that takes as its operands the current beliefs and the new information and produces as a result a belief set representing the result of the revision. The \n\n\n\n+\n\n\n{\\displaystyle +}\n\n operator denoted expansion: \n\n\n\nK\n+\nP\n\n\n{\\displaystyle K+P}\n\n is the deductive closure of \n\n\n\nK\n∪\n{\nP\n}\n\n\n{\\displaystyle K\\cup \\{P\\))\n\n. The AGM postulates for revision are:\n",
+            "ol1": "1 - Closure: \n\n\n\nK\n∗\nP\n\n\n{\\displaystyle K*P}\n\n is a belief set (i.e., a deductively closed set of formulae);\n2 - Success: \n\n\n\nP\n∈\nK\n∗\nP\n\n\n{\\displaystyle P\\in K*P}\n\n\n3 - Inclusion: \n\n\n\nK\n∗\nP\n⊆\nK\n+\nP\n\n\n{\\displaystyle K*P\\subseteq K+P}\n\n\n4 - Vacuity: \n\n\n\n\nIf \n\n(\n¬\nP\n)\n∉\nK\n,\n\n then \n\nK\n∗\nP\n=\nK\n+\nP\n\n\n{\\displaystyle {\\text{If ))(\\neg P)\\not \\in K,{\\text{ then ))K*P=K+P}\n\n\n5 - \n\n\n\nK\n∗\nP\n\n\n{\\displaystyle K*P}\n\n is inconsistent only if \n\n\n\nP\n\n\n{\\displaystyle P}\n\n is inconsistent\n6 - Extensionality: \n\n\n\n\nIf \n\nP\n\n and \n\nQ\n\n are logically equivalent, then \n\nK\n∗\nP\n=\nK\n∗\nQ\n\n\n{\\displaystyle {\\text{If ))P{\\text{ and ))Q{\\text{ are logically equivalent, then ))K*P=K*Q}\n\n (see logical equivalence)\n7 - \n\n\n\nK\n∗\n(\nP\n∧\nQ\n)\n⊆\n(\nK\n∗\nP\n)\n+\nQ\n\n\n{\\displaystyle K*(P\\wedge Q)\\subseteq (K*P)+Q}\n\n\n8 - \n\n\n\n\nIf \n\n(\n¬\nQ\n)\n∉\nK\n∗\nP\n\n then \n\n(\nK\n∗\nP\n)\n+\nQ\n⊆\nK\n∗\n(\nP\n∧\nQ\n)\n\n\n{\\displaystyle {\\text{If ))(\\neg Q)\\not \\in K*P{\\text{ then ))(K*P)+Q\\subseteq K*(P\\wedge Q)}\n\n\n",
+            "paragraph3": "A revision operator that satisfies all eight postulates is the full meet revision, in which \n\n\n\nK\n∗\nP\n\n\n{\\displaystyle K*P}\n\n is equal to \n\n\n\nK\n+\nP\n\n\n{\\displaystyle K+P}\n\n if consistent, and to the deductive closure of \n\n\n\nP\n\n\n{\\displaystyle P}\n\n otherwise. While satisfying all AGM postulates, this revision operator has been considered to be too conservative, in that no information from the old knowledge base is maintained if the revising formula is inconsistent with it.[citation needed]\n"
+        },
+        {
+            "title": "Conditions equivalent to the AGM postulates",
+            "paragraph1": "The AGM postulates are equivalent to several different conditions on the revision operator; in particular, they are equivalent to the revision operator being definable in terms of structures known as selection functions, epistemic entrenchments, systems of spheres, and preference relations. The latter are reflexive, transitive, and total relations over the set of models.\n",
+            "paragraph2": "Each revision operator \n\n\n\n∗\n\n\n{\\displaystyle *}\n\n satisfying the AGM postulates is associated to a set of preference relations \n\n\n\n\n≤\n\nK\n\n\n\n\n{\\displaystyle \\leq _{K))\n\n, one for each possible belief set \n\n\n\nK\n\n\n{\\displaystyle K}\n\n, such that the models of \n\n\n\nK\n\n\n{\\displaystyle K}\n\n are exactly the minimal of all models according to \n\n\n\n\n≤\n\nK\n\n\n\n\n{\\displaystyle \\leq _{K))\n\n. The revision operator and its associated family of orderings are related by the fact that \n\n\n\nK\n∗\nP\n\n\n{\\displaystyle K*P}\n\n is the set of formulae whose set of models contains all the minimal models of \n\n\n\nP\n\n\n{\\displaystyle P}\n\n according to \n\n\n\n\n≤\n\nK\n\n\n\n\n{\\displaystyle \\leq _{K))\n\n. This condition is equivalent to the set of models of \n\n\n\nK\n∗\nP\n\n\n{\\displaystyle K*P}\n\n being exactly the set of the minimal models of \n\n\n\nP\n\n\n{\\displaystyle P}\n\n according to the ordering \n\n\n\n\n≤\n\nK\n\n\n\n\n{\\displaystyle \\leq _{K))\n\n.\n",
+            "paragraph3": "A preference ordering \n\n\n\n\n≤\n\nK\n\n\n\n\n{\\displaystyle \\leq _{K))\n\n represents an order of implausibility among all situations, including those that are conceivable but yet currently considered false. The minimal models according to such an ordering are exactly the models of the knowledge base, which are the models that are currently considered the most likely. All other models are greater than these ones and are indeed considered less plausible. In general, \n\n\n\nI\n\n<\n\nK\n\n\nJ\n\n\n{\\displaystyle I<_{K}J}\n\n indicates that the situation represented by the model \n\n\n\nI\n\n\n{\\displaystyle I}\n\n is believed to be more plausible than the situation represented by \n\n\n\nJ\n\n\n{\\displaystyle J}\n\n. As a result, revising by a formula having \n\n\n\nI\n\n\n{\\displaystyle I}\n\n and \n\n\n\nJ\n\n\n{\\displaystyle J}\n\n as models should select only \n\n\n\nI\n\n\n{\\displaystyle I}\n\n to be a model of the revised knowledge base, as this model represent the most likely scenario among those supported by \n\n\n\nP\n\n\n{\\displaystyle P}\n\n.\n"
+        },
+        {
+            "title": "Contraction",
+            "paragraph1": "Contraction is the operation of removing a belief \n\n\n\nP\n\n\n{\\displaystyle P}\n\n from a knowledge base \n\n\n\nK\n\n\n{\\displaystyle K}\n\n; the result of this operation is denoted by \n\n\n\nK\n−\nP\n\n\n{\\displaystyle K-P}\n\n. The operators of revision and contractions are related by the Levi and Harper identities:\n",
+            "paragraph2": "Eight postulates have been defined for contraction. Whenever a revision operator satisfies the eight postulates for revision, its corresponding contraction operator satisfies the eight postulates for contraction and vice versa. If a contraction operator satisfies at least the first six postulates for contraction, translating it into a revision operator and then back into a contraction operator using the two identities above leads to the original contraction operator. The same holds starting from a revision operator.\n",
+            "paragraph3": "One of the postulates for contraction has been longly discussed: the recovery postulate:\n",
+            "paragraph4": "According to this postulate, the removal of a belief \n\n\n\nP\n\n\n{\\displaystyle P}\n\n followed by the reintroduction of the same belief in the belief set should lead to the original belief set. There are some examples showing that such behavior is not always reasonable: in particular, the contraction by a general condition such as \n\n\n\na\n∨\nb\n\n\n{\\displaystyle a\\vee b}\n\n leads to the removal of more specific conditions such as \n\n\n\na\n\n\n{\\displaystyle a}\n\n from the belief set; it is then unclear why the reintroduction of \n\n\n\na\n∨\nb\n\n\n{\\displaystyle a\\vee b}\n\n should also lead to the reintroduction of the more specific condition \n\n\n\na\n\n\n{\\displaystyle a}\n\n. For example, if George was previously believed to have German citizenship, he was also believed to be European. Contracting this latter belief amounts to ceasing to believe that George is European; therefore, that George has German citizenship is also retracted from the belief set. If George is later discovered to have Austrian citizenship, then the fact that he is European is also reintroduced. According to the recovery postulate, however, the belief that he also has German citizenship should also be reintroduced.\n",
+            "paragraph5": "The correspondence between revision and contraction induced by the Levi and Harper identities is such that a contraction not satisfying the recovery postulate is translated into a revision satisfying all eight postulates, and that a revision satisfying all eight postulates is translated into a contraction satisfying all eight postulates, including recovery. As a result, if recovery is excluded from consideration, a number of contraction operators are translated into a single revision operator, which can be then translated back into exactly one contraction operator. This operator is the only one of the initial group of contraction operators that satisfies recovery; among this group, it is the operator that preserves as much information as possible.\n"
+        },
+        {
+            "title": "The Ramsey test",
+            "paragraph1": "The evaluation of a counterfactual conditional \n\n\n\na\n>\nb\n\n\n{\\displaystyle a>b}\n\n can be done, according to the Ramsey test (named for Frank P. Ramsey), to the hypothetical addition of \n\n\n\na\n\n\n{\\displaystyle a}\n\n to the set of current beliefs followed by a check for the truth of \n\n\n\nb\n\n\n{\\displaystyle b}\n\n. If \n\n\n\nK\n\n\n{\\displaystyle K}\n\n is the set of beliefs currently held, the Ramsey test is formalized by the following correspondence:\n",
+            "paragraph2": "If the considered language of the formulae representing beliefs is propositional, the Ramsey test gives a consistent definition for counterfactual conditionals in terms of a belief revision operator. However, if the language of formulae representing beliefs itself includes the counterfactual conditional connective \n\n\n\n>\n\n\n{\\displaystyle >}\n\n, the Ramsey test leads to the Gärdenfors triviality result: there is no non-trivial revision operator that satisfies both the AGM postulates for revision and the condition of the Ramsey test. This result holds in the assumption that counterfactual formulae like \n\n\n\na\n>\nb\n\n\n{\\displaystyle a>b}\n\n can be present in belief sets and revising formulae. Several solutions to this problem have been proposed.\n"
+        },
+        {
+            "title": "Non-monotonic inference relation",
+            "paragraph1": "Given a fixed knowledge base \n\n\n\nK\n\n\n{\\displaystyle K}\n\n and a revision operator \n\n\n\n∗\n\n\n{\\displaystyle *}\n\n, one can define a non-monotonic inference relation using the following definition: \n\n\n\nP\n⊢\nQ\n\n\n{\\displaystyle P\\vdash Q}\n\n if and only if \n\n\n\nK\n∗\nP\n⊨\nQ\n\n\n{\\displaystyle K*P\\models Q}\n\n. In other words, a formula \n\n\n\nP\n\n\n{\\displaystyle P}\n\n entails another formula \n\n\n\nQ\n\n\n{\\displaystyle Q}\n\n if the addition of the first formula to the current knowledge base leads to the derivation of \n\n\n\nQ\n\n\n{\\displaystyle Q}\n\n. This inference relation is non-monotonic.\n",
+            "paragraph2": "The AGM postulates can be translated into a set of postulates for this inference relation. Each of these postulates is entailed by some previously considered set of postulates for non-monotonic inference relations. Vice versa, conditions that have been considered for non-monotonic inference relations can be translated into postulates for a revision operator. All these postulates are entailed by the AGM postulates.\n"
+        },
+        {
+            "title": "Foundational revision",
+            "paragraph1": "In the AGM framework, a belief set is represented by a deductively closed set of propositional formulae. While such sets are infinite, they can always be finitely representable. However, working with deductively closed sets of formulae leads to the implicit assumption that equivalent belief sets should be considered equal when revising. This is called the principle of irrelevance of syntax.\n",
+            "paragraph2": "This principle has been and is currently debated: while \n\n\n\n{\na\n,\nb\n}\n\n\n{\\displaystyle \\{a,b\\))\n\n and \n\n\n\n{\na\n∧\nb\n}\n\n\n{\\displaystyle \\{a\\wedge b\\))\n\n are two equivalent sets, revising by \n\n\n\n¬\na\n\n\n{\\displaystyle \\neg a}\n\n should produce different results. In the first case, \n\n\n\na\n\n\n{\\displaystyle a}\n\n and \n\n\n\nb\n\n\n{\\displaystyle b}\n\n are two separate beliefs; therefore, revising by \n\n\n\n¬\na\n\n\n{\\displaystyle \\neg a}\n\n should not produce any effect on \n\n\n\nb\n\n\n{\\displaystyle b}\n\n, and the result of revision is \n\n\n\n{\n¬\na\n,\nb\n}\n\n\n{\\displaystyle \\{\\neg a,b\\))\n\n. In the second case, \n\n\n\na\n∧\nb\n\n\n{\\displaystyle a\\wedge b}\n\n is taken a single belief. The fact that \n\n\n\na\n\n\n{\\displaystyle a}\n\n is false contradicts this belief, which should therefore be removed from the belief set. The result of revision is therefore \n\n\n\n{\n¬\na\n}\n\n\n{\\displaystyle \\{\\neg a\\))\n\n in this case.\n",
+            "paragraph3": "The problem of using deductively closed knowledge bases is that no distinction is made between pieces of knowledge that are known by themselves and pieces of knowledge that are merely consequences of them. This distinction is instead done by the foundational approach to belief revision, which is related to foundationalism in philosophy. According to this approach, retracting a non-derived piece of knowledge should lead to retracting all its consequences that are not otherwise supported (by other non-derived pieces of knowledge).  This approach can be realized by using knowledge bases that are not deductively closed and assuming that all formulae in the knowledge base represent self-standing beliefs, that is, they are not derived beliefs. In order to distinguish the foundational approach to belief revision to that based on deductively closed knowledge bases, the latter is called the coherentist approach. This name has been chosen because the coherentist approach aims at restoring the coherence\n(consistency) among all beliefs, both self-standing and derived ones. This approach is related to coherentism in philosophy.\n",
+            "paragraph4": "Foundationalist revision operators working on non-deductively closed belief sets typically select some subsets of \n\n\n\nK\n\n\n{\\displaystyle K}\n\n that are consistent with \n\n\n\nP\n\n\n{\\displaystyle P}\n\n, combined them in some way, and then conjoined them with \n\n\n\nP\n\n\n{\\displaystyle P}\n\n. The following are two non-deductively closed base revision operators.\n",
+            "paragraph5": "A different realization of the foundational approach to belief revision is based on explicitly declaring the dependences among beliefs. In the truth maintenance systems, dependence links among beliefs can be specified. In other words, one can explicitly declare that a given fact is believed because of one or more other facts; such a dependency is called a justification. Beliefs not having any justifications play the role of non-derived beliefs in the non-deductively closed knowledge base approach.\n"
+        },
+        {
+            "title": "Model-based revision and update",
+            "paragraph1": "A number of proposals for revision and update based on the set of models of the involved formulae were developed independently of the AGM framework. The principle behind this approach is that a knowledge base is equivalent to a set of possible worlds, that is, to a set of scenarios that are considered possible according to that knowledge base. Revision can therefore be performed on the sets of possible worlds rather than on the corresponding knowledge bases.\n",
+            "paragraph2": "The revision and update operators based on models are usually identified by the name of their authors: Winslett, Forbus, Satoh, Dalal, Hegner, and Weber. According to the  first four of these proposal, the result of revising/updating a formula \n\n\n\nK\n\n\n{\\displaystyle K}\n\n by another formula \n\n\n\nP\n\n\n{\\displaystyle P}\n\n is characterized by the set of models of \n\n\n\nP\n\n\n{\\displaystyle P}\n\n that are the closest to the models of \n\n\n\nK\n\n\n{\\displaystyle K}\n\n. Different notions of closeness can be defined, leading to the difference among these proposals.\n",
+            "paragraph3": "The revision operator defined by Hegner makes \n\n\n\nK\n\n\n{\\displaystyle K}\n\n not to affect  the value of the variables that are mentioned in \n\n\n\nP\n\n\n{\\displaystyle P}\n\n. What results from this operation is a formula \n\n\n\n\nK\n′\n\n\n\n{\\displaystyle K'}\n\n that is consistent with \n\n\n\nP\n\n\n{\\displaystyle P}\n\n, and can therefore be conjoined with it. The revision operator by Weber is similar, but the literals that are removed from \n\n\n\nK\n\n\n{\\displaystyle K}\n\n are not all literals of \n\n\n\nP\n\n\n{\\displaystyle P}\n\n, but only the literals that are evaluated differently by a pair of closest models of \n\n\n\nK\n\n\n{\\displaystyle K}\n\n and \n\n\n\nP\n\n\n{\\displaystyle P}\n\n according to the Satoh measure of closeness.\n"
+        },
+        {
+            "title": "Iterated revision",
+            "paragraph1": "The AGM postulates are equivalent to a preference ordering (an ordering over models) to be associated to every knowledge base \n\n\n\nK\n\n\n{\\displaystyle K}\n\n. However, they do not relate the orderings corresponding to two non-equivalent knowledge bases. In particular, the orderings associated to a knowledge base \n\n\n\nK\n\n\n{\\displaystyle K}\n\n and its revised version \n\n\n\nK\n∗\nP\n\n\n{\\displaystyle K*P}\n\n can be completely different. This is a problem for performing a second revision, as the ordering associated with \n\n\n\nK\n∗\nP\n\n\n{\\displaystyle K*P}\n\n is necessary to calculate \n\n\n\nK\n∗\nP\n∗\nQ\n\n\n{\\displaystyle K*P*Q}\n\n.\n",
+            "paragraph2": "Establishing a relation between the ordering associated with \n\n\n\nK\n\n\n{\\displaystyle K}\n\n and \n\n\n\nK\n∗\nP\n\n\n{\\displaystyle K*P}\n\n has been however recognized not to be the right solution to this problem. Indeed, the preference relation should depend on the previous history of revisions, rather than on the resulting knowledge base only. More generally, a preference relation gives more information about the state of mind of an agent than a simple knowledge base. Indeed, two states of mind might represent the same piece of knowledge \n\n\n\nK\n\n\n{\\displaystyle K}\n\n while at the same time being different in the way a new piece of knowledge would be incorporated. For example, two people might have the same idea as to where to go on holiday, but they differ on how they would change this idea if they win a million-dollar lottery. Since the basic condition of the preference ordering is that their minimal models are exactly the models of their associated knowledge base, a knowledge base can be considered implicitly represented by a preference ordering (but not vice versa).\n",
+            "paragraph3": "Given that a preference ordering allows deriving its associated knowledge base but also allows performing a single step of revision, studies on iterated revision have been concentrated on how a preference ordering should be changed in response of a revision. While single-step revision is about how a knowledge base \n\n\n\nK\n\n\n{\\displaystyle K}\n\n has to be changed into a new knowledge base \n\n\n\nK\n∗\nP\n\n\n{\\displaystyle K*P}\n\n, iterated revision is about how a preference ordering (representing both the current knowledge and how much situations believed to be false are considered possible) should be turned into a new preference relation when \n\n\n\nP\n\n\n{\\displaystyle P}\n\n is learned. A single step of iterated revision produces a new ordering that allows for further revisions.\n",
+            "paragraph4": "Two kinds of preference ordering are usually considered: numerical and non-numerical. In the first case, the level of plausibility of a model is  representing by a non-negative integer number; the lower the rank, the more plausible the situation corresponding to the model. Non-numerical preference orderings correspond to the preference relations used in the AGM framework: a possibly total ordering over models. The non-numerical preference relation were initially considered unsuitable for iterated revision because of the impossibility of reverting a revision by a number of other revisions, which is instead possible in the numerical case.\n",
+            "paragraph5": "Darwiche and Pearl formulated the following postulates for iterated revision.\n",
+            "ol1": "1 - if \n\n\n\nα\n⊨\nμ\n\n\n{\\displaystyle \\alpha \\models \\mu }\n\n then \n\n\n\n(\nψ\n∗\nμ\n)\n∗\nα\n≡\nψ\n∗\nα\n\n\n{\\displaystyle (\\psi *\\mu )*\\alpha \\equiv \\psi *\\alpha }\n\n;\n2 - if \n\n\n\nα\n⊨\n¬\nμ\n\n\n{\\displaystyle \\alpha \\models \\neg \\mu }\n\n, then \n\n\n\n(\nψ\n∗\nμ\n)\n∗\nα\n≡\nψ\n∗\nα\n\n\n{\\displaystyle (\\psi *\\mu )*\\alpha \\equiv \\psi *\\alpha }\n\n;\n3 - if \n\n\n\nψ\n∗\nα\n⊨\nμ\n\n\n{\\displaystyle \\psi *\\alpha \\models \\mu }\n\n, then \n\n\n\n(\nψ\n∗\nμ\n)\n∗\nα\n⊨\nμ\n\n\n{\\displaystyle (\\psi *\\mu )*\\alpha \\models \\mu }\n\n;\n4 - if \n\n\n\nψ\n∗\nα\n⊭\n¬\nμ\n\n\n{\\displaystyle \\psi *\\alpha \\not \\models \\neg \\mu }\n\n, then \n\n\n\n(\nψ\n∗\nμ\n)\n∗\nα\n⊭\n¬\nμ\n\n\n{\\displaystyle (\\psi *\\mu )*\\alpha \\not \\models \\neg \\mu }\n\n.\n",
+            "paragraph6": "Specific iterated revision operators have been proposed by Spohn, Boutilier, Williams, Lehmann, and others. Williams also provided a general iterated revision operator.\n"
+        },
+        {
+            "title": "Merging",
+            "paragraph1": "The assumption implicit in the revision operator is that the new piece of information \n\n\n\nP\n\n\n{\\displaystyle P}\n\n is always to be considered more reliable than the old knowledge base \n\n\n\nK\n\n\n{\\displaystyle K}\n\n. This is formalized by the second of the AGM postulates: \n\n\n\nP\n\n\n{\\displaystyle P}\n\n is always believed after revising \n\n\n\nK\n\n\n{\\displaystyle K}\n\n with \n\n\n\nP\n\n\n{\\displaystyle P}\n\n. More generally, one can consider the process of merging several pieces of information (rather than just two) that might or might not have the same reliability. Revision becomes the particular instance of this process when a less reliable piece of information \n\n\n\nK\n\n\n{\\displaystyle K}\n\n is merged with a more reliable \n\n\n\nP\n\n\n{\\displaystyle P}\n\n.\n",
+            "paragraph2": "While the input to the revision process is a pair of formulae \n\n\n\nK\n\n\n{\\displaystyle K}\n\n and \n\n\n\nP\n\n\n{\\displaystyle P}\n\n, the input to merging is a multiset of formulae \n\n\n\nK\n\n\n{\\displaystyle K}\n\n, \n\n\n\nT\n\n\n{\\displaystyle T}\n\n, etc. The use of multisets is necessary as two sources to the merging process might be identical.\n",
+            "paragraph3": "When merging a number of knowledge bases with the same degree of plausibility, a distinction is made between arbitration and majority. This distinction depends on the assumption that is made about the information and how it has to be put together.\n",
+            "paragraph4": "The above is the original definition of arbitration. According to a newer definition, an arbitration operator is a merging operator that is insensitive to the number of equivalent knowledge bases to merge. This definition makes arbitration the exact opposite of majority.\n",
+            "paragraph5": "Postulates for both arbitration and merging have been proposed. An example of an arbitration operator satisfying all postulates is the classical disjunction. An example of a majority operator satisfying all postulates is that selecting all models that have a minimal total Hamming distance to models of the knowledge bases to merge.\n",
+            "paragraph6": "A merging operator can be expressed as a family of orderings over models, one for each possible multiset of knowledge bases to merge: the models of the result of merging a multiset of knowledge bases are the minimal models of the ordering associated to the multiset. A merging operator defined in this way satisfies the postulates for merging if and only if the family of orderings meets a given set of conditions. For the old definition of arbitration, the orderings are not on models but on pairs (or, in general, tuples) of models.\n"
+        },
+        {
+            "title": "Social choice theory",
+            "paragraph1": "Many revision proposals involve orderings over models representing the relative plausibility of the possible alternatives. The problem of merging amounts to combine a set of orderings into a single one expressing the combined  plausibility of the alternatives. This is similar with what is done in social choice theory, which is the study of how the preferences of a group of agents can be combined in a rational way. Belief revision and social choice theory are similar in that they combine a set of orderings into one. They differ on how these orderings are interpreted: preferences in social choice theory; plausibility in belief revision. Another difference is that the alternatives are explicitly enumerated in social choice theory, while they are the propositional models over a given alphabet in belief revision.\n"
+        },
+        {
+            "title": "Complexity",
+            "paragraph1": "From the point of view of computational complexity, the most studied problem about belief revision is that of query answering in the propositional case. This is the problem of establishing whether a formula follows from the result of a revision, that is, \n\n\n\nK\n∗\nP\n⊨\nQ\n\n\n{\\displaystyle K*P\\models Q}\n\n, where \n\n\n\nK\n\n\n{\\displaystyle K}\n\n, \n\n\n\nP\n\n\n{\\displaystyle P}\n\n, and \n\n\n\nQ\n\n\n{\\displaystyle Q}\n\n are propositional formulae. More generally, query answering is the problem of telling whether a formula is entailed by the result of a belief revision, which could be update, merging, revision, iterated revision, etc. Another problem that has received some attention is that of model checking, that is, checking whether a model satisfies the result of a belief revision. A related question is whether such result can be represented in space polynomial in that of its arguments.\n",
+            "paragraph2": "Since a deductively closed knowledge base is infinite, complexity studies on belief revision operators working on deductively closed knowledge bases are done in the assumption that such deductively closed knowledge base are given in the form of an equivalent finite knowledge base.\n",
+            "paragraph3": "A distinction is made among belief revision operators and belief revision schemes. While the former are simple mathematical operators mapping a pair of formulae into another formula, the latter depend on further information such as a preference relation. For example, the Dalal revision is an operator because, once two formulae \n\n\n\nK\n\n\n{\\displaystyle K}\n\n and \n\n\n\nP\n\n\n{\\displaystyle P}\n\n are given, no other information is needed to compute \n\n\n\nK\n∗\nP\n\n\n{\\displaystyle K*P}\n\n. On the other hand, revision based on a preference relation is a revision scheme, because \n\n\n\nK\n\n\n{\\displaystyle K}\n\n and \n\n\n\nP\n\n\n{\\displaystyle P}\n\n do not allow determining the result of revision if the family of preference orderings between models is not given. The complexity for revision schemes is determined in the assumption that the extra information needed to compute revision is given in some compact form. For example, a preference relation can be represented by a sequence of formulae whose models are increasingly preferred. Explicitly storing the relation as a set of pairs of models is instead not a compact representation of preference because the space required is exponential in the number of propositional letters.\n",
+            "paragraph4": "The complexity of query answering and model checking in the propositional case is in the second level of the polynomial hierarchy for most belief revision operators and schemas. Most revision operators suffer from the problem of representational blow up: the result of revising two formulae is not necessarily representable in space polynomial in that of the two original formulae. In other words, revision may exponentially increase the size of the knowledge base.\n"
+        },
+        {
+            "title": "Relevance",
+            "paragraph1": "New breakthrough results that demonstrate how relevance can be employed in belief revision have been achieved. Williams, Peppas, Foo and Chopra reported the results in the Artificial Intelligence journal.\n",
+            "paragraph2": "Belief revision has also been used to demonstrate the acknowledgement of intrinsic social capital in closed networks.\n"
+        },
+        {
+            "title": "Implementations",
+            "paragraph1": "Systems specifically implementing belief revision are:\n",
+            "ul1": "SATEN – an object-oriented web-based revision and extraction engine (Williams, Sims)[7]\nADS – SAT solver–based belief revision (Benferhat, Kaci, Le Berre, Williams)[8]\nBReLS[9]\nImmortal[10]\n",
+            "paragraph2": "Two systems including a belief revision feature are SNePS and Cyc.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Formal_logic",
+        "https://en.wikipedia.org/wiki/Philosophy",
+        "https://en.wikipedia.org/wiki/Databases",
+        "https://en.wikipedia.org/wiki/Artificial_intelligence",
+        "https://en.wikipedia.org/wiki/Intelligent_agent",
+        "https://en.wikipedia.org/wiki/Propositional_variable",
+        "https://en.wikipedia.org/wiki/David_Makinson",
+        "https://en.wikipedia.org/wiki/Deductive_closure",
+        "https://en.wikipedia.org/wiki/Inconsistent",
+        "https://en.wikipedia.org/wiki/Logical_equivalence",
+        "https://en.wikipedia.org/wiki/Reflexive_relation",
+        "https://en.wikipedia.org/wiki/Transitive_relation",
+        "https://en.wikipedia.org/wiki/Connected_relation",
+        "https://en.wikipedia.org/wiki/Counterfactual_conditional",
+        "https://en.wikipedia.org/wiki/Logical_consequence",
+        "https://en.wikipedia.org/wiki/Propositional_formula",
+        "https://en.wikipedia.org/wiki/Foundationalism",
+        "https://en.wikipedia.org/wiki/Coherentism",
+        "https://en.wikipedia.org/wiki/Truth_maintenance_system",
+        "https://en.wikipedia.org/wiki/Marianne_Winslett",
+        "https://en.wikipedia.org/wiki/Hamming_distance",
+        "https://en.wikipedia.org/wiki/Ken_Forbus",
+        "https://en.wikipedia.org/wiki/Judea_Pearl",
+        "https://en.wikipedia.org/wiki/Multiset",
+        "https://en.wikipedia.org/wiki/Social_choice_theory",
+        "https://en.wikipedia.org/wiki/Computational_complexity_theory",
+        "https://en.wikipedia.org/wiki/Model_checking",
+        "https://en.wikipedia.org/wiki/Polynomial_hierarchy",
+        "https://en.wikipedia.org/wiki/SAT_solver",
+        "https://en.wikipedia.org/wiki/Cyc",
+        "https://en.wikipedia.org/wiki/Bayesian_inference",
+        "https://en.wikipedia.org/wiki/Belief_propagation",
+        "https://en.wikipedia.org/wiki/Defeasible_reasoning",
+        "https://en.wikipedia.org/wiki/Discursive_dilemma",
+        "https://en.wikipedia.org/wiki/Epistemic_closure",
+        "https://en.wikipedia.org/wiki/Inquiry",
+        "https://en.wikipedia.org/wiki/Knowledge_representation",
+        "https://en.wikipedia.org/wiki/Philosophy_of_science",
+        "https://en.wikipedia.org/wiki/Reason_maintenance",
+        "https://en.wikipedia.org/wiki/Reasoning",
+        "https://en.wikipedia.org/wiki/Marianne_Winslett",
+        "https://en.wikipedia.org/wiki/Discursive_dilemma",
+        "https://en.wikipedia.org/wiki/Cambridge_University_Press",
+        "https://en.wikipedia.org/wiki/PhilPapers",
+        "https://en.wikipedia.org/wiki/Indiana_Philosophy_Ontology_Project",
+        "https://en.wikipedia.org/wiki/Stanford_Encyclopedia_of_Philosophy",
+        "https://en.wikipedia.org/wiki/Stanford_Encyclopedia_of_Philosophy",
+        "https://en.wikipedia.org/wiki/Belief_revision",
+        "https://en.wikipedia.org/wiki/Belief_revision",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

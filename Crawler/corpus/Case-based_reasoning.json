@@ -1,0 +1,96 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Case_based_reasoning",
+    "title": "Case-based reasoning",
+    "table_of_contents": [
+        "1 Process",
+        "2 Comparison to other methods",
+        "3 Criticism",
+        "4 History",
+        "5 See also",
+        "6 Notes and references",
+        "7 Further reading",
+        "8 External links"
+    ],
+    "content": [
+        {
+            "paragraph1": "In artificial intelligence and philosophy[verification needed], case-based reasoning (CBR), broadly construed, is the process of solving new problems based on the solutions of similar past problems.\n",
+            "paragraph2": "In everyday life, an auto mechanic who fixes an engine by recalling another car that exhibited similar symptoms is using case-based reasoning. A lawyer who advocates a particular outcome in a trial based on legal precedents or a judge who creates case law is using case-based reasoning. So, too, an engineer copying working elements of nature (practicing biomimicry), is treating nature as a database of solutions to problems. Case-based reasoning is a prominent type of analogy solution making.\n",
+            "paragraph3": "It has been argued[by whom?] that case-based reasoning is not only a powerful method for computer reasoning, but also a pervasive behavior in everyday human problem solving; or, more radically, that all reasoning is based on past cases personally experienced. This view is related to prototype theory, which is most deeply explored in cognitive science.\n"
+        },
+        {
+            "title": "Process",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/2/25/CBR_steps.png/440px-CBR_steps.png",
+                "caption": "\n\t\tA diagram of case based reasoning in French.\n\t"
+            },
+            "paragraph1": "Case-based reasoning has been formalized[clarification needed] for purposes of computer reasoning as a four-step process:\n",
+            "ol1": "1 - Retrieve: Given a target problem, retrieve cases relevant to solving it from memory. A case consists of a problem, its solution, and, typically, annotations about how the solution was derived. For example, suppose Fred wants to prepare blueberry pancakes. Being a novice cook, the most relevant experience he can recall is one in which he successfully made plain pancakes. The procedure he followed for making the plain pancakes, together with justifications for decisions made along the way, constitutes Fred's retrieved case.\n2 - Reuse: Map the solution from the previous case to the target problem. This may involve adapting the solution as needed to fit the new situation. In the pancake example, Fred must adapt his retrieved solution to include the addition of blueberries.\n3 - Revise: Having mapped the previous solution to the target situation, test the new solution in the real world (or a simulation) and, if necessary, revise. Suppose Fred adapted his pancake solution by adding blueberries to the batter. After mixing, he discovers that the batter has turned blue – an undesired effect. This suggests the following revision: delay the addition of blueberries until after the batter has been ladled into the pan.\n4 - Retain: After the solution has been successfully adapted to the target problem, store the resulting experience as a new case in memory. Fred, accordingly, records his new-found procedure for making blueberry pancakes, thereby enriching his set of stored experiences, and better preparing him for future pancake-making demands.\n"
+        },
+        {
+            "title": "Comparison to other methods",
+            "paragraph1": "At first glance, CBR may seem similar to the rule induction algorithms[note 1] of machine learning. Like a rule-induction algorithm, CBR starts with a set of cases or training examples; it forms generalizations of these examples, albeit implicit ones, by identifying commonalities between a retrieved case and the target problem.\n",
+            "paragraph2": "If for instance a procedure for plain pancakes is mapped to blueberry pancakes, a decision is made to use the same basic batter and frying method, thus implicitly generalizing the set of situations under which the batter and frying method can be used. The key difference, however, between the implicit generalization in CBR and the generalization in rule induction lies in when the generalization is made. A rule-induction algorithm draws its generalizations from a set of training examples before the target problem is even known; that is, it performs eager generalization.\n",
+            "paragraph3": "For instance, if a rule-induction algorithm were given recipes for plain pancakes, Dutch apple pancakes, and banana pancakes as its training examples, it would have to derive, at training time, a set of general rules for making all types of pancakes. It would not be until testing time that it would be given, say, the task of cooking blueberry pancakes. The difficulty for the rule-induction algorithm is in anticipating the different directions in which it should attempt to generalize its training examples. This is in contrast to CBR, which delays (implicit) generalization of its cases until testing time – a strategy of lazy generalization. In the pancake example, CBR has already been given the target problem of cooking blueberry pancakes; thus it can generalize its cases exactly as needed to cover this situation. CBR therefore tends to be a good approach for rich, complex domains in which there are myriad ways to generalize a case.\n",
+            "paragraph4": "In law, there is often explicit delegation of CBR to courts, recognizing the limits of rule based reasons: limiting delay, limited knowledge of future context, limit of negotiated agreement, etc. While CBR in law and cognitively inspired CBR have long been associated, the former is more clearly an interpolation of rule based reasoning, and judgment, while the latter is more closely tied to recall and process adaptation. The difference is clear in their attitude toward error and appellate review.\n"
+        },
+        {
+            "title": "Criticism",
+            "paragraph1": "Critics of CBR[who?] argue that it is an approach that accepts anecdotal evidence as its main operating principle. Without statistically relevant data for backing and implicit generalization, there is no guarantee that the generalization is correct. However, all inductive reasoning where data is too scarce for statistical relevance is inherently based on anecdotal evidence.\n"
+        },
+        {
+            "title": "History",
+            "paragraph1": "CBR traces its roots to the work of Roger Schank and his students at Yale University in the early 1980s. Schank's model of dynamic memory was the basis for the earliest CBR systems: Janet Kolodner's CYRUS and Michael Lebowitz's IPP.\n",
+            "paragraph2": "Other schools of CBR and closely allied fields emerged in the 1980s, which directed at topics such as legal reasoning, memory-based reasoning (a way of reasoning from examples on massively parallel machines), and combinations of CBR with other reasoning methods. In the 1990s, interest in CBR grew internationally, as evidenced by the establishment of an International Conference on Case-Based Reasoning in 1995, as well as European, German, British, Italian, and other CBR workshops[which?].\n",
+            "paragraph3": "CBR technology has resulted in the deployment of a number of successful systems, the earliest being Lockheed's CLAVIER, a system for laying out composite parts to be baked in an industrial convection oven. CBR has been used extensively in applications such as the Compaq SMART system and has found a major application area in the health sciences, as well as in structural safety management.\n",
+            "paragraph4": "There is recent work[which?][when?] that develops CBR within a statistical framework and formalizes case-based inference as a specific type of probabilistic inference. Thus, it becomes possible to produce case-based predictions equipped with a certain level of confidence.\nOne description of the difference between CBR and induction from instances is that statistical inference aims to find what tends to make cases similar while CBR aims to encode what suffices to claim similarly.[full citation needed]\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Artificial_intelligence",
+        "https://en.wikipedia.org/wiki/Philosophy",
+        "https://en.wikipedia.org/wiki/Mechanic",
+        "https://en.wikipedia.org/wiki/Engine",
+        "https://en.wikipedia.org/wiki/Automobile",
+        "https://en.wikipedia.org/wiki/Lawyer",
+        "https://en.wikipedia.org/wiki/Legal",
+        "https://en.wikipedia.org/wiki/Precedent",
+        "https://en.wikipedia.org/wiki/Case_law",
+        "https://en.wikipedia.org/wiki/Engineer",
+        "https://en.wikipedia.org/wiki/Biomimicry",
+        "https://en.wikipedia.org/wiki/Analogy",
+        "https://en.wikipedia.org/wiki/Computer_reasoning",
+        "https://en.wikipedia.org/wiki/Problem_solving",
+        "https://en.wikipedia.org/wiki/Prototype_theory",
+        "https://en.wikipedia.org/wiki/Cognitive_science",
+        "https://en.wikipedia.org/wiki/French_language",
+        "https://en.wikipedia.org/wiki/Computer_reasoning",
+        "https://en.wikipedia.org/wiki/Pancakes",
+        "https://en.wikipedia.org/wiki/Rule_induction",
+        "https://en.wikipedia.org/wiki/Algorithm",
+        "https://en.wikipedia.org/wiki/Machine_learning",
+        "https://en.wikipedia.org/wiki/Anecdotal_evidence",
+        "https://en.wikipedia.org/wiki/Inductive_reasoning",
+        "https://en.wikipedia.org/wiki/Anecdotal_evidence",
+        "https://en.wikipedia.org/wiki/Roger_Schank",
+        "https://en.wikipedia.org/wiki/Yale_University",
+        "https://en.wikipedia.org/wiki/Janet_Kolodner",
+        "https://en.wikipedia.org/wiki/Statistical_inference",
+        "https://en.wikipedia.org/wiki/Abductive_reasoning",
+        "https://en.wikipedia.org/wiki/Duck_test",
+        "https://en.wikipedia.org/wiki/I_know_it_when_I_see_it",
+        "https://en.wikipedia.org/wiki/Commonsense_reasoning",
+        "https://en.wikipedia.org/wiki/Purposeful_omission",
+        "https://en.wikipedia.org/wiki/Decision_tree",
+        "https://en.wikipedia.org/wiki/Genetic_algorithm",
+        "https://en.wikipedia.org/wiki/Pattern_matching",
+        "https://en.wikipedia.org/wiki/Analogy",
+        "https://en.wikipedia.org/wiki/Ripple_down_rules",
+        "https://en.wikipedia.org/wiki/Casuistry",
+        "https://en.wikipedia.org/wiki/Similarity_heuristic",
+        "https://en.wikipedia.org/wiki/Wayback_Machine",
+        "https://en.wikipedia.org/wiki/Rivka_Oxman",
+        "https://en.wikipedia.org/wiki/Nupedia",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

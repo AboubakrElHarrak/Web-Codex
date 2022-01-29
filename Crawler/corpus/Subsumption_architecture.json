@@ -1,0 +1,94 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Subsumption_architecture",
+    "title": "Subsumption architecture",
+    "table_of_contents": [
+        "1 Overview",
+        "2 Goal",
+        "3 Layers and augmented finite-state machines",
+        "4 Robots",
+        "5 Strengths and weaknesses",
+        "6 See also",
+        "7 Notes",
+        "8 References",
+        "9 External links"
+    ],
+    "content": [
+        {
+            "paragraph1": "Subsumption architecture is a reactive robotic architecture heavily associated with behavior-based robotics which was very popular in the 1980s and 90s.  The term was introduced by Rodney Brooks and colleagues in 1986.  Subsumption has been widely influential in autonomous robotics and elsewhere in real-time AI.\n"
+        },
+        {
+            "title": "Overview",
+            "paragraph1": "Subsumption architecture is a control architecture that was proposed in opposition to traditional AI, or GOFAI.  Instead of guiding behavior by symbolic mental representations of the world, subsumption architecture couples sensory information to action selection in an intimate and bottom-up fashion.: 130 \n",
+            "paragraph2": "It does this by decomposing the complete behavior into sub-behaviors.  These sub-behaviors are organized into a hierarchy of layers. Each layer implements a particular level of behavioral competence, and higher levels are able to subsume lower levels (= integrate/combine lower levels to a more comprehensive whole) in order to create viable behavior.  For example, a robot's lowest layer could be \"avoid an object\". The second layer would be \"wander around\", which runs beneath the third layer \"explore the world\".  Because a robot must have the ability to \"avoid objects\" in order to \"wander around\" effectively, the subsumption architecture creates a system in which the higher layers utilize the lower-level competencies.  The layers, which all receive sensor-information, work in parallel and generate outputs.  These outputs can be commands to actuators, or signals that suppress or inhibit other layers.: 8–12, 15–16 \n"
+        },
+        {
+            "title": "Goal",
+            "paragraph1": "Subsumption architecture attacks the problem of intelligence from a significantly different perspective than traditional AI.  Disappointed with the performance of Shakey the robot and similar conscious mind representation-inspired projects, Rodney Brooks started creating robots based on a different notion of intelligence, resembling unconscious mind processes.  Instead of modelling aspects of human intelligence via symbol manipulation, this approach is aimed at real-time interaction and viable responses to a dynamic lab or office environment.: 130–131 \n",
+            "paragraph2": "The goal was informed by four key ideas:\n",
+            "ul1": "Situatedness – A major idea of situated AI is that a robot should be able to react to its environment within a human-like time-frame.  Brooks argues that situated mobile robot should not represent the world via an internal set of symbols and then act on this model.  Instead, he claims that \"the world is its own best model\", which means that proper perception-to-action setups can be used to directly interact with the world as opposed to modelling it. Yet, each module/behavior still models the world, but on a very low level, close to the sensorimotor signals. These simple models necessarily use hardcoded assumptions about the world encoded in the algorithms themselves, but avoid the use of memory to predict the world's behavior, instead relying on direct sensorial feedback as much as possible.\nEmbodiment – Brooks argues building an embodied agent accomplishes two things. The first is that it forces the designer to test and create an integrated physical control system, not theoretic models or simulated robots that might not work in the physical world.  The second is that it can solve the symbol grounding problem, a philosophical issue many traditional AIs encounter, by directly coupling sense-data to meaningful actions.  \"The world grounds regress,\" and the internal relation of the behavioral layers are directly grounded in the world the robot perceives.\nIntelligence – Looking at evolutionary progress, Brooks argues that developing perceptual and mobility skills are a necessary foundation for human-like intelligence.  Also, by rejecting top-down representations as a viable starting point for AI, it seems that \"intelligence is determined by the dynamics of interaction with the world.\"\nEmergence – Conventionally, individual modules are not considered intelligent by themselves. It is the interaction of such modules, evaluated by observing the agent and its environment, that is usually deemed intelligent (or not).  \"Intelligence,\" therefore, \"is in the eye of the observer.\"[5]: 165–170 \n",
+            "paragraph3": "The ideas outlined above are still a part of an ongoing debate regarding the nature of intelligence and how the progress of robotics and AI should be fostered.\n"
+        },
+        {
+            "title": "Layers and augmented finite-state machines",
+            "paragraph1": "Each layer is made up by a set of processors that are augmented finite-state machines (AFSM), the augmentation being added instance variables to hold programmable data-structures.  A layer is a module and is responsible for a single behavioral goal, such as \"wander around.\"  There is no central control within or between these behavioral modules.  All AFSMs continuously and asynchronously receive input from the relevant sensors and send output to actuators (or other AFSMs).  Input signals that are not read by the time a new one is delivered end up getting discarded.  These discarded signals are common, and is useful for performance because it allows the system to work in real time by dealing with the most immediate information.\n",
+            "paragraph2": "Because there is no central control, AFSMs communicate with each other via inhibition and suppression signals.  Inhibition signals block signals from reaching actuators or AFSMs, and suppression signals blocks or replaces the inputs to layers or their AFSMs. This system of AFSM communication is how higher layers subsume lower ones (see figure 1), as well as how the architecture deals with priority and action selection arbitration in general.: 12–16 \n",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Subsumption_Architecture_Abstract_Diagram.png/440px-Subsumption_Architecture_Abstract_Diagram.png",
+                "caption": "\n\t\tFigure 1: Abstract representation of subsumption architecture, with the higher level layers subsuming the roles of lower level layers when the sensory information determines it.[5]: 11 \n"
+            },
+            "paragraph3": "The development of layers follows an intuitive progression.  First, the lowest layer is created, tested, and debugged.  Once that lowest level is running, one creates and attaches the second layer with the proper suppression and inhibition connections to the first layer.  After testing and debugging the combined behavior, this process can be repeated for (theoretically) any number of behavioral modules.: 16–20 \n"
+        },
+        {
+            "title": "Robots",
+            "paragraph1": "The following is a small list of robots that utilize the subsumption architecture.\n",
+            "ul1": "Allen (robot)\nHerbert, a soda can collecting robot (see external links for a video)\nGenghis, a robust hexapodal walker (see external links for a video)\n",
+            "paragraph2": "The above are described in detail along with other robots in Elephants Don't Play Chess.\n"
+        },
+        {
+            "title": "Strengths and weaknesses",
+            "paragraph1": "The main advantages of the architecture are:\n",
+            "ul1": "the emphasis on iterative development and testing of real-time systems in their target domain;\nthe emphasis on connecting limited, task-specific perception directly to the expressed actions that require it; and\nthe emphasis on distributive and parallel control, thereby integrating the perception, control, and action systems in a manner similar to animals.[5]: 172–173 [6]\n",
+            "paragraph2": "The main disadvantages of the architecture are:\n",
+            "ul2": "the difficulty of designing adaptable action selection through highly distributed system of inhibition and suppression;[4]: 139–140  and\nthe lack of large memory and symbolic representation, which seems to restrict the architecture from understanding language;\n",
+            "paragraph3": "When subsumption architecture was developed, the novel setup and approach of subsumption architecture allowed it to be successful in many important domains where traditional AI had failed, namely real-time interaction with a dynamic environment.  The lack of large memory storage, symbolic representations, and central control, however, places it at a disadvantage at learning complex actions, in-depth mapping, and understanding language.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Robotic_architectures",
+        "https://en.wikipedia.org/wiki/Rodney_Brooks",
+        "https://en.wikipedia.org/wiki/Autonomous_robotics",
+        "https://en.wikipedia.org/wiki/Artificial_intelligence",
+        "https://en.wikipedia.org/wiki/GOFAI",
+        "https://en.wikipedia.org/wiki/Mental_representation",
+        "https://en.wikipedia.org/wiki/Action_selection",
+        "https://en.wikipedia.org/wiki/Shakey_the_robot",
+        "https://en.wikipedia.org/wiki/Rodney_Brooks",
+        "https://en.wikipedia.org/wiki/Situated",
+        "https://en.wikipedia.org/wiki/Situated_AI",
+        "https://en.wikipedia.org/wiki/Embodied_agent",
+        "https://en.wikipedia.org/wiki/Control_system",
+        "https://en.wikipedia.org/wiki/Symbol_grounding",
+        "https://en.wikipedia.org/wiki/Emergence",
+        "https://en.wikipedia.org/wiki/Instance_variable",
+        "https://en.wikipedia.org/wiki/Modular_programming",
+        "https://en.wikipedia.org/wiki/Action_selection",
+        "https://en.wikipedia.org/wiki/Action_selection",
+        "https://en.wikipedia.org/wiki/Robotic_mapping",
+        "https://en.wikipedia.org/wiki/Natural_language_understanding",
+        "https://en.wikipedia.org/wiki/Agent_architecture",
+        "https://en.wikipedia.org/wiki/Cognitive_architecture",
+        "https://en.wikipedia.org/wiki/Emergent_behavior",
+        "https://en.wikipedia.org/wiki/Hierarchical_control_system",
+        "https://en.wikipedia.org/wiki/Mibe_architecture",
+        "https://en.wikipedia.org/wiki/Robotic_paradigm",
+        "https://en.wikipedia.org/wiki/Scruffies",
+        "https://en.wikipedia.org/wiki/MIT_Press",
+        "https://en.wikipedia.org/wiki/Mars_Pathfinder",
+        "https://en.wikipedia.org/wiki/Mars_Exploration_Rover_Mission",
+        "https://en.wikipedia.org/wiki/Merkwelt",
+        "https://en.wikipedia.org/wiki/Subsumption_architecture",
+        "https://en.wikipedia.org/wiki/Subsumption_architecture",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

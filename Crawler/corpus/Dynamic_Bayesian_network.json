@@ -1,0 +1,66 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Dynamic_Bayesian_network",
+    "title": "Dynamic Bayesian network",
+    "table_of_contents": [
+        "1 See also",
+        "2 References",
+        "3 Further reading",
+        "4 Software"
+    ],
+    "content": [
+        {
+            "image2": {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/R%C3%A9seau_bay%C3%A9sien_dynamique.svg/661px-R%C3%A9seau_bay%C3%A9sien_dynamique.svg.png",
+                "caption": "\n\t\tDynamic Bayesian Network composed by 3 variables.\n\t"
+            },
+            "image3": {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/R%C3%A9seau_bay%C3%A9sien_3t.svg/808px-R%C3%A9seau_bay%C3%A9sien_3t.svg.png",
+                "caption": "\n\t\tBayesian Network developed on 3 time steps.\n\t"
+            },
+            "image4": {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/R%C3%A9seau_bay%C3%A9sien_simplifi%C3%A9.svg/380px-R%C3%A9seau_bay%C3%A9sien_simplifi%C3%A9.svg.png",
+                "caption": "\n\t\tSimplified Dynamic Bayesian Network. All the variables do not need to be duplicated in the graphical model, but they are dynamic, too.\n\t"
+            },
+            "paragraph1": "A Dynamic Bayesian Network (DBN) is a Bayesian network (BN) which relates variables to each other over adjacent time steps. This is often called a Two-Timeslice BN (2TBN) because it says that at any point in time T, the value of a variable can be calculated from the internal regressors and the immediate prior value (time T-1).  DBNs were developed by Paul Dagum in the early 1990s at Stanford University's Section on Medical Informatics. Dagum developed DBNs to unify and extend traditional linear state-space models such as Kalman filters, linear and normal forecasting models such as ARMA and simple dependency models such as hidden Markov models into a general probabilistic representation and inference mechanism for arbitrary nonlinear and non-normal time-dependent domains.\n",
+            "paragraph2": "Today, DBNs are common in robotics, and have shown potential for a wide range of data mining applications.  For example, they have been used in speech recognition, digital forensics, protein sequencing, and bioinformatics.  DBN is a generalization of hidden Markov models and Kalman filters.\n",
+            "paragraph3": "DBNs are conceptually related to Probabilistic Boolean Networks  and can, similarly, be used to model dynamical systems at steady-state.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Bayesian_network",
+        "https://en.wikipedia.org/wiki/Stanford_University",
+        "https://en.wikipedia.org/wiki/State_Space_Model",
+        "https://en.wikipedia.org/wiki/Kalman_filter",
+        "https://en.wikipedia.org/wiki/ARMA_model",
+        "https://en.wikipedia.org/wiki/Hidden_Markov_model",
+        "https://en.wikipedia.org/wiki/Robotics",
+        "https://en.wikipedia.org/wiki/Data_mining",
+        "https://en.wikipedia.org/wiki/Speech_recognition",
+        "https://en.wikipedia.org/wiki/Digital_forensics",
+        "https://en.wikipedia.org/wiki/Protein",
+        "https://en.wikipedia.org/wiki/Sequencing",
+        "https://en.wikipedia.org/wiki/Bioinformatics",
+        "https://en.wikipedia.org/wiki/Hidden_Markov_models",
+        "https://en.wikipedia.org/wiki/Kalman_filter",
+        "https://en.wikipedia.org/wiki/Recursive_Bayesian_estimation",
+        "https://en.wikipedia.org/wiki/Probabilistic_logic_network",
+        "https://en.wikipedia.org/wiki/Generalized_filtering",
+        "https://en.wikipedia.org/wiki/Eric_Horvitz",
+        "https://en.wikipedia.org/wiki/Eric_Horvitz",
+        "https://en.wikipedia.org/wiki/Eric_Horvitz",
+        "https://en.wikipedia.org/wiki/Eric_Horvitz",
+        "https://en.wikipedia.org/wiki/Peter_Norvig",
+        "https://en.wikipedia.org/wiki/Prentice_Hall",
+        "https://en.wikipedia.org/wiki/Lecture_Notes_in_Computer_Science",
+        "https://en.wikipedia.org/wiki/GitHub",
+        "https://en.wikipedia.org/wiki/GNU_General_Public_License",
+        "https://en.wikipedia.org/wiki/Google_Code",
+        "https://en.wikipedia.org/wiki/GNU_General_Public_License",
+        "https://en.wikipedia.org/wiki/FreeBSD_license",
+        "https://en.wikipedia.org/wiki/Statistics",
+        "https://en.wikipedia.org/wiki/Dynamic_Bayesian_network",
+        "https://en.wikipedia.org/wiki/Dynamic_Bayesian_network",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

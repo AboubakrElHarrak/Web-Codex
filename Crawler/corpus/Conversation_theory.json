@@ -1,0 +1,74 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Conversation_theory",
+    "title": "Conversation theory",
+    "table_of_contents": [
+        "1 Overview",
+        "2 Topics",
+        "2.1 Levels of conversation",
+        "2.2 Conversation",
+        "2.2.1 Analogy",
+        "2.3 Cognitive Reflector",
+        "2.4 Learning strategies",
+        "3 See also",
+        "4 References",
+        "5 Further reading",
+        "6 External links"
+    ],
+    "content": [
+        {
+            "paragraph1": "Conversation theory is a cybernetic and dialectic framework that offers a scientific theory to explain how interactions lead to \"construction of knowledge\", or \"knowing\": wishing to preserve both the dynamic/kinetic quality, and the necessity for there to be a \"knower\". This work was proposed by Gordon Pask in the 1970s.\n"
+        },
+        {
+            "title": "Overview",
+            "paragraph1": "Conversation theory regards social systems as symbolic, language-oriented systems where responses depend on one person's interpretation of another person's behavior, and where meanings are agreed through conversations. But since meanings are agreed, and the agreements can be illusory and transient, scientific research requires stable reference points in human transactions to allow for reproducible results. Pask found these points to be the understandings which arise in the conversations between two participating individuals, and which he defined rigorously.\n",
+            "paragraph2": "Conversation theory describes interaction between two or more cognitive systems, such as a teacher and a student or distinct perspectives within one individual, and how they engage in a dialog over a given concept and identify differences in how they understand it.\n",
+            "paragraph3": "Conversation theory came out of the work of Gordon Pask on instructional design and models of individual learning styles. In regard to learning styles, he identified conditions required for concept sharing and described the learning styles holist, serialist, and their optimal mixture versatile. He proposed a rigorous model of analogy relations.\n"
+        },
+        {
+            "title": "Topics",
+            "paragraph1": "Conversation theory as developed by Pask originated from this cybernetics framework and attempts to explain learning in both living organisms and machines.  The fundamental idea of the theory was that learning occurs through conversations about a subject matter which serves to make knowledge explicit.\n",
+            "subtitle1": "Levels of conversation",
+            "paragraph2": "Conversations can be conducted at a number of different levels:\n",
+            "ul1": "Natural language (general discussion)\nObject languages (for discussing the subject matter)\nMetalanguages (for talking about learning/language)\n",
+            "subtitle2": "Conversation",
+            "paragraph3": "Through recursive interactions called \"conversation\" their differences may be reduced until agreement—that is, agreement up to a point which Pask called \"agreement over an understanding\"—may be reached. A residue of the interaction may be captured as an \"entailment mesh\", an organized and publicly available collection of resultant knowledge, itself a major product of the theory as devotees argue they afford many advantages over semantic networks and other, less formalized and non-experimentally based \"representations of knowledge\".\n",
+            "paragraph4": "Lastly, a formal analogy is shown where the derivations of the concept triples are indicated. The diamond shape denotes analogy and can exist between any three topics because of the shared meanings and differences.\n",
+            "paragraph5": "The relation of one topic to another by an analogy can also be seen as a restriction on a mapping and a distinction to produce the second topic or concept.\n",
+            "subtitle3": "Cognitive Reflector",
+            "paragraph6": "From conversation theory, Pask developed what he called a \"Cognitive Reflector\". This is a virtual machine for selecting and executing concepts or topics from an entailment mesh shared by at least a pair of participants. It features an external modelling facility on which agreement between, say, a teacher and pupil may be shown by reproducing public descriptions of behaviour. We see this in essay and report writing or the \"practicals\" of science teaching.\n",
+            "paragraph7": "Lp was Pask's protolanguage which produced operators like Ap which concurrently executes the concept, Con, of a Topic, T, to produce a Description, D. Thus:\n",
+            "paragraph8": "Ap(Con(T)) => D(T), where => stands for produces.\n",
+            "paragraph9": "A succinct account of these operators is presented in Pask Amongst many insights he points out that three indexes are required for concurrent execution, two for parallel and one to designate a serial process. He subsumes this complexity by designating participants A, B, etc.\n",
+            "paragraph10": "In Commentary toward the end of Pask, he states:\n",
+            "subtitle4": "Learning strategies",
+            "paragraph11": "In order to facilitate learning, Pask argued that subject matter should be represented in the form of structures which show what is to be learned.  These structures exist in a variety of different levels depending upon the extent of the relationships displayed.  The critical method of learning according to Conversation Theory is \"teachback\" in which one person teaches another what they have learned.\n",
+            "paragraph12": "Pask identified two different types of learning strategies:\n",
+            "ul2": "Serialists – Progress through a structure in a sequential fashion\nHolists – Look for higher order relations\n",
+            "paragraph13": "The ideal is the versatile learner who is neither vacuous holist \"globe trotter\" nor serialist who knows little of the context of his work.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Cybernetic",
+        "https://en.wikipedia.org/wiki/Dialectic",
+        "https://en.wikipedia.org/wiki/Gordon_Pask",
+        "https://en.wikipedia.org/wiki/Social_system",
+        "https://en.wikipedia.org/wiki/Conversation",
+        "https://en.wikipedia.org/wiki/Scientific_research",
+        "https://en.wikipedia.org/wiki/Human",
+        "https://en.wikipedia.org/wiki/Teacher",
+        "https://en.wikipedia.org/wiki/Student",
+        "https://en.wikipedia.org/wiki/Gordon_Pask",
+        "https://en.wikipedia.org/wiki/Learning_styles",
+        "https://en.wikipedia.org/wiki/Semantic_networks",
+        "https://en.wikipedia.org/wiki/Logical_equivalence",
+        "https://en.wikipedia.org/wiki/Truth_value",
+        "https://en.wikipedia.org/wiki/Conversational_constraints_theory",
+        "https://en.wikipedia.org/wiki/Integrative_learning",
+        "https://en.wikipedia.org/wiki/Text_and_conversation_theory",
+        "https://en.wikipedia.org/wiki/Wayback_Machine",
+        "https://en.wikipedia.org/wiki/Conversation_theory",
+        "https://en.wikipedia.org/wiki/Conversation_theory",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

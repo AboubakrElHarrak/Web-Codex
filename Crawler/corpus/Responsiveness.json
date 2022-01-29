@@ -1,0 +1,53 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Responsiveness",
+    "title": "Responsiveness",
+    "table_of_contents": [
+        "1 Vs performance",
+        "2 Delays",
+        "3 Solutions to improve responsiveness",
+        "4 See also",
+        "5 References",
+        "6 External links"
+    ],
+    "content": [
+        {
+            "image2": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/9/91/Linux_kernel_and_gaming_input-output_latency.svg/600px-Linux_kernel_and_gaming_input-output_latency.svg.png",
+                "caption": "\nResponsiveness requires a low latency/delay of the entire input-output-loop.\n\t"
+            },
+            "paragraph1": "Responsiveness as a concept of computer science refers to the specific ability of a system or functional unit to complete assigned tasks within a given time. For example, it would refer to the ability of an artificial intelligence system to understand and carry out its tasks in a timely fashion. It is one of the criteria under the principle of robustness (from a v principle). The other three are observability, recoverability, and task conformance.\n"
+        },
+        {
+            "title": "Vs performance",
+            "paragraph1": "Software which lacks a decent process management can have poor responsiveness even on a fast machine. On the other hand, even slow hardware can run responsive software.\n",
+            "paragraph2": "It is much more important that a system actually spend the available resources in the best way possible. For instance, it makes sense to let the mouse driver run at a very high priority to provide fluid mouse interactions. For long-term operations, such as copying, downloading or transforming big files the most important factor is to provide good user-feedback and not the performance of the operation since it can quite well run in the background, using only spare processor time.\n"
+        },
+        {
+            "title": "Delays",
+            "paragraph1": "Long delays can be a major cause of user frustration, or can lead the user to believe the system is not functioning, or that a command or input gesture has been ignored. Responsiveness is therefore considered an essential usability issue for human-computer-interaction (HCI). The rationale behind the responsiveness principle is that the system should deliver results of an operation to users in a timely and organized manner.\n",
+            "paragraph2": "The frustration threshold can be quite different, depending on the situation and the fact that user interface depends on local or remote systems to show a visible response.\n",
+            "paragraph3": "There are at least three user tolerance thresholds (i.e.):\n"
+        },
+        {
+            "title": "Solutions to improve responsiveness",
+            "paragraph1": "Although numerous other options may exist, the most frequently used and recommended answers to responsiveness issues are:\n",
+            "ul1": "Optimizing the process that delivers the output by eliminating wasteful, unproductive output from the algorithm or method by which the result is produced.\nA decent process management system, giving highest priority to operations that would otherwise interrupt the user's work flow, such as typing, onscreen buttons, or moving the mouse pointer. Usually there is enough \"idle time\" in between, for the other operations.\nUsing idle time to prepare for the operations a user might do next.\nLet the user do something productive while the system is busy  for instance, writing information in a form, reading a manual, etc. For instance, in a tabbed browser, the user can read one page while loading another.\nDeliver intermediate results, before the operation is finished. For instance, a web page can already be operated before all images are loaded, which will take up the idle time which would otherwise be spent needlessly.\nIf some waiting is inevitable, a progress indicator can significantly reduce frustration. For short delays, an animated icon might be sufficient. Longer delays are better covered with a progress bar, or, if possible, the system should provide an approximation of the time that an operation is going to take before starting it.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Throttle_response",
+        "https://en.wikipedia.org/wiki/Responsivity",
+        "https://en.wikipedia.org/wiki/Computer_science",
+        "https://en.wikipedia.org/wiki/Artificial_intelligence",
+        "https://en.wikipedia.org/wiki/Usability",
+        "https://en.wikipedia.org/wiki/Progress_indicator",
+        "https://en.wikipedia.org/wiki/Progress_bar",
+        "https://en.wikipedia.org/wiki/Agile_construction",
+        "https://en.wikipedia.org/wiki/Reactive_user_interface",
+        "https://en.wikipedia.org/wiki/Responsive_web_design",
+        "https://en.wikipedia.org/wiki/Responsiveness",
+        "https://en.wikipedia.org/wiki/Responsiveness",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

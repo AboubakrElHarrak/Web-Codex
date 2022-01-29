@@ -1,0 +1,77 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Source_code_editor",
+    "title": "Source-code editor",
+    "table_of_contents": [
+        "1 Characteristics",
+        "2 Notable examples",
+        "3 Controversy",
+        "4 See also",
+        "5 References"
+    ],
+    "content": [
+        {
+            "image3": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/0/04/Notepad%2B%2B_v5.1.PNG/440px-Notepad%2B%2B_v5.1.PNG",
+                "caption": "\n\t\tScreenshot of using Notepad++ to edit XML code\n\t"
+            },
+            "paragraph1": "A source-code editor is a text editor program designed specifically for editing source code of computer programs. It may be a standalone application or it may be built into an integrated development environment (IDE) or web browser. Source-code editors are a fundamental programming tool, as the fundamental job of programmers is to write and edit source code.\n"
+        },
+        {
+            "title": "Characteristics",
+            "paragraph1": "Source-code editors have characteristics specifically designed to simplify and speed up typing of source code, such as syntax highlighting, indentation, autocomplete and brace matching functionality. These editors also provide a convenient way to run a compiler, interpreter, debugger, or other program relevant for the software-development process. So, while many text editors like Notepad can be used to edit source code, if they don't enhance, automate or ease the editing of code, they are not source-code editors.\n",
+            "paragraph2": "Structure editors are a different form of source-code editor, where instead of editing raw text, one manipulates the code's structure, generally the abstract syntax tree. In this case features such as syntax highlighting, validation, and code formatting are easily and efficiently implemented from the concrete syntax tree or abstract syntax tree, but editing is often more rigid than free-form text. Structure editors also require extensive support for each language, and thus are harder to extend to new languages than text editors, where basic support only requires supporting syntax highlighting or indentation. For this reason, strict structure editors are not popular for source code editing, though some IDEs provide similar functionality.\n",
+            "paragraph3": "A source-code editor can check syntax while code is being entered and immediately warn of syntax problems. A few source-code editors  compress source code, typically converting common keywords into single-byte tokens, removing unnecessary whitespace, and converting numbers to a binary form. Such tokenizing editors later uncompress the source code when viewing it, possibly prettyprinting it with consistent capitalization and spacing. A few source-code editors  do both.\n"
+        },
+        {
+            "title": "Notable examples",
+            "ul1": "Atom[1]\nBrackets (text editor)[1]\nEclipse (cross-platform, including Linux, macOS, Windows)\nEmacs (cross-platform, including Unix, Linux, macOS, Windows)\nGedit (cross-platform, including Linux, macOS, Windows)\nNetBeans\nNotepad++[1] (Windows)\nSlickEdit (cross-platform, including Linux, macOS, Windows, Solaris, HP-UX, AIX)\nSublime Text[1]\nTextMate (macOS)\nUltraEdit[1]\nvi/Vim (cross-platform, including Unix, Linux, macOS, Windows)\nVisual Studio Code[1] (cross-platform, including Linux, macOS, Windows)\n"
+        },
+        {
+            "title": "Controversy",
+            "paragraph1": "Many source-code editors and IDEs have been involved in ongoing user arguments, sometimes referred to jovially as \"holy wars\" by the programming community. Notable examples include vi vs. Emacs and Eclipse vs. NetBeans. These arguments have formed a significant part of internet culture and they often start whenever either editor is mentioned anywhere.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/XML",
+        "https://en.wikipedia.org/wiki/Text_editor",
+        "https://en.wikipedia.org/wiki/Source_code",
+        "https://en.wikipedia.org/wiki/Computer_program",
+        "https://en.wikipedia.org/wiki/Integrated_development_environment",
+        "https://en.wikipedia.org/wiki/Web_browser",
+        "https://en.wikipedia.org/wiki/Programming_tool",
+        "https://en.wikipedia.org/wiki/Syntax_highlighting",
+        "https://en.wikipedia.org/wiki/Indentation_style",
+        "https://en.wikipedia.org/wiki/Autocomplete",
+        "https://en.wikipedia.org/wiki/Brace_matching",
+        "https://en.wikipedia.org/wiki/Compiler",
+        "https://en.wikipedia.org/wiki/Debugger",
+        "https://en.wikipedia.org/wiki/Microsoft_Notepad",
+        "https://en.wikipedia.org/wiki/Structure_editor",
+        "https://en.wikipedia.org/wiki/Abstract_syntax_tree",
+        "https://en.wikipedia.org/wiki/Concrete_syntax_tree",
+        "https://en.wikipedia.org/wiki/Prettyprint",
+        "https://en.wikipedia.org/wiki/Emacs",
+        "https://en.wikipedia.org/wiki/Unix",
+        "https://en.wikipedia.org/wiki/Gedit",
+        "https://en.wikipedia.org/wiki/NetBeans",
+        "https://en.wikipedia.org/wiki/SlickEdit",
+        "https://en.wikipedia.org/wiki/AIX",
+        "https://en.wikipedia.org/wiki/Sublime_Text",
+        "https://en.wikipedia.org/wiki/TextMate",
+        "https://en.wikipedia.org/wiki/UltraEdit",
+        "https://en.wikipedia.org/wiki/Vi",
+        "https://en.wikipedia.org/wiki/Visual_Studio_Code",
+        "https://en.wikipedia.org/wiki/Editor_war",
+        "https://en.wikipedia.org/wiki/NetBeans",
+        "https://en.wikipedia.org/wiki/Internet_culture",
+        "https://en.wikipedia.org/wiki/Integrated_development_environment",
+        "https://en.wikipedia.org/wiki/Comparison_of_integrated_development_environments",
+        "https://en.wikipedia.org/wiki/Comparison_of_online_source_code_playgrounds",
+        "https://en.wikipedia.org/wiki/Comparison_of_hex_editors",
+        "https://en.wikipedia.org/wiki/Comparison_of_HTML_editors",
+        "https://en.wikipedia.org/wiki/List_of_text_editors",
+        "https://en.wikipedia.org/wiki/Text_editor",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

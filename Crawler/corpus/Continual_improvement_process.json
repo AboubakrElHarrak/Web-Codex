@@ -1,0 +1,74 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Continuous_improvement_process",
+    "title": "Continual improvement process",
+    "table_of_contents": [
+        "1 Kaizen",
+        "2 PDCA",
+        "2.1 PDSA",
+        "3 In environmental management",
+        "4 ISO change from \"continuous\" to \"continual\"",
+        "5 See also",
+        "6 References"
+    ],
+    "content": [
+        {
+            "paragraph1": "A continual improvement process, also often called a continuous improvement process (abbreviated as CIP or CI), is an ongoing effort to improve products, services, or processes. These efforts can seek \"incremental\" improvement over time or \"breakthrough\" improvement all at once. Delivery (customer valued) processes are constantly evaluated and improved in the light of their efficiency, effectiveness and flexibility.\n",
+            "paragraph2": "Some see CIPs as a meta-process for most management systems (such as business process management, quality management, project management, and program management). W. Edwards Deming, a pioneer of the field, saw it as part of the 'system' whereby feedback from the process and customer were evaluated against organisational goals. The fact that it can be called a management process does not mean that it needs to be executed by 'management'; but rather merely that it makes decisions about the implementation of the delivery process and the design of the delivery process itself.\n\nA broader definition is that of the Institute of Quality Assurance who defined \"continuous improvement as a gradual never-ending change which is: '... focused on increasing the effectiveness and/or efficiency of an organisation to fulfil its policy and objectives. It is not limited to quality initiatives. Improvement in business strategy, business results, customer, employee and supplier relationships can be subject to continual improvement. Put simply, it means ‘getting better all the time’.' \": 498 \n"
+        },
+        {
+            "title": "Kaizen",
+            "paragraph1": "Some successful implementations use the approach known as kaizen (the translation of kai (“change”) zen (“good”) is “improvement”). This method became famous from Imai's 1986 book Kaizen: The Key to Japan's Competitive Success.\n",
+            "ul1": "Feedback: The core principle of CIP is the (self) reflection of processes.\nEfficiency: The purpose of CIP is the identification, reduction, and elimination of suboptimal processes.\nEvolution: The emphasis of CIP is on incremental, continual steps rather than giant leaps.\n",
+            "paragraph2": "Key features of kaizen include:\n",
+            "ul2": "Improvements are based on many small changes rather than the radical changes that might arise from Research and Development\nAs the ideas come from the workers themselves, they are less likely to be radically different, and therefore easier to implement\nSmall improvements are less likely to require major capital investment than major process changes\nThe ideas come from the talents of the existing workforce, as opposed to using research, consultants or equipment – any of which could be very expensive\nAll employees should continually be seeking ways to improve their own performance\nIt helps encourage workers to take ownership for their work, and can help reinforce team working, thereby improving worker motivation.\n",
+            "paragraph3": "The elements above are the more tactical elements of CIP. The more strategic elements include deciding how to increase the value of the delivery process output to the customer (effectiveness) and how much flexibility is valuable in the process to meet changing needs.\n"
+        },
+        {
+            "title": "PDCA",
+            "paragraph1": "The PDCA (plan, do, check, act) or (plan, do, check, adjust) cycle supports continuous improvement and Kaizen. It provides a process for improvement since the early design (planning) stage of any process, system, product or service.\n",
+            "subtitle1": "PDSA",
+            "paragraph2": "The PDSA (Plan, Do, Study, Act) cycle is often credited to W. Edwards Deming and often called the Deming cycle though W. Edwards Deming referred to it as the Shewhart cycle. Walter A. Shewhart back in the 1920s was working at Western Electric Company with W. Edwards Deming and Joseph M. Juran.  Shewhart took the standard academic scientific method of Inductive and Deductive Thinking, used in hypothesis testing, and converted it to a simple notion. When we do something we Plan it, Do it, Study it, and Act on its results: the PDSA cycle. This was a far simpler notion to use and inform the shop floor of Western Electric while building telephones, where many workers would not and could not understand the scientific method. In fact, the PDSA notion could easily be applied to everyday life; driving a car to work. Thus the PDSA cycle was very easy to relate to by Western's workforce and gained the buy-in needed.\n"
+        },
+        {
+            "title": "In environmental management",
+            "paragraph1": "The CIP-concept is also used in environmental management systems (EMS), such as ISO 14000 and EMAS. The term \"continual improvement\", not \"continuous improvement\", is used in ISO 14000, and is understood to refer to an ongoing series of small or large-scale improvements which are each done discretely, i.e. in a step-wise fashion.  Several differences exist between the CIP concept as it is applied in quality management and environmental management. CIP in EMS aims to improve the natural consequences of products and activities, not the products and activities as such.  Secondly, there is no client-orientation in EMS-related CIP. Also, CIP in EMS is not limited to small, incremental improvements as in Kaizen, it also includes innovations of any scale.\n"
+        },
+        {
+            "title": "ISO change from \"continuous\" to \"continual\"",
+            "paragraph1": "In the late 1990s, the developers of the ISO 9001:2000 standard—which addressed quality management systems and principles—debated whether or not to update the use of the word \"continuous\" to \"continual\". ISO Technical Committee 176 and regulatory representatives ultimately decided that \"continuous was unenforceable because it meant an organization had to improve minute by minute, whereas, continual improvement meant step-wise improvement or improvement in segments\". The committee reportedly did not base the change on dictionary definitions or the standard's vocabulary. This change ran contrary to the common usage of \"continuous\" in the standard and other prior business management documentation.\n",
+            "paragraph2": "The concept of 'Continual Improvement' is core of the British Standards Institute's 2019 publication: BS 8624 Guide to Continual improvement: Methods for quantification. BS 8624 describes requirements for 'Continual Improvement' and provides methods and examples of recognized techniques.\n\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Incrementalism",
+        "https://en.wikipedia.org/wiki/Efficiency",
+        "https://en.wikipedia.org/wiki/Effectiveness",
+        "https://en.wikipedia.org/wiki/Business_process_management",
+        "https://en.wikipedia.org/wiki/Quality_management",
+        "https://en.wikipedia.org/wiki/Project_management",
+        "https://en.wikipedia.org/wiki/Program_management",
+        "https://en.wikipedia.org/wiki/Institute_of_Quality_Assurance",
+        "https://en.wikipedia.org/wiki/Kaizen",
+        "https://en.wikipedia.org/wiki/Masaaki_Imai",
+        "https://en.wikipedia.org/wiki/PDCA",
+        "https://en.wikipedia.org/wiki/Western_Electric_Company",
+        "https://en.wikipedia.org/wiki/Hypothesis_Testing",
+        "https://en.wikipedia.org/wiki/Environmental_management_system",
+        "https://en.wikipedia.org/wiki/ISO_14000",
+        "https://en.wikipedia.org/wiki/ISO_14000",
+        "https://en.wikipedia.org/wiki/Kaizen",
+        "https://en.wikipedia.org/wiki/ISO_9000",
+        "https://en.wikipedia.org/wiki/BSI_Group",
+        "https://en.wikipedia.org/wiki/Benchmarking",
+        "https://en.wikipedia.org/wiki/Lean_manufacturing",
+        "https://en.wikipedia.org/wiki/Minimum_viable_product",
+        "https://en.wikipedia.org/wiki/Perpetual_beta",
+        "https://en.wikipedia.org/wiki/Training_Within_Industry",
+        "https://en.wikipedia.org/wiki/Operational_excellence",
+        "https://en.wikipedia.org/wiki/Wayback_Machine",
+        "https://en.wikipedia.org/wiki/Continual_improvement_process",
+        "https://en.wikipedia.org/wiki/Continual_improvement_process",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

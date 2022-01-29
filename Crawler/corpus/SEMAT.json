@@ -1,0 +1,86 @@
+{
+    "url": "https://en.wikipedia.org/wiki/SEMAT",
+    "title": "SEMAT",
+    "table_of_contents": [
+        "1 Practice area",
+        "2 Education area",
+        "3 Theory area",
+        "4 Organizational structure",
+        "4.1 Main organization",
+        "4.2 Japan Chapter",
+        "4.3 Korea Chapter",
+        "4.4 Latin American Chapter",
+        "4.5 Russia Chapter",
+        "5 Practical Applications of SEMAT",
+        "6 Tools supporting SEMAT",
+        "7 References",
+        "8 External links"
+    ],
+    "content": [
+        {
+            "paragraph1": "SEMAT (Software Engineering Method and Theory) is an initiative to reshape software engineering such that software engineering qualifies as a rigorous discipline. The initiative was launched in December 2009  by Ivar Jacobson, Bertrand Meyer, and Richard Soley with a call for action statement and a vision statement. The initiative was envisioned as a multi-year effort for bridging the gap between the developer community and the academic community and for creating a community giving value to the whole software community.\n",
+            "paragraph2": "The work is now structured in four different but strongly related areas: Practice, Education, Theory, and Community.[citation needed] The Practice area primarily addresses practices. The Education area is concerned with all issues related to training for both the developers and the academics including students. The Theory area is primarily addressing the search for a General Theory in Software Engineering. Finally, the Community area works with setting up legal entities, creating websites and community growth.  It was expected that the Practice area, the Education area and the Theory area would at some point in time integrate in a way of value to all of them: the Practice area would be a \"customer\" of the Theory area, and direct the research to useful results for the developer community.  The Theory area would give a solid and practical platform for the Practice area.  And, the Education area would communicate the results in proper ways.\n"
+        },
+        {
+            "title": "Practice area",
+            "paragraph1": "The first step was here to develop a common ground or a kernel including the essence of software engineering – things we always have, always do, always produce when developing software.  The second step was envisioned to add value on top of this kernel in the form of a library of practices to be composed to become specific methods, specific for all kinds of reasons such as the preferences of the team using it, kind of software being built, etc.\nThe first step is as of this writing just about to be concluded.  The results are a kernel including universal elements for software development – called the Essence Kernel, and a language – called the Essence Language - to describe these elements (and elements built on top of the kernel (practices, methods, and more).  Essence, including both the kernel and language, has been published as an OMG standard in beta status in July 2013 and is expected to become a formally adopted standard in early 2014.\n",
+            "paragraph2": "The second step has just started, and the Practice area will be divided into a number of separate but interconnected tracks: the practice (library track), the tool track are so far identified and work has started or is about to get started.[citation needed] The practice track is currently working on a Users Guide.\n"
+        },
+        {
+            "title": "Education area",
+            "paragraph1": "The area focuses on leveraging the work of SEMAT in software engineering education, both within academia and industry. It promotes global education based on a common ground called Essence. The area's target groups are instructors such as university professors and industrial coaches as well as their students and learning practitioners.\n",
+            "paragraph2": "The goal of the area is to create educational courses and course materials that are internationally viable, identify pedagogical approaches that are appropriate and effective for specific target groups and disseminate experience and lessons learned.\n",
+            "paragraph3": "The area includes members from a number of universities and institutes worldwide.[citation needed] Most members have already been involved in leveraging aspects of SEMAT in the context of their software engineering courses. They are gathering their resources and starting a common venture towards defining a new generation of SEMAT-powered software engineering curricula.\n",
+            "paragraph4": "As of 2018, some studies of utilizing Essence in educational settings exist. One example of the use of Essence in university education was a software engineering course carried out in Norwegian University of Science and Technology. A study was conducted by introducing Essence into a project-based software engineering course, with the aim of understanding what difficulties the students faced in using Essence, and whether they considered it to have been useful. The results indicated that Essence could also be useful for novice software engineers by (1) encouraging them to look up and study new practices and methods in order to create their own, (2) encouraging them to adjust their way-of-working reflectively and in a situation-specific manner, (3) helping them structure their way of working. The findings of another study introducing students to Essence through a digital game supported these findings: the students felt that Essence will be useful to them in future, real-world projects, and that they wish to utilize it in them.\n"
+        },
+        {
+            "title": "Theory area",
+            "paragraph1": "An important part of SEMAT is that a general theory of software engineering is planned to emerge with significant benefits.\n",
+            "paragraph2": "A series of workshops held under the title SEMAT Workshop on a General Theory of Software Engineering (GTSE) are a key component in awareness building around general theories.\n",
+            "paragraph3": "In addition to community awareness building, SEMAT also aims to contribute with a specific general theory of software engineering. This theory should be solidly based on the SEMAT Essence language and kernel, and should support software engineering practitioners' goal-oriented decision making. As argued elsewhere, such support is predicated on the predictive capabilities of the theory. Thus, the SEMAT Essence should be augmented to allow the prediction of critical software engineering phenomena.\n",
+            "paragraph4": "The GTSE workshop series assists in the development of the SEMAT general software engineering theory by engaging a larger community in the search for, development of, and evaluation of promising theories, which may be used as a base for the SEMAT theory.\n"
+        },
+        {
+            "title": "Organizational structure",
+            "subtitle1": "Main organization",
+            "paragraph1": "SEMAT is chaired by Sumeet S. Malhotra of Tata Consultancy Services. The CEO of the organization is Ste Nadin of Fujitsu. The Executive Management Committee of SEMAT are Ivar Jacobson, Ste Nadin, Sumeet S. Malhotra, Paul E. McMahon, Michael Goedicke and Cecile Peraire.\n",
+            "subtitle2": "Japan Chapter",
+            "paragraph2": "Japan Chapter was established in April 2013, and it has more than 250 members as of November 2013.[citation needed] Member activities include carrying out seminars about SEMAT, considering utilization of SEMAT Essence for integrating different requirements engineering techniques and body of knowledges (BoKs), and translating articles into Japanese.\n",
+            "subtitle3": "Korea Chapter",
+            "paragraph3": "The chapter was inaugurated with about 50 members in October 2013.  Member activities include: 2e Consulting started rewriting their IT service engagement methods using the Essence kernel, and uEngine Solutions started developing a tool to orchestrate Essence-kernel based practices into a project method. Korean government supported KAIST to conduct research in Essence.\n",
+            "subtitle4": "Latin American Chapter",
+            "paragraph4": "Semat Latin American Chapter was created in August 2011 in Medellin (Colombia) by Ivar Jacobson during the Latin American Software Engineering Symposium. This Chapter has 9 Executive Committee members from Colombia, Venezuela, Peru, Brazil, Argentina, Chile, and Mexico, chaired by Dr. Carlos Zapata from Colombia. More than 80 people signed the initial declaration of the Chapter and nowadays the Chapter members are in charge of disseminating the Semat ideas in all Latin America. Chapter members have participated in various Latin American conferences, including the Latin American Conference on Informatics (CLEI), the Ibero American Software Engineering and Knowledge Engineering Journeys (JIISIC), the Colombian Computing Conference (CCC), and the Chilean Computing Meeting (ECC). The Chapter contributed in the submission sent in response to the OMG call for proposals and currently studies didactic strategies for teaching the Semat kernel by games, theoretical studies about some kernel elements, and practical representations of several software development and quality methods by using the Semat kernel. Some of the members also translated the Essence book and some other Semat materials and papers into Spanish.\n",
+            "subtitle5": "Russia Chapter",
+            "paragraph5": "Russian Chapter has about 20 members. A few universities have incorporated SEMAT in their training courses[citation needed], including Moscow State University, Moscow Institute of Physics and Technology, Higher School of Economics, Moscow State University of Economics, Statistics, and Informatics.  The chapter and some commercial companies are carrying out seminars about SEMAT.  INCOSE Russian Chapter is working on an extension of SEMAT to Systems Engineering. EC-leasing is working on an extension of the Kernel for Software Life Cycle. Russian Chapter attended in two conferences: Actual Problems of System and Software Engineering and SECR with SEMAT section and articles.[citation needed] Translation of the Essence book into Russian is in progress.\n"
+        },
+        {
+            "title": "Practical Applications of SEMAT",
+            "paragraph1": "Ideas developed by the SEMAT community have been applied by both industry and academia. Notable examples include:\n",
+            "ul1": "Reinsurance company Munich Re have assembled a family of \"collaboration models\" to cover the whole spectrum of software and application work. Four collaboration models — exploratory, standard, maintenance, and support — have been built on the same kernel from the same set of 12 practices.[13]\n"
+        },
+        {
+            "title": "Tools supporting SEMAT",
+            "paragraph1": "The first tool that supported the authoring and development of SEMAT practices based on a kernel was the EssWork Practice Workbench tool provided by Ivar Jacobson International. The Practice Workbench tool was made available to the SEMAT community in June 2012 and is now publicly available and free to use. The Practice Workbench is an Integrated Practice Development Environment with support for collaborative practice and method development. Key features of the Practice Workbench include:\n",
+            "ul1": "Interactive presentation of the Essence Kernel\nPractice authoring and extension using the Essence Language\nMethod composition\nInnovative card-based representation\nPublication of methods, practices and kernels as card-based HTML web-sites\nExport to the EssWork deployment environment\n",
+            "paragraph2": "Other publicly available tools supporting SEMAT's Essence include:\n",
+            "ul2": "SematAcc,[15][16] the Essence Accelerator System, designed to speed up the learning of Essence Theory in Software Engineering and to easily test it with any software project\nThe Essence Board Game,[17] intended to teach the basics of Essence in a fun fashion\nEssencery,[18][19] an Open Source alternative for composing methods using the Essence graphical language syntax\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Software_engineering",
+        "https://en.wikipedia.org/wiki/Ivar_Jacobson",
+        "https://en.wikipedia.org/wiki/Bertrand_Meyer",
+        "https://en.wikipedia.org/wiki/Richard_Soley",
+        "https://en.wikipedia.org/wiki/Object_Management_Group",
+        "https://en.wikipedia.org/wiki/Moscow_State_University",
+        "https://en.wikipedia.org/wiki/Moscow_Institute_of_Physics_and_Technology",
+        "https://en.wikipedia.org/wiki/Higher_School_of_Economics",
+        "https://en.wikipedia.org/wiki/INCOSE",
+        "https://en.wikipedia.org/wiki/Systems_Engineering",
+        "https://en.wikipedia.org/wiki/Munich_Re",
+        "https://en.wikipedia.org/wiki/SEMAT",
+        "https://en.wikipedia.org/wiki/SEMAT",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

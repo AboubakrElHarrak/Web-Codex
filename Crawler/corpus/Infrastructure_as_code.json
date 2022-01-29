@@ -1,0 +1,104 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Infrastructure_as_code",
+    "title": "Infrastructure as code",
+    "table_of_contents": [
+        "1 Overview",
+        "2 Advantages",
+        "3 Disadvantages",
+        "4 Types of approaches",
+        "5 Methods",
+        "6 Tools",
+        "6.1 Continuous configuration automation",
+        "6.1.1 Community content",
+        "7 Relationship to DevOps",
+        "8 Relationship to security",
+        "9 See also",
+        "10 References"
+    ],
+    "content": [
+        {
+            "paragraph1": "Infrastructure as code (IaC) is the process of managing and provisioning computer data centers through machine-readable definition files, rather than physical hardware configuration or interactive configuration tools.\nThe IT infrastructure managed by this process comprises both physical equipment, such as bare-metal servers, as well as virtual machines, and associated configuration resources.\nThe definitions may be in a version control system.\nThe code in the definition files may use either scripts or declarative definitions, rather than maintaining the code through manual processes, but IaC more often employs declarative approaches.\n"
+        },
+        {
+            "title": "Overview",
+            "paragraph1": "IaC grew as a response to the difficulty posed by utility computing and second-generation web frameworks.   In 2006, the launch of Amazon Web Services’ Elastic Compute Cloud and the 1.0 version of Ruby on Rails just months before created widespread scaling problems in the enterprise that were previously experienced only at large, multi-national companies. With new tools emerging to handle this ever growing field, the idea of IaC was born. The thought of modelling infrastructure with code, and then having the ability to design, implement, and deploy application infrastructure with known software best practices appealed to both software developers and IT infrastructure administrators. The ability to treat infrastructure like code and use the same tools as any other software project would allow developers to rapidly deploy applications.\n"
+        },
+        {
+            "title": "Advantages",
+            "paragraph1": "The value of IaC can be broken down into three measurable categories: cost, speed, and risk.[citation needed] Cost reduction aims at helping not only the enterprise financially, but also in terms of people and effort, meaning that by removing the manual component, people are able to refocus their efforts towards other enterprise tasks.[citation needed] Infrastructure automation enables speed through faster execution when configuring your infrastructure and aims at providing visibility to help other teams across the enterprise work quickly and more efficiently. Automation removes the risk associated with human error, like manual misconfiguration; removing this can decrease downtime and increase reliability. These outcomes and attributes help the enterprise move towards implementing a culture of DevOps, the combined working of development and operations.\n"
+        },
+        {
+            "title": "Disadvantages",
+            "paragraph1": "IaC uses machine readable definition files, and may or may not be Turing complete. The lack of Turing completeness may inhibit an author from offering software tests in the same language as the infrastructure definition. The lack of tests can lead to a lack of confidence in infrastructure deployments, or introduce a high barrier to entry for testing.\n"
+        },
+        {
+            "title": "Types of approaches",
+            "paragraph1": "There are generally two approaches to IaC: declarative (functional) vs. imperative (procedural). The difference between the declarative and the imperative approach is essentially  'what'  versus  'how' . The declarative approach focuses on what the eventual target configuration should be; the imperative focuses on how the infrastructure is to be changed to meet this. The declarative approach defines the desired state and the system executes what needs to happen to achieve that desired state. Imperative defines specific commands that need to be executed in the appropriate order to end with the desired conclusion. \n"
+        },
+        {
+            "title": "Methods",
+            "paragraph1": "There are two methods of IaC: push and pull. The main difference is the manner in which the servers are told how to be configured. In the pull method the server to be configured will pull its configuration from the controlling server. In the push method the controlling server pushes the configuration to the destination system.\n"
+        },
+        {
+            "title": "Tools",
+            "paragraph1": "There are many tools that fulfill infrastructure automation capabilities and use IaC. Broadly speaking, any framework or tool that performs changes or configures infrastructure declaratively or imperatively based on a programmatic approach can be considered IaC. Traditionally, server (lifecycle) automation and configuration management tools were used to accomplish IaC. Now enterprises are also using continuous configuration automation tools or stand-alone IaC frameworks, such as Microsoft’s PowerShell DSC or AWS CloudFormation.\n",
+            "subtitle1": "Continuous configuration automation",
+            "paragraph2": "All continuous configuration automation (CCA) tools can be thought of as an extension of traditional IaC frameworks. They leverage IaC to change, configure, and automate infrastructure, and they also provide visibility, efficiency and flexibility in how infrastructure is managed. These additional attributes provide enterprise-level security and compliance.\n",
+            "paragraph3": "An important aspect when considering CCA tools, if they are open source, is the community content. As Gartner states, the value of CCA tools is \"as dependent on user-community-contributed content and support as it is on the commercial maturity and performance of the automation tooling\". Vendors like Puppet and Chef, those that have been around a significant amount of time, have created their own communities. Chef has Chef Community Repository and Puppet has PuppetForge. Other vendors rely on adjacent communities and leverage other IaC frameworks such as PowerShell DSC. New vendors are emerging that are not content-driven, but model-driven with the intelligence in the product to deliver content. These visual, object-oriented systems work well for developers, but they are especially useful to production-oriented DevOps and operations constituents that value models versus scripting for content. As the field continues to develop and change, the community-based content will become ever important to how IaC tools are used, unless they are model driven and object oriented.\n",
+            "paragraph4": "Notable CCA tools include:\n",
+            "paragraph5": "Other tools include AWS CloudFormation, cdist, StackStorm, Juju, Azure ARM, Cloudify, and Pulumi.\n"
+        },
+        {
+            "title": "Relationship to DevOps",
+            "paragraph1": "IaC can be a key attribute of enabling best practices in DevOps – Developers become more involved in defining configuration and Ops teams get involved earlier in the development process.  Tools that utilize IaC bring visibility to the state and configuration of servers and ultimately provide the visibility to users within the enterprise, aiming to bring teams together to maximize their efforts. Automation in general aims to take the confusion and error-prone aspect of manual processes and make it more efficient, and productive. Allowing for better software and applications to be created with flexibility, less downtime, and an overall cost effective way for the company. IaC is intended to reduce the complexity that kills efficiency out of manual configuration. Automation and collaboration are considered central points in DevOps; infrastructure automation tools are often included as components of a DevOps toolchain.\n"
+        },
+        {
+            "title": "Relationship to security",
+            "paragraph1": "The 2020 Cloud Threat Report released by Unit 42 (the threat intelligence unit of cybersecurity provider Palo Alto Networks) identified around 200,000 potential vulnerabilities in infrastructure as code templates.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Data_center",
+        "https://en.wikipedia.org/wiki/IT_infrastructure",
+        "https://en.wikipedia.org/wiki/Virtual_machine",
+        "https://en.wikipedia.org/wiki/Version_Control_System",
+        "https://en.wikipedia.org/wiki/Declarative_programming",
+        "https://en.wikipedia.org/wiki/Utility_computing",
+        "https://en.wikipedia.org/wiki/Amazon_Web_Services",
+        "https://en.wikipedia.org/wiki/Elastic_Compute_Cloud",
+        "https://en.wikipedia.org/wiki/Ruby_on_Rails",
+        "https://en.wikipedia.org/wiki/DevOps",
+        "https://en.wikipedia.org/wiki/Software_development",
+        "https://en.wikipedia.org/wiki/Information_technology_operations",
+        "https://en.wikipedia.org/wiki/Turing_completeness",
+        "https://en.wikipedia.org/wiki/Declarative_programming",
+        "https://en.wikipedia.org/wiki/Imperative_programming",
+        "https://en.wikipedia.org/wiki/Push_technology",
+        "https://en.wikipedia.org/wiki/Pull_technology",
+        "https://en.wikipedia.org/wiki/Configuration_management",
+        "https://en.wikipedia.org/wiki/AWS_CloudFormation",
+        "https://en.wikipedia.org/wiki/Continuous_configuration_automation",
+        "https://en.wikipedia.org/wiki/List_of_systems_management_systems",
+        "https://en.wikipedia.org/wiki/Gartner",
+        "https://en.wikipedia.org/wiki/Chef_Community_Repository",
+        "https://en.wikipedia.org/wiki/PuppetForge",
+        "https://en.wikipedia.org/wiki/PowerShell",
+        "https://en.wikipedia.org/wiki/Inedo",
+        "https://en.wikipedia.org/wiki/Clojure",
+        "https://en.wikipedia.org/wiki/SaltStack",
+        "https://en.wikipedia.org/wiki/CFEngine",
+        "https://en.wikipedia.org/wiki/HashiCorp",
+        "https://en.wikipedia.org/wiki/Red_Hat",
+        "https://en.wikipedia.org/wiki/AWS_CloudFormation",
+        "https://en.wikipedia.org/wiki/Cdist",
+        "https://en.wikipedia.org/wiki/StackStorm",
+        "https://en.wikipedia.org/wiki/DevOps",
+        "https://en.wikipedia.org/wiki/DevOps_toolchain",
+        "https://en.wikipedia.org/wiki/Palo_Alto_Networks",
+        "https://en.wikipedia.org/wiki/Harvard_Business_Review",
+        "https://en.wikipedia.org/wiki/Infrastructure_as_code",
+        "https://en.wikipedia.org/wiki/Infrastructure_as_code",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

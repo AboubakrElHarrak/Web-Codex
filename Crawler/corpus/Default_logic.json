@@ -1,0 +1,102 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Default_reasoning",
+    "title": "Default logic",
+    "table_of_contents": [
+        "1 Syntax of default logic",
+        "1.1 Examples",
+        "1.2 Restrictions",
+        "2 Semantics of default logic",
+        "2.1 Entailment",
+        "2.2 Alternative default inference rules",
+        "3 Variants of default logic",
+        "4 Translations",
+        "5 Complexity",
+        "6 Implementations",
+        "7 See also",
+        "8 References",
+        "9 External links"
+    ],
+    "content": [
+        {
+            "paragraph1": "Default logic is a non-monotonic logic proposed by Raymond Reiter to formalize reasoning with default assumptions.\n",
+            "paragraph2": "Default logic can express facts like “by default, something is true”; by contrast, standard logic can only express that something is true or that something is false. This is a problem because reasoning often involves facts that are true in the majority of cases but not always. A classical example is: “birds typically fly”. This rule can be expressed in standard logic either by “all birds fly”, which is inconsistent with the fact that penguins do not fly, or by “all birds that are not penguins and not ostriches and ... fly”, which requires all exceptions to the rule to be specified. Default logic aims at formalizing inference rules like this one without explicitly mentioning all their exceptions.\n"
+        },
+        {
+            "title": "Syntax of default logic",
+            "paragraph1": "A default theory is a pair \n\n\n\n⟨\nW\n,\nD\n⟩\n\n\n{\\displaystyle \\langle W,D\\rangle }\n\n. W is a set of logical formulas, called the background theory, that formalize the facts that are known for sure. D is a set of default rules, each one being of the form:\n",
+            "paragraph2": "According to this default, if we believe that Prerequisite is true, and each of \n\n\n\n\n\nJ\nu\ns\nt\ni\nf\ni\nc\na\nt\ni\no\nn\n\n\nn\n\n\n\n\n{\\displaystyle \\mathrm {Justification} _{n))\n\n is consistent with our current beliefs, we are led to believe that Conclusion is true.\n",
+            "paragraph3": "The logical formulae in W and all formulae in a default were originally assumed to be first-order logic formulae, but they can potentially be formulae in an arbitrary formal logic. The case in which they are formulae in propositional logic is one of the most studied.\n",
+            "subtitle1": "Examples",
+            "paragraph4": "The default rule “birds typically fly” is formalized by the following default:\n",
+            "paragraph5": "This rule means that, \"if X is a bird, and it can be assumed that it flies, then we can conclude that it flies\". A background theory containing some facts about birds is the following one:\n",
+            "paragraph6": "According to this default rule, a condor flies because the precondition Bird(Condor) is true and the justification Flies(Condor) is not inconsistent with what is currently known. On the contrary, Bird(Penguin) does not allow concluding Flies(Penguin): even if the precondition of the default Bird(Penguin) is true, the justification Flies(Penguin) is inconsistent with what is known. From this background theory and this default, Bird(Bee) cannot be concluded because the default rule only allows deriving Flies(X) from Bird(X), but not vice versa. Deriving the antecedents of an inference rule from the consequences is a form of explanation of the consequences, and is the aim of abductive reasoning.\n",
+            "paragraph7": "A common default assumption is that what is not known to be true is believed to be false. This is known as the Closed-World Assumption, and is formalized in default logic using a default like the following one for every fact F.\n",
+            "paragraph8": "For example, the computer language Prolog uses a sort of default assumption when dealing with negation: if a negative atom cannot be proved to be true, then it is assumed to be false.\nNote, however, that Prolog uses the so-called negation as failure: when the interpreter has to evaluate the atom \n\n\n\n¬\nF\n\n\n{\\displaystyle \\neg F}\n\n, it tries to prove that F is true, and conclude that \n\n\n\n¬\nF\n\n\n{\\displaystyle \\neg F}\n\n is true if it fails. In default logic, instead, a default having \n\n\n\n¬\nF\n\n\n{\\displaystyle \\neg F}\n\n as a justification can only be applied if \n\n\n\n¬\nF\n\n\n{\\displaystyle \\neg F}\n\n is consistent with the current knowledge.\n",
+            "subtitle2": "Restrictions",
+            "paragraph9": "A default is categorical or prerequisite-free if it has no prerequisite (or, equivalently, its prerequisite is tautological). A default is normal if it has a single justification that is equivalent to its conclusion. A default is supernormal if it is both categorical and normal. A default is seminormal if all its justifications entail its conclusion. A default theory is called categorical, normal, supernormal, or seminormal if all defaults it contains are categorical, normal, supernormal, or seminormal, respectively.\n"
+        },
+        {
+            "title": "Semantics of default logic",
+            "paragraph1": "A default rule can be applied to a theory if its precondition is entailed by the theory and its justifications are all consistent with the theory.  The application of a default rule leads to the addition of its consequence to the theory.  Other default rules may then be applied to the resulting theory.  When the theory is such that no other default can be applied, the theory is called an extension of the default theory.  The default rules may be applied in different order, and this may lead to different extensions. The Nixon diamond example is a default theory with two extensions:\n",
+            "paragraph2": "Since Nixon is both a Republican and a Quaker, both defaults can be applied. However, applying the first default leads to the conclusion that Nixon is not a pacifist, which makes the second default not applicable. In the same way, applying the second default we obtain that Nixon is a pacifist, thus making the first default not applicable. This particular default theory has therefore two extensions, one in which Pacifist(Nixon) is true, and one in which Pacifist(Nixon) is false.\n",
+            "paragraph3": "The original semantics of default logic was based on the fixed point of a function. The following is an equivalent algorithmic definition. If a default contains formulae with free variables, it is considered to represent the set of all defaults obtained by giving a value to all these variables. A default \n\n\n\n\n\n\nα\n:\n\nβ\n\n1\n\n\n,\n…\n,\n\nβ\n\nn\n\n\n\nγ\n\n\n\n\n{\\displaystyle {\\frac {\\alpha :\\beta _{1},\\ldots ,\\beta _{n)){\\gamma ))}\n\n is applicable to a propositional theory T if \n\n\n\nT\n⊨\nα\n\n\n{\\displaystyle T\\models \\alpha }\n\n and all theories \n\n\n\nT\n∪\n{\n\nβ\n\ni\n\n\n}\n\n\n{\\displaystyle T\\cup \\{\\beta _{i}\\))\n\n are consistent. The application of this default to T leads to the theory \n\n\n\nT\n∪\n{\nγ\n}\n\n\n{\\displaystyle T\\cup \\{\\gamma \\))\n\n. An extension can be generated by applying the following algorithm:\n",
+            "paragraph4": "This algorithm is non-deterministic, as several defaults can alternatively be applied to a given theory T. In the Nixon diamond example, the application of the first default leads to a theory to which the second default cannot be applied and vice versa. As a result, two extensions are generated: one in which Nixon is a pacifist and one in which Nixon is not a pacifist.\n",
+            "paragraph5": "The final check of consistency of the justifications of all defaults that have been applied implies that some theories do not have any extensions. In particular, this happens whenever this check fails for every possible sequence of applicable defaults. The following default theory has no extension:\n",
+            "paragraph6": "Since \n\n\n\nA\n(\nb\n)\n\n\n{\\displaystyle A(b)}\n\n is consistent with the background theory, the default can be applied, thus leading to the conclusion that \n\n\n\nA\n(\nb\n)\n\n\n{\\displaystyle A(b)}\n\n is false. This result however undermines the assumption that has been made for applying the first default. Consequently, this theory has no extensions.\n",
+            "paragraph7": "In a normal default theory, all defaults are normal: each default has the form \n\n\n\n\n\n\nϕ\n:\nψ\n\nψ\n\n\n\n\n{\\displaystyle {\\frac {\\phi :\\psi }{\\psi ))}\n\n. A normal default theory is guaranteed to have at least one extension. Furthermore, the extensions of a normal default theory are mutually inconsistent, i.e., inconsistent with each other.\n",
+            "subtitle1": "Entailment",
+            "paragraph8": "A default theory can have zero, one, or more extensions. Entailment of a formula from a default theory can be defined in two ways:\n",
+            "paragraph9": "Thus, the Nixon diamond example theory has two extensions, one in which Nixon is a pacifist and one in which he is not a pacifist. Consequently, neither Pacifist(Nixon) nor ¬Pacifist(Nixon) are skeptically entailed, while both of them are credulously entailed. As this example shows, the credulous consequences of a default theory may be inconsistent with each other.\n",
+            "subtitle2": "Alternative default inference rules",
+            "paragraph10": "The following alternative inference rules for default logic are all based on the same syntax as the original system.\n",
+            "paragraph11": "The justified and constrained versions of the inference rule assign at least an extension to every default theory.\n"
+        },
+        {
+            "title": "Variants of default logic",
+            "paragraph1": "The following variants of default logic differ from the original one on both syntax and semantics.\n",
+            "ul1": "Cumulative default logic\nCommitment to assumptions default logic\nQuasi-default logic\n"
+        },
+        {
+            "title": "Translations",
+            "paragraph1": "Default theories can be translated into theories in other logics and vice versa. The following conditions on translations have been considered:\n",
+            "paragraph2": "Translations are typically required to be faithful or at\nleast consequence-preserving, while the conditions of\nmodularity and same alphabet are sometimes ignored.\n",
+            "paragraph3": "The translatability between propositional default logic and\nthe following logics have been studied:\n",
+            "ul1": "classical propositional logic;\nautoepistemic logic;\npropositional default logic restricted to seminormal theories;\nalternative semantics of default logic;\ncircumscription.\n",
+            "paragraph4": "Translations exist or not depending on which conditions are imposed. Translations from propositional default logic to classical propositional logic cannot always generate a polynomially sized propositional theory, unless the polynomial hierarchy collapses. Translations to autoepistemic logic exist or not depending on whether modularity or the use of the same alphabet is required.\n"
+        },
+        {
+            "title": "Complexity",
+            "paragraph1": "The computational complexity of the following problems about default logic is known:\n"
+        },
+        {
+            "title": "Implementations",
+            "paragraph1": "Four systems implementing default logics are \nDeReS[permanent dead link],\nXRay, \nGADeL, and Catala.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Raymond_Reiter",
+        "https://en.wikipedia.org/wiki/Propositional_logic",
+        "https://en.wikipedia.org/wiki/Abductive_reasoning",
+        "https://en.wikipedia.org/wiki/Prolog",
+        "https://en.wikipedia.org/wiki/Negation_as_failure",
+        "https://en.wikipedia.org/wiki/Nixon_diamond",
+        "https://en.wikipedia.org/wiki/Richard_Nixon",
+        "https://en.wikipedia.org/wiki/American_Republican",
+        "https://en.wikipedia.org/wiki/Quaker",
+        "https://en.wikipedia.org/wiki/Nondeterministic_algorithm",
+        "https://en.wikipedia.org/wiki/Entailment",
+        "https://en.wikipedia.org/wiki/Inconsistent",
+        "https://en.wikipedia.org/wiki/Autoepistemic_logic",
+        "https://en.wikipedia.org/wiki/Modal_logic",
+        "https://en.wikipedia.org/wiki/Polynomial_hierarchy",
+        "https://en.wikipedia.org/wiki/Analysis_of_algorithms",
+        "https://en.wikipedia.org/wiki/Propositional_formula",
+        "https://en.wikipedia.org/wiki/Answer_set_programming",
+        "https://en.wikipedia.org/wiki/Defeasible_logic",
+        "https://en.wikipedia.org/wiki/Stanford_Encyclopedia_of_Philosophy",
+        "https://en.wikipedia.org/wiki/Default_logic",
+        "https://en.wikipedia.org/wiki/Default_logic",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

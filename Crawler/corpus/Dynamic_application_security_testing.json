@@ -1,0 +1,67 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Dynamic_application_security_testing",
+    "title": "Dynamic application security testing",
+    "table_of_contents": [
+        "1 Overview",
+        "2 Commercial and open-source scanners",
+        "2.1 DAST strengths",
+        "2.2 DAST weaknesses",
+        "3 References",
+        "4 External links"
+    ],
+    "content": [
+        {
+            "paragraph1": "A dynamic application security testing (DAST) tool is a program which communicates with a web application through the web front-end in order to identify potential security vulnerabilities in the web application and architectural weaknesses. It performs a black-box test. Unlike static application security testing tools, DAST tools do not have access to the source code and therefore detect vulnerabilities by actually performing attacks.\n",
+            "paragraph2": "DAST tools allow sophisticated scans, detecting vulnerabilities with minimal user interactions once configured with host name, crawling parameters and authentication credentials. These tools will attempt to detect vulnerabilities in query strings, headers, fragments, verbs (GET/POST/PUT) and DOM injection.\n"
+        },
+        {
+            "title": "Overview",
+            "paragraph1": "DAST tools facilitate the automated review of a web application with the express purpose of discovering security vulnerabilities and are required to comply with various regulatory requirements. Web application scanners can look for a wide variety of vulnerabilities, such as input/output validation: (e.g. cross-site scripting and SQL injection), specific application problems and server configuration mistakes.\n",
+            "paragraph2": "In a copyrighted report published in March 2012 by security vendor Cenzic, the most common application vulnerabilities in recently tested applications include:\n"
+        },
+        {
+            "title": "Commercial and open-source scanners",
+            "paragraph1": "Commercial scanners are a category of web-assessment tools which need to be purchased. Some scanners include some free features but most need to be bought for full access to the tool's power.\n",
+            "paragraph2": "Open-source scanners are often free of cost to the user.\n",
+            "paragraph3": "Security researcher Shay Chen has previously compiled an exhaustive list of both commercial and open-source web application security scanners. The list also highlights how each of the scanners performed during his benchmarking tests against the WAVSEP.\n",
+            "paragraph4": "The WAVSEP platform is publicly available and can be used to evaluate the various aspects of web application scanners: technology support, performance, accuracy, coverage and result consistency.\n",
+            "subtitle1": "DAST strengths",
+            "paragraph5": "These tools can detect vulnerabilities of the finalized release candidate versions prior to shipping. Scanners simulate a malicious user by attacking and probing, identifying results which are not part of the expected result set, allowing for a realistic attack simulation. The big advantage of these types of tools are that they can scan year-round to be constantly searching for vulnerabilities. With new vulnerabilities being discovered regularly this allows companies to find and patch vulnerabilities before they can become exploited.\n",
+            "paragraph6": "As a dynamic testing tool, web scanners are not language-dependent. A web application scanner is able to scan engine-driven web applications. Attackers use the same tools, so if the tools can find a vulnerability, so can attackers.\n",
+            "subtitle2": "DAST weaknesses",
+            "paragraph7": "While scanning with a DAST tool, data may be overwritten or malicious payloads injected into the subject site. Sites should be scanned in a production-like but non-production environment to ensure accurate results while protecting the data in the production environment.\n",
+            "paragraph8": "Because the tool is implementing a dynamic testing method, it cannot cover 100% of the source code of the application and then, the application itself. The penetration tester should look at the coverage of the web application or of its attack surface to know if the tool was configured correctly or was able to understand the web application.\n",
+            "paragraph9": "The tool cannot implement all variants of attacks for a given vulnerability. So the tools generally have a predefined list of attacks and do not generate the attack payloads depending on the tested web application. Some tools are also quite limited in their understanding of the behavior of applications with dynamic content such as JavaScript and Flash.\n",
+            "paragraph10": "A report from 2012 found that the top application technologies overlooked by most Web application scanners includes jQuery, REST, and Google WebToolkit in AJAX applications, Flash Remoting (AMF) and HTML5, as well as mobile apps and Web Services using JSON and REST. XML-RPC and SOAP technologies used in Web services, and complex workflows such as shopping cart, and XSRF/CSRF tokens.\n\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Static_application_security_testing",
+        "https://en.wikipedia.org/wiki/SQL_injection",
+        "https://en.wikipedia.org/wiki/SQL_injection",
+        "https://en.wikipedia.org/wiki/Arbitrary_code_execution",
+        "https://en.wikipedia.org/wiki/Memory_corruption",
+        "https://en.wikipedia.org/wiki/Data_breach",
+        "https://en.wikipedia.org/wiki/File_inclusion_vulnerability",
+        "https://en.wikipedia.org/wiki/File_inclusion_vulnerability",
+        "https://en.wikipedia.org/wiki/File_inclusion_vulnerability",
+        "https://en.wikipedia.org/wiki/Buffer_overflow",
+        "https://en.wikipedia.org/wiki/Code_injection",
+        "https://en.wikipedia.org/wiki/Code_injection",
+        "https://en.wikipedia.org/wiki/Release_candidate",
+        "https://en.wikipedia.org/wiki/Dynamic_testing",
+        "https://en.wikipedia.org/wiki/Attack_surface",
+        "https://en.wikipedia.org/wiki/JavaScript",
+        "https://en.wikipedia.org/wiki/Adobe_Flash",
+        "https://en.wikipedia.org/wiki/JQuery",
+        "https://en.wikipedia.org/wiki/REST",
+        "https://en.wikipedia.org/wiki/AJAX",
+        "https://en.wikipedia.org/wiki/HTML5",
+        "https://en.wikipedia.org/wiki/JSON",
+        "https://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology",
+        "https://en.wikipedia.org/wiki/Dynamic_application_security_testing",
+        "https://en.wikipedia.org/wiki/Dynamic_application_security_testing",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

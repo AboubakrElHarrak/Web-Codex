@@ -1,0 +1,56 @@
+{
+    "url": "https://en.wikipedia.org/wiki/DataOps",
+    "title": "DataOps",
+    "table_of_contents": [
+        "1 History",
+        "2 Goals and philosophy",
+        "3 Implementation",
+        "4 Events",
+        "5 References"
+    ],
+    "content": [
+        {
+            "paragraph1": "DataOps is an automated, process-oriented methodology, used by analytic and data teams, to improve the quality and reduce the cycle time of data analytics. While DataOps began as a set of best practices, it has now matured to become a new and independent approach to data analytics. DataOps applies to the entire data lifecycle from data preparation to reporting, and recognizes the interconnected nature of the data analytics team and information technology operations.\n",
+            "paragraph2": "DataOps incorporates the Agile methodology to shorten the cycle time of analytics development in alignment with business goals. \n",
+            "paragraph3": "DevOps focuses on continuous delivery by leveraging on-demand IT resources and by automating test and deployment of software. This merging of software development and IT operations has improved velocity, quality, predictability and scale of software engineering and deployment. Borrowing methods from DevOps, DataOps seeks to bring these same improvements to data analytics.\n",
+            "paragraph4": "DataOps utilizes statistical process control (SPC) to monitor and control the data analytics pipeline. With SPC in place, the data flowing through an operational system is constantly monitored and verified to be working. If an anomaly occurs, the data analytics team can be notified through an automated alert.\n",
+            "paragraph5": "DataOps is not tied to a particular technology, architecture, tool, language or framework. Tools that support DataOps promote collaboration, orchestration, quality, security, access and ease of use.\n"
+        },
+        {
+            "title": "History",
+            "paragraph1": "\nDataOps was first introduced by Lenny Liebmann, Contributing Editor, InformationWeek, in a blog post on the IBM Big Data & Analytics Hub titled \"3 reasons why DataOps is essential for big data success\" on June 19, 2014. The term DataOps was later popularized by Andy Palmer of Tamr and Steph Locke. DataOps is a moniker for \"Data Operations.\" 2017 was a significant year for DataOps with significant ecosystem development, analyst coverage, increased keyword searches, surveys, publications, and open source projects. Gartner named DataOps on the Hype Cycle for Data Management in 2018. ",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/a/a2/Dataops.gif",
+                "caption": "\n\t\tDataOps heritage from DevOps, Agile, and manufacturing\n\t"
+            }
+        },
+        {
+            "title": "Goals and philosophy",
+            "paragraph1": "The volume of data is forecast to grow at a rate of 32% CAGR to 180 Zettabytes by the year 2025 (Source: IDC). DataOps seeks to provide the tools, processes, and organizational structures to cope with this significant increase in data. Automation streamlines the daily demands of managing large integrated databases, freeing the data team to develop new analytics in a more efficient and effective way. DataOps seeks to increase velocity, reliability, and quality of data analytics. It emphasizes communication, collaboration, integration, automation, measurement and cooperation between data scientists, analysts, data/ETL (extract, transform, load) engineers, information technology (IT), and quality assurance/governance.\n"
+        },
+        {
+            "title": "Implementation",
+            "paragraph1": "Toph Whitmore at Blue Hill Research offers these DataOps leadership principles for the information technology department:\n",
+            "ul1": "“Establish progress and performance measurements at every stage of the data flow. Where possible, benchmark data-flow cycle times.\nDefine rules for an abstracted semantic layer. Ensure everyone is “speaking the same language” and agrees upon what the data (and metadata) is and is not.\nValidate with the “eyeball test”: Include continuous-improvement -oriented human feedback loops. Consumers must be able to trust the data, and that can only come with incremental validation.\nAutomate as many stages of the data flow as possible including BI, data science, and analytics.\nUsing benchmarked performance information, identify bottlenecks and then optimize for them. This may require investment in commodity hardware, or automation of a formerly-human-delivered data-science step in the process.\nEstablish governance discipline, with a particular focus on two-way data control, data ownership, transparency, and comprehensive data lineage tracking through the entire workflow.\nDesign process for growth and extensibility. The data flow model must be designed to accommodate volume and variety of data. Ensure enabling technologies are priced affordably to scale with that enterprise data growth.”\n"
+        },
+        {
+            "title": "Events",
+            "ul1": "Data Opticon[12]\nData Ops Summit[13]\nData Ops Online Champion[14]\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Data_analysis",
+        "https://en.wikipedia.org/wiki/Agile_software_development",
+        "https://en.wikipedia.org/wiki/DevOps",
+        "https://en.wikipedia.org/wiki/Statistical_process_control",
+        "https://en.wikipedia.org/wiki/Big_data",
+        "https://en.wikipedia.org/wiki/Data_scientists",
+        "https://en.wikipedia.org/wiki/Information_technology",
+        "https://en.wikipedia.org/wiki/Information_technology",
+        "https://en.wikipedia.org/wiki/Data_lineage",
+        "https://en.wikipedia.org/wiki/DataOps",
+        "https://en.wikipedia.org/wiki/DataOps",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

@@ -1,0 +1,60 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Closed_world_assumption",
+    "title": "Closed-world assumption",
+    "table_of_contents": [
+        "1 Example",
+        "2 Formalization in logic",
+        "3 See also",
+        "4 References",
+        "5 External links"
+    ],
+    "content": [
+        {
+            "paragraph1": "The closed-world assumption (CWA), in a formal system of logic used for knowledge representation, is the presumption that a statement that is true is also known to be true. Therefore, conversely, what is not currently known to be true, is false. The same name also refers to a logical formalization of this assumption by Raymond Reiter. The opposite of the closed-world assumption is the open-world assumption (OWA), stating that lack of knowledge does not imply falsity. Decisions on CWA vs. OWA determine the understanding of the actual semantics of a conceptual expression with the same notations of concepts. A successful formalization of natural language semantics usually cannot avoid an explicit revelation of whether the implicit logical backgrounds are based on CWA or OWA.\n",
+            "paragraph2": "Negation as failure is related to the closed-world assumption, as it amounts to believing false every predicate that cannot be proved to be true.\n"
+        },
+        {
+            "title": "Example",
+            "paragraph1": "In the context of knowledge management, the closed-world assumption is used in at least two situations: (1) when the knowledge base is known to be complete (e.g., a corporate database containing records for every employee), and (2) when the knowledge base is known to be incomplete but a \"best\" definite answer must be derived from incomplete information. For example, if a database contains the following table reporting editors who have worked on a given article, a query on the people not having edited the article on Formal Logic is usually expected to return \"Sarah Johnson\".\n",
+            "paragraph2": " \nIn the closed-world assumption, the table is assumed to be complete (it lists all editor-article relationships), and Sarah Johnson is the only editor who has not edited the article on Formal Logic. In contrast, with the open-world assumption the table is not assumed to contain all editor-article tuples, and the answer to who has not edited the Formal Logic article is unknown. There is an unknown number of editors not listed in the table, and an unknown number of articles edited by Sarah Johnson that are also not listed in the table.\n"
+        },
+        {
+            "title": "Formalization in logic",
+            "paragraph1": "The first formalization of the closed-world assumption in formal logic consists in adding to the knowledge base the negation of the literals that are not currently entailed by it. The result of this addition is always consistent if the knowledge base is in Horn form, but is not guaranteed to be consistent otherwise. For example, the knowledge base\n",
+            "paragraph2": "entails neither \n\n\n\nE\nn\ng\nl\ni\ns\nh\n(\nF\nr\ne\nd\n)\n\n\n{\\displaystyle English(Fred)}\n\n nor \n\n\n\nI\nr\ni\ns\nh\n(\nF\nr\ne\nd\n)\n\n\n{\\displaystyle Irish(Fred)}\n\n.\n",
+            "paragraph3": "Adding the negation of these two literals to the knowledge base leads to\n",
+            "paragraph4": "which is inconsistent. In other words, this formalization of the closed-world assumption sometimes turns a consistent knowledge base into an inconsistent one. The closed-world assumption does not introduce an inconsistency on a knowledge base \n\n\n\nK\n\n\n{\\displaystyle K}\n\n exactly when the intersection of all Herbrand models of \n\n\n\nK\n\n\n{\\displaystyle K}\n\n is also a model of \n\n\n\nK\n\n\n{\\displaystyle K}\n\n; in the propositional case, this condition is equivalent to \n\n\n\nK\n\n\n{\\displaystyle K}\n\n having a single minimal model, where a model is minimal if no other model has a subset of variables assigned to true.\n",
+            "paragraph5": "Alternative formalizations not suffering from this problem have been proposed. In the following description, the considered knowledge base \n\n\n\nK\n\n\n{\\displaystyle K}\n\n is assumed to be propositional. In all cases, the formalization of the closed-world assumption is based on adding to \n\n\n\nK\n\n\n{\\displaystyle K}\n\n the negation of the formulae that are “free for negation” for \n\n\n\nK\n\n\n{\\displaystyle K}\n\n, i.e., the formulae that can be assumed to be false. In other words, the closed-world assumption applied to a knowledge base \n\n\n\nK\n\n\n{\\displaystyle K}\n\n generates the knowledge base\n",
+            "paragraph6": "The set \n\n\n\nF\n\n\n{\\displaystyle F}\n\n of formulae that are free for negation in \n\n\n\nK\n\n\n{\\displaystyle K}\n\n can be defined in different ways, leading to different formalizations of the closed-world assumption. The following are the definitions of \n\n\n\nf\n\n\n{\\displaystyle f}\n\n being free for negation in the various formalizations.\n",
+            "paragraph7": "The ECWA and the formalism of circumscription coincide on propositional theories. The complexity of query answering (checking whether a formula is entailed by another one under the closed-world assumption) is typically in the second level of the polynomial hierarchy for general formulae, and ranges from P to coNP for Horn formulae. Checking whether the original closed-world assumption introduces an inconsistency requires at most a logarithmic number of calls to an NP oracle; however, the exact complexity of this problem is not currently known.\n",
+            "paragraph8": "In situations where it is not possible to assume a closed world for all predicates, yet some of them are known to be closed, the partial-closed world assumption can be used. This regime considers knowledge bases generally to be open, i.e., potentially incomplete, yet allows to use completeness assertions to specify parts of the knowledge base that are closed.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Mathematical_logic",
+        "https://en.wikipedia.org/wiki/Knowledge_representation",
+        "https://en.wikipedia.org/wiki/Formal_logic",
+        "https://en.wikipedia.org/wiki/Raymond_Reiter",
+        "https://en.wikipedia.org/wiki/Negation_as_failure",
+        "https://en.wikipedia.org/wiki/Knowledge_management",
+        "https://en.wikipedia.org/wiki/Database",
+        "https://en.wikipedia.org/wiki/Complete_knowledge_base",
+        "https://en.wikipedia.org/wiki/Logic",
+        "https://en.wikipedia.org/wiki/Logical_consequence",
+        "https://en.wikipedia.org/wiki/Consistent",
+        "https://en.wikipedia.org/wiki/Horn_clause",
+        "https://en.wikipedia.org/wiki/Herbrand_model",
+        "https://en.wikipedia.org/wiki/Polynomial_hierarchy",
+        "https://en.wikipedia.org/wiki/CoNP",
+        "https://en.wikipedia.org/wiki/Horn_clause",
+        "https://en.wikipedia.org/wiki/Oracle_machine",
+        "https://en.wikipedia.org/wiki/Negation_as_failure",
+        "https://en.wikipedia.org/wiki/Default_logic",
+        "https://en.wikipedia.org/wiki/Stable_model_semantics",
+        "https://en.wikipedia.org/wiki/Unique_name_assumption",
+        "https://en.wikipedia.org/wiki/Jack_Minker",
+        "https://en.wikipedia.org/wiki/Springer_Berlin_Heidelberg",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

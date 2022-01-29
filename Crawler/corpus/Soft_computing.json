@@ -1,0 +1,37 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Soft_computing",
+    "title": "Soft computing",
+    "table_of_contents": [
+        "1 History",
+        "2 See also",
+        "3 Notable journals",
+        "4 References"
+    ],
+    "content": [
+        {
+            "image2": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/0/02/Soft_Computing_pic.jpg/440px-Soft_Computing_pic.jpg",
+                "caption": "\n\t\tConcept illustration of Soft computing\n"
+            },
+            "paragraph1": "Soft computing is a set of algorithms, \nincluding neural networks, fuzzy logic, and genetic algorithms.\nThese algorithms are tolerant of imprecision, uncertainty, partial truth and approximation.\nIt is contrasted with hard computing: algorithms which finds provably correct and optimal solutions to problems. \n"
+        },
+        {
+            "title": "History",
+            "paragraph1": "The theory and techniques related to soft computing were first introduced in 1980s. The term \"soft computing\" was coined by Lotfi A. Zadeh.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Algorithms",
+        "https://en.wikipedia.org/wiki/Neural_network",
+        "https://en.wikipedia.org/wiki/Fuzzy_logic",
+        "https://en.wikipedia.org/wiki/Genetic_algorithm",
+        "https://en.wikipedia.org/wiki/Optimal",
+        "https://en.wikipedia.org/wiki/Emergence",
+        "https://en.wikipedia.org/wiki/Synthetic_intelligence",
+        "https://en.wikipedia.org/wiki/Artificial_intelligence",
+        "https://en.wikipedia.org/wiki/Soft_computing",
+        "https://en.wikipedia.org/wiki/Soft_computing",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

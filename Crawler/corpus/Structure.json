@@ -1,0 +1,221 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Structure",
+    "title": "Structure",
+    "table_of_contents": [
+        "1 Load-bearing",
+        "2 Biological",
+        "3 Chemical",
+        "4 Mathematical",
+        "5 Musical",
+        "6 Social",
+        "7 Data",
+        "8 Software",
+        "9 Logical",
+        "10 See also",
+        "11 References",
+        "12 Further reading",
+        "13 External links"
+    ],
+    "content": [
+        {
+            "image2": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/f/fe/DNA_simple2.svg/340px-DNA_simple2.svg.png",
+                "caption": "\n\t\tThe structure of a DNA molecule is essential to its function.\n\t"
+            },
+            "paragraph1": "A structure is an arrangement and organization of interrelated elements in a material object or system, or the object or system so organized. Material structures include man-made objects such as buildings and machines and natural objects such as biological organisms, minerals and chemicals. Abstract structures include data structures in computer science and musical form. Types of structure include a hierarchy (a cascade of one-to-many relationships), a network featuring many-to-many links, or a lattice featuring connections between components that are neighbors in space.\n"
+        },
+        {
+            "title": "Load-bearing",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/6/6d/S%C3%A1mi_storehouse.jpg/440px-S%C3%A1mi_storehouse.jpg",
+                "caption": "\n\t\tA traditional Sami food storage structure\n\t"
+            },
+            "image2": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/0/05/Vo%C3%BBte_de_l%27%C3%A9glise_Saint-S%C3%A9verin_%C3%A0_Paris.jpg/340px-Vo%C3%BBte_de_l%27%C3%A9glise_Saint-S%C3%A9verin_%C3%A0_Paris.jpg",
+                "caption": "\n\t\tGothic quadripartite cross-ribbed vaults of the Saint-Séverin church in Paris\n\t"
+            },
+            "paragraph1": "Buildings, aircraft, skeletons, anthills, beaver dams, bridges and salt domes are all examples of load-bearing structures. The results of construction are divided into buildings and non-building structures, and make up the infrastructure of a human society. Built structures are broadly divided by their varying design approaches and standards, into categories including building structures, architectural structures, civil engineering structures and mechanical structures.\n",
+            "paragraph2": "The effects of loads on physical structures are determined through structural analysis, which is one of the tasks of structural engineering. The structural elements can be classified as one-dimensional (ropes, struts, beams, arches), two-dimensional (membranes, plates, slab, shells, vaults), or three-dimensional (solid masses).: 2  Three-dimensional elements were the main option available to early structures such as Chichen Itza. A one-dimensional element has one dimension much larger than the other two, so the other dimensions can be neglected in calculations; however, the ratio of the smaller dimensions and the composition can determine the flexural and compressive stiffness of the element. Two-dimensional elements with a thin third dimension have little of either but can resist biaxial traction.: 2–3 \n",
+            "paragraph3": "The structure elements are combined in structural systems. The majority of everyday load-bearing structures are section-active structures like frames, which are primarily composed of one-dimensional (bending) structures. Other types are Vector-active structures such as trusses, surface-active structures such as shells and folded plates, form-active structures such as cable or membrane structures, and hybrid structures.: 134–136 \n",
+            "paragraph4": "Load-bearing biological structures such as bones, teeth, shells, and tendons derive their strength from a multilevel hierarchy of structures employing biominerals and proteins, at the bottom of which are collagen fibrils.\n"
+        },
+        {
+            "title": "Biological",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/4/44/Helianthus_whorl.jpg/440px-Helianthus_whorl.jpg",
+                "caption": "\n\t\tThe spiral arrangement of small bright yellow florets that make up the flower head of a  sunflower is an example of the highly ordered structure that characterizes all  organisms.[5]\n"
+            },
+            "paragraph1": "In biology, one of the properties of life is its highly ordered structure, which can be observed at  multiple levels such as in cells, tissues, organs, and organisms. \n",
+            "paragraph2": "In another context, structure can also observed in macromolecules, particularly proteins and nucleic acids. The function of these molecules is determined by their shape as well as their composition, and their structure has multiple levels. Protein structure has a four-level hierarchy. The primary structure is the sequence of amino acids that make it up. It has a peptide backbone made up of a repeated sequence of a nitrogen and two carbon atoms. The secondary structure consists of repeated patterns determined by hydrogen bonding. The two basic types are the α-helix and the β-pleated sheet. The tertiary structure is a back and forth bending of the polypeptide chain, and the quaternary structure is the way that tertiary units come together and interact. Structural biology is concerned with biomolecular structure of macromolecules.\n"
+        },
+        {
+            "title": "Chemical",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Dopamin_-_Dopamine.svg/440px-Dopamin_-_Dopamine.svg.png",
+                "caption": "\n\t\tA skeletal formula for dopamine\n"
+            },
+            "paragraph1": "Chemical structure refers to both molecular geometry and electronic structure. The structure can be represented by a variety of diagrams called structural formulas. Lewis structures use a dot notation to represent the valence electrons for an atom; these are the electrons that determine the role of the atom in chemical reactions.: 71–72  Bonds between atoms can be represented by lines with one line for each pair of electrons that is shared. In a simplified version of such a diagram, called a skeletal formula, only carbon-carbon bonds and functional groups are shown.\n",
+            "paragraph2": "Atoms in a crystal have a structure that involves repetition of a basic unit called a unit cell. The atoms can be modeled as points on a lattice, and one can explore the effect of symmetry operations that include rotations about a point, reflections about a symmetry planes, and translations (movements of all the points by the same amount). Each crystal has a finite group, called the space group, of such operations that map it onto itself; there are 230 possible space groups.: 125–126  By Neumann's law, the symmetry of a crystal determines what physical properties, including piezoelectricity and ferromagnetism, the crystal can have.: 34–36, 91–92, 168–169 \n"
+        },
+        {
+            "title": "Mathematical"
+        },
+        {
+            "title": "Musical",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/7/7b/ChopinOp28no6.png/440px-ChopinOp28no6.png",
+                "caption": "\n\t\tA motif from the Preludes by Chopin, Op. 28 no.6, bars 1–3\n\t"
+            },
+            "paragraph1": "A large part of numerical analysis involves identifying and interpreting the structure of musical works. Structure can be found at the level of part of a work, the entire work, or a group of works. Elements of music such as pitch, duration and timbre combine into small elements like motifs and phrases, and these in turn combine in larger structures. Not all music (for example, that of John Cage) has a hierarchical organization, but hierarchy makes it easier for a listener to understand and remember the music.: 80 \n",
+            "paragraph2": "In analogy to linguistic terminology, motifs and phrases can be combined to make complete musical ideas such as sentences and phrases. A larger form is known as the period. One such form that was widely used between 1600 and 1900 has two phrases, an antecedent and a consequent, with a half cadence in the middle and a full cadence at the end providing punctuation.: 38–39  On a larger scale are single-movement forms such as the sonata form and the contrapuntal form, and multi-movement forms such as the symphony.\n"
+        },
+        {
+            "title": "Social",
+            "paragraph1": "A social structure is a pattern of relationships. They are social organizations of individuals in various life situations. Structures are applicable to people in how a society is as a system organized by a characteristic pattern of relationships. This is known as the social organization of the group.: 3  Sociologists have studied the changing structure of these groups. Structure and agency are two confronted theories about human behaviour.  The debate surrounding the influence of structure and agency on human thought is one of the central issues in sociology. In this context, agency refers to the individual human capacity to act independently and make free choices. Structure here refers to factors such as social class, religion, gender, ethnicity, customs, etc. that seem to limit or influence individual opportunities.\n"
+        },
+        {
+            "title": "Data",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Singly-linked-list.svg/440px-Singly-linked-list.svg.png",
+                "caption": "\n\t\tIn a singly linked list, each element has a data value and a pointer to the next element.\n\t"
+            },
+            "paragraph1": "In computer science, a data structure is a way of organizing information in a computer so that it can be used efficiently. Data structures are built out of two basic types: An array has an index that can be used for immediate access to any data item (some programming languages require array size to be initialized). A linked list can be reorganized, grown or shrunk, but its elements must be accessed with a pointer that links them together in a particular order.: 156  Out of these any number of other data structures can be created such as stacks, queues, trees and hash tables.\n",
+            "paragraph2": "In solving a problem, a data structure is generally an integral part of the algorithm.: 5  In modern programming style, algorithms and data structures are encapsulated together in an abstract data type.: ix \n"
+        },
+        {
+            "title": "Software",
+            "paragraph1": "Software architecture is the specific choices made between possible alternatives within a framework. For example, a framework might require a database and the architecture would specify the type and manufacturer of the database. The structure of software is the way in which it is partitioned into interrelated components. A key structural issue is minimizing dependencies between these components. This makes it possible to change one component without requiring changes in others.: 3  The purpose of structure is to optimise for (brevity, readability, traceability, isolation and encapsulation, maintainability, extensibility, performance and efficiency), examples being: language choice, code, functions, libraries, builds, system evolution, or diagrams for flow logic and design. Structural elements reflect the requirements of the application: for example, if the system requires a high fault tolerance, then a redundant structure is needed so that if a component fails it has backups. A high redundancy is an essential part of the design of several systems in the Space Shuttle.\n"
+        },
+        {
+            "title": "Logical",
+            "paragraph1": "As a branch of philosophy, logic is concerned with distinguishing good arguments from poor ones. A chief concern is with the structure of arguments. An argument consists of one or more premises from which a conclusion is inferred. The steps in this inference can be expressed in a formal way and their structure analyzed. Two basic types of inference are deduction and induction. In a valid deduction, the conclusion necessarily follows from the premises, regardless of whether they are true or not. An invalid deduction contains some error in the analysis. An inductive argument claims that if the premises are true, the conclusion is likely.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/DNA",
+        "https://en.wikipedia.org/wiki/System",
+        "https://en.wikipedia.org/wiki/Building",
+        "https://en.wikipedia.org/wiki/Machine",
+        "https://en.wikipedia.org/wiki/Organism",
+        "https://en.wikipedia.org/wiki/Mineral",
+        "https://en.wikipedia.org/wiki/Chemical_substance",
+        "https://en.wikipedia.org/wiki/Data_structure",
+        "https://en.wikipedia.org/wiki/Computer_science",
+        "https://en.wikipedia.org/wiki/Musical_form",
+        "https://en.wikipedia.org/wiki/Hierarchy",
+        "https://en.wikipedia.org/wiki/Complex_network",
+        "https://en.wikipedia.org/wiki/Sami_people",
+        "https://en.wikipedia.org/wiki/Building",
+        "https://en.wikipedia.org/wiki/Aircraft",
+        "https://en.wikipedia.org/wiki/Skeleton",
+        "https://en.wikipedia.org/wiki/Ant_colony",
+        "https://en.wikipedia.org/wiki/Beaver_dam",
+        "https://en.wikipedia.org/wiki/Bridge",
+        "https://en.wikipedia.org/wiki/Salt_dome",
+        "https://en.wikipedia.org/wiki/Structural_load",
+        "https://en.wikipedia.org/wiki/Construction",
+        "https://en.wikipedia.org/wiki/Building",
+        "https://en.wikipedia.org/wiki/Nonbuilding_structure",
+        "https://en.wikipedia.org/wiki/Infrastructure",
+        "https://en.wikipedia.org/wiki/Architectural_structure",
+        "https://en.wikipedia.org/wiki/Structural_analysis",
+        "https://en.wikipedia.org/wiki/Structural_engineering",
+        "https://en.wikipedia.org/wiki/Rope",
+        "https://en.wikipedia.org/wiki/Strut",
+        "https://en.wikipedia.org/wiki/Arch",
+        "https://en.wikipedia.org/wiki/Membrane",
+        "https://en.wikipedia.org/wiki/Concrete_slab",
+        "https://en.wikipedia.org/wiki/Chichen_Itza",
+        "https://en.wikipedia.org/wiki/Flexural_rigidity",
+        "https://en.wikipedia.org/wiki/Compressive_strength",
+        "https://en.wikipedia.org/wiki/Truss",
+        "https://en.wikipedia.org/wiki/Protein",
+        "https://en.wikipedia.org/wiki/Collagen",
+        "https://en.wikipedia.org/wiki/Floret",
+        "https://en.wikipedia.org/wiki/Flower_head",
+        "https://en.wikipedia.org/wiki/Helianthus_annuus",
+        "https://en.wikipedia.org/wiki/Living_organism",
+        "https://en.wikipedia.org/wiki/Biology",
+        "https://en.wikipedia.org/wiki/Life",
+        "https://en.wikipedia.org/wiki/Biological_organisation",
+        "https://en.wikipedia.org/wiki/Organism",
+        "https://en.wikipedia.org/wiki/Macromolecule",
+        "https://en.wikipedia.org/wiki/Protein",
+        "https://en.wikipedia.org/wiki/Nucleic_acid",
+        "https://en.wikipedia.org/wiki/Protein_structure",
+        "https://en.wikipedia.org/wiki/Protein_primary_structure",
+        "https://en.wikipedia.org/wiki/Amino_acid",
+        "https://en.wikipedia.org/wiki/Peptide",
+        "https://en.wikipedia.org/wiki/Protein_secondary_structure",
+        "https://en.wikipedia.org/wiki/Hydrogen_bonding",
+        "https://en.wikipedia.org/wiki/Alpha_helix",
+        "https://en.wikipedia.org/wiki/Beta_sheet",
+        "https://en.wikipedia.org/wiki/Protein_tertiary_structure",
+        "https://en.wikipedia.org/wiki/Protein_quaternary_structure",
+        "https://en.wikipedia.org/wiki/Structural_biology",
+        "https://en.wikipedia.org/wiki/Biomolecular_structure",
+        "https://en.wikipedia.org/wiki/Chemical_structure",
+        "https://en.wikipedia.org/wiki/Dopamine",
+        "https://en.wikipedia.org/wiki/Structural_formula",
+        "https://en.wikipedia.org/wiki/Lewis_structure",
+        "https://en.wikipedia.org/wiki/Valence_electron",
+        "https://en.wikipedia.org/wiki/Skeletal_formula",
+        "https://en.wikipedia.org/wiki/Crystal_structure",
+        "https://en.wikipedia.org/wiki/Bravais_lattice",
+        "https://en.wikipedia.org/wiki/Symmetry",
+        "https://en.wikipedia.org/wiki/Space_group",
+        "https://en.wikipedia.org/wiki/Piezoelectricity",
+        "https://en.wikipedia.org/wiki/Ferromagnetism",
+        "https://en.wikipedia.org/wiki/Mathematical_structure",
+        "https://en.wikipedia.org/wiki/Musical_form",
+        "https://en.wikipedia.org/wiki/Numerical_analysis",
+        "https://en.wikipedia.org/wiki/Timbre",
+        "https://en.wikipedia.org/wiki/John_Cage",
+        "https://en.wikipedia.org/wiki/Hierarchical_organization",
+        "https://en.wikipedia.org/wiki/Linguistics",
+        "https://en.wikipedia.org/wiki/Sonata_form",
+        "https://en.wikipedia.org/wiki/Counterpoint",
+        "https://en.wikipedia.org/wiki/Symphony",
+        "https://en.wikipedia.org/wiki/Social_structure",
+        "https://en.wikipedia.org/wiki/Organization",
+        "https://en.wikipedia.org/wiki/Structure_and_agency",
+        "https://en.wikipedia.org/wiki/Social_class",
+        "https://en.wikipedia.org/wiki/Religion",
+        "https://en.wikipedia.org/wiki/Gender",
+        "https://en.wikipedia.org/wiki/Ethnic_group",
+        "https://en.wikipedia.org/wiki/Data_structure",
+        "https://en.wikipedia.org/wiki/Computer_science",
+        "https://en.wikipedia.org/wiki/Computer",
+        "https://en.wikipedia.org/wiki/Array_data_structure",
+        "https://en.wikipedia.org/wiki/Programming_language",
+        "https://en.wikipedia.org/wiki/Linked_list",
+        "https://en.wikipedia.org/wiki/Hash_table",
+        "https://en.wikipedia.org/wiki/Algorithm",
+        "https://en.wikipedia.org/wiki/Abstract_data_type",
+        "https://en.wikipedia.org/wiki/Software_architecture",
+        "https://en.wikipedia.org/wiki/Structure_chart",
+        "https://en.wikipedia.org/wiki/Program_optimization",
+        "https://en.wikipedia.org/wiki/Computer_language",
+        "https://en.wikipedia.org/wiki/Indentation_style",
+        "https://en.wikipedia.org/wiki/API",
+        "https://en.wikipedia.org/wiki/Class_browser",
+        "https://en.wikipedia.org/wiki/Makefile",
+        "https://en.wikipedia.org/wiki/Package_manager",
+        "https://en.wikipedia.org/wiki/Control_Structure_Diagram",
+        "https://en.wikipedia.org/wiki/Space_Shuttle",
+        "https://en.wikipedia.org/wiki/Logic",
+        "https://en.wikipedia.org/wiki/Premise",
+        "https://en.wikipedia.org/wiki/Inference",
+        "https://en.wikipedia.org/wiki/Deductive_reasoning",
+        "https://en.wikipedia.org/wiki/Inductive_reasoning",
+        "https://en.wikipedia.org/wiki/Abstract_structure",
+        "https://en.wikipedia.org/wiki/Mathematical_structure",
+        "https://en.wikipedia.org/wiki/Structural_geology",
+        "https://en.wikipedia.org/wiki/Dictionary_of_Algorithms_and_Data_Structures",
+        "https://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology",
+        "https://en.wikipedia.org/wiki/Structure",
+        "https://en.wikipedia.org/wiki/Structure",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

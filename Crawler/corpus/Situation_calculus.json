@@ -1,0 +1,124 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Situation_calculus",
+    "title": "Situation calculus",
+    "table_of_contents": [
+        "1 Overview",
+        "2 Elements",
+        "2.1 Actions",
+        "2.2 Situations",
+        "2.3 Fluents",
+        "3 Formulae",
+        "3.1 Action preconditions",
+        "3.2 Action effects",
+        "3.3 The frame problem",
+        "3.4 The successor state axioms",
+        "3.5 States",
+        "3.6 Foundational axioms",
+        "4 Regression",
+        "5 GOLOG",
+        "6 The original version of the situation calculus",
+        "7 The situation calculus as a logic program",
+        "8 See also",
+        "9 References"
+    ],
+    "content": [
+        {
+            "paragraph1": "The situation calculus is a logic formalism designed for representing and reasoning about dynamical domains. It was first introduced by John McCarthy in 1963. The main version of the situational calculus that is presented in this article is based on that introduced by Ray Reiter in 1991. It is followed by sections about McCarthy's 1986 version and a logic programming formulation.\n"
+        },
+        {
+            "title": "Overview",
+            "paragraph1": "The situation calculus represents changing scenarios as a set of first-order logic formulae. The basic elements of the calculus are:\n",
+            "ul1": "The actions that can be performed in the world\nThe fluents that describe the state of the world\nThe situations\n",
+            "paragraph2": "A domain is formalized by a number of formulae, namely:\n",
+            "ul2": "Action precondition axioms, one for each action\nSuccessor state axioms, one for each fluent\nAxioms describing the world in various situations\nThe foundational axioms of the situation calculus\n",
+            "paragraph3": "A simple robot world will be modeled as a running example. In this world there is a single robot and several inanimate objects. The world is laid out according to a grid so that locations can be specified in terms of \n\n\n\n(\nx\n,\ny\n)\n\n\n{\\displaystyle (x,y)}\n\n coordinate points. It is possible for the robot to move around the world, and to pick up and drop items. Some items may be too heavy for the robot to pick up, or fragile so that they break when they are dropped. The robot also has the ability to repair any broken items that it is holding.\n"
+        },
+        {
+            "title": "Elements",
+            "paragraph1": "The main elements of the situation calculus are the actions, fluents and the situations. A number of objects are also typically involved in the description of the world. The situation calculus is based on a sorted domain with three sorts: actions, situations, and objects, where the objects include everything that is not an action or a situation. Variables of each sort can be used. While actions, situations, and objects are elements of the domain, the fluents are modeled as either predicates or functions.\n",
+            "subtitle1": "Actions",
+            "paragraph2": "The actions form a sort of the domain. Variables of sort action can be used. Actions can be quantified. In the example robot world, possible action terms would be \n\n\n\nm\no\nv\ne\n(\nx\n,\ny\n)\n\n\n{\\displaystyle move(x,y)}\n\n to model the robot moving to a new location \n\n\n\n(\nx\n,\ny\n)\n\n\n{\\displaystyle (x,y)}\n\n, and \n\n\n\np\ni\nc\nk\nu\np\n(\no\n)\n\n\n{\\displaystyle pickup(o)}\n\n to model the robot picking up an object o. A special predicate Poss is used to indicate when an action is executable.\n",
+            "subtitle2": "Situations",
+            "paragraph3": "In the situation calculus, a dynamic world is modeled as progressing through a series of situations as a result of various actions being performed within the world. A situation represents a history of action occurrences. In the Reiter version of the situation calculus described here,  a situation does not represent a state, contrarily to the literal meaning of the term and contrarily to the original definition by McCarthy and Hayes. This point has been summarized by Reiter as follows:\n",
+            "paragraph4": "The situation before any actions have been performed is typically denoted \n\n\n\n\nS\n\n0\n\n\n\n\n{\\displaystyle S_{0))\n\n and called the initial situation. The new situation resulting from the performance of an action is denoted using the function symbol do (Some other references[which?] also use result). This function symbol has a situation and an action as arguments, and a situation as a result, the latter being the situation that results from performing the given action in the given situation.\n",
+            "paragraph5": "The fact that situations are sequences of actions and not states is enforced by an axiom stating that \n\n\n\nd\no\n(\na\n,\ns\n)\n\n\n{\\displaystyle do(a,s)}\n\n is equal to \n\n\n\nd\no\n(\n\na\n′\n\n,\n\ns\n′\n\n)\n\n\n{\\displaystyle do(a',s')}\n\n if and only if \n\n\n\na\n=\n\na\n′\n\n\n\n{\\displaystyle a=a'}\n\n and \n\n\n\ns\n=\n\ns\n′\n\n\n\n{\\displaystyle s=s'}\n\n. This condition makes no sense if situations were states, as two different actions executed in two different states can result in the same state.\n",
+            "paragraph6": "In the example robot world, if the robot's first action is to move to location \n\n\n\n(\n2\n,\n3\n)\n\n\n{\\displaystyle (2,3)}\n\n, the first action is \n\n\n\nm\no\nv\ne\n(\n2\n,\n3\n)\n\n\n{\\displaystyle move(2,3)}\n\n and the resulting situation is \n\n\n\nd\no\n(\nm\no\nv\ne\n(\n2\n,\n3\n)\n,\n\nS\n\n0\n\n\n)\n\n\n{\\displaystyle do(move(2,3),S_{0})}\n\n. If its next action is to pick up the ball, the resulting situation is \n\n\n\nd\no\n(\np\ni\nc\nk\nu\np\n(\nB\na\nl\nl\n)\n,\nd\no\n(\nm\no\nv\ne\n(\n2\n,\n3\n)\n,\n\nS\n\n0\n\n\n)\n)\n\n\n{\\displaystyle do(pickup(Ball),do(move(2,3),S_{0}))}\n\n. Situations terms like \n\n\n\nd\no\n(\nm\no\nv\ne\n(\n2\n,\n3\n)\n,\n\nS\n\n0\n\n\n)\n\n\n{\\displaystyle do(move(2,3),S_{0})}\n\n and \n\n\n\nd\no\n(\np\ni\nc\nk\nu\np\n(\nB\na\nl\nl\n)\n,\nd\no\n(\nm\no\nv\ne\n(\n2\n,\n3\n)\n,\n\nS\n\n0\n\n\n)\n)\n\n\n{\\displaystyle do(pickup(Ball),do(move(2,3),S_{0}))}\n\n denote the sequences of executed actions, and not the description of the state that result from execution.\n",
+            "subtitle3": "Fluents",
+            "paragraph7": "Statements whose truth value may change are modeled by relational fluents, predicates which take a situation as their final argument. Also possible are functional fluents, functions which take a situation as their final argument and return a situation-dependent value. Fluents may be thought of as \"properties of the world\"'.\n",
+            "paragraph8": "In the example, the fluent \n\n\n\n\n\nisCarrying\n\n\n(\no\n,\ns\n)\n\n\n{\\displaystyle {\\textit {isCarrying))(o,s)}\n\n can be used to indicate that the robot is carrying a particular object in a particular situation. If the robot initially carries nothing, \n\n\n\n\n\nisCarrying\n\n\n(\nB\na\nl\nl\n,\n\nS\n\n0\n\n\n)\n\n\n{\\displaystyle {\\textit {isCarrying))(Ball,S_{0})}\n\n is false while \n\n\n\n\n\nisCarrying\n\n\n(\nB\na\nl\nl\n,\nd\no\n(\np\ni\nc\nk\nu\np\n(\nB\na\nl\nl\n)\n,\n\nS\n\n0\n\n\n)\n)\n\n\n{\\displaystyle {\\textit {isCarrying))(Ball,do(pickup(Ball),S_{0}))}\n\n is true. The location of the robot can be modeled using a functional fluent \n\n\n\nl\no\nc\na\nt\ni\no\nn\n(\ns\n)\n\n\n{\\displaystyle location(s)}\n\n which returns the location \n\n\n\n(\nx\n,\ny\n)\n\n\n{\\displaystyle (x,y)}\n\n of the robot in a particular situation.\n"
+        },
+        {
+            "title": "Formulae",
+            "paragraph1": "The description of a dynamic world is encoded in second order logics using three kinds of formulae: formulae about actions (preconditions and effects), formulae about the state of the world, and foundational axioms.\n",
+            "subtitle1": "Action preconditions",
+            "paragraph2": "Some actions may not be executable in a given situation. For example, it is impossible to put down an object unless one is in fact carrying it. The restrictions on the performance of actions are modeled by literals of the form \n\n\n\n\n\nPoss\n\n\n(\na\n,\ns\n)\n\n\n{\\displaystyle {\\textit {Poss))(a,s)}\n\n, where a is an action, s a situation, and Poss is a special binary predicate denoting executability of actions. In the example, the condition that dropping an object is only possible when one is carrying it is modeled by:\n",
+            "paragraph3": "As a more complex example, the following models that the robot can carry only one object at a time, and that some objects are too heavy for the robot to lift (indicated by the predicate heavy):\n",
+            "subtitle2": "Action effects",
+            "paragraph4": "Given that an action is possible in a situation, one must specify the effects of that action on the fluents. This is done by the effect axioms. For example, the fact that picking up an object causes the robot to be carrying it can be modeled as:\n",
+            "paragraph5": "It is also possible to specify conditional effects, which are effects that depend on the current state. The following models that some objects are fragile (indicated by the predicate fragile) and dropping them causes them to be broken (indicated by the fluent broken):\n",
+            "paragraph6": "While this formula correctly describes the effect of the actions, it is not sufficient to correctly describe the action in logic, because of the frame problem.\n",
+            "subtitle3": "The frame problem",
+            "paragraph7": "While the above formulae seem suitable for reasoning about the effects of actions, they have a critical weakness - they cannot be used to derive the non-effects of actions. For example, it is not possible to deduce that after picking up an object, the robot's location remains unchanged. This requires a so-called frame axiom, a formula like:\n",
+            "paragraph8": "The need to specify frame axioms has long been recognised as a problem in axiomatizing dynamic worlds, and is known as the frame problem. As there are generally a very large number of such axioms, it is very easy for the designer to leave out a necessary frame axiom, or to forget to modify all appropriate axioms when a change to the world description is made.\n",
+            "subtitle4": "The successor state axioms",
+            "paragraph9": "The successor state axioms \"solve\" the frame problem in the situation calculus. According to this solution, the designer must enumerate as effect axioms all the ways in which the value of a particular fluent can be changed. The effect axioms affecting the value of fluent \n\n\n\nF\n(\n\n\nx\n→\n\n\n,\ns\n)\n\n\n{\\displaystyle F({\\overrightarrow {x)),s)}\n\n can be written in generalised form as a positive and a negative effect axiom:\n",
+            "paragraph10": "The formula \n\n\n\n\nγ\n\nF\n\n\n+\n\n\n\n\n{\\displaystyle \\gamma _{F}^{+))\n\n describes the conditions under which action a in situation s makes the fluent F become true in the successor situation \n\n\n\nd\no\n(\na\n,\ns\n)\n\n\n{\\displaystyle do(a,s)}\n\n. Likewise, \n\n\n\n\nγ\n\nF\n\n\n−\n\n\n\n\n{\\displaystyle \\gamma _{F}^{-))\n\n describes the conditions under which performing action a in situation s makes fluent F false in the successor situation.\n",
+            "paragraph11": "If this pair of axioms describe all the ways in which fluent F can change value, they can be rewritten as a single axiom:\n",
+            "paragraph12": "In words, this formula states: \"given that it is possible to perform action a in situation s, the fluent F would be true in the resulting situation \n\n\n\nd\no\n(\na\n,\ns\n)\n\n\n{\\displaystyle do(a,s)}\n\n if and only if performing a in s would make it true, or it is true in situation s and performing a in s would not make it false.\"\n",
+            "paragraph13": "By way of example, the value of the fluent broken introduced above is given by the following successor state axiom:\n",
+            "subtitle5": "States",
+            "paragraph14": "The properties of the initial or any other situation can be specified by simply stating them as formulae. For example, a fact about the initial state is formalized by making assertions about \n\n\n\n\nS\n\n0\n\n\n\n\n{\\displaystyle S_{0))\n\n (which is not a state, but a situation). The following statements model that initially, the robot carries nothing, is at\nlocation \n\n\n\n(\n0\n,\n0\n)\n\n\n{\\displaystyle (0,0)}\n\n, and there are no broken objects:\n",
+            "subtitle6": "Foundational axioms",
+            "paragraph15": "The foundational axioms of the situation calculus formalize the idea that situations are histories by having \n\n\n\nd\no\n(\na\n,\ns\n)\n=\nd\no\n(\n\na\n′\n\n,\n\ns\n′\n\n)\n\n⟺\n\na\n=\n\na\n′\n\n∧\ns\n=\n\ns\n′\n\n\n\n{\\displaystyle do(a,s)=do(a',s')\\iff a=a'\\land s=s'}\n\n. They also include other properties such as the second order induction on situations.\n"
+        },
+        {
+            "title": "Regression",
+            "paragraph1": "Regression is a mechanism for proving consequences in the situation calculus. It is based on expressing a formula containing the situation \n\n\n\nd\no\n(\na\n,\ns\n)\n\n\n{\\displaystyle do(a,s)}\n\n in terms of a formula containing the action a and the situation s, but not the situation \n\n\n\nd\no\n(\na\n,\ns\n)\n\n\n{\\displaystyle do(a,s)}\n\n. By iterating this procedure, one can end up with an equivalent formula containing only the initial situation S_0. Proving consequences is supposedly simpler from this formula than from the original one.\n"
+        },
+        {
+            "title": "GOLOG",
+            "paragraph1": "GOLOG is a logic programming language based on the situation calculus.\n"
+        },
+        {
+            "title": "The original version of the situation calculus",
+            "paragraph1": "The main difference between the original situation calculus by McCarthy and Hayes and the one in use today is the interpretation of situations. In the modern version of the situational calculus, a situation is a sequence of actions. Originally, situations were defined as \"the complete state of the universe at an instant of time\". It was clear from the beginning that such situations could not be completely described; the idea was simply to give some statements about situations, and derive consequences from them. This is also different from the approach that is taken by the fluent calculus, where a state can be a collection of known facts, that is, a possibly incomplete description of the universe.\n",
+            "paragraph2": "In the original version of the situation calculus, fluents are not reified. In other words, conditions that can change are represented by predicates and not by functions. Actually, McCarthy and Hayes defined a fluent as a function that depends on the situation, but they then proceeded always using predicates to represent fluents. For example, the fact that it is raining at place x in the situation s is represented by the literal \n\n\n\nr\na\ni\nn\ni\nn\ng\n(\nx\n,\ns\n)\n\n\n{\\displaystyle raining(x,s)}\n\n. In the 1986 version of the situation calculus by McCarthy, functional fluents are used. For example, the position of an object x in the situation s is represented by the value of \n\n\n\nl\no\nc\na\nt\ni\no\nn\n(\nx\n,\ns\n)\n\n\n{\\displaystyle location(x,s)}\n\n, where location is a function. Statements about such functions can be given using equality: \n\n\n\nl\no\nc\na\nt\ni\no\nn\n(\nx\n,\ns\n)\n=\nl\no\nc\na\nt\ni\no\nn\n(\nx\n,\n\ns\n′\n\n)\n\n\n{\\displaystyle location(x,s)=location(x,s')}\n\n means that the location of the object x is the same in the two situations s and \n\n\n\n\ns\n′\n\n\n\n{\\displaystyle s'}\n\n.\n",
+            "paragraph3": "The execution of actions is represented by the function result: the execution of the action a in the situation s is the situation \n\n\n\n\n\nresult\n\n\n(\na\n,\ns\n)\n\n\n{\\displaystyle {\\textit {result))(a,s)}\n\n. The effects of actions are expressed by formulae relating fluents in situation s and fluents in situations \n\n\n\n\n\nresult\n\n\n(\na\n,\ns\n)\n\n\n{\\displaystyle {\\textit {result))(a,s)}\n\n. For example, that the action of opening the door results in the door being open if not locked is represented by: \n",
+            "paragraph4": "The predicates locked and open represent the conditions of a door being locked and open, respectively. Since these condition may vary, they are represented by predicates with a situation argument. The formula says that if the door is not locked in a situation, then the door is open after executing the action of opening, this action being represented by the constant opens.\n",
+            "paragraph5": "These formulae are not sufficient to derive everything that is considered plausible. Indeed, fluents at different situations are only related if they are preconditions and effects of actions; if a fluent is not affected by an action, there is no way to deduce it did not change. For example, the formula above does not imply that \n\n\n\n¬\nl\no\nc\nk\ne\nd\n(\nd\no\no\nr\n,\n\n\nresult\n\n\n(\no\np\ne\nn\ns\n,\ns\n)\n)\n\n\n{\\displaystyle \\neg locked(door,{\\textit {result))(opens,s))}\n\n follows from \n\n\n\n¬\nl\no\nc\nk\ne\nd\n(\nd\no\no\nr\n,\ns\n)\n\n\n{\\displaystyle \\neg locked(door,s)}\n\n, which is what one would expect (the door is not made locked by opening it). In order for inertia to hold, formulae called frame axioms are needed. These formulae specify all non-effects of actions:\n",
+            "paragraph6": "In the original formulation of the situation calculus, the initial situation, later denoted by \n\n\n\n\nS\n\n0\n\n\n\n\n{\\displaystyle S_{0))\n\n, is not explicitly identified. The initial situation is not needed if situations are taken to be descriptions of the world. For example, to represent the scenario in which the door was closed but not locked and the action of opening it is performed is formalized by taking a constant s to mean the initial situation and making statements about it (e.g., \n\n\n\n¬\nl\no\nc\nk\ne\nd\n(\nd\no\no\nr\n,\ns\n)\n\n\n{\\displaystyle \\neg locked(door,s)}\n\n). That the door is open after the change is reflected by formula \n\n\n\no\np\ne\nn\n(\nd\no\no\nr\n,\n\n\nresult\n\n\n(\no\np\ne\nn\ns\n,\ns\n)\n)\n\n\n{\\displaystyle open(door,{\\textit {result))(opens,s))}\n\n being entailed. The initial situation is instead necessary if, like in the modern situation calculus, a situation is taken to be a history of actions, as the initial situation represents the empty sequence of actions.\n",
+            "paragraph7": "The version of the situation calculus introduced by McCarthy in 1986 differs to the original one for the use of functional fluents (e.g., \n\n\n\nl\no\nc\na\nt\ni\no\nn\n(\nx\n,\ns\n)\n\n\n{\\displaystyle location(x,s)}\n\n is a term representing the position of x in the situation s) and for an attempt to use circumscription to replace the frame axioms.\n"
+        },
+        {
+            "title": "The situation calculus as a logic program",
+            "paragraph1": "It is also possible (e.g. Kowalski 1979, Apt and Bezem 1990, Shanahan 1997) to write the situation calculus as a logic program:\n",
+            "paragraph2": "Here Holds is a meta-predicate and the variable f ranges over fluents. The predicates Poss, Initiates and Terminates correspond to the predicates Poss, \n\n\n\n\nγ\n\nF\n\n\n+\n\n\n(\n\n\nx\n→\n\n\n,\na\n,\ns\n)\n\n\n{\\displaystyle \\gamma _{F}^{+}({\\overrightarrow {x)),a,s)}\n\n, and \n\n\n\n\nγ\n\nF\n\n\n−\n\n\n(\n\n\nx\n→\n\n\n,\na\n,\ns\n)\n\n\n{\\displaystyle \\gamma _{F}^{-}({\\overrightarrow {x)),a,s)}\n\n respectively. The left arrow ← is half of the equivalence ↔. The other half is implicit in the completion of the program, in which negation is interpreted as negation as failure. Induction axioms are also implicit, and are needed only to prove program properties. Backward reasoning as in SLD resolution, which is the usual mechanism used to execute logic programs, implements regression implicitly.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Logic",
+        "https://en.wikipedia.org/wiki/Ray_Reiter",
+        "https://en.wikipedia.org/wiki/Logic_programming",
+        "https://en.wikipedia.org/wiki/Truth_value",
+        "https://en.wikipedia.org/wiki/Frame_problem",
+        "https://en.wikipedia.org/wiki/Frame_problem",
+        "https://en.wikipedia.org/wiki/GOLOG",
+        "https://en.wikipedia.org/wiki/Fluent_calculus",
+        "https://en.wikipedia.org/wiki/Negation_as_failure",
+        "https://en.wikipedia.org/wiki/SLD_resolution",
+        "https://en.wikipedia.org/wiki/Frame_problem",
+        "https://en.wikipedia.org/wiki/Event_calculus",
+        "https://en.wikipedia.org/wiki/Electronic_Transactions_on_Artificial_Intelligence",
+        "https://en.wikipedia.org/wiki/Journal_of_the_ACM",
+        "https://en.wikipedia.org/wiki/Artificial_intelligence",
+        "https://en.wikipedia.org/wiki/Dartmouth_workshop",
+        "https://en.wikipedia.org/wiki/Frame_problem",
+        "https://en.wikipedia.org/wiki/McCarthy_Formalism",
+        "https://en.wikipedia.org/wiki/McCarthy_91_function",
+        "https://en.wikipedia.org/wiki/Space_fountain",
+        "https://en.wikipedia.org/wiki/Situation_calculus",
+        "https://en.wikipedia.org/wiki/Situation_calculus",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

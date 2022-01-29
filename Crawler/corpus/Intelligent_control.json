@@ -1,0 +1,68 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Intelligent_control",
+    "title": "Intelligent control",
+    "table_of_contents": [
+        "1 Overview",
+        "1.1 Neural network controller",
+        "1.2 Bayesian controllers",
+        "2 See also",
+        "3 References",
+        "4 Further reading"
+    ],
+    "content": [
+        {
+            "paragraph1": "Intelligent control is a class of control techniques that use various artificial intelligence computing approaches like neural networks, Bayesian probability, fuzzy logic, machine learning, reinforcement learning, evolutionary computation and genetic algorithms.\n"
+        },
+        {
+            "title": "Overview",
+            "paragraph1": "Intelligent control can be divided into the following major sub-domains:\n",
+            "ul1": "Neural network control\nMachine learning control\nReinforcement learning\nBayesian control\nFuzzy control\nNeuro-fuzzy control\nExpert Systems\nGenetic control\n",
+            "paragraph2": "New control techniques are created continuously as new models of intelligent behavior are created and computational methods developed to support them.\n",
+            "subtitle1": "Neural network controller",
+            "paragraph3": "Neural networks have been used to solve problems in almost all spheres of science and technology. Neural network control basically involves two steps:\n",
+            "ul2": "System identification\nControl\n",
+            "paragraph4": "It has been shown that a feedforward network with nonlinear, continuous and differentiable activation functions have universal approximation capability. Recurrent networks have also been used for system identification. Given, a set of input-output data pairs, system identification aims to form a mapping among these data pairs. Such a network is supposed to capture the dynamics of a system. For the control part, deep reinforcement learning has shown its ability to control complex systems.\n",
+            "subtitle2": "Bayesian controllers",
+            "paragraph5": "Bayesian probability has produced a number of algorithms that are in common use in many advanced control systems, serving as state space estimators of some variables that are used in the controller.\n",
+            "paragraph6": "The Kalman filter and the Particle filter are two examples of popular Bayesian control components. The Bayesian approach to controller design often requires an important effort in deriving the so-called system model and measurement model, which are the mathematical relationships linking the state variables to the sensor measurements available in the controlled system. In this respect, it is very closely linked to the\nsystem-theoretic approach to control design.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Control_theory",
+        "https://en.wikipedia.org/wiki/Artificial_intelligence",
+        "https://en.wikipedia.org/wiki/Artificial_neural_networks",
+        "https://en.wikipedia.org/wiki/Bayesian_probability",
+        "https://en.wikipedia.org/wiki/Fuzzy_logic",
+        "https://en.wikipedia.org/wiki/Machine_learning",
+        "https://en.wikipedia.org/wiki/Reinforcement_learning",
+        "https://en.wikipedia.org/wiki/Evolutionary_computation",
+        "https://en.wikipedia.org/wiki/Genetic_algorithm",
+        "https://en.wikipedia.org/wiki/Neural_network",
+        "https://en.wikipedia.org/wiki/Machine_learning_control",
+        "https://en.wikipedia.org/wiki/Reinforcement_learning",
+        "https://en.wikipedia.org/wiki/Bayesian_probability",
+        "https://en.wikipedia.org/wiki/Fuzzy_control",
+        "https://en.wikipedia.org/wiki/Expert_System",
+        "https://en.wikipedia.org/wiki/Genetic_algorithm",
+        "https://en.wikipedia.org/wiki/Neural_networks",
+        "https://en.wikipedia.org/wiki/Universal_approximation_theorem",
+        "https://en.wikipedia.org/wiki/Recurrent_neural_network",
+        "https://en.wikipedia.org/wiki/Reinforcement_learning",
+        "https://en.wikipedia.org/wiki/Bayesian_probability",
+        "https://en.wikipedia.org/wiki/Estimator",
+        "https://en.wikipedia.org/wiki/Kalman_filter",
+        "https://en.wikipedia.org/wiki/Particle_filter",
+        "https://en.wikipedia.org/wiki/Systems_theory",
+        "https://en.wikipedia.org/wiki/Control_engineering",
+        "https://en.wikipedia.org/wiki/Action_selection",
+        "https://en.wikipedia.org/wiki/AI_effect",
+        "https://en.wikipedia.org/wiki/Applications_of_artificial_intelligence",
+        "https://en.wikipedia.org/wiki/Function_approximation",
+        "https://en.wikipedia.org/wiki/List_of_emerging_technologies",
+        "https://en.wikipedia.org/wiki/Outline_of_artificial_intelligence",
+        "https://en.wikipedia.org/wiki/Intelligent_control",
+        "https://en.wikipedia.org/wiki/Intelligent_control",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

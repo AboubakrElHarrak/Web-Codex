@@ -1,0 +1,103 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Computational_engineering",
+    "title": "Computational engineering",
+    "table_of_contents": [
+        "1 Methods",
+        "2 Applications",
+        "3 See also",
+        "4 References",
+        "5 External links"
+    ],
+    "content": [
+        {
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/5/58/Kiva_Simulation.jpg",
+                "caption": "\n\t\tSimulation of an experimental engine\n\t"
+            },
+            "paragraph1": "Computational science and engineering (CSE) is a relatively new discipline that deals with the development and application of computational models and simulations, often coupled with high-performance computing, to solve complex physical problems arising in engineering analysis and design (computational engineering) as well as natural phenomena (computational science). CSE has been described as the \"third mode of discovery\" (next to theory and experimentation).\n",
+            "paragraph2": "In many fields, computer simulation is essential to business and research. Computer simulation provides the capability to enter fields that are either inaccessible to traditional experimentation or where carrying out traditional empirical inquiries is prohibitively expensive. CSE should neither be confused with pure computer science, nor with computer engineering, although a wide domain in the former is used in CSE (e.g., certain algorithms, data structures, parallel programming, high performance computing) and some problems in the latter can be modeled and solved with CSE methods (as an application area).\n",
+            "paragraph3": "It is typically offered as a masters or doctorate program.\n"
+        },
+        {
+            "title": "Methods",
+            "paragraph1": "Computational Science and Engineering methods and frameworks include:\n",
+            "ul1": "High performance computing and techniques to gain efficiency (through change in computer architecture, parallel algorithms etc.)\nModeling and simulation\nAlgorithms for solving discrete and continuous problems\nAnalysis and visualization of data\nMathematical foundations: Numerical and applied linear algebra, initial & boundary value problems, Fourier analysis, optimization\nData Science for developing methods and algorithms to handle and  extract  knowledge from large scientific data\n",
+            "paragraph2": "With regard to computing, computer programming, algorithms, and parallel computing play a major role in CSE. The most widely used programming language in the scientific community is FORTRAN. Recently, C++ and C have increased in popularity over FORTRAN. Due to the wealth of legacy code in FORTRAN and its simpler syntax, the scientific computing community has been slow in completely adopting C++ as the lingua franca. Because of its very natural way of expressing mathematical computations, and its built-in visualization capacities, the proprietary language/environment MATLAB is also widely used, especially for rapid application development and model verification. Python along with external libraries (such as NumPy, SciPy, Matplotlib) has gained some popularity as a free and Copycenter alternative to MATLAB.\n"
+        },
+        {
+            "title": "Applications",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Elmer-pump-heatequation.png/440px-Elmer-pump-heatequation.png",
+                "caption": "\n\t\tA numerical solution to the heat equation on a pump casing model using the finite element method.\n\t"
+            },
+            "paragraph1": "Computational Science and Engineering finds diverse applications, including in:\n",
+            "ul1": "Aerospace Engineering and Mechanical Engineering: combustion simulations, structural dynamics, computational fluid dynamics, computational thermodynamics, computational solid mechanics, vehicle crash simulation, biomechanics, trajectory calculation of satellites\nAstrophysical systems\nBattlefield simulations and military gaming, homeland security, emergency response\nBiology and Medicine: protein folding simulations (and other macromolecules), bioinformatics, genomics, computational neurological modeling, modeling of biological systems (e.g., ecological systems), 3D CT ultrasound, MRI imaging, molecular bionetworks, cancer and seizure control\nChemistry: calculating the structures and properties of chemical compounds/molecules and solids, computational chemistry/cheminformatics, molecular mechanics simulations, computational chemical methods in solid state physics, chemical pollution transport\nCivil Engineering: finite element analysis, structures with random loads, construction engineering, water supply systems, transportation/vehicle modeling\nComputer Engineering, Electrical Engineering, and Telecommunications: VLSI, computational electromagnetics, semiconductor modeling, simulation of microelectronics, energy infrastructure, RF simulation, networks\nEpidemiology: influenza spread\nEnvironmental Engineering and Numerical weather prediction: climate research, Computational geophysics (seismic processing), modeling of natural disasters\nFinance: derivative pricing, risk management\nIndustrial Engineering: discrete event and Monte-Carlo simulations (for logistics and manufacturing systems for example), queueing networks, mathematical optimization\nMaterial Science: glass manufacturing, polymers, and crystals\nNuclear Engineering: nuclear reactor modeling, radiation shielding simulations, fusion simulations\nPetroleum engineering: petroleum reservoir modeling, oil and gas exploration\nPhysics: Computational particle physics, automatic calculation of particle interaction or decay, plasma modeling, cosmological simulations\nTransportation\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Computer_engineering",
+        "https://en.wikipedia.org/wiki/Computational_model",
+        "https://en.wikipedia.org/wiki/Computational_science",
+        "https://en.wikipedia.org/wiki/Computer_science",
+        "https://en.wikipedia.org/wiki/Computer_engineering",
+        "https://en.wikipedia.org/wiki/Master_of_Science",
+        "https://en.wikipedia.org/wiki/Doctor_of_Philosophy",
+        "https://en.wikipedia.org/wiki/High_performance_computing",
+        "https://en.wikipedia.org/wiki/Computer_model",
+        "https://en.wikipedia.org/wiki/Simulation",
+        "https://en.wikipedia.org/wiki/Algorithms",
+        "https://en.wikipedia.org/wiki/Data_science",
+        "https://en.wikipedia.org/wiki/FORTRAN",
+        "https://en.wikipedia.org/wiki/MATLAB",
+        "https://en.wikipedia.org/wiki/NumPy",
+        "https://en.wikipedia.org/wiki/SciPy",
+        "https://en.wikipedia.org/wiki/Matplotlib",
+        "https://en.wikipedia.org/wiki/Copycenter",
+        "https://en.wikipedia.org/wiki/Heat_equation",
+        "https://en.wikipedia.org/wiki/Mathematical_model",
+        "https://en.wikipedia.org/wiki/Finite_element_method",
+        "https://en.wikipedia.org/wiki/Aerospace_Engineering",
+        "https://en.wikipedia.org/wiki/Mechanical_Engineering",
+        "https://en.wikipedia.org/wiki/Combustion_models_for_CFD",
+        "https://en.wikipedia.org/wiki/Structural_dynamics",
+        "https://en.wikipedia.org/wiki/Computational_fluid_dynamics",
+        "https://en.wikipedia.org/wiki/Computational_thermodynamics",
+        "https://en.wikipedia.org/wiki/Battle",
+        "https://en.wikipedia.org/wiki/Homeland_security",
+        "https://en.wikipedia.org/wiki/Biology",
+        "https://en.wikipedia.org/wiki/Medicine",
+        "https://en.wikipedia.org/wiki/Chemistry",
+        "https://en.wikipedia.org/wiki/Computational_chemistry",
+        "https://en.wikipedia.org/wiki/Civil_Engineering",
+        "https://en.wikipedia.org/wiki/Finite_element_analysis",
+        "https://en.wikipedia.org/wiki/Computer_Engineering",
+        "https://en.wikipedia.org/wiki/Electrical_Engineering",
+        "https://en.wikipedia.org/wiki/Telecommunications",
+        "https://en.wikipedia.org/wiki/Epidemiology",
+        "https://en.wikipedia.org/wiki/Environmental_Engineering",
+        "https://en.wikipedia.org/wiki/Numerical_weather_prediction",
+        "https://en.wikipedia.org/wiki/Climate_research",
+        "https://en.wikipedia.org/wiki/Computational_geophysics",
+        "https://en.wikipedia.org/wiki/Finance",
+        "https://en.wikipedia.org/wiki/Industrial_Engineering",
+        "https://en.wikipedia.org/wiki/Mathematical_optimization",
+        "https://en.wikipedia.org/wiki/Material_Science",
+        "https://en.wikipedia.org/wiki/Nuclear_Engineering",
+        "https://en.wikipedia.org/wiki/Petroleum_engineering",
+        "https://en.wikipedia.org/wiki/Physics",
+        "https://en.wikipedia.org/wiki/Transportation",
+        "https://en.wikipedia.org/wiki/Applied_mathematics",
+        "https://en.wikipedia.org/wiki/Computational_science",
+        "https://en.wikipedia.org/wiki/Computational_mathematics",
+        "https://en.wikipedia.org/wiki/Computational_fluid_dynamics",
+        "https://en.wikipedia.org/wiki/Computational_electromagnetics",
+        "https://en.wikipedia.org/wiki/Engineering_mathematics",
+        "https://en.wikipedia.org/wiki/Grand_Challenges",
+        "https://en.wikipedia.org/wiki/Numerical_analysis",
+        "https://en.wikipedia.org/wiki/Multiphysics",
+        "https://en.wikipedia.org/wiki/Computational_engineering",
+        "https://en.wikipedia.org/wiki/Computational_engineering",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

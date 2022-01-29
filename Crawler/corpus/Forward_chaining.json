@@ -1,0 +1,60 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Forward_chaining",
+    "title": "Forward chaining",
+    "table_of_contents": [
+        "1 Example",
+        "2 See also",
+        "3 References",
+        "4 External links"
+    ],
+    "content": [
+        {
+            "paragraph1": "Forward chaining  (or forward reasoning) is one of the two main methods of reasoning when using an inference engine and can be described logically as repeated application of modus ponens. Forward chaining is a popular implementation strategy for expert systems, business and production rule systems. The opposite of forward chaining is backward chaining.\n",
+            "paragraph2": "Forward chaining starts with the available data and uses inference rules to extract more data (from an end user, for example) until a goal is reached. An inference engine using forward chaining searches the inference rules until it finds one where the antecedent (If clause) is known to be true. When such a rule is found, the engine can conclude, or infer, the consequent (Then clause), resulting in the addition of new information to its data.\n",
+            "paragraph3": "Inference engines will iterate through this process until a goal is reached.\n"
+        },
+        {
+            "title": "Example",
+            "paragraph1": "Suppose that the goal is to conclude the color of a pet named Fritz, given that he croaks and eats flies, and that the rule base contains the following four rules:\n",
+            "ol1": "1 - If X croaks and X eats flies - Then X is a frog\n2 - If X chirps and X sings - Then X is a canary\n3 - If X is a frog - Then X is green\n4 - If X is a canary - Then X is yellow\n",
+            "paragraph2": "Let us illustrate forward chaining by following the pattern of a computer as it evaluates the rules.\nAssume the following facts:\n",
+            "ul1": "Fritz croaks\nFritz eats flies\n",
+            "paragraph3": "With forward reasoning, the inference engine can derive that Fritz is green in a series of steps:\n",
+            "paragraph4": "1. Since the base facts indicate that \"Fritz croaks\" and \"Fritz eats flies\", the antecedent of rule #1 is satisfied by substituting Fritz for X, and the inference engine concludes:\n",
+            "paragraph5": "2. The antecedent of rule #3 is then satisfied by substituting Fritz for X, and the inference engine concludes:\n",
+            "paragraph6": "The name \"forward chaining\" comes from the fact that the inference engine starts with the data and reasons its way to the answer,\nas opposed to backward chaining, which works the other way around.\nIn the derivation, the rules are used in the opposite order as compared to backward chaining.\nIn this example, rules #2 and #4 were not used in determining that Fritz is green.\n",
+            "paragraph7": "Because the data determines which rules are selected and used, this method is called data-driven, in contrast to goal-driven backward chaining inference. The forward chaining approach is often employed by expert systems, such as CLIPS.\n",
+            "paragraph8": "One of the advantages of forward-chaining over backward-chaining is that the reception of new data can trigger new inferences, which makes the engine better suited to dynamic situations in which conditions are likely to change.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Chaining",
+        "https://en.wikipedia.org/wiki/Automated_reasoning",
+        "https://en.wikipedia.org/wiki/Inference_engine",
+        "https://en.wikipedia.org/wiki/Logically",
+        "https://en.wikipedia.org/wiki/Modus_ponens",
+        "https://en.wikipedia.org/wiki/Expert_system",
+        "https://en.wikipedia.org/wiki/Business_rules_engine",
+        "https://en.wikipedia.org/wiki/Backward_chaining",
+        "https://en.wikipedia.org/wiki/Data",
+        "https://en.wikipedia.org/wiki/Inference_rule",
+        "https://en.wikipedia.org/wiki/Goal",
+        "https://en.wikipedia.org/wiki/Inference_engine",
+        "https://en.wikipedia.org/wiki/Consequent",
+        "https://en.wikipedia.org/wiki/Information",
+        "https://en.wikipedia.org/wiki/Rule_base",
+        "https://en.wikipedia.org/wiki/Backward_chaining",
+        "https://en.wikipedia.org/wiki/Backward_chaining",
+        "https://en.wikipedia.org/wiki/Backward_chaining",
+        "https://en.wikipedia.org/wiki/Expert_system",
+        "https://en.wikipedia.org/wiki/CLIPS",
+        "https://en.wikipedia.org/wiki/Backward_chaining",
+        "https://en.wikipedia.org/wiki/Constraint_Handling_Rules",
+        "https://en.wikipedia.org/wiki/Opportunistic_reasoning",
+        "https://en.wikipedia.org/wiki/Rete_algorithm",
+        "https://en.wikipedia.org/wiki/Forward_chaining",
+        "https://en.wikipedia.org/wiki/Forward_chaining",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

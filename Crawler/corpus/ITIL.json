@@ -1,0 +1,47 @@
+{
+    "url": "https://en.wikipedia.org/wiki/ITIL",
+    "title": "ITIL",
+    "table_of_contents": [
+        "1 History",
+        "2 See also",
+        "3 References",
+        "4 External links"
+    ],
+    "content": [
+        {
+            "paragraph1": "\n\nThe Information Technology Infrastructure Library (ITIL)  is a set of detailed practices for IT activities such as IT service management (ITSM) and IT asset management (ITAM) that focus on aligning IT services with the needs of business.\n",
+            "paragraph2": "ITIL describes processes, procedures, tasks, and checklists which are neither organization-specific nor technology-specific, but can be applied by an organization toward strategy, delivering value, and maintaining a minimum level of competency.  It allows the organization to establish a baseline from which it can plan, implement, and measure.  It is used to demonstrate compliance and to measure improvement. There is no formal independent third party compliance assessment available for ITIL compliance in an organization. Certification in ITIL is only available to individuals. Since 2013, ITIL has been owned by AXELOS, a joint venture between Capita and the UK Cabinet Office.\n"
+        },
+        {
+            "title": "History",
+            "paragraph1": "Responding to growing dependence on IT, the UK Government's Central Computer and Telecommunications Agency (CCTA) in the 1980s developed a set of recommendations designed to standardise IT management practices across government functions, built around a process model-based view of controlling and managing operations often credited to W. Edwards Deming and his plan-do-check-act (PDCA) cycle.\n",
+            "ul1": "In April 2001, the CCTA was merged into the Office of Government Commerce (OGC), an office of the UK Treasury.[4]\nIn 2006, the ITIL Version 2 glossary was published.\nIn May 2007, this organization issued ITIL Version 3 (also known as the ITIL Refresh Project) consisting of 26 processes and functions, now grouped into only 5 volumes, arranged around the concept of Service lifecycle structure. ITIL Version 3 is now known as ITIL 2007 Edition.\nIn 2009, the OGC officially announced that ITIL Version 2 certification would be withdrawn and launched a major consultation as per how to proceed.[5]\n",
+            "paragraph2": "In 2009 and 2011, researchers investigated the benefits of the ITIL implementation.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/IT_service_management",
+        "https://en.wikipedia.org/wiki/IT_asset_management",
+        "https://en.wikipedia.org/wiki/AXELOS",
+        "https://en.wikipedia.org/wiki/Joint_venture",
+        "https://en.wikipedia.org/wiki/Capita",
+        "https://en.wikipedia.org/wiki/Cabinet_Office",
+        "https://en.wikipedia.org/wiki/Central_Computer_and_Telecommunications_Agency",
+        "https://en.wikipedia.org/wiki/PDCA",
+        "https://en.wikipedia.org/wiki/Office_of_Government_Commerce",
+        "https://en.wikipedia.org/wiki/HM_Treasury",
+        "https://en.wikipedia.org/wiki/Application_Services_Library",
+        "https://en.wikipedia.org/wiki/Application_lifecycle_management",
+        "https://en.wikipedia.org/wiki/Business_Information_Services_Library",
+        "https://en.wikipedia.org/wiki/Information_management",
+        "https://en.wikipedia.org/wiki/Functional_management",
+        "https://en.wikipedia.org/wiki/Tudor_IT_Process_Assessment",
+        "https://en.wikipedia.org/wiki/CIO_magazine",
+        "https://en.wikipedia.org/wiki/Office_of_Government_Commerce",
+        "https://en.wikipedia.org/wiki/Office_of_Government_Commerce",
+        "https://en.wikipedia.org/wiki/ITIL",
+        "https://en.wikipedia.org/wiki/ITIL",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

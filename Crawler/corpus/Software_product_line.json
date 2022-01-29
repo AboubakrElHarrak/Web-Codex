@@ -1,0 +1,54 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Software_product_line",
+    "title": "Software product line",
+    "table_of_contents": [
+        "1 Description",
+        "2 Development",
+        "3 See also",
+        "4 References",
+        "5 External links"
+    ],
+    "content": [
+        {
+            "paragraph1": "Software product lines (SPLs), or software product line development, refers to software engineering methods, tools and techniques for creating a collection of similar software systems from a shared set of software assets using a common means of production.\n",
+            "paragraph2": "The Carnegie Mellon Software Engineering Institute defines a software product line as \"a set of software-intensive systems that share a common, managed set of features satisfying the specific needs of a particular market segment or mission and that are developed from a common set of core assets in a prescribed way.\"\n"
+        },
+        {
+            "title": "Description",
+            "paragraph1": "Manufacturers have long employed analogous engineering techniques to create a product line of similar products using a common factory that assembles and configures parts designed to be reused across the product line. For example, automotive manufacturers can create unique variations of one car model using a single pool of carefully designed parts and a factory specifically designed to configure and assemble those parts.\n",
+            "paragraph2": "The characteristic that distinguishes software product lines from previous efforts is predictive versus opportunistic software reuse. Rather than put general software components into a library in the hope that opportunities for reuse will arise, software product lines only call for software artifacts to be created when reuse is predicted in one or more products in a well defined product line.\n",
+            "paragraph3": "Recent advances in the software product line field have demonstrated that narrow and strategic application of these concepts can yield order of magnitude improvements in software engineering capability.[citation needed] The result is often a discontinuous jump in competitive business advantage[citation needed], similar to that seen when manufacturers adopt mass production and mass customization paradigms.\n"
+        },
+        {
+            "title": "Development",
+            "paragraph1": "While early software product line methods at the genesis of the field provided the best software engineering improvement metrics seen in four decades, the latest generation of software product line methods and tools are exhibiting even greater improvements. New generation methods are extending benefits beyond product creation into maintenance and evolution, lowering the overall complexity of product line development, increasing the scalability of product line portfolios, and enabling organizations to make the transition to software product line practice with orders of magnitude less time, cost and effort.\n",
+            "paragraph2": "Recently the concepts of software product lines have been extended to cover systems and software engineering holistically. This is reflected by the emergence of industry standard families like ISO 265xx on systems and software engineering practices for product lines.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Product_lining",
+        "https://en.wikipedia.org/wiki/Software_engineering",
+        "https://en.wikipedia.org/wiki/Means_of_production",
+        "https://en.wikipedia.org/wiki/Software_Engineering_Institute",
+        "https://en.wikipedia.org/wiki/Car_model",
+        "https://en.wikipedia.org/wiki/Software_reuse",
+        "https://en.wikipedia.org/wiki/Software_components",
+        "https://en.wikipedia.org/wiki/Order_of_magnitude",
+        "https://en.wikipedia.org/wiki/Mass_production",
+        "https://en.wikipedia.org/wiki/Mass_customization",
+        "https://en.wikipedia.org/wiki/Software_maintenance",
+        "https://en.wikipedia.org/wiki/Software_evolution",
+        "https://en.wikipedia.org/wiki/Software_factory",
+        "https://en.wikipedia.org/wiki/Domain_engineering",
+        "https://en.wikipedia.org/wiki/Feature_model",
+        "https://en.wikipedia.org/wiki/Product_Family_Engineering",
+        "https://en.wikipedia.org/wiki/Software_Engineering_Institute",
+        "https://en.wikipedia.org/wiki/Wayback_Machine",
+        "https://en.wikipedia.org/wiki/Software_Engineering_Institute",
+        "https://en.wikipedia.org/wiki/Software_Engineering_Institute",
+        "https://en.wikipedia.org/wiki/Software_product_line",
+        "https://en.wikipedia.org/wiki/Software_product_line",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

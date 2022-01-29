@@ -1,0 +1,81 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Event_calculus",
+    "title": "Event calculus",
+    "table_of_contents": [
+        "1 Fluents and events",
+        "2 Domain-independent axioms",
+        "3 Domain-dependent axioms",
+        "4 The event calculus as a logic program",
+        "5 Extensions and applications",
+        "6 Reasoning tools",
+        "7 See also",
+        "8 References",
+        "9 Further reading"
+    ],
+    "content": [
+        {
+            "paragraph1": "The event calculus is a logical language for representing and reasoning about events and their effects first presented by Robert Kowalski and Marek Sergot in 1986. It was extended by Murray Shanahan and Rob Miller in the 1990s. Similar to other languages for reasoning about change, the event calculus represents the effects of actions on fluents. However, events can also be external to the system. In the event calculus, one can specify the value of fluents at some given time points, the events that take place at given time points, and  their effects.\n"
+        },
+        {
+            "title": "Fluents and events",
+            "paragraph1": "In the event calculus, fluents are reified. This means that they are not formalized by means of predicates but by means of functions. A separate predicate HoldsAt is used to tell which fluents hold at a given time point. For example, \n\n\n\n\n\nH\no\nl\nd\ns\nA\nt\n\n\n(\no\nn\n(\nb\no\nx\n,\nt\na\nb\nl\ne\n)\n,\nt\n)\n\n\n{\\displaystyle {\\mathit {HoldsAt))(on(box,table),t)}\n\n means that the box is on the table at time t; in this formula, HoldsAt is a predicate while on is a function.\n",
+            "paragraph2": "Events are also represented as terms. The effects of events are given using the predicates Initiates and Terminates. In particular, \n\n\n\n\n\nI\nn\ni\nt\ni\na\nt\ne\ns\n\n\n(\ne\n,\nf\n,\nt\n)\n\n\n{\\displaystyle {\\mathit {Initiates))(e,f,t)}\n\n means that,\nif the event represented by the term e is executed at time t,\nthen the fluent f will be true after t.\nThe Terminates predicate has a similar meaning, with the only difference \nbeing that f will be false after t.\n"
+        },
+        {
+            "title": "Domain-independent axioms",
+            "paragraph1": "Like other languages for representing actions, the event calculus formalizes the correct evolution of the fluent via formulae telling the value of each fluent after an arbitrary action has been performed. The event calculus solves the frame problem in a way that is similar to the successor state axioms of the situation calculus: a fluent is true at time t if and only if it has been made true in the past and has not been made false in the meantime.\n",
+            "paragraph2": "This formula means that the fluent represented by the term f is true at time t if:\n",
+            "ol1": "1 - an event e has taken place: \n\n\n\n\n\nH\na\np\np\ne\nn\ns\n\n\n(\ne\n,\n\nt\n\n1\n\n\n)\n\n\n{\\displaystyle {\\mathit {Happens))(e,t_{1})}\n\n;\n2 - this took place in the past: \n\n\n\n\n\n\nt\n\n\n\n1\n\n\n<\nt\n\n\n{\\displaystyle {\\mathit {t))_{1}<t}\n\n;\n3 - this event has the fluent f as an effect: \n\n\n\n\n\nI\nn\ni\nt\ni\na\nt\ne\ns\n\n\n(\ne\n,\nf\n,\n\nt\n\n1\n\n\n)\n\n\n{\\displaystyle {\\mathit {Initiates))(e,f,t_{1})}\n\n;\n4 - the fluent has not been made false in the meantime: \n\n\n\n\n\nC\nl\ni\np\np\ne\nd\n\n\n(\n\nt\n\n1\n\n\n,\nf\n,\nt\n)\n\n\n{\\displaystyle {\\mathit {Clipped))(t_{1},f,t)}\n\n\n",
+            "paragraph3": "A similar formula is used to formalize the opposite case in which a fluent is false at a given time. Other formulae are also needed for correctly formalizing fluents before they have been effects of an event. These formulae are similar to the above, but \n\n\n\n\n\nH\na\np\np\ne\nn\ns\n\n\n(\ne\n,\n\nt\n\n1\n\n\n)\n∧\n\n\nI\nn\ni\nt\ni\na\nt\ne\ns\n\n\n(\ne\n,\nf\n,\n\nt\n\n1\n\n\n)\n\n\n{\\displaystyle {\\mathit {Happens))(e,t_{1})\\wedge {\\mathit {Initiates))(e,f,t_{1})}\n\n is replaced by \n\n\n\n\n\nH\no\nl\nd\ns\nA\nt\n\n\n(\nf\n,\n\nt\n\n1\n\n\n)\n\n\n{\\displaystyle {\\mathit {HoldsAt))(f,t_{1})}\n\n.\n",
+            "paragraph4": "The Clipped predicate, stating that a fluent has been made false during an interval, can be axiomatized, or simply taken as a shorthand, as follows:\n"
+        },
+        {
+            "title": "Domain-dependent axioms",
+            "paragraph1": "The axioms above relate the value of the predicates HoldsAt, Initiates and Terminates, but do not specify which fluents are known to be true and which events actually make fluents true or false. This is done by using a set of domain-dependent axioms. The known values of fluents are stated as simple literals \n\n\n\n\n\nH\no\nl\nd\ns\nA\nt\n\n\n(\nf\n,\nt\n)\n\n\n{\\displaystyle {\\mathit {HoldsAt))(f,t)}\n\n. The effects of events are stated by formulae relating the effects of events with their preconditions. For example, if the event open makes the fluent isopen true, but only if haskey is currently true, the corresponding formula in the event calculus is:\n",
+            "paragraph2": "The right-hand expression of this equivalence is composed of a disjunction: for each event and fluent that can be made true by the event, there is a disjunct saying that e is actually that event, that f is actually that fluent, and that the precondition of the event is met.\n",
+            "paragraph3": "The formula above specifies the truth value of \n\n\n\n\n\nI\nn\ni\nt\ni\na\nt\ne\ns\n\n\n(\ne\n,\nf\n,\nt\n)\n\n\n{\\displaystyle {\\mathit {Initiates))(e,f,t)}\n\n for every possible event and fluent. As a result, all effects of all events have to be combined in a single formulae. This is a problem, because the addition of a new event requires modifying an existing formula rather than adding new ones. This problem can be solved by the application of circumscription to a set of formulae each specifying one effect of one event:\n",
+            "paragraph4": "These formulae are simpler than the formula above, because each effect of each event can be specified separately. The single formula telling which events e and fluents f make \n\n\n\n\n\nI\nn\ni\nt\ni\na\nt\ne\ns\n\n\n(\ne\n,\nf\n,\nt\n)\n\n\n{\\displaystyle {\\mathit {Initiates))(e,f,t)}\n\n true has been replaced by a set of smaller formulae, each one telling the effect of an event on a fluent.\n",
+            "paragraph5": "However, these formulae are not equivalent to the formula above. Indeed, they only specify sufficient conditions for \n\n\n\n\n\nI\nn\ni\nt\ni\na\nt\ne\ns\n\n\n(\ne\n,\nf\n,\nt\n)\n\n\n{\\displaystyle {\\mathit {Initiates))(e,f,t)}\n\n to be true, which should be completed by the fact that Initiates is false in all other cases. This fact can be formalized by simply circumscribing the predicate Initiates in the formula above. It is important to note that this circumscription is done only on the formulae specifying Initiates and not on the domain-independent axioms. The predicate Terminates can be specified in the same way Initiates is.\n",
+            "paragraph6": "A similar approach can be taken for the Happens predicate. The evaluation of this predicate can be enforced by formulae specifying not only when it is true and when it is false:\n",
+            "paragraph7": "Circumscription can simplify this specification, as only necessary conditions can be specified:\n",
+            "paragraph8": "Circumscribing the predicate Happens, this predicate will be false at all points in which it is not explicitly specified to be true. This circumscription has to be done separately from the circumscription of the other formulae. In other words, if F is the set of formulae of the kind \n\n\n\n\n\nI\nn\ni\nt\ni\na\nt\ne\ns\n\n\n(\ne\n,\nf\n,\nt\n)\n←\n⋯\n\n\n{\\displaystyle {\\mathit {Initiates))(e,f,t)\\leftarrow \\cdots }\n\n, G is the set of formulae \n\n\n\n\n\nH\na\np\np\ne\nn\ns\n\n\n(\ne\n,\nt\n)\n\n\n{\\displaystyle {\\mathit {Happens))(e,t)}\n\n, and H are the domain independent axioms, the correct formulation of the domain is:\n"
+        },
+        {
+            "title": "The event calculus as a logic program",
+            "paragraph1": "The event calculus was originally formulated as a set of Horn clauses augmented with negation as failure and could be run as a Prolog program. \nIn fact, circumscription is one of the several semantics that can be given to negation as failure, and is closely related to the completion semantics (in which \"if\" is interpreted as \"if and only if\" — see logic programming).\n"
+        },
+        {
+            "title": "Extensions and applications",
+            "paragraph1": "The original event calculus paper of Kowalski and Sergot focused on applications to database updates and narratives. Extensions of the event calculus can also formalize non-deterministic actions, concurrent actions, actions with delayed effects, gradual changes, actions with duration, continuous change, and non-inertial fluents.\n",
+            "paragraph2": "Kave Eshghi showed how the event calculus can be used for planning, using abduction to generate hypothetical events in abductive logic programming. Van Lambalgen and Hamm showed how the event calculus can also be used to give an algorithmic semantics to tense and aspect in natural language using constraint logic programming.\n",
+            "paragraph3": "Other notable extensions of the Event Calculus include Markov Logic Networks-based, probabilistic, epistemic variants and their combinations.\n"
+        },
+        {
+            "title": "Reasoning tools",
+            "paragraph1": "In addition to Prolog and its variants, several other tools for reasoning using the event calculus are also available:\n",
+            "ul1": "Abductive Event Calculus Planners\nDiscrete Event Calculus Reasoner\nEvent Calculus Answer Set Programming\nReactive Event Calculus\nRun-Time Event Calculus (RTEC)\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Logic",
+        "https://en.wikipedia.org/wiki/Robert_Kowalski",
+        "https://en.wikipedia.org/wiki/Murray_Shanahan",
+        "https://en.wikipedia.org/wiki/Frame_problem",
+        "https://en.wikipedia.org/wiki/Successor_state_axiom",
+        "https://en.wikipedia.org/wiki/Situation_calculus",
+        "https://en.wikipedia.org/wiki/Truth_value",
+        "https://en.wikipedia.org/wiki/Horn_clauses",
+        "https://en.wikipedia.org/wiki/Negation_as_failure",
+        "https://en.wikipedia.org/wiki/Prolog",
+        "https://en.wikipedia.org/wiki/Logic_programming",
+        "https://en.wikipedia.org/wiki/Abductive_Logic_Programming",
+        "https://en.wikipedia.org/wiki/Constraint_logic_programming",
+        "https://en.wikipedia.org/wiki/Probability",
+        "https://en.wikipedia.org/wiki/Frame_problem",
+        "https://en.wikipedia.org/wiki/Situation_calculus",
+        "https://en.wikipedia.org/wiki/Event_calculus",
+        "https://en.wikipedia.org/wiki/Event_calculus",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

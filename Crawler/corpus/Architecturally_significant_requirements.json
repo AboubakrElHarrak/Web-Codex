@@ -1,0 +1,79 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Architecturally_significant_requirements",
+    "title": "Architecturally significant requirements",
+    "table_of_contents": [
+        "1 Relation to non-functional requirements and quality attributes",
+        "2 Characteristics",
+        "2.1 Descriptive characteristics",
+        "2.2 Indicators",
+        "2.3 Heuristics",
+        "3 Elicitation",
+        "4 Impact",
+        "5 See also",
+        "6 References"
+    ],
+    "content": [
+        {
+            "paragraph1": "\nArchitecturally significant requirements are those requirements that have a measurable effect on a computer system’s architecture. This can comprise both software and hardware requirements. They are a subset of requirements, the subset that affects the architecture of a system in measurably identifiable ways.\n"
+        },
+        {
+            "title": "Relation to non-functional requirements and quality attributes",
+            "paragraph1": "For quite a long time, architecturally significant requirements were not recognized as an important notion. When talking about architecture, non-functional requirements or quality attributes is often used. However, recent empirical studies show that, for a software system, not all non-functional requirements affect its architecture, and requirements that are not non-functional requirements can also affect its architecture. So, architecturally significant requirements is a valuable notion that is suggested to use when talking about requirements in relation to architecture.\n"
+        },
+        {
+            "title": "Characteristics",
+            "paragraph1": "Architecturally significant requirements can be characterized from the following aspects.\n",
+            "subtitle1": "Descriptive characteristics",
+            "paragraph2": "Architecturally significant requirements are often hard to define and articulate, tend to be expressed vaguely, tend to be initially neglected, tend to be hidden within other requirements, and are subjective, variable, and situational.  Other requirements could also demonstrate these descriptive characteristics. However, architecturally significant requirements’ significance made these manifestations unique and challenging.\n",
+            "subtitle2": "Indicators",
+            "paragraph3": "A requirement that has wide effect, targets trade-off points, is strict (constraining, limiting, non-negotiable), assumption breaking, or difficult to achieve is likely to be architecturally significant.\n",
+            "paragraph4": "Indicators for architectural significance that have been reported in the literature include:\n",
+            "ul1": "The requirement is associated with high business value and/or technical risk.\nThe requirement is a concern of a particularly important (influential, that is) stakeholder.\nThe requirement has a first-of-a-kind character, e.g. none of the responsibilities of already existing components in the architecture addresses it.\nThe requirement has QoS/SLA characteristics that deviate from all ones that are already satisfied by the evolving architecture.\nThe requirement has caused budget overruns or client dissatisfaction in a previous project with a similar context.\n",
+            "paragraph5": "The OpenUP and Peter Eeles (IBM) discusses additional criteria for architectural significance in several articles and presentations\n",
+            "subtitle3": "Heuristics",
+            "paragraph6": "When a requirement specifies a software system’s quality attributes, refers to a software system’s core features, impose constraints on a software system, defines the environment in which the software system will run, it is likely to be architecturally significant.\n",
+            "paragraph7": "See discussion of design vs. architecture under software architecture for additional criteria of architectural significance.\n"
+        },
+        {
+            "title": "Elicitation",
+            "paragraph1": "Like all non-functional requirements and quality attribute requirements, architecturally significant requirements should be specified in a SMART way. Quality attribute scenarios are one way to achieve the S (specific) and the M (measured) criteria in SMART. The Software Engineering Institute recommends Quality Attribute Workshops for this effort. It has been suggested to keep architecture analysis and design lightweight and flexible; quality attribute trees for certain application genres and technology domains can support such approaches.\n",
+            "paragraph2": "It is important to communicate the elicited architecturally significant requirements, and any other architectural artifacts, in a notation and language that is comprehensible for the target audience (hear: business stakeholders).\n"
+        },
+        {
+            "title": "Impact",
+            "paragraph1": "Architecturally significant requirements are used in software design to drive and justify architectural decisions; if not satisfied properly, they contribute to the accumulation of technical debt. For instance, failure to meet security and compliance requirements complicates the system and process assurance audits and increases the risk of audit findings. Exemplary advice on how to address system quality attributes (including architecturally significant requirements) is available in the literature.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Software_architecture",
+        "https://en.wikipedia.org/wiki/Software_requirement",
+        "https://en.wikipedia.org/wiki/Quality_attributes",
+        "https://en.wikipedia.org/wiki/Software_system",
+        "https://en.wikipedia.org/wiki/Software_architecture",
+        "https://en.wikipedia.org/wiki/Software_requirement",
+        "https://en.wikipedia.org/wiki/Requirement",
+        "https://en.wikipedia.org/wiki/OpenUP",
+        "https://en.wikipedia.org/wiki/Quality_attributes",
+        "https://en.wikipedia.org/wiki/Software_system",
+        "https://en.wikipedia.org/wiki/Software_architecture",
+        "https://en.wikipedia.org/wiki/SMART_criteria",
+        "https://en.wikipedia.org/wiki/Software_Engineering_Institute",
+        "https://en.wikipedia.org/wiki/Target_audience",
+        "https://en.wikipedia.org/wiki/Stakeholder_theory",
+        "https://en.wikipedia.org/wiki/Software_design",
+        "https://en.wikipedia.org/wiki/Architectural_decision",
+        "https://en.wikipedia.org/wiki/Technical_debt",
+        "https://en.wikipedia.org/wiki/Architectural_decision",
+        "https://en.wikipedia.org/wiki/Architectural_pattern",
+        "https://en.wikipedia.org/wiki/List_of_system_quality_attributes",
+        "https://en.wikipedia.org/wiki/Requirements_engineering",
+        "https://en.wikipedia.org/wiki/Software_architecture",
+        "https://en.wikipedia.org/wiki/Solution_architecture",
+        "https://en.wikipedia.org/wiki/Systems_architecture",
+        "https://en.wikipedia.org/wiki/Wayback_Machine",
+        "https://en.wikipedia.org/wiki/Architecturally_significant_requirements",
+        "https://en.wikipedia.org/wiki/Architecturally_significant_requirements",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

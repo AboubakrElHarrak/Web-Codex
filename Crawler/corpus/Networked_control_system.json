@@ -1,0 +1,59 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Networked_control_system",
+    "title": "Networked control system",
+    "table_of_contents": [
+        "1 Overview",
+        "1.1 Types of communication networks",
+        "1.2 Problems and solutions",
+        "1.3 References",
+        "2 Further reading",
+        "3 External links"
+    ],
+    "content": [
+        {
+            "paragraph1": "A networked control system (NCS) is a control system wherein the control loops are closed through a communication network. The defining feature of an NCS is that control and feedback signals are exchanged among the system's components in the form of information packages through a network.\n"
+        },
+        {
+            "title": "Overview",
+            "paragraph1": "The functionality of a typical NCS is established by the use of four basic elements: \n",
+            "ol1": "1 - Sensors, to acquire information,\n2 - Controllers, to provide decision and commands,\n3 - Actuators, to perform the control commands and\n4 - Communication network, to enable exchange of information.\n",
+            "paragraph2": "The most important feature of an NCS is that it connects cyberspace to physical space enabling the execution of several tasks from long distance. In addition, NCSs eliminate unnecessary wiring reducing the complexity and the overall cost in designing and implementing the control systems. They can also be easily modified or upgraded by adding sensors, actuators, and controllers to them with relatively low cost and no major change in their structure. Furthermore, featuring efficient sharing of data between their controllers, NCSs are able to easily fuse global information to make intelligent decisions over large physical spaces. \n",
+            "paragraph3": "Their potential applications are numerous and cover a wide range of industries, such as space and terrestrial exploration, access in hazardous environments, factory automation, remote diagnostics and troubleshooting, experimental facilities, domestic robots, aircraft, automobiles, manufacturing plant monitoring, nursing homes and tele-operations. While the potential applications of NCSs are numerous, the proven applications are few, and the real opportunity in the area of NCSs is in developing real-world applications that realize the area's potential.\n",
+            "subtitle1": "Types of communication networks",
+            "ul1": "Fieldbuses, e.g. CAN, LON etc.\nIP/Ethernet\nWireless networks, e.g. Bluetooth, ZigBee, and Z-Wave. The term wireless networked control system (WNCS) is often used in this connection.\n",
+            "subtitle2": "Problems and solutions",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/8/8a/ISpace.jpg",
+                "caption": "\n\t\tiSpace concept\n\t"
+            },
+            "paragraph4": "Advent and development of the Internet combined with the advantages provided by NCS attracted the interest of researchers around the globe. Along with the advantages, several challenges also emerged giving rise to many important research topics. New control strategies, kinematics of the actuators in the systems, reliability and security of communications, bandwidth allocation, development of data communication protocols, corresponding fault detection and fault tolerant control strategies, real-time information collection and efficient processing of sensors data are some of the relative topics studied in depth.\n",
+            "paragraph5": "The insertion of the communication network in the feedback control loop makes the analysis and design of an NCS complex, since it imposes additional time delays in control loops or possibility of packages loss. Depending on the application, time-delays could impose severe degradation on the system performance.\n",
+            "paragraph6": "To alleviate the time-delay effect, Y. Tipsuwan and M-Y. Chow, in ADAC Lab at North Carolina State University, proposed the gain scheduler middleware (GSM) methodology and applied it in iSpace. S. Munir and W.J. Book (Georgia Institute of Technology) used a Smith predictor, a Kalman filter and an energy regulator to perform teleoperation through the Internet.\n",
+            "paragraph7": "K.C. Lee, S. Lee and H.H. Lee used a genetic algorithm to design a controller used in a NCS. Many other researchers provided solutions using concepts from several control areas such as robust control, optimal stochastic control, model predictive control, fuzzy logic etc.\n",
+            "paragraph8": "A most critical and important issue surrounding the design of distributed NCSs with the successively increasing complexity is to meet the requirements on system reliability and dependability, while guaranteeing a high system performance over a wide operating range. This makes network based fault detection and diagnosis techniques, which are essential to monitor the system performance,  receive more and more attention.\n",
+            "subtitle3": "References"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Control_system",
+        "https://en.wikipedia.org/wiki/Computer_network",
+        "https://en.wikipedia.org/wiki/Sensors",
+        "https://en.wikipedia.org/wiki/Actuators",
+        "https://en.wikipedia.org/wiki/Telecommunication_network",
+        "https://en.wikipedia.org/wiki/Fieldbus",
+        "https://en.wikipedia.org/wiki/Ethernet",
+        "https://en.wikipedia.org/wiki/Bluetooth",
+        "https://en.wikipedia.org/wiki/ZigBee",
+        "https://en.wikipedia.org/wiki/Fault_detection_and_isolation",
+        "https://en.wikipedia.org/wiki/Fault_tolerant",
+        "https://en.wikipedia.org/wiki/Control_loop",
+        "https://en.wikipedia.org/wiki/Smith_predictor",
+        "https://en.wikipedia.org/wiki/Kalman_filter",
+        "https://en.wikipedia.org/wiki/Genetic_algorithm",
+        "https://en.wikipedia.org/wiki/Stochastic_control",
+        "https://en.wikipedia.org/wiki/Networked_control_system",
+        "https://en.wikipedia.org/wiki/Networked_control_system",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

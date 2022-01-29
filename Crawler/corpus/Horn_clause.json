@@ -1,0 +1,81 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Horn_clause",
+    "title": "Horn clause",
+    "table_of_contents": [
+        "1 Definition",
+        "1.1 Significance",
+        "2 Logic programming",
+        "3 Notes",
+        "4 References"
+    ],
+    "content": [
+        {
+            "paragraph1": "In mathematical logic and logic programming, a Horn clause is a logical formula of a particular rule-like form which gives it useful properties for use in logic programming, formal specification, and model theory. Horn clauses are named for the logician Alfred Horn, who first pointed out their significance in 1951.\n"
+        },
+        {
+            "title": "Definition",
+            "paragraph1": "A Horn clause is a clause (a disjunction of literals) with at most one positive, i.e. unnegated, literal. \n",
+            "paragraph2": "Conversely, a disjunction of literals with at most one negated literal is called a dual-Horn clause. \n",
+            "paragraph3": "A Horn clause with exactly one positive literal is a definite clause or a strict Horn clause; a definite clause with no negative literals is a unit clause, and a unit clause without variables is a fact;.\nA Horn clause without a positive literal is a goal clause.\nNote that the empty clause, consisting of no literals (which is equivalent to false) is a goal clause.\nThese three kinds of Horn clauses are illustrated in the following propositional example:\n",
+            "paragraph4": "All variables in a clause are implicitly universally quantified with the scope being the entire clause. Thus, for example:\n",
+            "paragraph5": "stands for:\n",
+            "paragraph6": "which is logically equivalent to:\n",
+            "subtitle1": "Significance",
+            "paragraph7": "Horn clauses play a basic role in constructive logic and computational logic. They are important in automated theorem proving by first-order resolution, because the resolvent of two Horn clauses is itself a Horn clause, and the resolvent of a goal clause and a definite clause is a goal clause. These properties of Horn clauses can lead to greater efficiency of proving a theorem: the goal clause is the negation of this theorem; see Goal clause in the above table. Intuitively, if we wish to prove φ, we assume ¬φ (the goal) and check if such assumption leads to a contradiction. If so, then φ must hold. This way, a mechanical proving tool needs to maintain only one set of formulas (assumptions), rather than two sets (assumptions and (sub)goals).\n",
+            "paragraph8": "Propositional Horn clauses are also of interest in computational complexity. The problem of finding truth-value assignments to make a conjunction of propositional Horn clauses true is known as HORNSAT.\nThis problem is P-complete and solvable in linear time.\nNote that the unrestricted Boolean satisfiability problem is an NP-complete problem.\n"
+        },
+        {
+            "title": "Logic programming",
+            "paragraph1": "Horn clauses are also the basis of logic programming, where it is common to write definite clauses in the form of an implication:\n",
+            "paragraph2": "In fact, the resolution of a goal clause with a definite clause to produce a new goal clause is the basis of the SLD resolution inference rule, used in implementation of the logic programming language Prolog.\n",
+            "paragraph3": "In logic programming, a definite clause behaves as a goal-reduction procedure. For example, the Horn clause written above behaves as the procedure:\n",
+            "paragraph4": "To emphasize this reverse use of the clause, it is often written in the reverse form:\n",
+            "paragraph5": "In Prolog this is written as:\n",
+            "paragraph6": "In logic programming, computation and query evaluation are performed by representing the negation of a problem to be solved as a goal clause. For example, the problem of solving the existentially quantified conjunction of positive literals:\n",
+            "paragraph7": "is represented by negating the problem (denying that it has a solution), and representing it in the logically equivalent form of a goal clause:\n",
+            "paragraph8": "In Prolog this is written as:\n",
+            "paragraph9": "Solving the problem amounts to deriving a contradiction, which is represented by the empty clause (or \"false\"). The solution of the problem is a substitution of terms for the variables in the goal clause, which can be extracted from the proof of contradiction. Used in this way, goal clauses are similar to conjunctive queries in relational databases, and Horn clause logic is equivalent in computational power to a universal Turing machine. \n",
+            "paragraph10": "The Prolog notation is actually ambiguous, and the term “goal clause” is sometimes also used ambiguously.  The variables in a goal clause can be read as universally or existentially quantified, and deriving “false” can be interpreted either as deriving a contradiction or as deriving a successful solution of the problem to be solved.[further explanation needed]\n",
+            "paragraph11": "Van Emden and Kowalski (1976) investigated the model-theoretic properties of Horn clauses in the context of logic programming, showing that every set of definite clauses D has a unique minimal model M. An atomic formula A is logically implied by D if and only if A is true in M. It follows that a problem P represented by an existentially quantified conjunction of positive literals is logically implied by D if and only if P is true in M. The minimal model semantics of Horn clauses is the basis for the stable model semantics of logic programs.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Mathematical_logic",
+        "https://en.wikipedia.org/wiki/Logic_programming",
+        "https://en.wikipedia.org/wiki/Formal_specification",
+        "https://en.wikipedia.org/wiki/Model_theory",
+        "https://en.wikipedia.org/wiki/Alfred_Horn",
+        "https://en.wikipedia.org/wiki/Disjunction",
+        "https://en.wikipedia.org/wiki/Negation",
+        "https://en.wikipedia.org/wiki/Propositional_formula",
+        "https://en.wikipedia.org/wiki/Material_conditional",
+        "https://en.wikipedia.org/wiki/Universal_quantification",
+        "https://en.wikipedia.org/wiki/Constructive_logic",
+        "https://en.wikipedia.org/wiki/Computational_logic",
+        "https://en.wikipedia.org/wiki/Automated_theorem_proving",
+        "https://en.wikipedia.org/wiki/Computational_complexity_theory",
+        "https://en.wikipedia.org/wiki/Linear_time",
+        "https://en.wikipedia.org/wiki/Boolean_satisfiability_problem",
+        "https://en.wikipedia.org/wiki/Logic_programming",
+        "https://en.wikipedia.org/wiki/Material_conditional",
+        "https://en.wikipedia.org/wiki/SLD_resolution",
+        "https://en.wikipedia.org/wiki/Prolog",
+        "https://en.wikipedia.org/wiki/Prolog",
+        "https://en.wikipedia.org/wiki/Prolog",
+        "https://en.wikipedia.org/wiki/Conjunctive_query",
+        "https://en.wikipedia.org/wiki/Universal_Turing_machine",
+        "https://en.wikipedia.org/wiki/Stable_model_semantics",
+        "https://en.wikipedia.org/wiki/Indirect_proof",
+        "https://en.wikipedia.org/wiki/Alfred_Horn",
+        "https://en.wikipedia.org/wiki/Journal_of_Symbolic_Logic",
+        "https://en.wikipedia.org/wiki/Samuel_Buss",
+        "https://en.wikipedia.org/wiki/Jean_Gallier",
+        "https://en.wikipedia.org/wiki/Journal_of_Logic_Programming",
+        "https://en.wikipedia.org/wiki/Robert_Kowalski",
+        "https://en.wikipedia.org/wiki/Journal_of_the_ACM",
+        "https://en.wikipedia.org/wiki/Horn_clause",
+        "https://en.wikipedia.org/wiki/Horn_clause",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

@@ -1,0 +1,128 @@
+{
+    "url": "https://en.wikipedia.org/wiki/TEAF",
+    "title": "Treasury Enterprise Architecture Framework",
+    "table_of_contents": [
+        "1 Overview",
+        "2 History",
+        "3 TEAF Topics",
+        "3.1 Enterprise Architecture",
+        "3.2 Enterprise Architecture Framework",
+        "3.3 TEAF Matrix of Views and Perspectives",
+        "3.4 Enterprise Life Cycle activities",
+        "3.5 Products",
+        "3.6 System Interface Description",
+        "4 See also",
+        "5 References",
+        "6 External links"
+    ],
+    "content": [
+        {
+            "image2": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/c/c0/TEAF_Work_Products_for_EA_Direction%2C_Description%2C_and_Accomplishment.jpg/840px-TEAF_Work_Products_for_EA_Direction%2C_Description%2C_and_Accomplishment.jpg",
+                "caption": "\n\t\tTEAF Work Products for EA Direction, Description, and Accomplishment.[1]\n"
+            },
+            "paragraph1": "Treasury Enterprise Architecture Framework (TEAF) was an Enterprise architecture framework for treasury, based on the Zachman Framework. It was developed by the US Department of the Treasury and published in July 2000. May 2012 this framework has been subsumed by evolving Federal Enterprise Architecture Policy as documented in \"The Common Approach to Federal Enterprise Architecture\".\n",
+            "paragraph2": "The material presented here is obsolete and only useful for historical reference and is not the current policy in use by the Department of the Treasury.\n"
+        },
+        {
+            "title": "Overview",
+            "paragraph1": "The Treasury Enterprise Architecture Framework (TEAF) an architectural framework that supports Treasury's business processes in terms of products. This framework guides the development and redesign of the business processes for various bureaus in order to meet the requirements of recent legislation in a rapidly changing technology environment. The TEAF prescribes architectural views and delineates a set of notional products to portray these views.\n",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Treasury_Enterprise_Architecture_Framework_concept.jpg/560px-Treasury_Enterprise_Architecture_Framework_concept.jpg",
+                "caption": "\n\t\tTEAF view model.[1]\n"
+            },
+            "paragraph2": "The TEAF describes provides:\n",
+            "ul1": "Guidance to Treasury bureaus concerning the development and evolution of information systems architecture,\nA unifying concept, common principles, technologies, and standards for information systems, and\nA template for the development of the Enterprise Architecture.\n",
+            "paragraph3": "The TEAF's functional, information and organizational architecture views collectively model the organization’s processes, procedures, and business operations. By grounding the architecture in the business of the organization, the TEAF defines the core business procedures and enterprise processes. Through its explicit models, a TEAF-based architecture enables the identification and reasoning of enterprise- and system-level concerns and investment decisions.\n"
+        },
+        {
+            "title": "History",
+            "paragraph1": "The Treasury Enterprise Architecture Framework (TEAF) is derived from earlier treasury models, such as the US Treasury model (TISAF) released 1997, and the Federal Enterprise Architecture Framework (FEAF), released in 1999. The first version of the TEAF was released July 2000.\n",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/d/da/Blueprint_Roadmap_to_Treasury_IT_Modernization.jpg",
+                "caption": "\n\t\tBlueprint Roadmap to Treasury IT Modernization.[5]\n"
+            },
+            "paragraph2": "In the new millennium the Treasury Enterprise Architecture Framework (TEAF) has developed into the Treasury Enterprise Architecture (TEA), which aims to establish a roadmap for the modernization and optimization of the U.S. Treasury Department's business processes and IT environment. The Treasury Enterprise Architecture will provide a framework to guide IT investment planning, streamline systems, and ensure that IT programs align with business requirements and strategic goals.\n"
+        },
+        {
+            "title": "TEAF Topics",
+            "subtitle1": "Enterprise Architecture",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/0/02/EA_Development_Environment.jpg/640px-EA_Development_Environment.jpg",
+                "caption": "\n\t\tEA Development Environment.[2]\n"
+            },
+            "paragraph1": "Effective management and strategic decision making, especially for information technology (IT) investments, require an integrated view of the enterprise—understanding the interrelationships among the business organizations, their operational processes, and the information systems that support them. An Enterprise Architecture formalizes the identification, documentation, and management of these interrelationships, and supports the management and decision processes. The Enterprise Architecture provides substantial support for evolution of an enterprise as it anticipates and responds to the changing needs of its customers and constituents. The Enterprise Architecture is a vital part of the enterprise's decision-making process, and will evolve along with the enterprise's mission.\n",
+            "paragraph2": "The TEAF has been designed to help both the bureaus and the Department develop and maintain their Enterprise Architectures. The TEAF aims to establish a common Enterprise Architecture structure, consistent practices, and common terminology; and to institutionalize Enterprise Architecture governance across the Department. This architectural consistency will facilitate integration, information sharing, and exploitation of common requirements across Treasury.\n",
+            "subtitle2": "Enterprise Architecture Framework",
+            "image2": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Framework_for_EA_Direction%2C_Description%2C_and_Accomplishment_Overview.jpg/640px-Framework_for_EA_Direction%2C_Description%2C_and_Accomplishment_Overview.jpg",
+                "caption": "\n\t\tOverview of a Framework for EA Direction, Description, and Accomplishment Overview.[2]\n"
+            },
+            "paragraph3": "The purpose of the Enterprise Architecture Framework is to provide a structure for producing an Enterprise Architecture (EA) and managing Enterprise Architecture assets. To reduce the complexity and scope of developing and using an Enterprise Architecture, it must be subdivided so that portions may be used independently or built incrementally in separate projects. The TEAF subdivides an Enterprise Architecture by:\n",
+            "ul1": "Views\nPerspectives\nWork products\n",
+            "paragraph4": "The TEAF identifies, as shown in the figure, resources and work products that provide direction for EA development, work products constituting the EA description, and work products documenting how to accomplishment an EA implementation. The resources and work products for EA direction and accomplishment are not part of the EA description itself, but are developed and applied during the overall enterprise life cycle. The TEAF Matri,  organizes the subdivisions of the EA description and demonstrates the relationships among them. The following sections describe the subdivisions of the EA and their relationships to the TEAF Matrix.\n",
+            "subtitle3": "TEAF Matrix of Views and Perspectives",
+            "image3": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/0/00/TEAF_Matrix_of_Views_and_Perspectives.svg/608px-TEAF_Matrix_of_Views_and_Perspectives.svg.png",
+                "caption": "\n\t\tTEAF Matrix of Views and Perspectives.[2]\n"
+            },
+            "paragraph5": "The TEAF Matrix is a simplified portrayal of an EA structure to aid in understanding important EA aspects from various vantage points (views and perspectives). The TEAF Matrix aims to provide a simple, uniform structure to an entire framework. As depicted in the figure, the TEAF Matrix consists of four architectural views (Functional, Information, Organizational, and Infrastructure), which are shown as columns, and four perspectives (Planner, Owner, Designer, and Builder), which appear as rows. The TEAF Matrix is a four-by-four matrix with a total of 16 cells.  The views and perspectives are described in the following sections.\n",
+            "paragraph6": "When an EA description work product is shown within one cell of the TEAF Matrix, it means that the main vantage points for developing that work product correspond to that column (view) and row (perspective).  However, information from other views (and sometimes other perspectives) is needed to produce a work product.  Not all cells must be \"filled-in\" by producing an associated work product. Each bureau must define in its EA Roadmap its plans for producing and using an EA to match its needs.\n",
+            "subtitle4": "Enterprise Life Cycle activities",
+            "image4": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/5/51/Enterprise_Life_Cycle_activities.jpg/640px-Enterprise_Life_Cycle_activities.jpg",
+                "caption": "\n\t\tTEAF Enterprise Life Cycle activities [2]\n"
+            },
+            "paragraph7": "An Enterprise Life Cycle integrates the management, business, and engineering life cycle processes that span the enterprise to align its business and IT activities. Enterprise Life Cycle refers generally to an organization's approach for managing activities and making decisions during ongoing refreshment of business and technical practices to support its enterprise mission. These activities include investment management, project definition, configuration management, accountability, and guidance for systems development according to a System Development Life Cycle (SDLC). The Enterprise Life Cycle applies to enterprise-wide planning activities and decision making. By contrast, a System Development Life Cycle generally refers to practices for building individual systems. Determining what systems to build is an enterprise-level decision.\n",
+            "paragraph8": "The figure on the left depicts notional activities of an Enterprise Life Cycle methodology. Within the context of this document, Enterprise Life Cycle does not refer to a specific methodology or a specific bureau's approach. Each organization needs to follow a documented Enterprise Life Cycle methodology appropriate to its size, the complexity of its enterprise, and the scope of its needs.\n",
+            "subtitle5": "Products",
+            "image5": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/1/16/TEAF_Products.jpg/640px-TEAF_Products.jpg",
+                "caption": "\n\t\tTEAF Products.[1]\n"
+            },
+            "paragraph9": "The TEAF provides a unifying concept, common terminology and principles, common standards and formats, a normalized context for strategic planning and budget formulation, and a universal approach for resolving policy and management issues. It describes the enterprise information systems architecture and its components, including the architecture’s purpose, benefits, characteristics, and structure. The TEAF introduces various architectural views and delineates several modeling techniques. Each view is supported with graphics, data repositories, matrices, or reports (i.e., architectural products).\n",
+            "paragraph10": "The figure shows a matrix with four views and four perspectives. Essential products are shown across the top two rows of the matrix. It is notable that the TEAF includes an Information Assurance Trust model, the Technical Reference Model, and standards profiles as essential work products. These are not often addressed as critical\nframework components. One of these frameworks should provide a means to logically structure and organize the selected EA products. Now, in order to effectively create and maintain the EA products, a toolset should be selected.\n",
+            "subtitle6": "System Interface Description",
+            "image6": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/4/4a/System_Interface_Description%2C_Levels_1%2C_2%2C_3%2C_4%E2%80%94Generic_Examples.jpg/640px-System_Interface_Description%2C_Levels_1%2C_2%2C_3%2C_4%E2%80%94Generic_Examples.jpg",
+                "caption": "\n\t\tSystem Interface Description, Levels 1, 2, 3, 4—Generic Examples.\n\t"
+            },
+            "paragraph11": "The System Interface Description (SID) links together the Organizational and Infrastructure Views by depicting the assignments of systems and their interfaces to the nodes and needlines described in the Node Connectivity Description.  The Node Connectivity Description for a given architecture shows nodes (not always defined in physical terms), while the System Interface Description depicts the systems corresponding to the system nodes.  The System Interface Description can be produced at four levels, as described below. Level 1 is an essential work product, while Levels 2, 3, and 4 are supporting work products.\n",
+            "paragraph12": "The System Interface Description identifies the interfaces between nodes, between systems, and between the components of a system, depending on the needs of a particular architecture. A system interface is a simplified or generalized representation of a communications pathway or network, usually depicted graphically as a straight line, with a descriptive label.  Often, pairs of connected systems or system components have multiple interfaces between them.  The System Interface Description depicts all interfaces between systems and/or system components that are of interest to the architect.\n",
+            "paragraph13": "The graphic descriptions and/or supporting text for the System Interface Description should provide details concerning the capabilities of each system.  For example, descriptions of information systems should include details concerning the applications present within the system, the infrastructure services that support the applications, and the means by which the system processes, manipulates, stores, and exchanges data.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Enterprise_architecture_framework",
+        "https://en.wikipedia.org/wiki/US_Department_of_the_Treasury",
+        "https://en.wikipedia.org/wiki/Zachman_Framework",
+        "https://en.wikipedia.org/wiki/US_Department_of_the_Treasury",
+        "https://en.wikipedia.org/wiki/Enterprise_architecture_framework",
+        "https://en.wikipedia.org/wiki/Business_process",
+        "https://en.wikipedia.org/wiki/Business_process_reengineering",
+        "https://en.wikipedia.org/wiki/View_model",
+        "https://en.wikipedia.org/wiki/View_model",
+        "https://en.wikipedia.org/wiki/Treasury",
+        "https://en.wikipedia.org/wiki/Enterprise_Architecture",
+        "https://en.wikipedia.org/wiki/TISAF",
+        "https://en.wikipedia.org/wiki/Federal_Enterprise_Architecture_Framework",
+        "https://en.wikipedia.org/wiki/Business_processes",
+        "https://en.wikipedia.org/wiki/Enterprise_Architecture",
+        "https://en.wikipedia.org/wiki/Enterprise_Architecture_Framework",
+        "https://en.wikipedia.org/wiki/Enterprise_Architecture",
+        "https://en.wikipedia.org/wiki/Enterprise_Life_Cycle",
+        "https://en.wikipedia.org/wiki/System_Development_Life_Cycle",
+        "https://en.wikipedia.org/wiki/Department_of_Defense_Architecture_Framework",
+        "https://en.wikipedia.org/wiki/Federal_Enterprise_Architecture",
+        "https://en.wikipedia.org/wiki/Conceptual_schema",
+        "https://en.wikipedia.org/wiki/Wayback_Machine",
+        "https://en.wikipedia.org/wiki/Wayback_Machine",
+        "https://en.wikipedia.org/wiki/Jaap_Schekkerman",
+        "https://en.wikipedia.org/wiki/Wayback_Machine",
+        "https://en.wikipedia.org/wiki/Wayback_Machine",
+        "https://en.wikipedia.org/wiki/Treasury_Enterprise_Architecture_Framework",
+        "https://en.wikipedia.org/wiki/Treasury_Enterprise_Architecture_Framework",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

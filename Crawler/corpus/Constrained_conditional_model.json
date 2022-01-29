@@ -1,0 +1,38 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Constrained_Conditional_Models",
+    "title": "Constrained conditional model",
+    "table_of_contents": [
+        "1 Motivation",
+        "2 Formal Definition",
+        "3 Training paradigms",
+        "3.1 Learning local vs. global models",
+        "3.2 Minimally supervised CCM",
+        "3.3 Learning over latent representations",
+        "4 Integer linear programming for natural language processing applications",
+        "5 Resources",
+        "6 External links",
+        "7 References"
+    ],
+    "content": [],
+    "links": [
+        "https://en.wikipedia.org/wiki/Machine_learning",
+        "https://en.wikipedia.org/wiki/Natural_Language_Processing",
+        "https://en.wikipedia.org/wiki/Constrained_optimization",
+        "https://en.wikipedia.org/wiki/Feature_engineering",
+        "https://en.wikipedia.org/wiki/Textual_entailment",
+        "https://en.wikipedia.org/wiki/Markov_logic_network",
+        "https://en.wikipedia.org/wiki/Domain_knowledge",
+        "https://en.wikipedia.org/wiki/Structured_prediction",
+        "https://en.wikipedia.org/wiki/Natural_language_processing",
+        "https://en.wikipedia.org/wiki/Semantic_role_labeling",
+        "https://en.wikipedia.org/wiki/Coreference",
+        "https://en.wikipedia.org/wiki/Transliteration",
+        "https://en.wikipedia.org/wiki/Approximate_inference",
+        "https://en.wikipedia.org/wiki/Wayback_Machine",
+        "https://en.wikipedia.org/wiki/Yejin_Choi",
+        "https://en.wikipedia.org/wiki/Constrained_conditional_model",
+        "https://en.wikipedia.org/wiki/Constrained_conditional_model",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

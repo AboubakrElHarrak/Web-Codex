@@ -1,0 +1,43 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Software_feature",
+    "title": "Software feature",
+    "table_of_contents": [
+        "1 Feature-rich",
+        "2 See also",
+        "3 References",
+        "4 External links"
+    ],
+    "content": [
+        {
+            "image2": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/c/c5/Gimp_tutorial_speechbubbles17.png",
+                "caption": "\n\t\t\"Distress Selection\" software feature in GIMP\n"
+            },
+            "paragraph1": "In software, the term feature has several definitions. The Institute of Electrical and Electronics Engineers defines the term feature in IEEE 829 as \" distinguishing characteristic of a software item (e.g., performance, portability, or functionality).\"\n"
+        },
+        {
+            "title": "Feature-rich",
+            "paragraph1": "A piece of software is said to be \"feature-rich\" when it has many options and functional capabilities available to the user. Progressive disclosure is a technique applied to reduce the potential confusion caused by displaying a wealth of features at once.\n",
+            "paragraph2": "Sometimes if a piece of software is very feature-rich, that can be seen as a bad thing. The terms feature creep and software bloat can be used to refer to software that is overly feature-rich.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/GIMP",
+        "https://en.wikipedia.org/wiki/Software",
+        "https://en.wikipedia.org/wiki/Institute_of_Electrical_and_Electronics_Engineers",
+        "https://en.wikipedia.org/wiki/IEEE_829",
+        "https://en.wikipedia.org/wiki/Progressive_disclosure",
+        "https://en.wikipedia.org/wiki/Feature_creep",
+        "https://en.wikipedia.org/wiki/Software_bloat",
+        "https://en.wikipedia.org/wiki/Product_family_engineering",
+        "https://en.wikipedia.org/wiki/Software_design",
+        "https://en.wikipedia.org/wiki/Software_testing",
+        "https://en.wikipedia.org/wiki/Application_lifecycle_management",
+        "https://en.wikipedia.org/wiki/Journal_of_Object_Technology",
+        "https://en.wikipedia.org/wiki/Software_engineering",
+        "https://en.wikipedia.org/wiki/Software_feature",
+        "https://en.wikipedia.org/wiki/Software_feature",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

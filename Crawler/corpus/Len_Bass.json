@@ -1,0 +1,56 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Len_Bass",
+    "title": "Len Bass",
+    "table_of_contents": [
+        "1 Biography",
+        "2 Selected publications",
+        "3 Presentations",
+        "4 References",
+        "5 External links"
+    ],
+    "content": [
+        {
+            "paragraph1": "Leonard Joel (Len) Bass (born c.1943) is an American software engineer, Emeritus professor and former researcher at the Software Engineering Institute (SEI), particularly known for his contributions  on software architecture in practice.\n"
+        },
+        {
+            "title": "Biography",
+            "paragraph1": "Bass received his Ph.D. degree in Computer Science from Purdue University in 1970 under the supervision of Paul Ruel Young with the thesis, entitled \"Hierarchies based on computational complexity and irregularities of class determining measured sets.\"\n",
+            "paragraph2": "Bass was appointed Professor of Computer Science at the University of Rhode Island in 1970.[citation needed] In 1986, he moved to the Software Engineering Institute at Carnegie Mellon University, where he started as head of the user-interface software group, and later focused on the analysis of software architectures. Since 2011, he has been Senior Principal Researcher at NICTA (National ICT Australia).\n",
+            "paragraph3": "Len Bass was awarded the Software Development Magazine's Jolt Productivity Award twice in 1999 and 2003.\n"
+        },
+        {
+            "title": "Selected publications",
+            "paragraph1": "Books\n",
+            "ul1": "Bass, L., Clements, P., Kazman, R. (1st ed. 1998, 2nd ed. 2003, 3rd ed. 2012). Software Architecture in Practice. Pearson Education\nClements, P., Bass, L., Garlan, D., Ivers, J., Little, R., Nord, R., Stafford, J. (1st ed. 2002, 2nd ed. 2011). Documenting software architectures: views and beyond. Pearson Education.\nBass, L., Weber, I., Zhu, L. (2015). DevOps: A Software Architect's Perspective. Addison-Wesley Professional.\n",
+            "paragraph2": "Articles and reports, a selection:\n",
+            "ul2": "Kazman, R., Bass, L., Webb, M., & Abowd, G. (1994, May). \"SAAM: A method for analyzing the properties of software architectures.\" In Proceedings of the 16th international conference on Software engineering (pp. 81–90). IEEE Computer Society Press.\nAbowd, G., Bass, L., Clements, P., Kazman, R., & Northrop, L. (1997).Recommended Best Industrial Practice for Software Architecture Evaluation(No. CMU/SEI-96-TR-025). Carnegie-Mellon Univ Pittsburgh Pa Software Engineering Inst.\nKazman, R., Abowd, G., Bass, L., & Clements, P. (1996). \"Scenario-based analysis of software architecture.\" IEEE Software, 13(6):47–55.\n"
+        },
+        {
+            "title": "Presentations",
+            "ul1": "Bass, L. [lenbass]. (2016, July 31). Networking [Video file].\nBass, L. [lenbass]. (2016, July 30). Virtual Machine [Video file].\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Software_engineer",
+        "https://en.wikipedia.org/wiki/Software_Engineering_Institute",
+        "https://en.wikipedia.org/wiki/Software_architecture",
+        "https://en.wikipedia.org/wiki/Computer_Science",
+        "https://en.wikipedia.org/wiki/Purdue_University",
+        "https://en.wikipedia.org/wiki/University_of_Rhode_Island",
+        "https://en.wikipedia.org/wiki/Carnegie_Mellon_University",
+        "https://en.wikipedia.org/wiki/NICTA",
+        "https://en.wikipedia.org/wiki/Australia",
+        "https://en.wikipedia.org/wiki/Jolt_Awards",
+        "https://en.wikipedia.org/wiki/IEEE_Computer_Society_Press",
+        "https://en.wikipedia.org/wiki/Gregory_Abowd",
+        "https://en.wikipedia.org/wiki/IEEE_Software",
+        "https://en.wikipedia.org/wiki/Mathematics_Genealogy_Project",
+        "https://en.wikipedia.org/wiki/DBLP",
+        "https://en.wikipedia.org/wiki/Software_Engineering_Institute",
+        "https://en.wikipedia.org/wiki/NICTA",
+        "https://en.wikipedia.org/wiki/Len_Bass",
+        "https://en.wikipedia.org/wiki/Len_Bass",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

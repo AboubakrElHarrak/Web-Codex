@@ -1,0 +1,52 @@
+{
+    "url": "https://en.wikipedia.org/wiki/State_space_search",
+    "title": "State space search",
+    "table_of_contents": [
+        "1 Representation",
+        "2 Examples of state-space search algorithms",
+        "2.1 Uninformed search",
+        "2.2 Heuristic search",
+        "3 See also",
+        "4 References"
+    ],
+    "content": [
+        {
+            "paragraph1": "State space search is a process used in the field of computer science, including artificial intelligence (AI), in which successive configurations or states of an instance are considered, with the intention of finding a goal state with the desired property.\n",
+            "paragraph2": "Problems are often modelled as a state space, a set of states that a problem can be in. The set of states forms a graph where two states are connected if there is an operation that can be performed to transform the first state into the second.\n",
+            "paragraph3": "State space search often differs from traditional computer science search methods because the state space is implicit: the typical state space graph is much too large to generate and store in memory.  Instead, nodes are generated as they are explored, and typically discarded thereafter.  A solution to a combinatorial search instance may consist of the goal state itself, or of a path from some initial state to the goal state.\n"
+        },
+        {
+            "title": "Representation",
+            "paragraph1": "In state space search, a state space is formally represented as a tuple \n\n\n\nS\n:\n⟨\nS\n,\nA\n,\nA\nc\nt\ni\no\nn\n(\ns\n)\n,\nR\ne\ns\nu\nl\nt\n(\ns\n,\na\n)\n,\nC\no\ns\nt\n(\ns\n,\na\n)\n⟩\n\n\n{\\displaystyle S:\\langle S,A,Action(s),Result(s,a),Cost(s,a)\\rangle }\n\n, in which:\n",
+            "ul1": "\n\n\n\nS\n\n\n{\\displaystyle S}\n\n is the set of all possible states;\n\n\n\n\nA\n\n\n{\\displaystyle A}\n\n is the set of possible actions, not related to a particular state but regarding all the state space;\n\n\n\n\nA\nc\nt\ni\no\nn\n(\ns\n)\n\n\n{\\displaystyle Action(s)}\n\n is the function that establish which action is possible to perform in a certain state;\n\n\n\n\nR\ne\ns\nu\nl\nt\n(\ns\n,\na\n)\n\n\n{\\displaystyle Result(s,a)}\n\n is the function that returns the state reached performing action \n\n\n\na\n\n\n{\\displaystyle a}\n\n in state \n\n\n\ns\n\n\n{\\displaystyle s}\n\n\n\n\n\n\nC\no\ns\nt\n(\ns\n,\na\n)\n\n\n{\\displaystyle Cost(s,a)}\n\n is the cost of performing an action \n\n\n\na\n\n\n{\\displaystyle a}\n\n in state \n\n\n\ns\n\n\n{\\displaystyle s}\n\n. In many state spaces is a constant, but this is not true in general.\n"
+        },
+        {
+            "title": "Examples of state-space search algorithms",
+            "subtitle1": "Uninformed search",
+            "paragraph1": "According to Poole and Mack worth, the following are uninformed state-space search methods, meaning that they do not have any prior information about the goal's location.\n",
+            "ul1": "Traditional depth-first search\nBreadth-first search\nIterative deepening\nLowest-cost-first search\n",
+            "subtitle2": "Heuristic search",
+            "paragraph2": "Some algorithms take into account information about the goal node's location in the form of a heuristic function. Poole and Mackworth cite the following examples as informed search algorithms:\n",
+            "ul2": "Heuristic depth-first search\nGreedy best-first search\nA* search\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Computer_science",
+        "https://en.wikipedia.org/wiki/Artificial_intelligence",
+        "https://en.wikipedia.org/wiki/Configuration_graph",
+        "https://en.wikipedia.org/wiki/State_space",
+        "https://en.wikipedia.org/wiki/Computer_science",
+        "https://en.wikipedia.org/wiki/Search_algorithm",
+        "https://en.wikipedia.org/wiki/Implicit_graph",
+        "https://en.wikipedia.org/wiki/Computer_storage",
+        "https://en.wikipedia.org/wiki/Combinatorial_search",
+        "https://en.wikipedia.org/wiki/Heuristic_function",
+        "https://en.wikipedia.org/wiki/State_space",
+        "https://en.wikipedia.org/wiki/State_space_planning",
+        "https://en.wikipedia.org/wiki/Artificial_intelligence",
+        "https://en.wikipedia.org/wiki/State_space_search",
+        "https://en.wikipedia.org/wiki/State_space_search",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

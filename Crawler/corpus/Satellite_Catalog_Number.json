@@ -1,0 +1,40 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Satellite_Catalog_Number",
+    "title": "Satellite Catalog Number",
+    "table_of_contents": [],
+    "content": [
+        {
+            "paragraph1": "The Satellite Catalog Number (also known as NORAD (North American Aerospace Defense) Catalog Number, NORAD ID, USSPACECOM object number or simply catalog number, among similar variants) is a sequential nine-digit number assigned by the United States Space Command (USSPACECOM) in the order of launch or discovery to all artificial objects in the orbits of Earth and those that left Earth's orbit. The first catalogued object, catalog number 1, is the Sputnik 1 launch vehicle, with the Sputnik 1 satellite having been assigned catalog number 2.\n",
+            "paragraph2": "Objects that fail to orbit or orbit for a short time are not catalogued. The minimum object size in the catalog is 10 centimeters in diameter. As of June 11, 2021, the catalog lists 48,833 objects, including 11,264 satellites that have been launched into orbit after 1957. 21,197 of the objects were actively tracked while 1,374 were lost. ESA estimates there are about 34,000 pieces of orbiting debris that are large enough for USSTRATCOM to track as of January 2019.\n",
+            "paragraph3": "Permanently catalogued objects are assigned a number from 1 to 69,999 or above 99,999. Space-Track is expected to start publishing objects greater than 99,999 in 2020 starting with debris discovered by Space Fence.\n",
+            "paragraph4": "Space Command shares the catalog via space-track.org, which is maintained by the 18th Space Control Squadron (18 SPCS).\n"
+        },
+        {
+            "title": "History",
+            "paragraph1": "Initially, the catalog was maintained by NORAD. From 1985 onwards, USSPACECOM was tasked to detect, track, identify, and maintain a catalog of all human-made objects in Earth orbit. In 2002, USSPACECOM was disestablished and merged with the United States Strategic Command (USSTRATCOM). However, USSPACECOM was reestablished in 2019.\n",
+            "paragraph2": "Before 2020, the catalog number was limited to five digits due to the TLE format limitation. In 2020, Space-Track started to provide data in CCSDS OMM (Orbit Mean-Elements Message) format, which increased the maximum catalog number to 999,999,999.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/United_States_Space_Command",
+        "https://en.wikipedia.org/wiki/Sputnik_1",
+        "https://en.wikipedia.org/wiki/Centimeters",
+        "https://en.wikipedia.org/wiki/ESA",
+        "https://en.wikipedia.org/wiki/Space_Fence",
+        "https://en.wikipedia.org/wiki/18th_Space_Control_Squadron",
+        "https://en.wikipedia.org/wiki/NORAD",
+        "https://en.wikipedia.org/wiki/United_States_Strategic_Command",
+        "https://en.wikipedia.org/wiki/CCSDS",
+        "https://en.wikipedia.org/wiki/International_Designator",
+        "https://en.wikipedia.org/wiki/Space_debris",
+        "https://en.wikipedia.org/wiki/United_States_Space_Surveillance_Network",
+        "https://en.wikipedia.org/wiki/18th_Space_Control_Squadron",
+        "https://en.wikipedia.org/wiki/ESA",
+        "https://en.wikipedia.org/wiki/Twitter",
+        "https://en.wikipedia.org/wiki/Air_Force_Space_Command",
+        "https://en.wikipedia.org/wiki/Satellite_Catalog_Number",
+        "https://en.wikipedia.org/wiki/Satellite_Catalog_Number",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

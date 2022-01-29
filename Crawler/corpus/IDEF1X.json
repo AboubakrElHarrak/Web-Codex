@@ -1,0 +1,137 @@
+{
+    "url": "https://en.wikipedia.org/wiki/IDEF1X",
+    "title": "IDEF1X",
+    "table_of_contents": [
+        "1 Overview",
+        "2 History",
+        "2.1 Logical database design technique",
+        "3 IDEF1X building blocks",
+        "4 IDEF1X topics",
+        "4.1 The three schema approach",
+        "4.2 Modeling guidelines",
+        "4.3 IDEF1X meta model",
+        "5 See also",
+        "6 References",
+        "7 Further reading",
+        "8 External links"
+    ],
+    "content": [
+        {
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/c/ca/B_5_1_IDEF1X_Diagram.jpg/640px-B_5_1_IDEF1X_Diagram.jpg",
+                "caption": "\n\t\tExample of an IDEF1X diagram.\n\t"
+            },
+            "paragraph1": "Integration DEFinition for information modeling (IDEF1X) is a data modeling language for the development of semantic data models. IDEF1X is used to produce a graphical information model which represents the structure and semantics of information within an environment or system.\n",
+            "paragraph2": "IDEF1X permits the construction of semantic data models which may serve to support the management of data as a resource, the integration of information systems, and the building of computer databases. This standard is part of the IDEF family of modeling languages in the field of software engineering.\n"
+        },
+        {
+            "title": "Overview",
+            "paragraph1": "A data modeling technique is used to model data in a standard, consistent and predictable manner in order to manage it as a resource. It can be used in projects requiring a standard means of defining and analyzing the data resources within an organization. Such projects include the incorporation of a data modeling technique into a methodology, managing data as a resource, integrating information systems, or designing computer databases. The primary objectives of the IDEF1X standard are to provide:\n",
+            "ul1": "Means for completely understanding and analyzing an organization's data resources\nCommon means of representing and communicating the complexity of data\nA technique for presenting an overall view of the data required to run an enterprise\nMeans for defining an application-independent view of data which can be validated by users and transformed into a physical database design\nA technique for deriving an integrated data definition from existing data resources.\n",
+            "paragraph2": "A principal objective of IDEF1X is to support integration. The approach to integration focuses on the capture, management, and use of a single semantic definition of the data resource referred to as a “conceptual schema.” The “conceptual schema” provides a single integrated definition of the data within an enterprise which is not biased toward any single application of data and is independent of how the data is physically stored or accessed. The primary objective of this conceptual schema is to provide a consistent definition of the meanings of and interrelationships between data that can be used to integrate, share, and manage the integrity of data. A conceptual schema must have three important characteristics:\n",
+            "ul2": "Consistent with the infrastructure of the business and true across all application areas\nExtendible, such that new data can be defined without altering previously defined data\nTransformable to both the required user views and to a variety of data storage and access structures.\n"
+        },
+        {
+            "title": "History",
+            "paragraph1": "The need for semantic data models was first recognized by the U.S. Air Force in the mid-1970s as a result of the Integrated Computer Aided Manufacturing (ICAM) Program. The objective of this program was to increase manufacturing productivity through the systematic application of computer technology. The ICAM Program identified a need for better analysis and communication techniques for people involved in improving manufacturing productivity. As a result, the ICAM Program developed a series of techniques known as the IDEF (ICAM Definition) Methods which included the following:\n",
+            "ul1": "IDEF0 used to produce a “function model” which is a structured representation of the activities or processes within the environment or system\nIDEF1 used to produce an “information model” which represents the structure and semantics of information within the environment or system\nIDEF2 used to produce a “dynamics model”.\n",
+            "paragraph2": "The initial approach to IDEF information modeling (IDEF1) was published by the ICAM program in 1981, based on current research and industry needs. The theoretical roots for this approach stemmed from the early work of Edgar F. Codd on Relational model theory and Peter Chen on the entity-relationship model. The initial IDEF1 technique was based on the work of Dr R. R. Brown and Mr T. L. Ramey of Hughes Aircraft and Mr D. S. Coleman of D. Appleton Company (DACOM), with critical review and influence by Charles Bachman, Peter Chen, Dr M. A. Melkanoff, and Dr G.M. Nijssen.\n",
+            "paragraph3": "In 1983, the U.S. Air Force initiated the Integrated Information Support System (I2S2) project under the ICAM program. The objective of this project was to provide the enabling technology to logically and physically integrate a network of heterogeneous computer hardware and software. As a result of this project, and industry experience, the need for an enhanced technique for information modeling was recognized.\n",
+            "paragraph4": "From the point of view of the contract administrators of the Air Force IDEF program, IDEF1X was a result of the ICAM IISS-6201 project and was further extended by the IISS-6202 project. To satisfy the data modeling enhancement requirements that were identified in the IISS-6202 project, a sub-contractor, DACOM, obtained a license to the Logical Database Design Technique (LDDT) and its supporting software (ADAM). From the point of view of the technical content of the modeling technique, IDEF1X is a renaming of LDDT.\n",
+            "paragraph5": "On September 2, 2008, the associated NIST standard, FIPS 184, has been withdrawn (decision on Federal Register vol. 73 / page 51276 ).\n",
+            "paragraph6": "Since September 2012, IDEF1X is part of the international standard ISO/IEC/IEEE 31320-2:2012. The standard describes the syntax and semantics of IDEF1X97, which consists of two conceptual modeling languages: a “key-style” language downward compatible with FIPS 184, which supports relational and extended relational databases, and a newer “identity-style” language suitable for object databases and object-oriented modeling.\n",
+            "subtitle1": "Logical database design technique",
+            "paragraph7": "The logical database design technique (LDDT) had been developed in 1982 by Robert G. Brown of The Database Design Group entirely outside the IDEF program and with no knowledge of IDEF1. Nevertheless, the central goal of IDEF1 and LDDT was the same: to produce a database-neutral model of the persistent information needed by an enterprise by modeling the real-world entities involved. LDDT combined elements of the relational data model, the E-R model, and data generalization in a way specifically intended to support data modeling and the transformation of the data models into database designs.\n",
+            "paragraph8": "LDDT included an environmental (namespace) hierarchy, multiple levels of model, the modeling of generalization/specialization, and the explicit representation of relationships by primary and foreign keys, supported by a well defined role naming facility. The primary keys and unambiguously role-named foreign keys expressed sometimes subtle uniqueness and referential integrity constraints that needed to be known and honored by whatever type of database was ultimately designed. Whether the database design used the integrity constraint based keys of the LDDT model as database access keys or indexes was an entirely separate decision. The precision and completeness of the LDDT models was an important factor in enabling the relatively smooth transformation of the models into database designs. Early LDDT models were transformed into database designs for IBM's hierarchical database, IMS. Later models were transformed into database designs for Cullinet's network database, IDMS, and many varieties of relational database.\n",
+            "paragraph9": "The LDDT software, ADAM, supported view (model) entry, view merging, selective (subset) viewing, namespace inheritance, normalization, a quality assurance analysis of views, entity relationship graph and report generation, transformation to a relational database expressed as SQL data declaration statements, and referential integrity checking SQL. Logical models were serialized with a structural modeling language.\n",
+            "paragraph10": "The graphic syntax of LDDT differed from that of IDEF1 and, more importantly, LDDT contained many interrelated modeling concepts not present in IDEF1. Therefore, instead of extending IDEF1, Mary E. Loomis of DACOM wrote a concise summary of the syntax and semantics of a substantial subset of LDDT, using terminology compatible with IDEF1 wherever possible. DACOM labeled the result IDEF1X and supplied it to the ICAM program, which published it in 1985. (IEEE 1998, p. iii) (Bruce 1992, p. xii) DACOM also converted the ADAM software to C and sold it under the name Leverage.\n"
+        },
+        {
+            "title": "IDEF1X building blocks"
+        },
+        {
+            "title": "IDEF1X topics",
+            "subtitle1": "The three schema approach",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/f/f1/A2_3_Three_schema_approach.svg/560px-A2_3_Three_schema_approach.svg.png",
+                "caption": "\n\t\tThe three schema approach .[3]\n"
+            },
+            "paragraph1": "The three-schema approach in software engineering is an approach to building information systems and systems information management, that promotes the conceptual model as the key to achieving data integration.\n",
+            "paragraph2": "A schema is a model, usually depicted by a diagram and sometimes accompanied by a language description. The three schemas used in this approach are:\n",
+            "ul1": "External schema for user views\nConceptual schema integrates external schemata\nInternal schema that defines physical storage structures.\n",
+            "paragraph3": "At the center, the conceptual schema defines the ontology of the concepts as the users think of them and talk about them. The physical schema describes the internal formats of the data stored in the database, and the external schema defines the view of the data presented to the application programs. The framework attempted to permit multiple data models to be used for external schemata.\n",
+            "subtitle2": "Modeling guidelines",
+            "image2": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/f/fb/A3_2_Synthesizing_an_Entity.jpg",
+                "caption": "\n\t\tSynthesizing an entity in phase one – entity definition\n\t"
+            },
+            "paragraph4": "The modeling process can be divided into five stages of model developing.\n",
+            "subtitle3": "IDEF1X meta model",
+            "image6": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/c/ca/B_5_1_IDEF1X_Diagram.jpg/560px-B_5_1_IDEF1X_Diagram.jpg",
+                "caption": "\n\t\tMeta model of IDEF1X.\n\t"
+            },
+            "paragraph5": "A meta model is a model of the constructs of a modeling system. Like any model, it is used to represent and reason about the subject of the model - in this case IDEF1X. The meta model is used to reason about IDEF1X, i.e., what the constructs of IDEF1X are and how they relate to one another. The model shown is an IDEF1X model of IDEF1X. Such meta models can be used for various purposes, such as repository design, tool design, or in order to specify the set of valid IDEF1X models. Depending on the purpose, somewhat different models result. There is no “one right model.” For example, a model for a tool that supports building models incrementally must allow incomplete or even inconsistent models. The meta model for formalization, however, emphasizes alignment with the concepts of the formalization and hence incomplete or inconsistent models are not allowed.\n",
+            "paragraph6": "Meta models have two important limitations. First, they specify syntax but not semantics. Second, a meta model must be supplemented with constraints in natural or formal language. The formal theory of IDEF1X provides both the semantics and a means to precisely express the necessary constraints.\n",
+            "paragraph7": "A meta model for IDEF1X is given in the adjacent figure. The name of the view is mm. The domain hierarchy and constraints are also given. The constraints are expressed as sentences in the formal theory of the meta model. The meta model informally defines the set of valid IDEF1X models in the usual way, as the sample instance tables that correspond to a valid IDEF1X model. The meta model also formally defines the set of valid IDEF1X models in the following way. The meta model, as an IDEF1X model, has a corresponding formal theory. The semantics of the theory are defined in the standard way. That is, an interpretation of a theory consists of a domain of individuals and a set of assignments:\n",
+            "ul2": "To each constant in the theory, an individual in the domain is assigned\nTo each n-ary function symbol in the theory, an n-ary function over the domain is assigned\nTo each n-ary predicate symbol in the theory, an n-ary relation over the domain is assigned.\n",
+            "paragraph8": "In the intended interpretation, the domain of individuals consists of views, such as production; entities, such as part and vendor; domains, such as qty_on_hand; connection relationships; category clusters; and so on. If every axiom in the theory is true in the interpretation, then the interpretation is called a model for the theory. Every model for the IDEF1X theory corresponding to the IDEF1X meta model and its constraints is a valid IDEF1X model.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Idefix",
+        "https://en.wikipedia.org/wiki/IDEF",
+        "https://en.wikipedia.org/wiki/Data_modeling",
+        "https://en.wikipedia.org/wiki/Modeling_language",
+        "https://en.wikipedia.org/wiki/Semantic_data_model",
+        "https://en.wikipedia.org/wiki/Information_model",
+        "https://en.wikipedia.org/wiki/Semantics",
+        "https://en.wikipedia.org/wiki/Information",
+        "https://en.wikipedia.org/wiki/System",
+        "https://en.wikipedia.org/wiki/Database",
+        "https://en.wikipedia.org/wiki/IDEF",
+        "https://en.wikipedia.org/wiki/Software_engineering",
+        "https://en.wikipedia.org/wiki/Data_modeling",
+        "https://en.wikipedia.org/wiki/Data",
+        "https://en.wikipedia.org/wiki/Data_modeling",
+        "https://en.wikipedia.org/wiki/Methodology",
+        "https://en.wikipedia.org/wiki/Information_systems",
+        "https://en.wikipedia.org/wiki/Database",
+        "https://en.wikipedia.org/wiki/System_integration",
+        "https://en.wikipedia.org/wiki/Management",
+        "https://en.wikipedia.org/wiki/Conceptual_schema",
+        "https://en.wikipedia.org/wiki/Semantic_data_model",
+        "https://en.wikipedia.org/wiki/IDEF0",
+        "https://en.wikipedia.org/wiki/Relational_model",
+        "https://en.wikipedia.org/wiki/Peter_Chen",
+        "https://en.wikipedia.org/wiki/Hughes_Aircraft",
+        "https://en.wikipedia.org/wiki/Charles_Bachman",
+        "https://en.wikipedia.org/wiki/Peter_Chen",
+        "https://en.wikipedia.org/wiki/IBM_Information_Management_System",
+        "https://en.wikipedia.org/wiki/Three_schema_approach",
+        "https://en.wikipedia.org/wiki/Conceptual_schema",
+        "https://en.wikipedia.org/wiki/Data_integration",
+        "https://en.wikipedia.org/wiki/Scientific_modelling",
+        "https://en.wikipedia.org/wiki/Diagram",
+        "https://en.wikipedia.org/wiki/Conceptual_schema",
+        "https://en.wikipedia.org/wiki/Ontology",
+        "https://en.wikipedia.org/wiki/Concept",
+        "https://en.wikipedia.org/wiki/Data",
+        "https://en.wikipedia.org/wiki/Database",
+        "https://en.wikipedia.org/wiki/Application_program",
+        "https://en.wikipedia.org/wiki/Metamodeling",
+        "https://en.wikipedia.org/wiki/IDEF0",
+        "https://en.wikipedia.org/wiki/IDEF5",
+        "https://en.wikipedia.org/wiki/ISO_10303",
+        "https://en.wikipedia.org/wiki/Logic_Works",
+        "https://en.wikipedia.org/wiki/Weak_entity",
+        "https://en.wikipedia.org/wiki/Copyright_status_of_works_by_the_federal_government_of_the_United_States",
+        "https://en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology",
+        "https://en.wikipedia.org/wiki/Wayback_Machine",
+        "https://en.wikipedia.org/wiki/Wayback_Machine",
+        "https://en.wikipedia.org/wiki/IDEF1X",
+        "https://en.wikipedia.org/wiki/IDEF1X",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

@@ -1,0 +1,89 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Computational_humor",
+    "title": "Computational humor",
+    "table_of_contents": [
+        "1 Joke generators",
+        "1.1 Pun generation",
+        "1.2 Other",
+        "2 Joke recognition",
+        "3 Applications",
+        "4 Related research",
+        "5 See also",
+        "6 Further reading",
+        "7 References"
+    ],
+    "content": [
+        {
+            "paragraph1": "Computational humor is a branch of computational linguistics and artificial intelligence which uses computers in humor research. It is a relatively new area, with the first dedicated conference organized in 1996.\n"
+        },
+        {
+            "title": "Joke generators",
+            "subtitle1": "Pun generation",
+            "paragraph1": "An approach to analysis of humor is classification of jokes. A further step is an attempt to generate jokes basing on the rules that underlie classification.\n",
+            "paragraph2": "Simple prototypes for computer pun generation were reported in the early 1990s, based on a natural language generator program, VINCI. Graeme Ritchie and Kim Binsted in their 1994 research paper described a computer program, JAPE, designed to generate question-answer-type puns from a general, i.e., non-humorous, lexicon.  (The program name is an acronym for \"Joke Analysis and Production Engine\".) Some examples produced by JAPE are:\n",
+            "paragraph3": "Since then the approach has been improved, and the latest report, dated 2007, describes the STANDUP joke generator, implemented in the Java programming language. The STANDUP generator was tested on children within the framework of analyzing its usability for language skills development for children with communication disabilities, e.g., because of cerebral palsy. (The project name is an acronym for \"System To Augment Non-speakers' Dialog Using Puns\" and an allusion to standup comedy.) Children responded to this \"language playground\" with enthusiasm, and showed marked improvement on certain types of language tests.\n",
+            "subtitle2": "Other",
+            "paragraph4": "Stock and Strapparava described a program to generate funny acronyms.\n",
+            "paragraph5": "\"AskTheBrain\" (2002)  used clustering and bayesian analysis to associate concepts in a comical way.\n"
+        },
+        {
+            "title": "Joke recognition",
+            "paragraph1": "A statistical machine learning algorithm to detect whether a sentence contained a \"That's what she said\" double entendre was developed by Kiddon and Brun (2011).  There is an open-source Python implementation of Kiddon & Brun's TWSS system.\n",
+            "paragraph2": "A program to recognize knock-knock jokes was reported by Taylor and Mazlack. This kind of research is important in analysis of human-computer interaction.\n",
+            "paragraph3": "An application of machine learning techniques for the distinguishing of joke texts from non-jokes was described by Mihalcea and Strapparava (2006).\n",
+            "paragraph4": "Takizawa et al. (1996) reported on a heuristic program for detecting puns in the Japanese language.\n",
+            "paragraph5": "In 2020, a new benchmark dataset and state-of-the-art classification model has been introduced based on the usage of transfer learning and BERT sentence embedding. The paper achieved 98% accuracy in humor detection. \n"
+        },
+        {
+            "title": "Applications",
+            "paragraph1": "A possible application for the assistance in language acquisition is described in the section \"Pun generation\". Another envisioned use of joke generators is in cases of steady supply of jokes where quantity is more important than quality. Another obvious, yet remote, direction is automated joke appreciation.\n",
+            "paragraph2": "It is known[citation needed] that humans interact with computers in ways similar to interacting with other humans that may be described in terms of personality, politeness, flattery, and in-group favoritism. Therefore, the role of humor in human-computer interaction is being investigated. In particular, humor generation in user interface to ease communications with computers was suggested.\n",
+            "paragraph3": "Craig McDonough implemented the Mnemonic Sentence Generator, which converts passwords into humorous sentences.  Basing on the incongruity theory of humor, it is suggested that the resulting meaningless but funny sentences are easier to remember. For example, the password AjQA3Jtv is converted into \"Arafat joined Quayle's Ant, while TARAR Jeopardized thurmond's vase\".\n"
+        },
+        {
+            "title": "Related research",
+            "paragraph1": "John Allen Paulos is known for his interest in mathematical foundations of humor. His book Mathematics and Humor: A Study of the Logic of Humor demonstrates structures common to humor and formal sciences (mathematics, linguistics) and develops a mathematical model of jokes based on catastrophe theory.\n",
+            "paragraph2": "Conversational systems which have been designed to take part in Turing test competitions generally have the ability to learn humorous anecdotes and jokes. Because many people regard humor as something particular to humans, its appearance in conversation can be quite useful in convincing a human interrogator that a hidden entity, which could be a machine or a human, is in fact a human.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Computer_humor",
+        "https://en.wikipedia.org/wiki/Computational_linguistics",
+        "https://en.wikipedia.org/wiki/Artificial_intelligence",
+        "https://en.wikipedia.org/wiki/Computer",
+        "https://en.wikipedia.org/wiki/Humor_research",
+        "https://en.wikipedia.org/wiki/Pun",
+        "https://en.wikipedia.org/wiki/Natural_language_generator",
+        "https://en.wikipedia.org/wiki/Kim_Binsted",
+        "https://en.wikipedia.org/wiki/Pun",
+        "https://en.wikipedia.org/wiki/Java_programming_language",
+        "https://en.wikipedia.org/wiki/Cerebral_palsy",
+        "https://en.wikipedia.org/wiki/Standup_comedy",
+        "https://en.wikipedia.org/wiki/Acronym",
+        "https://en.wikipedia.org/wiki/Double_entendre",
+        "https://en.wikipedia.org/wiki/Machine_learning",
+        "https://en.wikipedia.org/wiki/Heuristic",
+        "https://en.wikipedia.org/wiki/Japanese_language",
+        "https://en.wikipedia.org/wiki/State_of_the_art",
+        "https://en.wikipedia.org/wiki/Transfer_learning",
+        "https://en.wikipedia.org/wiki/Language_acquisition",
+        "https://en.wikipedia.org/wiki/User_interface",
+        "https://en.wikipedia.org/wiki/Password",
+        "https://en.wikipedia.org/wiki/John_Allen_Paulos",
+        "https://en.wikipedia.org/wiki/Catastrophe_theory",
+        "https://en.wikipedia.org/wiki/Theory_of_humor",
+        "https://en.wikipedia.org/wiki/IEEE_Intelligent_Systems",
+        "https://en.wikipedia.org/wiki/Wayback_Machine",
+        "https://en.wikipedia.org/wiki/BBC_News",
+        "https://en.wikipedia.org/wiki/Wayback_Machine",
+        "https://en.wikipedia.org/wiki/IEEE_Intelligent_Systems",
+        "https://en.wikipedia.org/wiki/CERIAS",
+        "https://en.wikipedia.org/wiki/Purdue_University",
+        "https://en.wikipedia.org/wiki/John_Allen_Paulos",
+        "https://en.wikipedia.org/wiki/Kevin_Warwick",
+        "https://en.wikipedia.org/wiki/Computational_humor",
+        "https://en.wikipedia.org/wiki/Computational_humor",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

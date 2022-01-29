@@ -1,0 +1,100 @@
+{
+    "url": "https://en.wikipedia.org/wiki/PDCA",
+    "title": "PDCA",
+    "table_of_contents": [
+        "1 Meaning",
+        "1.1 Plan",
+        "1.2 Do",
+        "1.3 Check",
+        "1.4 Act",
+        "2 About",
+        "3 See also",
+        "4 References",
+        "5 Further reading"
+    ],
+    "content": [
+        {
+            "paragraph1": "PDCA (plan–do–check–act or plan–do–check–adjust) is an iterative design and management method used in business for the control and continuous improvement of processes and products. It is also known as the Deming circle/cycle/wheel, the Shewhart cycle, the control circle/cycle, or plan–do–study–act (PDSA). Another version of this PDCA cycle is OPDCA. The added \"O\" stands for observation or as some versions say: \"Observe the current condition.\" This emphasis on observation and current condition has currency with the literature on lean manufacturing and the Toyota Production System. The PDCA cycle, with Ishikawa’s changes, can be traced back to S. Mizuno of the Tokyo Institute of Technology in 1959.\n"
+        },
+        {
+            "title": "Meaning",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/7/7a/PDCA_Cycle.svg/700px-PDCA_Cycle.svg.png",
+                "caption": "\n\t\tThe PDCA cycle[5]\n"
+            },
+            "image2": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/a/a8/PDCA_Process.png/700px-PDCA_Process.png",
+                "caption": "\n\t\tContinuous quality improvement with PDCA\n\t"
+            },
+            "subtitle1": "Plan",
+            "paragraph1": "Establish objectives and processes required to deliver the desired results.\n",
+            "subtitle2": "Do",
+            "paragraph2": "Carry out the objectives from the previous step.\n",
+            "subtitle3": "Check",
+            "paragraph3": "During the check phase, the data and results gathered from the do phase are evaluated. Data is compared to the expected outcomes to see any similarities and differences. The testing process is also evaluated to see if there were any changes from the original test created during the planning phase. If the data is placed in a chart it can make it easier to see any trends if the PDCA cycle is conducted multiple times. This helps to see what changes work better than others, and if said changes can be improved as well.\n",
+            "paragraph4": "Example: Gap analysis, or Appraisals.\n",
+            "subtitle4": "Act",
+            "paragraph5": "Also called \"Adjust\", this act phase is where a process is improved. Records from the \"do\" and \"check\" phases help identify issues with the process. These issues may include problems, non-conformities, opportunities for improvement, inefficiencies and other issues that result in outcomes that are evidently less-than-optimal. Root causes of such issues are investigated, found and eliminated by modifying the process. Risk is re-evaluated. At the end of the actions in this phase, the process has better instructions, standards or goals. Planning for the next cycle can proceed with a better base-line. Work in the next do phase should not create recurrence of the identified issues; if it does, then the action was not effective.\n"
+        },
+        {
+            "title": "About",
+            "paragraph1": "PDCA is associated with W. Edwards Deming, who is considered by many to be the father of modern quality control; however, he used PDSA (Plan-Do-Study-Act) and referred to it as the \"Shewhart cycle\". Later in Deming's career, he modified PDCA to \"Plan, Do, Study, Act\" (PDSA) because he felt that \"check\" emphasized inspection over analysis. The PDSA cycle was used to create the model of know-how transfer process, and other models.\n",
+            "paragraph2": "The concept of PDCA is based on the scientific method, as developed from the work of Francis Bacon (Novum Organum, 1620). The scientific method can be written as \"hypothesis–experiment–evaluation\" or as \"plan–do–check\". Walter A. Shewhart described manufacture under \"control\"—under statistical control—as a three-step process of specification, production, and inspection.: 45  He also specifically related this to the scientific method of hypothesis, experiment, and evaluation. Shewhart says that the statistician \"must help to change the demand [for goods] by showing [...] how to close up the tolerance range and to improve the quality of goods.\": 48  Clearly, Shewhart intended the analyst to take action based on the conclusions of the evaluation. According to Deming, during his lectures in Japan in the early 1920s, the Japanese participants shortened the steps to the now traditional plan, do, check, act. Deming preferred plan, do, study, act because \"study\" has connotations in English closer to Shewhart's intent than \"check\".\n",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/4/42/PDCA-Multi-Loop.png/800px-PDCA-Multi-Loop.png",
+                "caption": "\n\t\tMultiple iterations of the PDCA cycle are repeated until the problem is solved.\n\t"
+            },
+            "paragraph3": "A fundamental principle of the scientific method and PDCA is iteration—once a hypothesis is confirmed (or negated), executing the cycle again will extend the knowledge further. Repeating the PDCA cycle can bring its users closer to the goal, usually a perfect operation and output.\n",
+            "paragraph4": "PDCA (and other forms of scientific problem solving) is also known as a system for developing critical thinking. At Toyota this is also known as \"Building people before building cars\". Toyota and other lean manufacturing companies propose that an engaged, problem-solving workforce using PDCA in a culture of critical thinking is better able to innovate and stay ahead of the competition through rigorous problem solving and the subsequent innovations.\n",
+            "paragraph5": "Deming continually emphasized iterating towards an improved system, hence PDCA should be repeatedly implemented in spirals of increasing knowledge of the system that converge on the ultimate goal, each cycle closer than the previous.[citation needed] One can envision an open coil spring, with each loop being one cycle of the scientific method, and each complete cycle indicating an increase in our knowledge of the system under study. This approach is based on the belief that our knowledge and skills are limited, but improving. Especially at the start of a project, key information may not be known; the PDCA—scientific method—provides feedback to justify guesses (hypotheses) and increase knowledge. Rather than enter \"analysis paralysis\" to get it perfect the first time, it is better to be approximately right than exactly wrong. With improved knowledge, one may choose to refine or alter the goal (ideal state). The aim of the PDCA cycle is to bring its users closer to whatever goal they choose.: 160 \n",
+            "paragraph6": "When PDCA is used for complex projects or products with a certain controversy, checking with external stakeholders should happen before the Do stage, since changes to projects and products that are already in detailed design can be costly; this is also seen as Plan-Check-Do-Act.[citation needed]\n",
+            "paragraph7": "Rate of change, that is, rate of improvement, is a key competitive factor in today's world.[citation needed] PDCA allows for major \"jumps\" in performance (\"breakthroughs\" often desired in a Western approach), as well as kaizen (frequent small improvements).[citation needed] In the United States a PDCA approach is usually associated with a sizable project involving numerous people's time,[citation needed] and thus managers want to see large \"breakthrough\" improvements to justify the effort expended. However, the scientific method and PDCA apply to all sorts of projects and improvement activities.: 76 \n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Iterative_design",
+        "https://en.wikipedia.org/wiki/Management",
+        "https://en.wikipedia.org/wiki/Lean_manufacturing",
+        "https://en.wikipedia.org/wiki/Toyota_Production_System",
+        "https://en.wikipedia.org/wiki/Tokyo_Institute_of_Technology",
+        "https://en.wikipedia.org/wiki/Gap_analysis",
+        "https://en.wikipedia.org/wiki/Quality_management",
+        "https://en.wikipedia.org/wiki/Scientific_method",
+        "https://en.wikipedia.org/wiki/Francis_Bacon",
+        "https://en.wikipedia.org/wiki/Novum_Organum",
+        "https://en.wikipedia.org/wiki/Lean_manufacturing",
+        "https://en.wikipedia.org/wiki/Analysis_paralysis",
+        "https://en.wikipedia.org/wiki/Kaizen",
+        "https://en.wikipedia.org/wiki/COBIT",
+        "https://en.wikipedia.org/wiki/Decision_cycle",
+        "https://en.wikipedia.org/wiki/DMAIC",
+        "https://en.wikipedia.org/wiki/Lean_manufacturing",
+        "https://en.wikipedia.org/wiki/Learning_cycle",
+        "https://en.wikipedia.org/wiki/Lesson_study",
+        "https://en.wikipedia.org/wiki/OODA_loop",
+        "https://en.wikipedia.org/wiki/Performance_management",
+        "https://en.wikipedia.org/wiki/Quality_storyboard",
+        "https://en.wikipedia.org/wiki/Six_sigma",
+        "https://en.wikipedia.org/wiki/Theory_of_constraints",
+        "https://en.wikipedia.org/wiki/Total_security_management",
+        "https://en.wikipedia.org/wiki/Software_development_process",
+        "https://en.wikipedia.org/wiki/Intelligence_cycle",
+        "https://en.wikipedia.org/wiki/ASQ_Quality_Press",
+        "https://en.wikipedia.org/wiki/Mike_Rother",
+        "https://en.wikipedia.org/wiki/Toyota_Kata",
+        "https://en.wikipedia.org/wiki/Massachusetts_Institute_of_Technology",
+        "https://en.wikipedia.org/wiki/Routledge",
+        "https://en.wikipedia.org/wiki/American_Society_for_Quality",
+        "https://en.wikipedia.org/wiki/Lean_manufacturing",
+        "https://en.wikipedia.org/wiki/Cellular_manufacturing",
+        "https://en.wikipedia.org/wiki/Takt_time",
+        "https://en.wikipedia.org/wiki/Kanban",
+        "https://en.wikipedia.org/wiki/Five_whys",
+        "https://en.wikipedia.org/wiki/Production_leveling",
+        "https://en.wikipedia.org/wiki/Total_productive_maintenance",
+        "https://en.wikipedia.org/wiki/PDCA",
+        "https://en.wikipedia.org/wiki/PDCA",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

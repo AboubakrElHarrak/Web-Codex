@@ -1,0 +1,149 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Flight_plan",
+    "title": "Flight plan",
+    "table_of_contents": [
+        "1 Route or flight paths",
+        "1.1 Airway or flight path",
+        "1.2 Navaid",
+        "1.3 Direct",
+        "2 SIDs and STARs",
+        "3 Special use airspace",
+        "4 Flight levels",
+        "5 Alternate airports",
+        "6 Fuel",
+        "7 Flight plan timeline",
+        "8 Other flight planning considerations",
+        "9 Description of flight plan blocks (FAA) Domestic Flight Plan Form 7233-1,",
+        "10 Some terms and acronyms used in flight planning",
+        "11 See also",
+        "12 References",
+        "13 External links"
+    ],
+    "content": [
+        {
+            "image2": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/9/9e/International_flight_plan.png/480px-International_flight_plan.png",
+                "caption": "\n\t\tInternational flight plan\n\t"
+            },
+            "paragraph1": "Flight plans are documents filed by a pilot or flight dispatcher with the local Air Navigation Service Provider (e.g. the FAA in the United States) prior to departure which indicate the plane's planned route or flight path. Flight plan format is specified in ICAO Doc 4444. They generally include basic information such as departure and arrival points, estimated time en route, alternate airports in case of bad weather, type of flight (whether instrument flight rules  or visual flight rules ), the pilot's information, number of people on board and information about the aircraft itself. In most countries, flight plans are required for flights under IFR, but may be optional for flying VFR unless crossing international borders. Flight plans are highly recommended, especially when flying over inhospitable areas, such as water, as they provide a way of alerting rescuers if the flight is overdue. In the United States and Canada, when an aircraft is crossing the Air Defense Identification Zone (ADIZ), either an IFR or a special type of VFR flight plan called a DVFR (Defense VFR) flight plan must be filed. For IFR flights, flight plans are used by air traffic control to initiate tracking and routing services. For VFR flights, their only purpose is to provide needed information should search and rescue operations be required, or for use by air traffic control when flying in a \"Special Flight Rules Area\".\n"
+        },
+        {
+            "title": "Route or flight paths",
+            "paragraph1": "Routing types used in flight planning are: airway, navaid and direct. A route may be composed of segments of different routing types. For example, a route from Chicago to Rome may include airway routing over the U.S. and Europe, but direct routing over the Atlantic Ocean.\n",
+            "subtitle1": "Airway or flight path",
+            "paragraph2": "Airway routing occurs along pre-defined pathways called flight paths. Airways can be thought of as three-dimensional highways for aircraft. In most land areas of the world, aircraft are required to fly airways between the departure and destination airports[citation needed]. The rules governing airway routing cover altitude, airspeed, and requirements for entering and leaving the airway (see SIDs and STARs). Most airways are eight nautical miles (14 kilometers) wide, and the airway flight levels keep aircraft separated by at least 1000 vertical feet from aircraft on the flight level above and below. Airways usually intersect at Navaids, which designate the allowed points for changing from one airway to another. Airways have names consisting of one or more letters followed by one or more digits (e.g., V484 or UA419)[citation needed].\n",
+            "paragraph3": "The airway structure is divided into high and low altitudes. The low altitude airways in the U.S. which can be navigated using VOR Navaids have names that start with the letter V, and are therefore called Victor Airways. They cover altitudes from approximately 1200 feet above ground level (AGL) to 17,999 feet (5,486 m) above mean sea level (MSL). T routes are low altitude RNAV only routes which may or may not utilize VOR NAVAIDS.  The high altitude airways in the U.S. have names that start with the letter J and are called Jet Routes, or Q for Q routes.  Q routes in the U.S. are RNAV only high altitude airways, whereas J routes use VOR NAVAID's the same way V routes do. J & Q routes run from 18,000 feet (5,486 m) to 45,000 feet (13,716 m). The altitude separating the low and high airway structures varies from country to country. For example, it is 19,500 feet (5,944 m) in Switzerland, and 25,500 feet (7,772 m) in Egypt.\n",
+            "subtitle2": "Navaid",
+            "paragraph4": "Navaid routing occurs between Navaids (short for Navigational Aids, see VOR) which are not always connected by airways. Navaid routing is typically only allowed in the continental U.S. If a flight plan specifies Navaid routing between two Navaids which are connected via an airway, the rules for that particular airway must be followed as if the aircraft was flying Airway routing between those two Navaids. Allowable altitudes are covered in Flight Levels.\n",
+            "subtitle3": "Direct",
+            "paragraph5": "Direct routing occurs when one or both of the route segment endpoints are at a latitude/longitude which is not located at a Navaid. Some flight planning organizations specify that checkpoints generated for a Direct route be a limited distance apart, or limited by time to fly between the checkpoints (i.e. direct checkpoints could be farther apart for a fast aircraft than for a slow one).\n"
+        },
+        {
+            "title": "SIDs and STARs",
+            "paragraph1": "SIDs and STARs are procedures and checkpoints used to enter and leave the airway system by aircraft operating on IFR flight plans. There is a defined transition point at which an airway and a SID or STAR intersect.\n",
+            "paragraph2": "A SID, or Standard Instrument Departure, defines a pathway out of an airport and onto the airway structure. A SID is sometimes called a Departure Procedure (DP). SIDs are unique to the associated airport.\n",
+            "paragraph3": "A STAR, or Standard Terminal Arrival Route, ('Standard Instrument Arrival' in the UK) defines a pathway into an airport from the airway structure. STARs can be associated with more than one arrival airport, which can occur when two or more airports are in proximity (e.g., San Francisco and San Jose).\n"
+        },
+        {
+            "title": "Special use airspace",
+            "paragraph1": "In general, flight planners are expected to avoid areas called Special Use Airspace (SUA) when planning a flight. In the United States, there are several types of SUA, including Restricted, Warning, Prohibited, Alert, and Military Operations Area (MOA). Examples of Special Use Airspace include a region around the White House in Washington, D.C., and the country of Cuba. Government and military aircraft may have different requirements for particular SUA areas, or may be able to acquire special clearances to traverse through these areas.\n"
+        },
+        {
+            "title": "Flight levels",
+            "paragraph1": "Flight levels (FL) are used by air traffic controllers to simplify the vertical separation of aircraft and one exists every 100 feet relative to an agreed pressure level. Above a transitional altitude, which varies from country to country, the worldwide arbitrary pressure datum of 1013.25 millibar or the equivalent setting of 29.92 inches of mercury is entered into the altimeter and altitude is then referred to as a flight level. The altimeter reading is converted to a flight level by removing the trailing two zeros: for example, 29000 feet becomes FL290. When the pressure at sea level is by chance the international standard then the flight level is also the altitude. To avoid confusion, below the transition altitude, height is referred to as a numeric altitude, for example 'descend 5000 feet' and above the transition altitude, 'climb flight level 250'.\n",
+            "paragraph2": "Airways have a set of associated standardized flight levels (sometimes called the \"flight model\") which must be used when on the airway. On a bi-directional airway, each direction has its own set of flight levels. A valid flight plan must include a legal flight level at which the aircraft will travel the airway. A change in airway may require a change in flight level.\n",
+            "paragraph3": "In the US, Canada and Europe for eastbound (heading 0–179 degrees) IFR flights, the flight plan must list an \"odd\" flight level in 2000 foot increments starting at FL190 (i.e., FL190, FL210, FL230, etc.); Westbound (heading 180–359 degrees) IFR flights must list an \"even\" flight level in 2000 foot increments starting at FL180 (i.e., FL180, FL200, FL220, etc.). However, Air Traffic Control (ATC) may assign any flight level at any time if traffic situations merit a change in altitude.\n",
+            "paragraph4": "Aircraft efficiency increases with height. Burning fuel decreases the weight of an aircraft which may then choose to increase its flight level to further improve fuel consumption. For example, an aircraft may be able to reach FL290 early in a flight, but step climb to FL370 later in the route after weight has decreased due to fuel burn off.\n",
+            "ul1": "RVSM\n"
+        },
+        {
+            "title": "Alternate airports",
+            "paragraph1": "Part of flight planning often involves the identification of one or more airports which can be flown to in case of unexpected conditions (such as weather) at the destination airport. The planning process must be careful to include only alternate airports which can be reached with the anticipated fuel load and total aircraft weight and that have capabilities necessary to handle the type of aircraft being flown.\n",
+            "paragraph2": "In Canada, unlike the United States, unless specifically exempted by a company Operating Certificate, IFR flight plans require an alternate airport, regardless of the forecast destination weather.  In order to be considered as a legally valid alternate, the airport must be forecast to be at or above certain weather minima at the estimated time of arrival (at the alternate).  The minimum weather conditions vary based on the type of approach(es) available at the alternate airport, and may be found in the General section of the Canada Air Pilot (CAP).\n"
+        },
+        {
+            "title": "Fuel",
+            "paragraph1": "Aircraft manufacturers are responsible for generating flight performance data which flight planners use to estimate fuel needs for a particular flight. The fuel burn rate is based on specific throttle settings for climbing and cruising. The planner uses the projected weather and aircraft weight as inputs to the flight performance data to estimate the necessary fuel to reach the destination. The fuel burn is usually given as the weight of the fuel (usually pounds or kilograms) instead of the volume (such as gallons or litres) because aircraft weight is critical.\n",
+            "paragraph2": "In addition to standard fuel needs, some organizations require that a flight plan include reserve fuel if certain conditions are met. For example, an over-water flight of longer than a specific duration may require the flight plan to include reserve fuel. The reserve fuel may be planned as extra which is left over on the aircraft at the destination, or it may be assumed to be burned during flight (perhaps due to unaccounted for differences between the actual aircraft and the flight performance data).\n",
+            "paragraph3": "In case of an in-flight emergency it may be necessary to determine whether it is quicker to divert to the alternate airfield or continue to the destination.  This can be calculated according to the formula (known as the Vir Narain formula) as follows:\n",
+            "paragraph4": "where C is the distance from the Critical Point (equitime point) to the destination, D the distance between the destination and the alternate airfield, O is the groundspeed, A is the airspeed, θ = Φ +/- d (where Φ is the angle between the track to the destination and the track from the destination to the alternate airfield), and d is the drift (plus when the drift and the alternate airfield are on the opposite sides of the track, and minus when they are on the same side).\n"
+        },
+        {
+            "title": "Flight plan timeline",
+            "paragraph1": "Flight plans may be submitted before departure or even after the aircraft is in the air.  However flight plans may be submitted up to 120 hours in advance either by voice or by data link; though they are usually filled out or submitted just several hours before departure.  The minimum recommended time is 1 hour before departure for domestic flights, and up to three hours before international flights.  This time depends on the country the aircraft is flying out of.[citation needed]\n"
+        },
+        {
+            "title": "Other flight planning considerations",
+            "paragraph1": "Holding over the destination or alternate airports is a required part of some flight plans. Holding (circling in a pattern designated by the airport control tower) may be necessary if unexpected weather or congestion occurs at the airport. If the flight plan calls for hold planning, the additional fuel and hold time should appear on the flight plan.\n",
+            "paragraph2": "Organized Tracks are a series of paths similar to airways which cross ocean areas. Some organized track systems are fixed and appear on navigational charts (e.g., the NOPAC tracks over the Northern Pacific Ocean). Others change on a daily basis depending on weather, west or eastbound and other factors and therefore cannot appear on printed charts (e.g., the North Atlantic Tracks (NAT) over the Atlantic Ocean).\n"
+        },
+        {
+            "title": "Description of flight plan blocks (FAA) Domestic Flight Plan Form 7233-1,",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Flightplan.PNG/500px-Flightplan.PNG",
+                "caption": "\n\t\tStandard FAA flight plan form\n\t"
+            },
+            "ol1": "1 - Type: Type of flight plan. Flights may be VFR, IFR, DVFR, or a combination of types, termed composite.\n2 - Aircraft Identification: The registration of the aircraft, usually the flight or tail number.\n3 - Aircraft Type/Special Equipment: The type of aircraft and how it's equipped. For example, a Mitsubishi Mu-2 equipped with an altitude reporting transponder and GPS would use MU2/G. Equipment codes may be found in the FAA Airman's Information Manual.\n4 - True airspeed in knots: The planned cruise true airspeed of the aircraft in knots.\n5 - Departure Point: Usually the identifier of the airport from which the aircraft is departing.\n6 - Departure Time: Proposed and actual times of departure. Times are Universal Time Coordinated.\n7 - Cruising Altitude: The planned cruising altitude or flight level.\n8 - Route: Proposed route of flight. The route can be made up of airways, intersections, navaids, or possibly direct.\n9 - Destination: Point of intended landing. Typically the identifier of the destination airport.\n10 - Estimated Time Enroute: Planned elapsed time between departure and arrival at the destination.\n11 - Remarks: Any information the PIC believes is necessary to be provided to ATC. One common remark is \"SSNO\", which means the PIC is unable or unwilling to accept a SID or STAR on an IFR flight.\n12 - Fuel on Board: The amount of fuel on board the aircraft, in hours and minutes of flight time.\n13 - Alternate Airports: Airports of intended landing as an alternate of the destination airport. May be required for an IFR flight plan if poor weather is forecast at the planned destination.\n14 - Pilot's Information: Contact information of the pilot for search and rescue purposes.\n15 - Number Onboard: Total number of people on board the aircraft.\n16 - Color of Aircraft: The color helps identify the aircraft to search and rescue personnel.\n17 - Contact Information at Destination: Having a means of contacting the pilot is useful for tracking down an aircraft that has failed to close its flight plan and is possibly overdue or in distress.\n"
+        },
+        {
+            "title": "Some terms and acronyms used in flight planning"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Flightplan",
+        "https://en.wikipedia.org/wiki/Flight_planning",
+        "https://en.wikipedia.org/wiki/Aviator",
+        "https://en.wikipedia.org/wiki/Flight_dispatcher",
+        "https://en.wikipedia.org/wiki/Air_Navigation_Service_Provider",
+        "https://en.wikipedia.org/wiki/Federal_Aviation_Administration",
+        "https://en.wikipedia.org/wiki/Flight_path",
+        "https://en.wikipedia.org/wiki/Instrument_flight_rules",
+        "https://en.wikipedia.org/wiki/Visual_flight_rules",
+        "https://en.wikipedia.org/wiki/Air_Defense_Identification_Zone",
+        "https://en.wikipedia.org/wiki/Air_traffic_control",
+        "https://en.wikipedia.org/wiki/Chicago",
+        "https://en.wikipedia.org/wiki/Flight_path",
+        "https://en.wikipedia.org/wiki/Flight_path",
+        "https://en.wikipedia.org/wiki/VHF_omnidirectional_range",
+        "https://en.wikipedia.org/wiki/VHF_omnidirectional_range",
+        "https://en.wikipedia.org/wiki/Standard_Instrument_Departure",
+        "https://en.wikipedia.org/wiki/Standard_Terminal_Arrival_Route",
+        "https://en.wikipedia.org/wiki/Flight_planner",
+        "https://en.wikipedia.org/wiki/Special_use_airspace",
+        "https://en.wikipedia.org/wiki/Restricted_airspace",
+        "https://en.wikipedia.org/wiki/Military_Operations_Area",
+        "https://en.wikipedia.org/wiki/White_House",
+        "https://en.wikipedia.org/wiki/Cuba",
+        "https://en.wikipedia.org/wiki/Flight_level",
+        "https://en.wikipedia.org/wiki/Altimeter",
+        "https://en.wikipedia.org/wiki/Transition_altitude",
+        "https://en.wikipedia.org/wiki/Step_climb",
+        "https://en.wikipedia.org/wiki/RVSM",
+        "https://en.wikipedia.org/wiki/International_flight",
+        "https://en.wikipedia.org/wiki/North_Atlantic_Tracks",
+        "https://en.wikipedia.org/wiki/Visual_flight_rules",
+        "https://en.wikipedia.org/wiki/Instrument_flight_rules",
+        "https://en.wikipedia.org/wiki/DVFR",
+        "https://en.wikipedia.org/wiki/Transponder",
+        "https://en.wikipedia.org/wiki/Global_Positioning_System",
+        "https://en.wikipedia.org/wiki/Equipment_codes",
+        "https://en.wikipedia.org/wiki/Standard_Instrument_Departure",
+        "https://en.wikipedia.org/wiki/Standard_Terminal_Arrival_Route",
+        "https://en.wikipedia.org/wiki/Above_Ground_Level",
+        "https://en.wikipedia.org/wiki/ICAO",
+        "https://en.wikipedia.org/wiki/Mean_Sea_Level",
+        "https://en.wikipedia.org/wiki/Great_circle",
+        "https://en.wikipedia.org/wiki/Statute_mile",
+        "https://en.wikipedia.org/wiki/ROFOR",
+        "https://en.wikipedia.org/wiki/Aeronautical_Telecommunication_Network",
+        "https://en.wikipedia.org/wiki/Aircraft_Communications_Addressing_and_Reporting_System",
+        "https://en.wikipedia.org/wiki/Flight_planning",
+        "https://en.wikipedia.org/wiki/Flight_service_station",
+        "https://en.wikipedia.org/wiki/Future_Air_Navigation_System",
+        "https://en.wikipedia.org/wiki/International_Civil_Aviation_Organization",
+        "https://en.wikipedia.org/wiki/Flight_plan",
+        "https://en.wikipedia.org/wiki/Flight_plan",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

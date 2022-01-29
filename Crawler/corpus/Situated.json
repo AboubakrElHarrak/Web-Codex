@@ -1,0 +1,35 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Situated",
+    "title": "Situated",
+    "table_of_contents": [],
+    "content": [
+        {
+            "paragraph1": "In artificial intelligence and cognitive science, the term situated refers to an agent which is embedded in an environment. The term situated is commonly used to refer to robots, but some researchers argue that software agents can also be situated if:\n",
+            "ul1": "they exist in a dynamic (rapidly changing) environment, which\nthey can manipulate or change through their actions, and which\nthey can sense or perceive.\n",
+            "paragraph2": "Examples might include web-based agents, which can alter data or trigger processes (such as purchases) over the internet, or virtual-reality bots which inhabit and change virtual worlds, such as Second Life.\n",
+            "paragraph3": "Being situated is generally considered to be part of being embodied, but it is useful to consider each perspective individually.  The situated perspective emphasizes that intelligent behaviour derives from the environment and the agent's interactions with it. The nature of these interactions are defined by an agent's embodiment.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Situated_robotics",
+        "https://en.wikipedia.org/wiki/Nouvelle_AI",
+        "https://en.wikipedia.org/wiki/Situated_learning",
+        "https://en.wikipedia.org/wiki/Situated_knowledge",
+        "https://en.wikipedia.org/wiki/Situated_cognition",
+        "https://en.wikipedia.org/wiki/Artificial_intelligence",
+        "https://en.wikipedia.org/wiki/Cognitive_science",
+        "https://en.wikipedia.org/wiki/Intelligent_agent",
+        "https://en.wikipedia.org/wiki/Robot",
+        "https://en.wikipedia.org/wiki/Software",
+        "https://en.wikipedia.org/wiki/Dynamical_system",
+        "https://en.wikipedia.org/wiki/Sense",
+        "https://en.wikipedia.org/wiki/Perception",
+        "https://en.wikipedia.org/wiki/Second_Life",
+        "https://en.wikipedia.org/wiki/Embodied_embedded_cognition",
+        "https://en.wikipedia.org/wiki/Interaction",
+        "https://en.wikipedia.org/wiki/Situated",
+        "https://en.wikipedia.org/wiki/Situated",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

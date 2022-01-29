@@ -1,0 +1,32 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Conceptual_Dependency_Theory",
+    "title": "Conceptual dependency theory",
+    "table_of_contents": [],
+    "content": [
+        {
+            "paragraph1": "Conceptual dependency theory is a model of natural language understanding used in artificial intelligence systems.\n",
+            "paragraph2": "Roger Schank at Stanford University introduced the model in 1969, in the early days of artificial intelligence. This model was extensively used by Schank's students at Yale University such as Robert Wilensky, Wendy Lehnert, and Janet Kolodner.\n",
+            "paragraph3": "Schank developed the model to represent knowledge for natural language input into computers. Partly influenced by the work of Sydney Lamb, his goal was to make the meaning independent of the words used in the input, i.e. two sentences identical in meaning, would have a single representation. The system was also intended to draw logical inferences.\n",
+            "paragraph4": "The model uses the following basic representational tokens:\n",
+            "paragraph5": "A set of conceptual transitions then act on this representation, e.g. an ATRANS is used to represent a transfer such as \"give\" or \"take\" while a PTRANS is used to act on locations such as \"move\" or \"go\". An MTRANS represents mental acts such as \"tell\", etc.\n",
+            "paragraph6": "A sentence such as \"John gave a book to Mary\" is then represented as the action of an ATRANS on two real world objects John and Mary.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Natural_language_understanding",
+        "https://en.wikipedia.org/wiki/Artificial_intelligence",
+        "https://en.wikipedia.org/wiki/Roger_Schank",
+        "https://en.wikipedia.org/wiki/Stanford_University",
+        "https://en.wikipedia.org/wiki/Yale_University",
+        "https://en.wikipedia.org/wiki/Robert_Wilensky",
+        "https://en.wikipedia.org/wiki/Janet_Kolodner",
+        "https://en.wikipedia.org/wiki/Sydney_Lamb",
+        "https://en.wikipedia.org/wiki/Augmented_transition_network",
+        "https://en.wikipedia.org/wiki/Conceptual_space",
+        "https://en.wikipedia.org/wiki/Roger_Schank",
+        "https://en.wikipedia.org/wiki/Conceptual_dependency_theory",
+        "https://en.wikipedia.org/wiki/Conceptual_dependency_theory",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

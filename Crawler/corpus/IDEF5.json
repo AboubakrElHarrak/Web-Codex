@@ -1,0 +1,75 @@
+{
+    "url": "https://en.wikipedia.org/wiki/IDEF5",
+    "title": "IDEF5",
+    "table_of_contents": [
+        "1 Overview",
+        "2 Topics",
+        "2.1 Ontology",
+        "2.2 Central concepts of ontology",
+        "2.3 Ontology development process",
+        "2.4 Ontological analysis",
+        "3 IDEF5 Building blocks",
+        "3.1 Definitions",
+        "3.2 Diagram types",
+        "4 See also",
+        "5 References",
+        "6 External links"
+    ],
+    "content": [
+        {
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/3/37/4-54_Composition_Schematic_for_Ballpoint.jpg",
+                "caption": "\n\t\tExample of an IDEF5 Composition Schematic for a Ballpoint Pen.\n\t"
+            },
+            "paragraph1": "IDEF5 (Integrated Definition for Ontology Description Capture Method) is a software engineering method to develop and maintain usable, accurate domain ontologies. This standard is part of the IDEF family of modeling languages in the field of software engineering.\n"
+        },
+        {
+            "title": "Overview",
+            "paragraph1": "In the field of computer science ontologies are used to capture the concept and objects in a specific domain, along with associated relationships and meanings. In addition, ontology capture helps coordinate projects by standardizing terminology and creates opportunities for information reuse. The lDEF5 Ontology Capture Method has been developed to reliably construct ontologies in a way that closely reflects human understanding of the specific domain.\n",
+            "paragraph2": "In the IDEF5 method, an ontology is constructed by capturing the content of certain assertions about real-world objects, their properties, and their interrelationships and representing that content in an intuitive and natural form. The IDEF5 method has three main components:\n",
+            "ul1": "A graphical language to support conceptual ontology analysis\nA structured text language for detailed ontology characterization, and\nA systematic procedure that provides guidelines for effective ontology capture.\n"
+        },
+        {
+            "title": "Topics",
+            "subtitle1": "Ontology",
+            "paragraph1": "In IDEF5 the meaning of the term ontology is characterized to include a catalog of terms used in a domain, the rules governing how those terms can be combined to make valid statements about situations in that domain, and the “sanctioned inferences” that can be made when such statements are used in that domain. In every domain, there are phenomena that the humans in that domain discriminate as (conceptual or physical) objects, associations, and situations. Through various language mechanisms, one associates definite descriptors (e.g., names, noun phrases, etc.) to those phenomena.\n",
+            "subtitle2": "Central concepts of ontology",
+            "paragraph2": "The construction of ontologies for human engineered systems is the focus of the IDEF5. In the context of such systems, the nature of ontological knowledge involves several modifications to the more traditional conception. The first of these modifications has to do with the notion of a kind. Historically, a kind is an objective category of objects that are bound together by a common nature, a set of properties shared by all and only the members of the kind.\n",
+            "paragraph3": "While there is an attempt to divide the world at its joints in the construction of enterprise ontologies, those divisions are not determined by the natures of things in the enterprise so much as the roles those things are to play in the enterprise from some perspective or other. Because those roles might be filled in any of a number of ways by objects that differ in various ways, and because legitimate perspectives on a domain can vary widely, it is too restrictive to require that the instances of each identifiable kind in an enterprise share a common nature, let alone that the properties constituting that nature be essential to their bearers. Consequently, enterprise ontologies require a more flexible notion of kind.\n",
+            "subtitle3": "Ontology development process",
+            "paragraph4": "Ontology development requires extensive iterations, discussions, reviews, and introspection. Knowledge extraction is usually a discovery process and requires considerable introspection. It requires a process that incorporates both significant expert involvement as well as the dynamics of a group effort. Given the open-ended nature of ontological analyses, it is not prudent to adopt a “cookbook” approach to ontology development. In brief, the IDEF5 ontology development process consists of the following five activities:\n",
+            "ol1": "1 - Organizing and Scoping: This activity involves establishing the purpose, viewpoint, and context for the ontology development project and assigning roles to the team members.\n2 - Data Collection: This activity involves acquiring the raw data needed for ontology development.\n3 - Data Analysis: This activity involves analyzing the data to facilitate ontology extraction.\n4 - Initial Ontology Development: This activity involves developing a preliminary ontology from the acquired data.\n5 - Ontology Refinement and Validation: This activity involves refining and validating the ontology to complete the development process.\n",
+            "paragraph5": "Although the above activities are listed sequentially, there is a significant amount of overlap and iteration between the activities.\n",
+            "subtitle4": "Ontological analysis",
+            "paragraph6": "Ontological analysis is accomplished by examining the vocabulary that is used to discuss the characteristic objects and processes that compose the domain, developing rigorous definitions of the basic terms in that vocabulary, and characterizing the logical connections among those terms. The product of this analysis, an ontology, is a domain vocabulary complete with a set of precise definitions, or axioms, that constrain the meanings of the terms sufficiently to enable consistent interpretation of the data that use that vocabulary.\n"
+        },
+        {
+            "title": "IDEF5 Building blocks",
+            "subtitle1": "Definitions",
+            "paragraph1": "Some of the key terms in IDEF5 and the basic IDEF5 Schematic Language Symbols, see figure.:\n",
+            "subtitle2": "Diagram types",
+            "paragraph2": "Various diagram types, or schematics, can be constructed in the IDEF5 Schematic Language. The purpose of these schematics, like that of any representation, is to represent information visually. Thus, semantic rules must be provided for interpreting every possible schematic. These rules are provided by outlining the rules for interpreting the most basic constructs of the language, then applying them recursively to more complex constructs. There are four primary schematic types derived from the basic IDEF5 Schematic Language which can be used to capture ontology information directly in a form that is intuitive to the domain expert.\n",
+            "ul1": "Classification Schematics : Classification schematics provide mechanisms for humans to organize knowledge into logical taxonomies. Of particular merit are two types of classification: description subsumption and natural kind classification.\nComposition Schematics : Composition schematics serve as mechanisms to represent graphically the \"part-of\" relation that is so common among components of an ontology.\nRelation Schematics : Relation schematics allow ontology developers to visualize and understand relations among kinds in a domain, and can also be used to capture and display relations between first-order relations.\nObject State Schematics : Because there is no clean division between information about kinds and states and information about processes, the IDEF5 schematic language enables modelers to express fairly detailed object-centered process information (i.e., information about kinds of objects and the various states they can be in relative to certain processes). Diagrams built from these constructs are known as Object-State Schematics.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Software_engineering",
+        "https://en.wikipedia.org/wiki/IDEF",
+        "https://en.wikipedia.org/wiki/Modeling_language",
+        "https://en.wikipedia.org/wiki/Computer_science",
+        "https://en.wikipedia.org/wiki/Concept",
+        "https://en.wikipedia.org/wiki/Domain_knowledge",
+        "https://en.wikipedia.org/wiki/Terminology",
+        "https://en.wikipedia.org/wiki/Information",
+        "https://en.wikipedia.org/wiki/Understanding",
+        "https://en.wikipedia.org/wiki/Knowledge_extraction",
+        "https://en.wikipedia.org/wiki/IDEF",
+        "https://en.wikipedia.org/wiki/IDEF6",
+        "https://en.wikipedia.org/wiki/Ontology",
+        "https://en.wikipedia.org/wiki/Ontology_engineering",
+        "https://en.wikipedia.org/wiki/IDEF5",
+        "https://en.wikipedia.org/wiki/IDEF5",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

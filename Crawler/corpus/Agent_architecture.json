@@ -1,0 +1,49 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Agent_architecture",
+    "title": "Agent architecture",
+    "table_of_contents": [
+        "1 Types",
+        "1.1 Reactive architectures",
+        "1.2 Deliberative reasoning architectures",
+        "1.3 Layered/hybrid architectures",
+        "1.4 Cognitive architectures",
+        "2 See also",
+        "3 References"
+    ],
+    "content": [
+        {
+            "paragraph1": "Agent architecture in computer science is a blueprint for software agents and intelligent control systems, depicting the arrangement of components. The architectures implemented by intelligent agents are referred to as cognitive architectures. The term agent is a conceptual idea, but not defined precisely. It consists of facts, set of goals and sometimes a plan library.\n"
+        },
+        {
+            "title": "Types",
+            "subtitle1": "Reactive architectures",
+            "ul1": "Subsumption\n",
+            "subtitle2": "Deliberative reasoning architectures",
+            "ul2": "Procedural reasoning system (PRS)\n",
+            "subtitle3": "Layered/hybrid architectures",
+            "ul3": "3T\nAuRA\nBrahms\nGAIuS\nGRL\nICARUS\nInteRRaP\nTinyCog\nTouringMachines\n",
+            "subtitle4": "Cognitive architectures",
+            "ul4": "ASMO\nSoar\nACT-R\nBrahms\nLIDA\nPreAct\nCougaar\nPRODIGY\nFORR\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Computer_science",
+        "https://en.wikipedia.org/wiki/Blueprint",
+        "https://en.wikipedia.org/wiki/Software_agent",
+        "https://en.wikipedia.org/wiki/Intelligent_control",
+        "https://en.wikipedia.org/wiki/Intelligent_agent",
+        "https://en.wikipedia.org/wiki/Cognitive_architecture",
+        "https://en.wikipedia.org/wiki/Subsumption_architecture",
+        "https://en.wikipedia.org/wiki/Procedural_reasoning_system",
+        "https://en.wikipedia.org/wiki/Cougaar",
+        "https://en.wikipedia.org/wiki/FORR",
+        "https://en.wikipedia.org/wiki/Action_selection",
+        "https://en.wikipedia.org/wiki/Cognitive_architecture",
+        "https://en.wikipedia.org/wiki/Wayback_Machine",
+        "https://en.wikipedia.org/wiki/Artificial_intelligence",
+        "https://en.wikipedia.org/wiki/Agent_architecture",
+        "https://en.wikipedia.org/wiki/Agent_architecture",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

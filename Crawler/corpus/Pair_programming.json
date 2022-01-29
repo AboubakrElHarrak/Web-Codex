@@ -1,0 +1,94 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Pair_programming",
+    "title": "Pair programming",
+    "table_of_contents": [
+        "1 Economics",
+        "2 Design quality",
+        "3 Satisfaction",
+        "4 Learning",
+        "5 Team-building and communication",
+        "6 Studies",
+        "7 Indicators of non-performance",
+        "8 Pairing variations",
+        "9 Remote pair programming",
+        "10 See also",
+        "11 References",
+        "12 External links"
+    ],
+    "content": [
+        {
+            "image2": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/a/af/Pair_programming_1.jpg/660px-Pair_programming_1.jpg",
+                "caption": "\n\t\tTwo co-workers pair programming, 2007\n\t"
+            },
+            "paragraph1": "Pair programming is an agile software development technique in which two programmers work together at one workstation. One, the driver, writes code while the other, the observer or navigator, reviews each line of code as it is typed in. The two programmers switch roles frequently.\n",
+            "paragraph2": "While reviewing, the observer also considers the \"strategic\" direction of the work, coming up with ideas for improvements and likely future problems to address. This is intended to free the driver to focus all of their attention on the \"tactical\" aspects of completing the current task, using the observer as a safety net and guide.\n"
+        },
+        {
+            "title": "Economics",
+            "paragraph1": "Pair programming increases the person-hours required to deliver code compared to programmers working individually. However, the resulting code has fewer defects. Along with code development time, other factors like field support costs and quality assurance also figure in to the return on investment. Pair programming might theoretically offset these expenses by reducing defects in the programs.\n",
+            "paragraph2": "In addition to preventing mistakes as they are made, other intangible benefits may exist.  For example, the courtesy of rejecting phone calls or other distractions while working together, taking fewer breaks at agreed-upon intervals, or shared breaks to return phone calls (but returning to work quickly since someone is waiting).  One member of the team might have more focus and help drive or awaken the other if they lose focus, and that role might periodically change.  One member might have knowledge of a topic or technique which the other does not, which might eliminate delays to find or test a solution, or allow for a better solution, thus effectively expanding the skill set, knowledge, and experience of a programmer as compared to working alone.  Each of these intangible benefits, and many more, may be challenging to accurately measure, but can contribute to more efficient working hours.\n"
+        },
+        {
+            "title": "Design quality",
+            "paragraph1": "A system with two programmers possesses greater potential for the generation of more diverse solutions to problems for three reasons:\n",
+            "ol1": "1 - the programmers bring different prior experiences to the task;\n2 - they may assess information relevant to the task in different ways;\n3 - they stand in different relationships to the problem by virtue of their functional roles.\n",
+            "paragraph2": "In an attempt to share goals and plans, the programmers must overtly negotiate a shared course of action when a conflict arises between them. In doing so, they consider a larger number of ways of solving the problem than a single programmer alone might do. This significantly improves the design quality of the program as it reduces the chances of selecting a poor method.\n"
+        },
+        {
+            "title": "Satisfaction",
+            "paragraph1": "In an online survey of pair programmers from 2000, 96% of programmers stated that they enjoyed work more while pair programming than programming alone. Furthermore, 95% said that they were more confident in their work when they pair programmed.\n"
+        },
+        {
+            "title": "Learning",
+            "paragraph1": "Knowledge is constantly shared between pair programmers, whether in the industry or in a classroom. Many sources suggest that students show higher confidence when programming in pairs, and many learn whether it be from tips on programming language rules to overall design skill. In \"promiscuous pairing\", each programmer communicates and works with all the other programmers on the team rather than pairing only with one partner, which causes knowledge of the system to spread throughout the whole team. Pair programming allows programmers to examine their partner's code and provide feedback, which is necessary to increase their own ability to develop monitoring mechanisms for their own learning activities.\n"
+        },
+        {
+            "title": "Team-building and communication",
+            "paragraph1": "Pair programming allows team members to share quickly, making them less likely to have agendas hidden from each other. This helps pair programmers learn to communicate more easily. \"This raises the communication bandwidth and frequency within the project, increasing overall information flow within the team.\"\n"
+        },
+        {
+            "title": "Studies",
+            "paragraph1": "There are both empirical studies and meta-analyses of pair programming. The empirical studies tend to examine the level of productivity and the quality of the code, while meta-analyses may focus on biases introduced by the process of testing and publishing.\n",
+            "paragraph2": "A meta-analysis found pairs typically consider more design alternatives than programmers working alone, arrive at simpler more maintainable designs, and catch design defects earlier. However, it raised concerns that its findings may have been influenced by \"signs of publication bias among published studies on pair programming\". It concluded that \"pair programming is not uniformly beneficial or effective\".\n",
+            "paragraph3": "Although pair programmers may complete a task faster than a solo programmer, the total number of person-hours increases. A manager would have to balance faster completion of the work and reduced testing and debugging time against the higher cost of coding. The relative weight of these factors can vary by project and task.\n",
+            "paragraph4": "The benefit of pairing is greatest on tasks that the programmers do not fully understand before they begin: that is, challenging tasks that call for creativity and sophistication, and for novices as compared to experts. Pair programming could be helpful for attaining high quality and correctness on complex programming tasks, but it would also increase the development effort (cost) significantly.\n",
+            "paragraph5": "On simple tasks, which the pair already fully understands, pairing results in a net drop in productivity. It may reduce the code development time but also risks reducing the quality of the program. Productivity can also drop when novice–novice pairing is used without sufficient availability of a mentor to coach them.\n"
+        },
+        {
+            "title": "Indicators of non-performance",
+            "paragraph1": "There are indicators that a pair is not performing well:\n",
+            "ul1": "Disengagement may present as one of the members physically withdraws away from the keyboard, accesses email, or even falls asleep.\nThe \"Watch the Master\" phenomenon can arise if one member is more experienced than the other. In this situation, the junior member may take the observer role, deferring to the senior member of the pair for the majority of coding activity. This can easily lead to disengagement.\n"
+        },
+        {
+            "title": "Pairing variations"
+        },
+        {
+            "title": "Remote pair programming",
+            "paragraph1": "Remote pair programming, also known as virtual pair programming or distributed pair programming, is pair programming in which the two programmers are in different locations, working via a collaborative real-time editor, shared desktop, or a remote pair programming IDE plugin. Remote pairing introduces difficulties not present in face-to-face pairing, such as extra delays for coordination, depending more on \"heavyweight\" task-tracking tools instead of \"lightweight\" ones like index cards, and loss of verbal communication resulting in confusion and conflicts over such things as who \"has the keyboard\".\n",
+            "paragraph2": "Tool support could be provided by:\n",
+            "ul1": "Whole-screen sharing software[13][14][self-published source?]\nTerminal multiplexers\nSpecialized distributed editing tools\nAudio chat programs or VoIP software could be helpful when the screen sharing software does not provide two-way audio capability. Use of headsets keep the programmers' hands free\nCloud development environments\nCollaborative pair programming services\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Agile_software_development",
+        "https://en.wikipedia.org/wiki/Computer_programmer",
+        "https://en.wikipedia.org/wiki/Source_code",
+        "https://en.wikipedia.org/wiki/Code_review",
+        "https://en.wikipedia.org/wiki/Publication_bias",
+        "https://en.wikipedia.org/wiki/Integrated_development_environment",
+        "https://en.wikipedia.org/wiki/Terminal_multiplexer",
+        "https://en.wikipedia.org/wiki/Chavrusa",
+        "https://en.wikipedia.org/wiki/Extreme_programming",
+        "https://en.wikipedia.org/wiki/Joint_attention",
+        "https://en.wikipedia.org/wiki/Mob_programming",
+        "https://en.wikipedia.org/wiki/Team_programming",
+        "https://en.wikipedia.org/wiki/Alistair_Cockburn",
+        "https://en.wikipedia.org/wiki/Journal_of_Universal_Computer_Science",
+        "https://en.wikipedia.org/wiki/Wayback_Machine",
+        "https://en.wikipedia.org/wiki/Pair_programming",
+        "https://en.wikipedia.org/wiki/Pair_programming",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

@@ -1,0 +1,150 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Viable_System_Model",
+    "title": "Viable system model",
+    "table_of_contents": [
+        "1 Overview",
+        "2 Components",
+        "3 Rules for the viable system",
+        "3.1 Regulatory aphorisms",
+        "3.2 Principles of organization",
+        "3.3 Recursive system theorem",
+        "3.4 Axioms",
+        "3.5 The law of cohesion for multiple recursions of the viable system",
+        "4 Measuring performance",
+        "5 Metalanguage",
+        "6 Applying VSM",
+        "7 See also",
+        "8 References",
+        "9 Further reading",
+        "10 External links",
+        "10.1 Organizations"
+    ],
+    "content": [
+        {
+            "paragraph1": "The viable system model (VSM) is a model of the organizational structure of any autonomous system capable of producing itself. A viable system is any system organised in such a way as to meet the demands of surviving in the changing environment. One of the prime features of systems that survive is that they are adaptable. The VSM expresses a model for a viable system, which is an abstracted cybernetic (regulation theory) description that is claimed to be applicable to any organisation that is a viable system and capable of autonomy.\n"
+        },
+        {
+            "title": "Overview",
+            "paragraph1": "The model was developed by operations research theorist and cybernetician Stafford Beer in his book Brain of the Firm (1972). Together with Beer's earlier works on cybernetics applied to management, this book effectively founded management cybernetics.\n",
+            "paragraph2": "The first thing to note about the cybernetic theory of organizations encapsulated in the VSM is that viable systems are recursive; viable systems contain viable systems that can be modeled using an identical cybernetic description as the higher (and lower) level systems in the containment hierarchy (Beer expresses this property of viable systems as cybernetic isomorphism).\nA development of this model has originated the theoretical proposal called viable systems approach.\n",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/b/b6/VSM_Default_Version_English_with_two_operational_systems.png/440px-VSM_Default_Version_English_with_two_operational_systems.png",
+                "caption": "\n\t\tAn exemplary model of a corporation as a viable system. Assumption: There is one System 1 purchasing external resources and one System 1 which produces the value, delivered to the customers. The VSM applies for all kinds of organizations.\n\t"
+            }
+        },
+        {
+            "title": "Components",
+            "paragraph1": "Here we give a brief introduction to the cybernetic description of the organization encapsulated in a single level of the VSM.\n",
+            "paragraph2": "A viable system is composed of five interacting subsystems which may be mapped onto aspects of organizational structure. In broad terms Systems 1–3. are concerned with the 'here and now' of the organization's operations, System 4 is concerned with the 'there and then' – strategical responses to the effects of external, environmental and future demands on the organization. System 5 is concerned with balancing the 'here and now' and the 'there and then' to give policy directives which maintain the organization as a viable entity.\n",
+            "ul1": "System 1 in a viable system contains several primary activities. Each System 1 primary activity is itself a viable system due to the recursive nature of systems as described above. These are concerned with performing a function that implements at least part of the key transformation of the organization.\nSystem 2 represents the information channels and bodies that allow the primary activities in System 1 to communicate between each other and which allow System 3 to monitor and co-ordinate the activities within System 1.  Represents the scheduling function of shared resources to be used by System 1.\nSystem 3 represents the structures and controls that are put into place to establish the rules, resources, rights and responsibilities of System 1 and to provide an interface with Systems 4/5. Represents the big picture view of the processes inside of System 1.\nSystem 4 is made up of bodies that are responsible for looking outwards to the environment to monitor how the organization needs to adapt to remain viable.\nSystem 5 is responsible for policy decisions within the organization as a whole to balance demands from different parts of the organization and steer the organization as a whole.\n",
+            "paragraph3": "In addition to the subsystems that make up the first level of recursion, the environment is represented in the model. The presence of the environment in the model is necessary as the domain of action of the system and without it there is no way in the model to contextualize or ground the internal interactions of the organization.\n",
+            "paragraph4": "Algedonic alerts (from the Greek αλγος, pain and ηδος, pleasure) are alarms and rewards that escalate through the levels of recursion when actual performance fails or exceeds capability, typically after a timeout.\n",
+            "paragraph5": "The model is derived from the architecture of the brain and nervous system. Systems 3-2-1 are identified with the ancient brain or autonomic nervous system. System 4 embodies cognition and conversation. System 5, the higher brain functions, include introspection and decision making.\n"
+        },
+        {
+            "title": "Rules for the viable system",
+            "paragraph1": "In \"Heart of Enterprise\" a companion volume to \"Brain...\", Beer applies Ashby's concept of (Requisite) Variety: the number of possible states of a system or of an element of the system.  There are two aphorisms that permit observers to calculate Variety; four Principles of Organization; the Recursive System Theorem; three Axioms of Management and a Law of Cohesion. These rules ensure the Requisite Variety condition is satisfied, in effect that resources are matched to requirement.\n",
+            "subtitle1": "Regulatory aphorisms",
+            "paragraph2": "These aphorisms are:\n",
+            "ul1": "It is not necessary to enter the black box to understand the nature of the function it performs.\nIt is not necessary to enter the black box to calculate the variety that it potentially may generate.\n",
+            "subtitle2": "Principles of organization",
+            "paragraph3": "(Principles are 'primary sources of particular outcome')\n",
+            "paragraph4": "These principles are:\n",
+            "ul2": "Managerial, operational and environmental varieties diffusing through an institutional system, tend to equate; they should be designed to do so with minimum damage to people and cost.\nThe four directional channels carrying information between the management unit, the operation, and the environment must each have a higher capacity to transmit a given amount of information relevant to variety selection in a given time than the originating subsystem has to generate it in that time.\nWherever the information carried on a channel capable of distinguishing a given variety crosses a boundary, it undergoes transduction (converting energy from one form to another); the variety of the transducer must be at least equivalent to the variety of the channel.\nThe operation of the first three principles must be cyclically maintained without delays.\n",
+            "subtitle3": "Recursive system theorem",
+            "paragraph5": "This theorem states:\n",
+            "ul3": "In a recursive organizational structure any viable system contains, and is contained in, a viable system.\n",
+            "subtitle4": "Axioms",
+            "paragraph6": "(Axioms are statements 'worthy of belief')\n",
+            "paragraph7": "These axioms are:\n",
+            "ul4": "The sum of horizontal variety disposed by n operational elements (systems one) equals the sum of the vertical variety disposed by the six vertical components of corporate cohesion.[10] (The six are from Environment, System Three*, the System Ones, System Two, System Three and Algedonic alerts.)\nThe variety disposed by System Three resulting from the operation of the First Axiom equals the variety disposed by System Four.\nThe variety disposed by System Five equals the residual variety generated by the operation of the Second Axiom.\n",
+            "subtitle5": "The law of cohesion for multiple recursions of the viable system",
+            "paragraph8": "This law ('something invariant in nature') states:\n",
+            "ul5": "The System One variety accessible to System Three of recursion x equals the variety disposed by the sum of the metasystems of recursion y for every recursive pair.[11]\n"
+        },
+        {
+            "title": "Measuring performance",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/d/df/Performance.png",
+                "caption": "\n\t\tThree measures of capacity producing three measures of achievement\n\t"
+            },
+            "paragraph1": "In Brain of the Firm (p. 163) Beer describes a triple vector to characterize activity in a System 1. The components are:\n",
+            "ul1": "Actuality: \"What we are managing to do now, with existing resources, under existing constraints.\"\nCapability: \"This is what we could be doing (still right now) with existing resources, under existing constraints, if we really worked at it.\"\nPotentiality: \"This is what we ought to be doing by developing our resources and removing constraints, although still operating within the bounds of what is already known to be feasible.\"\n",
+            "paragraph2": "Beer adds \"It would help a lot to fix these definitions clearly in the mind.\" System 4's job is essentially to realize potential. He then defines \n",
+            "ul2": "Productivity: is the ratio of actuality and capability;\nLatency: is the ratio of capability and potentiality;\nPerformance: is the ratio of actuality and potentiality, and also the product of latency and productivity.\n",
+            "paragraph3": "Consider the management of a process with cash earnings or savings for a company or government: \n",
+            "paragraph4": "These methods (also known as normalisations) can be similarly applied in general e.g. to hours worked in the performance of tasks or products in a production process of some kind.\n",
+            "paragraph5": "When actuality deviates from capability, because someone did something well or something badly, an algedonic alert is sent to management. If corrective action, adoption of a good technique or correction of an error, is not taken in a timely manner the alert is escalated. Because the criteria are applied in an ordered hierarchy the management itself need not be, but the routine response functions must be ordered to reflect best known heuristic practice. These heuristics are constantly monitored for improvement by the organization's System 4s.\n",
+            "paragraph6": "Pay structures reflect these constraints on performance when capability or potential is realized with, for example, productivity bonuses, stakeholder agreements and intellectual property rights.\n"
+        },
+        {
+            "title": "Metalanguage",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/5/5d/Beer_Metalnaguage.PNG",
+                "caption": "\n\t\tResolving undecidability by raising the metalanguage\n\t"
+            },
+            "paragraph1": "In ascending the recursions of the viable system the context of each autonomous 5-4-3-2 metasystem enlarges and acquires more variety.\n",
+            "paragraph2": "This defines a metalanguage stack of increasing capability to resolve undecidability in the autonomous lower levels. If someone near process level needs to innovate to achieve potential, or restore capability, help can be secured from management of higher variety.\n",
+            "paragraph3": "An algedonic alert, sent when actuality deviates by some statistically significant amount from capability, makes this process automatic.\n",
+            "paragraph4": "The notion of adding more variety or states to resolve ambiguity or undecidability (also known as the decision problem) is the subject of Chaitin's metamathematical conjecture algorithmic information theory and provides a potentially rigorous theoretical basis for a general management heuristic. If a process is not producing the agreed product more information, if applicable, will correct this, resolve ambiguity, conflict or undecidability.\n",
+            "paragraph5": "In \"Platform for Change\" (Beer 1975) the thesis is developed via a collection of papers to learned bodies, including UK Police and Hospitals, to produce a visualization of the \"Total System\". Here a \"Relevant ethic\" evolves from \"Experimental ethics\" and the \"Ethic with a busted gut\" to produce a sustainable earth with reformed \"old institutions\" becoming \"new institutions\" driven by approval (eudemonic criteria \"Questions of Metric\" in Platform... pp 163– 179) from the \"software milieu\" while culture adopts the systems approach and \"Homo faber\" (man the maker) becomes \"Homo Gubernator\"  (self-steering).\n"
+        },
+        {
+            "title": "Applying VSM",
+            "paragraph1": "In applying the VSM variety measures are used to match people, machines and money to jobs that produce products or services. In a set of processes some jobs are done by one person. Some are done by many and often many processes are done by the same person. Throughout the working day a participant, in completing a task, may find the focus shifts between internal and external Systems 1–5 from moment to moment.\n",
+            "paragraph2": "The choices, or decisions discriminated, and their cost (or effort) defines the variety and hence resources needed for the job. The processes (Systems 1) are operationally managed by System 3 by monitoring performance and assuring (System 2) the flow of product between System 1s and out to users.\n",
+            "paragraph3": "System 3 is able to audit (via 3*) past performance so \"bad times\" for production can be compared to \"good times\". If things go wrong and levels of risk increase the System 3 asks for help or puts it to colleagues for a remedy. This is the pain of an algedonic alert, which can be automatic when performance fails to achieve capability targets. The autonomic 3–2–1 homeostatic loop's problem is absorbed for solution within the autonomy of its metasystem. Development (the System 4 role of research and marketing) is asked for recommendations.\n",
+            "paragraph4": "If more resources are required System 5 has to make the decision on which is the best option from System 4. Escalation to higher management (up the metalinguistic levels of recursion) will be needed if the remedy requires more resources than the current level of capability or variety can sustain. The pleasure of an algedonic alert which are performance improving innovations can also be handled in this way.\n",
+            "paragraph5": "In a small business all these functions might be done by one person or shared between the participants. In larger enterprises roles can differentiate and become more specialized emphasizing one or more aspects of the VSM. Local conditions, the environment and nature of the service or product, determines where warehousing, sales, advertising, promotion, dispatch, taxation, finance, salaries etc., fit into this picture. Not all enterprises charge for their transactions (e.g. some schools and medical services, policing) and voluntary staff may not be paid. Advertising or shipping might not be part of the business or they might be the principal activity. Whatever the circumstances, all enterprises are required to be useful to their users if they are to remain viable. For all participants the central question remains: \"Do I do what I always do for this transaction or do I innovate?\"  It is embodied in the calls on System 4. The VSM describes the constraints: a knowledge of past performance and how it may be improved.\n",
+            "paragraph6": "Beer dedicated Brain of the Firm to his colleagues past and present with the words \"absolutum obsoletum\" which he translated as \"If it works it's out of date\".\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Autonomous",
+        "https://en.wikipedia.org/wiki/System",
+        "https://en.wikipedia.org/wiki/Cybernetic",
+        "https://en.wikipedia.org/wiki/Operations_research",
+        "https://en.wikipedia.org/wiki/Cybernetics",
+        "https://en.wikipedia.org/wiki/Anthony_Stafford_Beer",
+        "https://en.wikipedia.org/wiki/Management_cybernetics",
+        "https://en.wikipedia.org/wiki/Recursion",
+        "https://en.wikipedia.org/wiki/Viable_systems_approach",
+        "https://en.wikipedia.org/wiki/Autonomic_nervous_system",
+        "https://en.wikipedia.org/wiki/William_Ross_Ashby",
+        "https://en.wikipedia.org/wiki/Transducer",
+        "https://en.wikipedia.org/wiki/Recursion",
+        "https://en.wikipedia.org/wiki/Order_theory",
+        "https://en.wikipedia.org/wiki/Heuristic",
+        "https://en.wikipedia.org/wiki/Project_stakeholder",
+        "https://en.wikipedia.org/wiki/Intellectual_property",
+        "https://en.wikipedia.org/wiki/Metasystem",
+        "https://en.wikipedia.org/wiki/Metalanguage",
+        "https://en.wikipedia.org/wiki/Undecidable_problem",
+        "https://en.wikipedia.org/wiki/Statistical_significance",
+        "https://en.wikipedia.org/wiki/Ambiguity",
+        "https://en.wikipedia.org/wiki/Decision_problem",
+        "https://en.wikipedia.org/wiki/Chaitin",
+        "https://en.wikipedia.org/wiki/Metamathematics",
+        "https://en.wikipedia.org/wiki/Algorithmic_information_theory",
+        "https://en.wikipedia.org/wiki/Conflict_resolution",
+        "https://en.wikipedia.org/wiki/Systems_approach",
+        "https://en.wikipedia.org/wiki/Homo_faber",
+        "https://en.wikipedia.org/wiki/Risk",
+        "https://en.wikipedia.org/wiki/American_Society_for_Cybernetics",
+        "https://en.wikipedia.org/wiki/Autonomous_agency_theory",
+        "https://en.wikipedia.org/wiki/Business_model",
+        "https://en.wikipedia.org/wiki/Cybernetics_Society",
+        "https://en.wikipedia.org/wiki/Dynamic_governance",
+        "https://en.wikipedia.org/wiki/Project_Cybersyn",
+        "https://en.wikipedia.org/wiki/Viable_system_theory",
+        "https://en.wikipedia.org/wiki/Hedonic",
+        "https://en.wikipedia.org/wiki/Eudaimonia",
+        "https://en.wikipedia.org/wiki/Allenna_Leonard",
+        "https://en.wikipedia.org/wiki/YouTube",
+        "https://en.wikipedia.org/wiki/Smalltalk",
+        "https://en.wikipedia.org/wiki/Viable_system_model",
+        "https://en.wikipedia.org/wiki/Viable_system_model",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

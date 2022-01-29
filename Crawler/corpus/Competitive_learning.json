@@ -1,0 +1,60 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Competitive_learning",
+    "title": "Competitive learning",
+    "table_of_contents": [
+        "1 Principles",
+        "2 Architecture and implementation",
+        "3 Example algorithm",
+        "4 See also",
+        "5 References",
+        "6 Further information and software"
+    ],
+    "content": [
+        {
+            "paragraph1": "Competitive learning is a form of unsupervised learning in artificial neural networks, in which nodes compete for the right to respond to a subset of the input data. A variant of Hebbian learning, competitive learning works by increasing the specialization of each node in the network.  It is well suited to finding clusters within data.\n",
+            "paragraph2": "Models and algorithms based on the principle of competitive learning include vector quantization and self-organizing maps (Kohonen maps).\n"
+        },
+        {
+            "title": "Principles",
+            "paragraph1": "There are three basic elements to a competitive learning rule:\n",
+            "ul1": "A set of neurons that are all the same except for some  randomly distributed synaptic weights, and which therefore respond differently to a given set  of input patterns\nA limit imposed on the \"strength\" of each neuron\nA mechanism that permits the neurons to compete for the right to respond to a given subset of inputs, such that only one output neuron (or only one neuron per group), is active (i.e. \"on\") at a time. The neuron that wins the competition is called a \"winner-take-all\" neuron.\n",
+            "paragraph2": "Accordingly, the individual neurons of the network learn to specialize on ensembles of similar patterns and in so doing become 'feature detectors' for different classes of input patterns.\n",
+            "paragraph3": "The fact that competitive networks recode sets of correlated inputs to one of a few output neurons essentially removes the redundancy in representation which is an essential part of processing in biological sensory systems.\n"
+        },
+        {
+            "title": "Architecture and implementation",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/5/5b/Competitive_neural_network_architecture.png",
+                "caption": "\n\t\tCompetitive neural network architecture\n\t"
+            },
+            "paragraph1": "Competitive Learning is usually implemented with Neural Networks that contain a hidden layer which is commonly known as “competitive layer”. Every competitive neuron is described by a vector of weights \n\n\n\n\n\n\nw\n\n\n\ni\n\n\n=\n\n\n(\n\n\nw\n\ni\n1\n\n\n,\n.\n.\n,\n\nw\n\ni\nd\n\n\n\n)\n\n\nT\n\n\n,\ni\n=\n1\n,\n.\n.\n,\nM\n\n\n{\\displaystyle {\\mathbf {w} }_{i}=\\left({w_{i1},..,w_{id))\\right)^{T},i=1,..,M}\n\n and calculates the similarity measure between the input data \n\n\n\n\n\n\nx\n\n\n\nn\n\n\n=\n\n\n(\n\n\nx\n\nn\n1\n\n\n,\n.\n.\n,\n\nx\n\nn\nd\n\n\n\n)\n\n\nT\n\n\n∈\n\n\nR\n\n\nd\n\n\n\n\n{\\displaystyle {\\mathbf {x} }^{n}=\\left({x_{n1},..,x_{nd))\\right)^{T}\\in \\mathbb {R} ^{d))\n\n  and the weight vector \n\n\n\n\n\n\nw\n\n\n\ni\n\n\n\n\n{\\displaystyle {\\mathbf {w} }_{i))\n\n .\n",
+            "paragraph2": "For every input vector, the competitive neurons “compete” with each other to see which one of them is the most similar to that particular input vector. The winner neuron m sets its output \n\n\n\n\no\n\nm\n\n\n=\n1\n\n\n{\\displaystyle o_{m}=1}\n\n and all the other competitive neurons set their output  \n\n\n\n\no\n\ni\n\n\n=\n0\n,\ni\n=\n1\n,\n.\n.\n,\nM\n,\ni\n≠\nm\n\n\n{\\displaystyle o_{i}=0,i=1,..,M,i\\neq m}\n\n.\n",
+            "paragraph3": "Usually, in order to measure similarity the inverse of the Euclidean distance is used: \n\n\n\n\n‖\n\n\n\nx\n\n\n−\n\n\n\nw\n\n\n\ni\n\n\n\n‖\n\n\n\n{\\displaystyle \\left\\|((\\mathbf {x} }-{\\mathbf {w} }_{i))\\right\\|}\n\n between the input vector \n\n\n\n\n\n\nx\n\n\n\nn\n\n\n\n\n{\\displaystyle {\\mathbf {x} }^{n))\n\n and the weight vector \n\n\n\n\n\n\nw\n\n\n\ni\n\n\n\n\n{\\displaystyle {\\mathbf {w} }_{i))\n\n.\n"
+        },
+        {
+            "title": "Example algorithm",
+            "paragraph1": "Here is a simple competitive learning algorithm to find three clusters within some input data.\n",
+            "paragraph2": "1. (Set-up.) Let a set of sensors all feed into three different nodes, so that every node is connected to every sensor.  Let the weights that each node gives to its sensors be set randomly between 0.0 and 1.0.  Let the output of each node be the sum of all its sensors, each sensor's signal strength being multiplied by its weight.\n",
+            "paragraph3": "2. When the net is shown an input, the node with the highest output is deemed the winner. The input is classified as being within the cluster corresponding to that node.\n",
+            "paragraph4": "3. The winner updates each of its weights, moving weight from the connections that gave it weaker signals to the connections that gave it stronger signals.\n",
+            "paragraph5": "Thus, as more data are received, each node converges on the centre of the cluster that it has come to represent and activates more strongly for inputs in this cluster and more weakly for inputs in other clusters.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Unsupervised_learning",
+        "https://en.wikipedia.org/wiki/Artificial_neural_networks",
+        "https://en.wikipedia.org/wiki/Hebbian_learning",
+        "https://en.wikipedia.org/wiki/Cluster_analysis",
+        "https://en.wikipedia.org/wiki/Vector_quantization",
+        "https://en.wikipedia.org/wiki/Sensory_systems",
+        "https://en.wikipedia.org/wiki/Similarity_measure",
+        "https://en.wikipedia.org/wiki/Ensemble_learning",
+        "https://en.wikipedia.org/wiki/Neural_gas",
+        "https://en.wikipedia.org/wiki/Pandemonium_architecture",
+        "https://en.wikipedia.org/wiki/David_Rumelhart",
+        "https://en.wikipedia.org/wiki/Competitive_learning",
+        "https://en.wikipedia.org/wiki/Competitive_learning",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

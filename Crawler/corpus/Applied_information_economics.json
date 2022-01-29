@@ -1,0 +1,55 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Applied_information_economics",
+    "title": "Applied information economics",
+    "table_of_contents": [
+        "1 Comparison to other methods",
+        "2 Limitations",
+        "3 See also",
+        "4 External links",
+        "5 References"
+    ],
+    "content": [
+        {
+            "paragraph1": "Applied information economics (AIE) is a decision analysis method developed by Douglas W. Hubbard and partially described in his book How to Measure Anything: Finding the Value of Intangibles in Business (2007; 2nd ed. 2010; 3rd ed. 2014).  AIE is a method for the practical application of several proven methods from decision theory and risk analysis including the use of Monte Carlo methods.  However, unlike some other modeling approaches with simulations, AIE incorporates the following:\n",
+            "ol1": "1 - Calibrated probability assessment.  This is a method for training estimators and experts (who are relied on for the inputs in Monte Carlo methods) to be neutrally confident about their assigned probabilities.[2]  That is, their probabilities are neither overconfident (too high) nor underconfident (too low).\n2 - Computing the value of additional information.  AIE uses information value calculations from decision theory such as the expected value of perfect information and the value of imperfect (partial) information.  Often, this is done for a large number of uncertain variables in some type of decision model or business case.  The result will reveal where efforts to reduce uncertainty by making further measurements are best spent.\n3 - Empirical methods applied according to the information value of the measurement.  This step is, in fact, the reason for the name of the method.  Most Monte Carlo modeling experts stop modeling after the first (uncalibrated) probability estimates from experts and there is usually little emphasis on further measurements with empirical methods.  Since AIE computes the value of additional information, measurement can be selective and focused.  This step often results in a very different set of measurement priorities than would otherwise have been used.\n4 - Various optimization methods including modern portfolio theory.  MPT and other methods are applied to determine ideal risk and return positions for a set of alternatives.\n",
+            "paragraph2": "Practitioners of AIE claim that if something affects an organization, it must be observable and, therefore, measurable.\n"
+        },
+        {
+            "title": "Comparison to other methods",
+            "paragraph1": "AIE differs in several ways from other popular methods of decision analysis:\n",
+            "ul1": "Unlike the accounting-style business case or cost benefit analysis, it does not rely entirely on point estimates of uncertain values.  Since it uses the Monte Carlo method, uncertainty can be modeled explicitly.\nUnlike most decision-theory analysis of uncertain decisions, the AIE model starts with \"calibrating\" the estimators.\nThe calculation of the value of information is used to guide further measurement efforts.\nAIE converts all values to economic terms so that powerful financial and economic optimization methods can be employed.  This is unlike some methods that rely mostly on subjective scores.\n",
+            "paragraph2": "The unique values AIE offers for businesses are (1) a disciplined quantification of the variability in financial projections and (2) the information necessary to systematically reduce that variability.\n",
+            "paragraph3": "AIE does tend to be somewhat more elaborate than these alternatives.  But practitioners[clarification needed] argue that it is no more complicated than analysis methods used in many other fields, as long as trained specialists are used.  It also becomes more important to choose rigor over simplicity when the decisions being analyzed are much larger and riskier.\n",
+            "paragraph4": "Because the AIE methodology requires an analytical background to understand, articulate to business stakeholders and deliver, its takeup is likely to be gradual.\n"
+        },
+        {
+            "title": "Limitations",
+            "paragraph1": "While there are multiple articles in industry periodicals and government sources (see below) referencing applied information economics, there are few in academic literature.  In addition, the following limitations apply:\n",
+            "ul1": "Until enough experts are fully trained in this method, its complexity might limit its adoption by managers accustomed to traditional cost-benefit analysis.\nLike traditional cost-benefit analysis it does not guarantee that some important factor won't be excluded if nobody thinks of adding it. It simply ensures that the factors included are at least calibrated estimates (not overconfident or underconfident) and that further reduction of uncertainty (by measurement efforts) is optimized and applied to the right factors.\nSome of the same limitations as Monte Carlo simulations intervene. For example, if some variables are (unknown to the analysts) covariant, then the Monte Carlo would generate a distribution of results that does not fit reality.\nCalibration removes certain systemic human estimate biases, but not all of them. It is a significant improvement on Monte Carlo models that have no calibration for initial estimates, but there is no guarantee that other biases of experts will not be introduced into the model.\nIt uses MPT in a modified and limited manner. Since many business investments are evaluated as opportunities arise, and not in a large \"batch\", they are often evaluated one at a time. The only persistently used component of MPT is the investment boundary, modified for the assessment of single investments of various sizes.\n",
+            "paragraph2": "AIE as a whole, like many decision analysis and risk analysis methods, has little or no research showing the long term benefits of the method.  However, AIE itself is not a new method and is based on previously-developed components that have a sound theoretical basis and/or have strong empirical evidence of improving on unaided intuition or other popular decision analysis methods.  Among these components are Monte Carlo simulations, calibration training, information value calculations from decision theory, and widely accepted empirical methods used for scientific measurement (see references above).\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Decision_analysis",
+        "https://en.wikipedia.org/wiki/Decision_theory",
+        "https://en.wikipedia.org/wiki/Monte_Carlo_method",
+        "https://en.wikipedia.org/wiki/Calibrated_probability_assessment",
+        "https://en.wikipedia.org/wiki/Decision_theory",
+        "https://en.wikipedia.org/wiki/Expected_value_of_perfect_information",
+        "https://en.wikipedia.org/wiki/Modern_portfolio_theory",
+        "https://en.wikipedia.org/wiki/Business_case",
+        "https://en.wikipedia.org/wiki/Cost_benefit_analysis",
+        "https://en.wikipedia.org/wiki/Monte_Carlo_method",
+        "https://en.wikipedia.org/wiki/Academic_literature",
+        "https://en.wikipedia.org/wiki/Choice_Modelling",
+        "https://en.wikipedia.org/wiki/Decision_theory",
+        "https://en.wikipedia.org/wiki/Behavioral_economics",
+        "https://en.wikipedia.org/wiki/Information_economics",
+        "https://en.wikipedia.org/wiki/Monte_Carlo_method",
+        "https://en.wikipedia.org/wiki/Calibrated_probability_assessment",
+        "https://en.wikipedia.org/wiki/Applied_information_economics",
+        "https://en.wikipedia.org/wiki/Applied_information_economics",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

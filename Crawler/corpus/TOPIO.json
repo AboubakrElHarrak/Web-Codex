@@ -1,0 +1,121 @@
+{
+    "url": "https://en.wikipedia.org/wiki/TOPIO",
+    "title": "TOPIO",
+    "table_of_contents": [
+        "1 Development history",
+        "2 Specifications",
+        "3 Technologies",
+        "4 See also",
+        "5 References",
+        "6 External links"
+    ],
+    "content": [
+        {
+            "paragraph1": "TOPIO (\"TOSY Ping Pong Playing Robot\") is a bipedal humanoid robot designed to play table tennis against a human being.  It has been developed since 2005 by TOSY, a robotics firm in Vietnam. It was publicly demonstrated at the Tokyo International Robot Exhibition (IREX) on November 28, 2007.   TOPIO 3.0 (the latest version of TOPIO) stands approximately 1.88 m (6' 2\") tall and weighs 120 kg (264 lb).\n",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/9/92/TOPIO_3.jpg/700px-TOPIO_3.jpg",
+                "caption": "\n\t\tTOPIO 3.0 at IREX 2009\n\t"
+            }
+        },
+        {
+            "title": "Development history",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/c/cc/TOPIO_2.0.jpg/500px-TOPIO_2.0.jpg",
+                "caption": "\n\t\tTOPIO 2.0 at Nuremberg International Toy Fair 2009\n\t"
+            }
+        },
+        {
+            "title": "Specifications",
+            "image1": {
+                "url": "//upload.wikimedia.org/wikipedia/commons/thumb/c/c3/TOPIO_1.0.jpg/500px-TOPIO_1.0.jpg",
+                "caption": "\n\t\tTOPIO 1.0 demonstrated at Tokyo International Robot Exhibition 2007\n\t"
+            }
+        },
+        {
+            "title": "Technologies",
+            "ul1": "Recognition of fast moving objects\nArtificial Intelligence\nLow Inertia mechanical system\nFast and accurate movement control\nBalanced bipedal walking\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Bipedal",
+        "https://en.wikipedia.org/wiki/Humanoid_robot",
+        "https://en.wikipedia.org/wiki/Table_tennis",
+        "https://en.wikipedia.org/wiki/TOSY",
+        "https://en.wikipedia.org/wiki/Tokyo",
+        "https://en.wikipedia.org/wiki/International_Robot_Exhibition",
+        "https://en.wikipedia.org/wiki/International_Robot_Exhibition",
+        "https://en.wikipedia.org/wiki/Nuremberg_International_Toy_Fair",
+        "https://en.wikipedia.org/wiki/TOSY",
+        "https://en.wikipedia.org/wiki/TOSY",
+        "https://en.wikipedia.org/wiki/International_Robot_Exhibition",
+        "https://en.wikipedia.org/wiki/Nuremberg_International_Toy_Fair",
+        "https://en.wikipedia.org/wiki/International_Robot_Exhibition",
+        "https://en.wikipedia.org/wiki/International_Robot_Exhibition",
+        "https://en.wikipedia.org/wiki/Power_supply",
+        "https://en.wikipedia.org/wiki/Hydraulic",
+        "https://en.wikipedia.org/wiki/Actuator",
+        "https://en.wikipedia.org/wiki/Hydraulic_cylinder",
+        "https://en.wikipedia.org/wiki/Servo_Motor",
+        "https://en.wikipedia.org/wiki/Servo_Motor",
+        "https://en.wikipedia.org/wiki/High_speed_camera",
+        "https://en.wikipedia.org/wiki/Artificial_Intelligence",
+        "https://en.wikipedia.org/wiki/Humanoid_robot",
+        "https://en.wikipedia.org/wiki/Actroid",
+        "https://en.wikipedia.org/wiki/ASIMO",
+        "https://en.wikipedia.org/wiki/Gynoid",
+        "https://en.wikipedia.org/wiki/REEM",
+        "https://en.wikipedia.org/wiki/QRIO",
+        "https://en.wikipedia.org/wiki/HUBO",
+        "https://en.wikipedia.org/wiki/Reuters",
+        "https://en.wikipedia.org/wiki/YouTube",
+        "https://en.wikipedia.org/wiki/Softpedia",
+        "https://en.wikipedia.org/wiki/Reuters",
+        "https://en.wikipedia.org/wiki/Humanoid_robot",
+        "https://en.wikipedia.org/wiki/Bioloid",
+        "https://en.wikipedia.org/wiki/FemiSapien",
+        "https://en.wikipedia.org/wiki/RoboSapien",
+        "https://en.wikipedia.org/wiki/Robosapien_v2",
+        "https://en.wikipedia.org/wiki/Ropid",
+        "https://en.wikipedia.org/wiki/RS_Media",
+        "https://en.wikipedia.org/wiki/HOAP",
+        "https://en.wikipedia.org/wiki/Kirobo",
+        "https://en.wikipedia.org/wiki/PINO",
+        "https://en.wikipedia.org/wiki/Plen",
+        "https://en.wikipedia.org/wiki/QRIO",
+        "https://en.wikipedia.org/wiki/SIGMO",
+        "https://en.wikipedia.org/wiki/ASIMO",
+        "https://en.wikipedia.org/wiki/GuRoo",
+        "https://en.wikipedia.org/wiki/HUBO",
+        "https://en.wikipedia.org/wiki/ICub",
+        "https://en.wikipedia.org/wiki/Murata_Boy_and_Murata_Girl",
+        "https://en.wikipedia.org/wiki/REEM",
+        "https://en.wikipedia.org/wiki/Toyota_Partner_Robot",
+        "https://en.wikipedia.org/wiki/Xianxingzhe",
+        "https://en.wikipedia.org/wiki/Honda_E_series",
+        "https://en.wikipedia.org/wiki/IsaacRobot",
+        "https://en.wikipedia.org/wiki/Kobian",
+        "https://en.wikipedia.org/wiki/MAHRU",
+        "https://en.wikipedia.org/wiki/Honda_P_series",
+        "https://en.wikipedia.org/wiki/PETMAN",
+        "https://en.wikipedia.org/wiki/Robot_Man_of_Szeged",
+        "https://en.wikipedia.org/wiki/Elektro",
+        "https://en.wikipedia.org/wiki/Land_Walker",
+        "https://en.wikipedia.org/wiki/GuRoo",
+        "https://en.wikipedia.org/wiki/EMIEW",
+        "https://en.wikipedia.org/wiki/Seropi",
+        "https://en.wikipedia.org/wiki/TOPIO_Dio",
+        "https://en.wikipedia.org/wiki/Wakamaru",
+        "https://en.wikipedia.org/wiki/Mitra_Robot",
+        "https://en.wikipedia.org/wiki/Gakutensoku",
+        "https://en.wikipedia.org/wiki/Geoff_Peterson",
+        "https://en.wikipedia.org/wiki/Robonaut",
+        "https://en.wikipedia.org/wiki/Shalu_Robot",
+        "https://en.wikipedia.org/wiki/Telenoid_R1",
+        "https://en.wikipedia.org/wiki/Cyborg",
+        "https://en.wikipedia.org/wiki/Robot_fetishism",
+        "https://en.wikipedia.org/wiki/TOPIO",
+        "https://en.wikipedia.org/wiki/TOPIO",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}

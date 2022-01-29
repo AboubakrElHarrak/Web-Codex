@@ -1,0 +1,54 @@
+{
+    "url": "https://en.wikipedia.org/wiki/Universal_Systems_Language",
+    "title": "Universal Systems Language",
+    "table_of_contents": [
+        "1 Philosophy",
+        "2 Formalism for a theory of control",
+        "3 Implementation",
+        "4 See also",
+        "5 References",
+        "6 Further reading",
+        "7 External links"
+    ],
+    "content": [
+        {
+            "paragraph1": "Universal Systems Language (USL) is a systems modeling language and formal method for the specification and design of software and other complex systems. It was designed by Margaret Hamilton based on her experiences writing flight software for the Apollo program. The language is implemented through the 001 Tool Suite software by Hamilton Technologies, Inc. USL evolved from 001AXES which in turn evolved from AXES all of which are based on Hamilton's axioms of control. The 001 Tool Suite uses the preventive concept of Development Before the Fact (DBTF) for its life-cycle development process. DBTF eliminates errors as early as possible during the development process removing the need to look for errors after-the-fact.\n"
+        },
+        {
+            "title": "Philosophy",
+            "paragraph1": "USL was inspired by Hamilton's recognition of patterns or categories of errors occurring during Apollo software development. Errors at the interfaces between subsystem boundaries accounted for the majority of errors and were often the most subtle and most difficult to find. Each interface error was placed into a category identifying the means to prevent it by way of system definition. This process led to a set of six axioms, forming the basis for a mathematical constructive logical theory of control for designing systems that would eliminate entire classes of errors just by the way a system is defined.\n",
+            "paragraph2": "Certain correctness guarantees are embedded in the USL grammar. In contrast to reactive approaches to program verification, testing for errors late into the life cycle, USL's development-before-the-fact philosophy is preventive, not allowing errors in the first place. A USL definition models both its application (for example, an avionics or banking system) and properties of control into its own life cycle. Providing a mathematical framework within which objects, their interactions, and their relationships can be captured, USL – a metalanguage – has \"metamechanisms\" for defining systems. USL's philosophy is that all objects are recursively reusable and reliable; reliable systems are defined in terms of reliable systems; only reliable systems are used as building blocks; and only reliable systems are used as mechanisms to integrate these building blocks to form a new system. Designers can then use the new system, along with more primitive ones, to define (and build) more comprehensive reliable systems. If a system is reliable, all the objects in all its levels and layers are reliable.\n",
+            "paragraph3": "USL is regarded by some users as more user-friendly than other formal systems. It is not only a formalism for software, but also defines ontologies for common elements of problem domains, such as physical space and event timing.\n"
+        },
+        {
+            "title": "Formalism for a theory of control",
+            "paragraph1": "A systems philosophy formalism for representing the logic of the control of systems, USL is based on a set of axioms of a general systems control theory with formal rules for its application. At the base of every USL system is a set of six axioms and the assumption of a universal set of objects. The axioms provide the formal foundation for a USL \"hierarchy\" – referred to as a map, which is a tree of control that spans networks of relations between objects. Explicit rules for defining a map have been derived from the axioms, where – among other things – structure, behavior, and their integration are captured. Each axiom defines a relation of immediate domination of a parent over its children. The union of these relations is control. Among other things, the axioms establish the relationships of an object for invocation in time and space, input and output (domain and codomain), input access rights and output access rights (domain access rights and codomain access rights), error detection and recovery, and ordering during its developmental and operational states. Every system can ultimately be defined in terms of three primitive control structures, each of which is derived from the six axioms – resulting in a universal semantics for defining systems.\n",
+            "paragraph2": "All representations of a system are defined in terms of a function map (FMap) and a type map (TMap). With USL, all functions in a system and their relationships are defined with a set of FMaps. Similarly, all types in a system and their relationships are defined with a set of TMaps. FMaps represent the dynamic (doing) world of action by capturing functional and temporal (including priority) characteristics. TMaps represent the static (being) world of objects by capturing spatial characteristics – for example, containment of one object by another or relationships between locations of objects in space. FMaps are inherently integrated with TMaps. Three universal primitive structures derived from the set of axioms and non-primitive structures derived ultimately in terms of the primitive structures specify each map. Primitive structures are universal in that they are able to be used to derive new abstract universal structures, functions or types. The process of deriving new objects (i.e., structures, types and functions) is equivalent to the process of deriving new types in a constructive type theory. Primitive functions, corresponding to primitive operations on types defined in a TMap, reside at the bottom nodes of an FMap. Primitive types, each defined by its own set of axioms, reside at the bottom nodes of a TMap. Each primitive function (or type) can be realized as a top node of a map on a lower (more concrete) layer of the system. Resident at every node on a map is the same kind of object (for example, a function on every node of an FMap and a type on a TMap). The object at each node plays multiple roles; for example, the object can serve as a parent (in control of its children) or a child (being controlled by its parent). Whereas each function on an FMap has a mapping from its input to output (domain to codomain), each type on a TMap has a relation between its domain and codomain. A structure relates each parent and its children according to the set of rules derived from the axioms of control. A primitive structure provides a relationship of the most primitive form (finest grain) of control. All maps are defined ultimately in terms of the primitive structures and therefore abide by the rules associated with each structure: A parent controls its children to have a dependent (Join), independent (Include), or decision-making relationship (Or).\n",
+            "image2": {
+                "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Ucs_rules.png",
+                "caption": "\n\t\tFigure. 1 The three primitive control structures and their rules form a universal foundation for constructing maps in the domains of time and space as FMaps and TMaps\n\t"
+            },
+            "paragraph3": "Any system can be defined completely using only primitive structures, but less primitive structures defined by and derived from the primitive structures – and therefore governed by the control axioms – accelerate the definition and understanding of a system. The defined structure, a form of template-like reuse, provides a mechanism to define a map without explicitly defining some of its elements. An FMap structure has placeholders for variable functions; a TMap structure has placeholders for variable types; a universal structure has placeholders for functions or types. Async is an example of a real-time, distributed, communicating FMap structure with both asynchronous and synchronous behavior. An example of a TMap structure is TreeOf, a collection of the same type of objects ordered using a tree indexing system. Each TMap structure assumes its own set of possible relations for its parent and children types. Abstract types decomposed with the same TMap structure inherit the same primitive operations and therefore the same behavior (each of which is available to FMaps that have access to members of each of its TMap's types).\n"
+        },
+        {
+            "title": "Implementation",
+            "paragraph1": "The process of developing a software system with USL together with its automation, the 001 Tool Suite (001), is as follows: define the system with USL, automatically analyze the definition with 001's analyzer to ensure that USL was used correctly, automatically generate much of the design and all of the implementation code with 001's generator. USL can be used to lend its formal support to other languages.\n"
+        }
+    ],
+    "links": [
+        "https://en.wikipedia.org/wiki/Modeling_language",
+        "https://en.wikipedia.org/wiki/Formal_method",
+        "https://en.wikipedia.org/wiki/Apollo_program",
+        "https://en.wikipedia.org/wiki/Usability",
+        "https://en.wikipedia.org/wiki/Systems_philosophy",
+        "https://en.wikipedia.org/wiki/Systems_philosophy",
+        "https://en.wikipedia.org/wiki/IDEF",
+        "https://en.wikipedia.org/wiki/Systems_Modeling_Language",
+        "https://en.wikipedia.org/wiki/Object_Process_Methodology",
+        "https://en.wikipedia.org/wiki/IEEE_Software",
+        "https://en.wikipedia.org/wiki/Universal_Systems_Language",
+        "https://en.wikipedia.org/wiki/Universal_Systems_Language",
+        "https://en.wikipedia.org/wiki/Main_Page",
+        "https://en.wikipedia.org/wiki/Main_Page"
+    ]
+}
