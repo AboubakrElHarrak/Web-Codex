@@ -5,7 +5,7 @@ import java.util.Date;
 import java.util.List;
 
 @Entity
-@Table(name = "user", uniqueConstraints = @UniqueConstraint(name = "identifiers_unique",columnNames = {"username", "email"}))
+@Table(name = "user")
 public class User
 {
     @Id
@@ -15,14 +15,14 @@ public class User
     private String firstname;
     private String lastname;
     private Date birthday;
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String username;
-    @Column(nullable = false)
+    @Column(nullable = false, unique = true)
     private String email;
-    @Column(nullable = false)
+    @Column(nullable = false, length = 60)
     private String password;
     private String role;
-    private boolean active;
+    private boolean active = false;
 
     public User()
     {}
