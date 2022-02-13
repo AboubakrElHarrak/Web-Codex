@@ -14,7 +14,6 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -33,8 +32,8 @@ public class ArticleServiceImplementation implements ArticleService
         searchSourceBuilder.query(QueryBuilders.boolQuery().must(QueryBuilders.termQuery("title.keyword",title)));
         searchSourceBuilder.size(1);
         searchRequest.source(searchSourceBuilder);
-        Map<String, Object> map = null;
-        SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);;
+        Map<String, Object> map;
+        SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);
 
         if(searchResponse.getHits().getTotalHits().value == 0)
         {
@@ -60,7 +59,7 @@ public class ArticleServiceImplementation implements ArticleService
         searchSourceBuilder.query(QueryBuilders.multiMatchQuery(searchQuery));
         searchSourceBuilder.size(15);
         searchRequest.source(searchSourceBuilder);
-        List<Map<String, Object>> documents = new ArrayList<Map<String, Object>>();
+        List<Map<String, Object>> documents = new ArrayList<>();
         SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);
         if(searchResponse.getHits().getTotalHits().value == 0)
         {
