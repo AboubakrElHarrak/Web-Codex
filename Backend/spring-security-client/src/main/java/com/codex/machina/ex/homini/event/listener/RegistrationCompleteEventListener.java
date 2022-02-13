@@ -2,6 +2,7 @@ package com.codex.machina.ex.homini.event.listener;
 
 import com.codex.machina.ex.homini.entity.User;
 import com.codex.machina.ex.homini.event.RegistrationCompleteEvent;
+import com.codex.machina.ex.homini.service.EmailSenderService;
 import com.codex.machina.ex.homini.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationListener;
@@ -14,6 +15,8 @@ public class RegistrationCompleteEventListener implements ApplicationListener<Re
 {
     @Autowired
     private UserService userService;
+    @Autowired
+    private EmailSenderService emailSenderService;
     @Override
     public void onApplicationEvent(RegistrationCompleteEvent event)
     {
@@ -23,7 +26,10 @@ public class RegistrationCompleteEventListener implements ApplicationListener<Re
         userService.saveVerificationTokenForUser(token,user);
         // Send Mail to the USER
         String url = event.getApplicationUrl() + "/verifyRegistration?token=" + token;
-        // sendVerificationEmail();
+        emailSenderService.sendSimpleEmail(
+                user.getEmail(),
+                "Click the link to verify your account : { " + url + " }",
+                "CODEX Account Verification Mail");
         System.out.println("Click the link to verify your account : { " + url + " }");
     }
 }

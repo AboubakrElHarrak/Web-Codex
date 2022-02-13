@@ -10,6 +10,7 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import java.io.IOException;
+import java.sql.SQLIntegrityConstraintViolationException;
 
 @ControllerAdvice
 @ResponseStatus
@@ -28,4 +29,12 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
         ErrorMessage errorMessage = new ErrorMessage(HttpStatus.SERVICE_UNAVAILABLE, exception.getMessage());
         return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE).body(errorMessage);
     }
+
+    @ExceptionHandler(SQLIntegrityConstraintViolationException.class)
+     public ResponseEntity<ErrorMessage> sqlIntegrityConstraintViolationException(
+             SQLIntegrityConstraintViolationException exception, WebRequest request)
+     {
+         ErrorMessage errorMessage = new ErrorMessage(HttpStatus.CONFLICT, exception.getMessage());
+         return ResponseEntity.status(HttpStatus.CONFLICT).body(errorMessage);
+     }
 }

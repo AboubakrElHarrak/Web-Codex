@@ -5,6 +5,7 @@ import com.codex.machina.ex.homini.Model.UserModel;
 import com.codex.machina.ex.homini.entity.User;
 import com.codex.machina.ex.homini.entity.VerificationToken;
 import com.codex.machina.ex.homini.event.RegistrationCompleteEvent;
+import com.codex.machina.ex.homini.service.EmailSenderService;
 import com.codex.machina.ex.homini.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
@@ -21,6 +22,8 @@ public class RegistrationController
     private UserService userService;
     @Autowired
     private ApplicationEventPublisher publisher;
+    @Autowired
+    private EmailSenderService emailSenderService;
     @PostMapping("/register")
     public String registerUser(@RequestBody UserModel userModel, final HttpServletRequest request)
     {
@@ -103,13 +106,19 @@ public class RegistrationController
     private void resendVerificationTokenMail(User user, String applicationUrl, VerificationToken verificationToken)
     {
         String url = applicationUrl + "/verifyRegistration?token=" + verificationToken.getToken();
-        // sendVerificationEmail();
+        emailSenderService.sendSimpleEmail(
+                user.getEmail(),
+                "Click the link to verify your account : { " + url + " }",
+                "CODEX Account Verification Mail");
         System.out.println("Click the link to verify your account : { " + url + " }");
     }
     private String passwordResetTokenMail(User user, String applicationUrl, String token)
     {
         String url = applicationUrl + "/savePassword?token=" + token;
-        // sendVerificationEmail();
+        emailSenderService.sendSimpleEmail(
+                user.getEmail(),
+                "Click the link to reset your password : { " + url + " }",
+                "CODEX Account Password Reset Mail");
         System.out.println("Click the link to reset your password : { " + url + " }");
         return url;
     }

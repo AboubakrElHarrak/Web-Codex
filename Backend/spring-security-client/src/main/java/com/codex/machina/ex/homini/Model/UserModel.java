@@ -1,9 +1,18 @@
 package com.codex.machina.ex.homini.Model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+import java.util.Date;
+
 public class UserModel
 {
     private String firstname;
     private String lastname;
+    @Temporal(TemporalType.DATE)
+    @JsonFormat(pattern = "dd-MM-yyyy")
+    private Date birthday;
     private String email;
     private String username;
     private String password;
@@ -12,10 +21,11 @@ public class UserModel
     public UserModel()
     {}
 
-    public UserModel(String firstname, String lastname, String email, String username,String password, String matchingPassword)
+    public UserModel(String firstname, String lastname, Date birthday, String email, String username,String password, String matchingPassword)
     {
         this.firstname = firstname;
         this.lastname = lastname;
+        this.birthday = birthday;
         this.email = email;
         this.username = username;
         this.password = password;
@@ -41,6 +51,16 @@ public class UserModel
     public void setLastname(String lastname)
     {
         this.lastname = lastname;
+    }
+
+    public Date getBirthday()
+    {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday)
+    {
+        this.birthday = birthday;
     }
 
     public String getEmail()

@@ -34,6 +34,7 @@ public class UserServiceImplementation implements UserService
         user.setEmail(userModel.getEmail());
         user.setFirstname(userModel.getFirstname());
         user.setLastname(userModel.getLastname());
+        user.setBirthday(userModel.getBirthday());
         user.setRole("USER");
         user.setPassword(passwordEncoder.encode(userModel.getPassword()));
 

@@ -1,5 +1,7 @@
 package com.codex.machina.ex.homini.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import javax.persistence.*;
 import java.util.Date;
 import java.util.List;
@@ -14,6 +16,8 @@ public class User
     private long userId;
     private String firstname;
     private String lastname;
+    @Temporal(TemporalType.DATE)
+    @JsonFormat(pattern = "dd-MM-yyyy")
     private Date birthday;
     @Column(nullable = false, unique = true)
     private String username;
