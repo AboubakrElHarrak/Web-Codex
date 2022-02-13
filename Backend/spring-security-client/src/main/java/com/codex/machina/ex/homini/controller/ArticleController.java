@@ -26,7 +26,7 @@ public class ArticleController
         return articleService.fetchArticleByTitle(title);
     }
 
-    @GetMapping("/articles/search_query")
+    @GetMapping("/articles")
     public List<Map<String, Object>> findArticleBySearch(@RequestParam("search_query") String searchQuery)
             throws ArticleNotFoundException, IOException
     {
