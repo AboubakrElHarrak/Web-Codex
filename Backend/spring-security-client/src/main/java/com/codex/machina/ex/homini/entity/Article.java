@@ -13,6 +13,7 @@ public class Article
     private long articleId;
     @Column(nullable = false)
     private String title;
+    
     @Column(nullable = false)
     private long views = 0;
 
