@@ -56,49 +56,7 @@ export default function HomePage() {
   {
     return <div>Articles Loading ...</div>
   }
-  if(currentArticle !== null)
-  {
-    let idx = 0;
-    for(let section of currentArticle.get("content"))
-    {
-      if(section.has("title"))
-      {
-        console.log(section.get("title"));
-      }
-      if(idx === 0)
-      {
-        idx++;
-      }
-      else if(idx === 1)
-      {
-        console.log("Table of Contents: " , currentArticle.get("table_of_contents"));
-      }
-      for(const entry of section.entries())
-      {
-        if(/paragraph[0-9]+/.test(entry[0]))
-        {
-          console.log(entry[0], ": ", entry[1]);
-        }
-        else if(/subtitle[0-9]+/.test(entry[0]))
-        {
-          console.log(entry[0], ": ", entry[1]);
-        }
-        else if(/ul[0-9]+/.test(entry[0]))
-        {
-          console.log(entry[0], ": ", entry[1]);
-        }
-        else if(/ol[0-9]+/.test(entry[0]))
-        {
-          console.log(entry[0], ": ", entry[1]);
-        }
-        else if(/image[0-9]+/.test(entry[0]))
-        {
-          console.log(entry[0], ": ", entry[1]);
-        }
-      }
-    }
-    console.log(currentArticle);
-  }
+  
   return <div>
            <Navbar links={MenuItems} />
                <section className='bg-dark ' >
