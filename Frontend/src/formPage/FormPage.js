@@ -12,7 +12,7 @@ export default function FormPage() {
     ]
   return <div>
             <Navbar links={MenuItems} />
-            <section class='bg-dark '>
+            <section className='bg-dark '>
                 <div className='container text-start py-5' style={{height: "653px"}}>
                     <Form />
                 </div>

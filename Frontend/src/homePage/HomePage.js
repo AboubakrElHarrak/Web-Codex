@@ -1,8 +1,9 @@
-import React,{ useState } from 'react';
+import React,{ useState, useEffect } from 'react';
 import Footer from '../footer/Footer';
 import Navbar from '../navbar/Navbar';
 import {useNavigate,Link} from 'react-router-dom';
 import BarreRech from './BarreRech/BarreRech';
+import { parse } from 'json-in-order';
 
 const ReadMore = ({ children }) => {
     const text = children;
@@ -19,40 +20,134 @@ const ReadMore = ({ children }) => {
   };
   
 export default function HomePage() {
-  let text ="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet tristique tortor. Nulla congue sodales nunc ac tempor. Etiam velit sapien, rutrum egestas lacinia vel, vulputate id risus. Nulla eget elementum tellus. Maecenas eget sapien auctor, gravida purus dictum, aliquam nulla. Praesent molestie vitae urna sed elementum. Mauris in mauris accumsan, tincidunt felis nec, varius lacus. Donec magna lacus, interdum in nulla sit amet, fringilla porttitor erat. Ut nec felis quis massa porttitor suscipit. Nulla varius tincidunt orci, a dictum leo ornare sed. Interdum et malesuada fames ac ante ipsum primis in faucibus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet tristique tortor. Nulla congue sodales nunc ac tempor. Etiam velit sapien, rutrum egestas lacinia vel, vulputate id risus. Nulla eget elementum tellus. Maecenas eget sapien auctor, gravida purus dictum, aliquam nulla. Praesent molestie vitae urna sed elementum. Mauris in mauris accumsan, tincidunt felis nec, varius lacus. Donec magna lacus, interdum in nulla sit amet, fringilla porttitor erat. Ut nec felis quis massa porttitor suscipit. Nulla varius tincidunt orci, a dictum leo ornare sed. Interdum et malesuada fames ac ante ipsum primis in faucibus..";
-  const [readMoreCliked, setReadMoreCliked]=useState(true);
-  function handleClick(e) {
+  const [articles, setArticles] = useState([]);
+  const [readMoreCliked, setReadMoreCliked]=useState(false);
+  const [currentArticle, setCurrentArticle] = useState(null);
+  const handleClick = (idx) => e => {
     e.preventDefault();
     setReadMoreCliked(!readMoreCliked);
+    setCurrentArticle(articles[idx]);
   }
-    const MenuItems = [
+  const MenuItems = [
+      {
+          title:'Log in',
+          url: '/form',
+      }
+  ];
+
+  useEffect(() => {
+    const getArticles = async () => {
+      const articlesFromServer = await fetchArticles();
+      setArticles(articlesFromServer);
+    }  
+    getArticles();
+  },[]);
+
+  const fetchArticles = async () => {
+    const response = await fetch("http://localhost:8080/articles");
+    const data = await response.text();
+    const arr = parse(data);
+    const articles = arr.map( article => {
+      return parse(article);
+    });
+    return articles;
+  }
+  if(articles.length === 0)
+  {
+    return <div>Articles Loading ...</div>
+  }
+  if(currentArticle !== null)
+  {
+    let idx = 0;
+    for(let section of currentArticle.get("content"))
+    {
+      if(section.has("title"))
+      {
+        console.log(section.get("title"));
+      }
+      if(idx === 0)
+      {
+        idx++;
+      }
+      else if(idx === 1)
+      {
+        console.log("Table of Contents: " , currentArticle.get("table_of_contents"));
+      }
+      for(const entry of section.entries())
+      {
+        if(/paragraph[0-9]+/.test(entry[0]))
         {
-            title:'Log in',
-            url: '/form',
+          console.log(entry[0], ": ", entry[1]);
         }
-    ]
-  const numbers = [1, 2, 3, 4, 5];
+        else if(/subtitle[0-9]+/.test(entry[0]))
+        {
+          console.log(entry[0], ": ", entry[1]);
+        }
+        else if(/ul[0-9]+/.test(entry[0]))
+        {
+          console.log(entry[0], ": ", entry[1]);
+        }
+        else if(/ol[0-9]+/.test(entry[0]))
+        {
+          console.log(entry[0], ": ", entry[1]);
+        }
+        else if(/image[0-9]+/.test(entry[0]))
+        {
+          console.log(entry[0], ": ", entry[1]);
+        }
+      }
+    }
+    console.log(currentArticle);
+  }
   return <div>
            <Navbar links={MenuItems} />
                <section className='bg-dark ' >
 
                    <div className='container text-center text-md-left py-5'  >
-                   {readMoreCliked 
-                         ? (<div><BarreRech /> 
-                            {numbers.map((number) =>
-                                  <div className="card mb-3 my-4">
-                                      <div class="card-body">
-                                          <h5 className="card-title fs-3 fw-bold">Title</h5>
-                                          <p className="card-text text-start">{text.slice(0, 330)}...<a style={{color: "#0645f3",textDecoration: "none"}} className=' px-2 ' href='' onClick={handleClick}>read more</a></p>
-                                          <p className="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                                      </div>
-                                  </div>)}</div>)
-                                       
-                          : <div className="card mb-3 my-4" style={{height:'517px'}}>
-                              <div class="card-body">
-                                <h5 className="card-title fs-3 fw-bold">Title</h5>
-                                <p className="card-text text-start">{text}</p>
-                                <p className="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                   {!readMoreCliked 
+                         ? 
+                         <div>
+                            <BarreRech /> 
+                            {articles.map((article, idx) => {
+                              return(article.get("content").length != 0 
+                              ?
+                              <div key={idx} className="card mb-3 my-4">
+                                <div className="card-body">
+                                  <h1 className="card-title fs-3 fw-bold">{article.get("title")}</h1>
+                                  <p className="card-text text-start">{article.get("content")[0].get("paragraph1")}...<a style={{color: "#0645f3",textDecoration: "none"}} className=' px-2 ' href='' onClick={handleClick(idx)}>read more</a></p>
+                                  <p className="card-text"><small className="text-muted">Source : {article.get("url")}</small></p>
+                                </div>
+                              </div>
+                              :
+                              null);
+                          })}
+                          </div>             
+                          : 
+                          <div className="card mb-3 my-4">
+                              <div className="card-body">
+                                <h1 className="card-title fs-3 fw-bold">{currentArticle.get("title")}</h1>
+                                {
+                                  currentArticle.get("content").map((section, idx) => {
+                                    return (
+                                    <div key={idx}>
+                                      {section.has("title") ? <h3 className="card-text text-start">{section.get("title")}</h3>: null}
+                                      {
+                                        Array.from(section.entries()).map((entry,idx) => {
+                                          return (
+                                            <>
+                                            {/paragraph[0-9]+/.test(entry[0]) ? <p key={idx} className="card-text text-start">{entry[1]}</p> : null}
+                                            {/subtitle[0-9]+/.test(entry[0]) ? <h4 className="card-text text-start">{entry[1]}</h4> : null}
+                                            {/ul[0-9]+/.test(entry[0]) ? <ul className="card-text text-start">{entry[1].split("\n").map( e => {return(e !== "" ? <li>{e}</li> : null)} )}</ul> : null}
+                                            {/ol[0-9]+/.test(entry[0]) ? <ol className="card-text text-start">{entry[1].split("\n").map( e => {return(e !== "" ? <li>{e}</li> : null)} )}</ol> : null}
+                                            {/image[0-9]+/.test(entry[0]) ? <><img src={entry[1].get("url")}/> <figcaption>{entry[1].get("caption")}</figcaption></> : null}
+                                            </>
+                                          )
+                                        })
+                                      }
+                                    </div>);
+                                  })
+                                }
+                                <p className="card-text"><small className="text-muted">Source : <a target="_blank" href={currentArticle.get("url")}>{currentArticle.get("url")}</a></small></p>
                               </div>
                             </div>
                        }   
