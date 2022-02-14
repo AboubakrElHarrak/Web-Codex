@@ -8,6 +8,8 @@ import java.util.Map;
 
 public interface ArticleService
 {
-    Map<String, Object> fetchArticleByTitle(String title) throws ArticleNotFoundException, IOException;
-    List<Map<String, Object>> findArticleBySearch(String searchQuery) throws ArticleNotFoundException, IOException;
+    String fetchArticleByTitle(String title) throws ArticleNotFoundException, IOException;
+    List<String> findArticleBySearch(String searchQuery) throws ArticleNotFoundException, IOException;
+
+    List<String> fetchArticles() throws ArticleNotFoundException, IOException;
 }

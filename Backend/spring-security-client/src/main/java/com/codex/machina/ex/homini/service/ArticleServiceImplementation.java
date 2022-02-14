@@ -24,7 +24,7 @@ public class ArticleServiceImplementation implements ArticleService
             new HttpHost("localhost", 9200, "http")));
 
     @Override
-    public Map<String, Object> fetchArticleByTitle(String title) throws ArticleNotFoundException, IOException
+    public String fetchArticleByTitle(String title) throws ArticleNotFoundException, IOException
     {
         SearchRequest searchRequest = new SearchRequest();
         searchRequest.indices("codex_articles");
@@ -32,7 +32,7 @@ public class ArticleServiceImplementation implements ArticleService
         searchSourceBuilder.query(QueryBuilders.boolQuery().must(QueryBuilders.termQuery("title.keyword",title)));
         searchSourceBuilder.size(1);
         searchRequest.source(searchSourceBuilder);
-        Map<String, Object> map;
+        String document;
         SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);
 
         if(searchResponse.getHits().getTotalHits().value == 0)
@@ -44,22 +44,22 @@ public class ArticleServiceImplementation implements ArticleService
             SearchHit[] searchHit = searchResponse.getHits().getHits();
             for (SearchHit hit : searchHit)
             {
-                map = hit.getSourceAsMap();
-                return map;
+                document = hit.getSourceAsString();
+                return document;
             }
         }
         return null;
     }
 
     @Override
-    public List<Map<String, Object>> findArticleBySearch(String searchQuery) throws ArticleNotFoundException, IOException {
+    public List<String> findArticleBySearch(String searchQuery) throws ArticleNotFoundException, IOException {
         SearchRequest searchRequest = new SearchRequest();
         searchRequest.indices("codex_articles");
         SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
         searchSourceBuilder.query(QueryBuilders.multiMatchQuery(searchQuery));
         searchSourceBuilder.size(15);
         searchRequest.source(searchSourceBuilder);
-        List<Map<String, Object>> documents = new ArrayList<>();
+        List<String> documents = new ArrayList<>();
         SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);
         if(searchResponse.getHits().getTotalHits().value == 0)
         {
@@ -70,7 +70,35 @@ public class ArticleServiceImplementation implements ArticleService
             SearchHit[] searchHits = searchResponse.getHits().getHits();
             for(SearchHit hit : searchHits)
             {
-                documents.add(hit.getSourceAsMap());
+                documents.add(hit.getSourceAsString());
+            }
+            return documents;
+        }
+        return null;
+    }
+
+    // NOTE(KARIM) : The map DS needs to be changed to an ordered one to preserve the initial json ordering that I made
+    @Override
+    public List<String> fetchArticles() throws ArticleNotFoundException, IOException
+    {
+        SearchRequest searchRequest = new SearchRequest();
+        searchRequest.indices("codex_articles");
+        SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
+        searchSourceBuilder.query();
+        searchSourceBuilder.size(5);
+        searchRequest.source(searchSourceBuilder);
+        List<String> documents = new ArrayList<>();
+        SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);
+        if(searchResponse.getHits().getTotalHits().value == 0)
+        {
+            throw new ArticleNotFoundException("Sorry No Articles Available at the moment !");
+        }
+        else if(searchResponse.getHits().getTotalHits().value > 0)
+        {
+            SearchHit[] searchHits = searchResponse.getHits().getHits();
+            for(SearchHit hit : searchHits)
+            {
+                documents.add(hit.getSourceAsString());
             }
             return documents;
         }
