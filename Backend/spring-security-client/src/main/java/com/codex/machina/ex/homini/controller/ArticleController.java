@@ -34,4 +34,10 @@ public class ArticleController
         }
         return articleService.fetchArticles();
     }
+    @GetMapping("/link")
+    public String linkArticle() throws IOException
+    {
+        articleService.linkArticles();
+        return "Articles Linked from es to MySQL";
+    }
 }

@@ -1,6 +1,8 @@
 package com.codex.machina.ex.homini.service;
 
+import com.codex.machina.ex.homini.entity.Article;
 import com.codex.machina.ex.homini.error.ArticleNotFoundException;
+import com.codex.machina.ex.homini.repository.ArticleRepository;
 import org.apache.http.HttpHost;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
@@ -10,6 +12,7 @@ import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -22,7 +25,8 @@ public class ArticleServiceImplementation implements ArticleService
 {
     RestHighLevelClient client = new RestHighLevelClient(RestClient.builder(
             new HttpHost("localhost", 9200, "http")));
-
+    @Autowired
+    private ArticleRepository articleRepository;
     @Override
     public String fetchArticleByTitle(String title) throws ArticleNotFoundException, IOException
     {
@@ -77,7 +81,6 @@ public class ArticleServiceImplementation implements ArticleService
         return null;
     }
 
-    // NOTE(KARIM) : The map DS needs to be changed to an ordered one to preserve the initial json ordering that I made
     @Override
     public List<String> fetchArticles() throws ArticleNotFoundException, IOException
     {
@@ -103,5 +106,28 @@ public class ArticleServiceImplementation implements ArticleService
             return documents;
         }
         return null;
+    }
+
+    @Override
+    public void linkArticles() throws IOException
+    {
+        SearchRequest searchRequest = new SearchRequest();
+        searchRequest.indices("codex_articles");
+        SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
+        searchSourceBuilder.query();
+        searchSourceBuilder.size(974);
+        searchRequest.source(searchSourceBuilder);
+        SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);
+        if(searchResponse.getHits().getTotalHits().value > 0)
+        {
+            SearchHit[] searchHits = searchResponse.getHits().getHits();
+            for(SearchHit hit : searchHits)
+            {
+                articleRepository.save(new Article(
+                        Long.valueOf(hit.getId()),
+                        hit.getSourceAsMap().get("title").toString(),
+                        0));
+            }
+        }
     }
 }

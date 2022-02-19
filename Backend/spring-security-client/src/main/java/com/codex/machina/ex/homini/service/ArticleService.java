@@ -12,4 +12,5 @@ public interface ArticleService
     List<String> findArticleBySearch(String searchQuery) throws ArticleNotFoundException, IOException;
 
     List<String> fetchArticles() throws ArticleNotFoundException, IOException;
+    void linkArticles() throws IOException;
 }
