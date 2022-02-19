@@ -12,7 +12,7 @@ export default function Form() {
     setRegisterCliked(!registerCliked);
     setLoginCliked(!loginCliked);
   }
-  return <div class="form-style-8">
+  return <div className="form-style-8">
     {loginCliked
         ? (<div>
               <h2>Login to your account</h2>

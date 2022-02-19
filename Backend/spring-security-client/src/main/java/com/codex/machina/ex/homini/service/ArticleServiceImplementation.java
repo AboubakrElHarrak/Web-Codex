@@ -1,6 +1,8 @@
 package com.codex.machina.ex.homini.service;
 
+import com.codex.machina.ex.homini.entity.Article;
 import com.codex.machina.ex.homini.error.ArticleNotFoundException;
+import com.codex.machina.ex.homini.repository.ArticleRepository;
 import org.apache.http.HttpHost;
 import org.elasticsearch.action.search.SearchRequest;
 import org.elasticsearch.action.search.SearchResponse;
@@ -10,6 +12,7 @@ import org.elasticsearch.client.RestHighLevelClient;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.builder.SearchSourceBuilder;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
@@ -22,9 +25,10 @@ public class ArticleServiceImplementation implements ArticleService
 {
     RestHighLevelClient client = new RestHighLevelClient(RestClient.builder(
             new HttpHost("localhost", 9200, "http")));
-
+    @Autowired
+    private ArticleRepository articleRepository;
     @Override
-    public Map<String, Object> fetchArticleByTitle(String title) throws ArticleNotFoundException, IOException
+    public String fetchArticleByTitle(String title) throws ArticleNotFoundException, IOException
     {
         SearchRequest searchRequest = new SearchRequest();
         searchRequest.indices("codex_articles");
@@ -32,7 +36,7 @@ public class ArticleServiceImplementation implements ArticleService
         searchSourceBuilder.query(QueryBuilders.boolQuery().must(QueryBuilders.termQuery("title.keyword",title)));
         searchSourceBuilder.size(1);
         searchRequest.source(searchSourceBuilder);
-        Map<String, Object> map;
+        String document;
         SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);
 
         if(searchResponse.getHits().getTotalHits().value == 0)
@@ -44,22 +48,22 @@ public class ArticleServiceImplementation implements ArticleService
             SearchHit[] searchHit = searchResponse.getHits().getHits();
             for (SearchHit hit : searchHit)
             {
-                map = hit.getSourceAsMap();
-                return map;
+                document = hit.getSourceAsString();
+                return document;
             }
         }
         return null;
     }
 
     @Override
-    public List<Map<String, Object>> findArticleBySearch(String searchQuery) throws ArticleNotFoundException, IOException {
+    public List<String> findArticleBySearch(String searchQuery) throws ArticleNotFoundException, IOException {
         SearchRequest searchRequest = new SearchRequest();
         searchRequest.indices("codex_articles");
         SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
         searchSourceBuilder.query(QueryBuilders.multiMatchQuery(searchQuery));
         searchSourceBuilder.size(15);
         searchRequest.source(searchSourceBuilder);
-        List<Map<String, Object>> documents = new ArrayList<>();
+        List<String> documents = new ArrayList<>();
         SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);
         if(searchResponse.getHits().getTotalHits().value == 0)
         {
@@ -70,10 +74,60 @@ public class ArticleServiceImplementation implements ArticleService
             SearchHit[] searchHits = searchResponse.getHits().getHits();
             for(SearchHit hit : searchHits)
             {
-                documents.add(hit.getSourceAsMap());
+                documents.add(hit.getSourceAsString());
             }
             return documents;
         }
         return null;
+    }
+
+    @Override
+    public List<String> fetchArticles() throws ArticleNotFoundException, IOException
+    {
+        SearchRequest searchRequest = new SearchRequest();
+        searchRequest.indices("codex_articles");
+        SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
+        searchSourceBuilder.query();
+        searchSourceBuilder.size(5);
+        searchRequest.source(searchSourceBuilder);
+        List<String> documents = new ArrayList<>();
+        SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);
+        if(searchResponse.getHits().getTotalHits().value == 0)
+        {
+            throw new ArticleNotFoundException("Sorry No Articles Available at the moment !");
+        }
+        else if(searchResponse.getHits().getTotalHits().value > 0)
+        {
+            SearchHit[] searchHits = searchResponse.getHits().getHits();
+            for(SearchHit hit : searchHits)
+            {
+                documents.add(hit.getSourceAsString());
+            }
+            return documents;
+        }
+        return null;
+    }
+
+    @Override
+    public void linkArticles() throws IOException
+    {
+        SearchRequest searchRequest = new SearchRequest();
+        searchRequest.indices("codex_articles");
+        SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
+        searchSourceBuilder.query();
+        searchSourceBuilder.size(974);
+        searchRequest.source(searchSourceBuilder);
+        SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);
+        if(searchResponse.getHits().getTotalHits().value > 0)
+        {
+            SearchHit[] searchHits = searchResponse.getHits().getHits();
+            for(SearchHit hit : searchHits)
+            {
+                articleRepository.save(new Article(
+                        Long.valueOf(hit.getId()),
+                        hit.getSourceAsMap().get("title").toString(),
+                        0));
+            }
+        }
     }
 }
