@@ -4,6 +4,8 @@ import Navbar from '../navbar/Navbar';
 import {useNavigate,Link} from 'react-router-dom';
 import BarreRech from './BarreRech/BarreRech';
 import { parse } from 'json-in-order';
+import back from './keyboard-key.png';
+import './HomePage.css';
 
 const ReadMore = ({ children }) => {
     const text = children;
@@ -20,6 +22,8 @@ const ReadMore = ({ children }) => {
   };
   
 export default function HomePage() {
+  const { search } = window.location;
+  const query = new URLSearchParams(search).get("search");
   const [articles, setArticles] = useState([]);
   const [readMoreCliked, setReadMoreCliked]=useState(false);
   const [currentArticle, setCurrentArticle] = useState(null);
@@ -27,6 +31,10 @@ export default function HomePage() {
     e.preventDefault();
     setReadMoreCliked(!readMoreCliked);
     setCurrentArticle(articles[idx]);
+    window.scrollTo(0,0);
+  }
+  const onBackClick = () => {
+    setReadMoreCliked(false);
   }
   const MenuItems = [
       {
@@ -44,7 +52,8 @@ export default function HomePage() {
   },[]);
 
   const fetchArticles = async () => {
-    const response = await fetch("http://localhost:8080/articles");
+    const endpoint = query === null ? "http://localhost:8080/articles" : `http://localhost:8080/articles?search_query=${query}`;
+    const response = await fetch(endpoint);
     const data = await response.text();
     const arr = parse(data);
     const articles = arr.map( article => {
@@ -57,6 +66,7 @@ export default function HomePage() {
     return <div>Articles Loading ...</div>
   }
   
+  console.log(query);
   return <div>
            <Navbar links={MenuItems} />
                <section className='bg-dark ' >
@@ -83,8 +93,11 @@ export default function HomePage() {
                           : 
                           <div className="card mb-3 my-4">
                               <div className="card-body">
-                                <h1 className="card-title fs-3 fw-bold">{currentArticle.get("title")}</h1>
-                                {
+                                <div className="upper-part">
+                                  <img className="back-button" src={back} onClick={onBackClick}/>
+                                  <h1 className="card-title fs-3 fw-bold">{currentArticle.get("title")}</h1>
+                                </div>
+                                 {
                                   currentArticle.get("content").map((section, idx) => {
                                     return (
                                     <div key={idx}>
