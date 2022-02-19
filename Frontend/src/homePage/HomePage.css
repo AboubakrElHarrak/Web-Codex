@@ -1,0 +1,12 @@
+.upper-part{
+    display: flex;
+}
+h1
+{
+    flex-grow: 2;
+}
+.back-button{
+    cursor: pointer;
+    width: 3%;
+    height: 3%;
+}
