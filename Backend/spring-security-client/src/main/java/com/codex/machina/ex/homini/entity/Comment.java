@@ -13,7 +13,7 @@ public class Comment
     private long commentId;
     private String content;
     private Date post_date;
-
+    
     @ManyToOne
     @JoinColumn(name = "userId", referencedColumnName = "userId")
     private User user;
