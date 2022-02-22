@@ -46,7 +46,7 @@ public class RegistrationController
     {
         return "This is a test ! " + principal.getName();
     }
-    @CrossOrigin(origins = "http://localhost:3000")
+
     @PostMapping("/register")
     public String registerUser(@RequestBody UserModel userModel, final HttpServletRequest request)
     {
@@ -65,7 +65,6 @@ public class RegistrationController
         }
         return "Bad User";
     }
-    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/resendVerificationToken")
     public String resendVerificationToken(@RequestParam("token") String oldToken, HttpServletRequest request)
     {
@@ -120,6 +119,7 @@ public class RegistrationController
             userService.changePassword(user, passwordModel.getNewPassword());
         return "Password Changed Successfully";
     }
+    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/jwtTokenRefresh")
     public void refreshJWTToken(HttpServletRequest request, HttpServletResponse response) throws IOException {
         String authorizationHeader = request.getHeader(AUTHORIZATION);

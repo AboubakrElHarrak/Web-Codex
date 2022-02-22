@@ -3,7 +3,7 @@ import {useNavigate,Link} from 'react-router-dom';
 import './Form.css'
 
 export default function Form() {
-  let navigate=useNavigate();
+  const navigate = useNavigate();
   const [registerCliked,setRegisterCliked]=useState(false);
   const [loginCliked,setLoginCliked]=useState(true);
   
@@ -118,8 +118,59 @@ export default function Form() {
     }
   }
 
+  const handleLogin = e => {
+    e.preventDefault();
+    if(username === "" || password === "")
+    {
+      setErrorMsg("Please enter all fields");
+      setError([true, 0]);
+    }
+    else
+    {
+      setError([false, -1]);
+      login(username, password).then(() => {
+        navigate("/");
+        window.location.reload();
+      });
+    }
+  }
+  
+  const login = async (username, password) => {
+    const urlencoded = new URLSearchParams();
+    urlencoded.append("username", username);
+    urlencoded.append("password",password);
+
+    const response = await fetch("http://localhost:8080/login",{
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+      body: urlencoded,
+      redirect: "follow"
+    });
+    if(response.ok)
+    {
+      const data = await response.json();
+      localStorage.setItem("user", JSON.stringify(data));
+    }
+    else
+    {
+      setErrorMsg("Incorrect username or password");
+      setError([true, 0]);
+    }
+  }
+
   function handleClick(e) {
     e.preventDefault();
+    setFirstname("");
+    setLastname("");
+    setUsername("");
+    setDob("");
+    setEmail("");
+    setPassword("");
+    setSubmitted(false);
+    setError([false,-1]);
+    setErrorMsg(false);
     setRegisterCliked(!registerCliked);
     setLoginCliked(!loginCliked);
   }
@@ -128,9 +179,10 @@ export default function Form() {
         ? (<div>
               <h2>Login to your account</h2>
               <form>
-                <input type="text1" placeholder="username" />
-                <input type="password" placeholder="password" />
-                <button>Login</button>
+                {error[0] && error[1] === 0 ? <div style={{color:"red"}}>{errorMsg}</div> : null}
+                <input onChange={handleUsername} type="text1" placeholder="username" />
+                <input onChange={handlePassword} type="password" placeholder="password" />
+                <button onClick={handleLogin}>Login</button>
                 <div className="text">
                   <h4>You don't have an account? <a style={{color: "#0645f3",textDecoration: "none"}} href='' onClick={handleClick}> Register</a></h4>
                 </div>

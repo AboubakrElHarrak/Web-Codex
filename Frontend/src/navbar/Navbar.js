@@ -12,7 +12,7 @@ export default function Navbar(props) {
                     <ul className="navbar-nav ms-auto ">
                     {props.links.map((item, idx) =>{
                        return(
-                           <li key={idx} className="nav-item"><Link className="nav-link fs-3 fw-bolder text-md-start" to={item.url} >{item.title}</Link></li>
+                           <li key={idx} className="nav-item" onClick={item.onClick} ><Link className="nav-link fs-3 fw-bolder text-md-start" to={item.url} >{item.title}</Link></li>
                        )
                     })}
                     </ul>  

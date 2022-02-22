@@ -27,23 +27,46 @@ export default function HomePage() {
   const [articles, setArticles] = useState([]);
   const [readMoreCliked, setReadMoreCliked]=useState(false);
   const [currentArticle, setCurrentArticle] = useState(null);
+  const [currentUser, setCurrentUser] = useState(undefined);
   const handleClick = (idx) => e => {
     e.preventDefault();
     setReadMoreCliked(!readMoreCliked);
     setCurrentArticle(articles[idx]);
     window.scrollTo(0,0);
   }
+
+  const getCurrentUser = () => {
+    return JSON.parse(localStorage.getItem("user"));
+  }
+  const logout = () => {
+    localStorage.removeItem("user");
+    window.location.reload();
+  }
+
   const onBackClick = () => {
     setReadMoreCliked(false);
   }
-  const MenuItems = [
+  
+  const MenuItems = !currentUser ? [
       {
-          title:'Log in',
-          url: '/form',
+          title: "Login",
+          url: "/form",
+          onClick: null
       }
+  ] : [
+    {
+      title: "Logout", 
+      url: "/",
+      onClick: logout
+    }
   ];
 
   useEffect(() => {
+    const user = getCurrentUser();
+    if(user)
+    {
+      setCurrentUser(user);
+    }
     const getArticles = async () => {
       const articlesFromServer = await fetchArticles();
       setArticles(articlesFromServer);
@@ -52,6 +75,8 @@ export default function HomePage() {
   },[]);
 
   const fetchArticles = async () => {
+    // NOTE (KARIM) : When the recommendation system will be implemented we will have to take into account the fact that we are logged in
+    // NOTE (KARIM) : The token refresh functionnality needs to be implemented when we start using endpoints that require authentication
     const endpoint = query === null ? "http://localhost:8080/articles" : `http://localhost:8080/articles?search_query=${query}`;
     const response = await fetch(endpoint);
     const data = await response.text();
@@ -61,12 +86,12 @@ export default function HomePage() {
     });
     return articles;
   }
+  
   if(articles.length === 0)
   {
     return <div>Articles Loading ...</div>
   }
   
-  console.log(query);
   return <div>
            <Navbar links={MenuItems} />
                <section className='bg-dark ' >
@@ -77,7 +102,7 @@ export default function HomePage() {
                          <div>
                             <BarreRech /> 
                             {articles.map((article, idx) => {
-                              return(article.get("content").length != 0 
+                              return(article.get("content").length !== 0 
                               ?
                               <div key={idx} className="card mb-3 my-4">
                                 <div className="card-body">
@@ -94,7 +119,7 @@ export default function HomePage() {
                           <div className="card mb-3 my-4">
                               <div className="card-body">
                                 <div className="upper-part">
-                                  <img className="back-button" src={back} onClick={onBackClick}/>
+                                  <img className="back-button" alt="" src={back} onClick={onBackClick}/>
                                   <h1 className="card-title fs-3 fw-bold">{currentArticle.get("title")}</h1>
                                 </div>
                                  {
@@ -110,7 +135,7 @@ export default function HomePage() {
                                             {/subtitle[0-9]+/.test(entry[0]) ? <h4 className="card-text text-start">{entry[1]}</h4> : null}
                                             {/ul[0-9]+/.test(entry[0]) ? <ul className="card-text text-start">{entry[1].split("\n").map( e => {return(e !== "" ? <li>{e}</li> : null)} )}</ul> : null}
                                             {/ol[0-9]+/.test(entry[0]) ? <ol className="card-text text-start">{entry[1].split("\n").map( e => {return(e !== "" ? <li>{e}</li> : null)} )}</ol> : null}
-                                            {/image[0-9]+/.test(entry[0]) ? <><img src={entry[1].get("url")}/> <figcaption>{entry[1].get("caption")}</figcaption></> : null}
+                                            {/image[0-9]+/.test(entry[0]) ? <><img src={entry[1].get("url")} alt={entry[1].get("caption")} /> <figcaption>{entry[1].get("caption")}</figcaption></> : null}
                                             </>
                                           )
                                         })
@@ -118,7 +143,7 @@ export default function HomePage() {
                                     </div>);
                                   })
                                 }
-                                <p className="card-text"><small className="text-muted">Source : <a target="_blank" href={currentArticle.get("url")}>{currentArticle.get("url")}</a></small></p>
+                                <p className="card-text"><small className="text-muted">Source : <a target="_blank" rel="noreferrer" href={currentArticle.get("url")}>{currentArticle.get("url")}</a></small></p>
                               </div>
                             </div>
                        }   
