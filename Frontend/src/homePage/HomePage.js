@@ -1,7 +1,7 @@
 import React,{ useState, useEffect } from 'react';
 import Footer from '../footer/Footer';
 import Navbar from '../navbar/Navbar';
-import {useNavigate,Link} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom';
 import BarreRech from './BarreRech/BarreRech';
 import { parse } from 'json-in-order';
 import back from './keyboard-key.png';
@@ -22,17 +22,24 @@ const ReadMore = ({ children }) => {
   };
   
 export default function HomePage() {
+  const navigate = useNavigate();
   const { search } = window.location;
   const query = new URLSearchParams(search).get("search");
   const [articles, setArticles] = useState([]);
   const [readMoreCliked, setReadMoreCliked]=useState(false);
   const [currentArticle, setCurrentArticle] = useState(null);
   const [currentUser, setCurrentUser] = useState(undefined);
+  const [timer, setTimer] = useState(null);
+  let [timeSpentOnArticle, setTimeSpentOnArticle] = useState(0);
   const handleClick = (idx) => e => {
     e.preventDefault();
     setReadMoreCliked(!readMoreCliked);
     setCurrentArticle(articles[idx]);
     window.scrollTo(0,0);
+    if(getCurrentUser())
+    {
+      startCounting();
+    }
   }
 
   const getCurrentUser = () => {
@@ -44,9 +51,70 @@ export default function HomePage() {
   }
 
   const onBackClick = () => {
-    setReadMoreCliked(false);
+    if(timeSpentOnArticle !== 0)
+    {
+      rate().then(setReadMoreCliked(false));
+      setReadMoreCliked(false);
+      setTimeSpentOnArticle(0);
+    }
+    else
+    {
+      setReadMoreCliked(false);
+    }
   }
-  
+  const onMainReturn = () => {
+    if(timeSpentOnArticle !== 0)
+    {
+      rate().then(navigate("/"));
+    }
+    else
+    {
+      navigate("/");
+    }
+  }
+
+  const rate = async () => {
+    const response = await fetch("http://localhost:8080/api/rate",{
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        "Authorization": "Bearer " + getCurrentUser()["access_token"]
+      },
+      body: JSON.stringify({
+        "title": currentArticle.get("title"),
+        "rating": timeSpentOnArticle.toString()
+        
+      }),
+      redirect: "follow"
+    });
+    const data = await response.text();
+    if(data.includes("The Token has expired"))
+    {
+      refreshToken();
+      rate();
+    }
+  }
+  const refreshToken = async () => {
+    const response = await fetch("http://localhost:8080/jwtTokenRefresh",{
+      method: "GET",
+      headers: {
+        "Authorization": "Bearer " + getCurrentUser()["refresh_token"] 
+      },
+      redirect: "follow"
+    });
+    if(response.ok)
+    {
+      const data = await response.json();
+      localStorage.removeItem("user");
+      localStorage.setItem("user", JSON.stringify(data));
+    }
+    else
+    {
+      navigate("/form");
+      window.location.reload();
+    }
+  }
+
   const MenuItems = !currentUser ? [
       {
           title: "Login",
@@ -76,7 +144,6 @@ export default function HomePage() {
 
   const fetchArticles = async () => {
     // NOTE (KARIM) : When the recommendation system will be implemented we will have to take into account the fact that we are logged in
-    // NOTE (KARIM) : The token refresh functionnality needs to be implemented when we start using endpoints that require authentication
     const endpoint = query === null ? "http://localhost:8080/articles" : `http://localhost:8080/articles?search_query=${query}`;
     const response = await fetch(endpoint);
     const data = await response.text();
@@ -86,14 +153,23 @@ export default function HomePage() {
     });
     return articles;
   }
-  
+
+  const startCounting = () => {
+    setTimer(setInterval(() => {
+      setTimeSpentOnArticle(timeSpentOnArticle++);
+    }, 60000));
+  }
+
   if(articles.length === 0)
   {
     return <div>Articles Loading ...</div>
   }
-  
+  if(!readMoreCliked)
+  {
+    clearInterval(timer);
+  }
   return <div>
-           <Navbar links={MenuItems} />
+           <Navbar links={MenuItems} mainRate={onMainReturn} />
                <section className='bg-dark ' >
 
                    <div className='container text-center text-md-left py-5'  >
