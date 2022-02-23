@@ -58,4 +58,14 @@ public class Rating
     {
         this.user = user;
     }
+
+    public Article getArticle()
+    {
+        return article;
+    }
+
+    public void setArticle(Article article)
+    {
+        this.article = article;
+    }
 }
