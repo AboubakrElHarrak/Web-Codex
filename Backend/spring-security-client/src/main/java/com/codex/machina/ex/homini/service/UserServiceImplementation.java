@@ -8,15 +8,18 @@ import com.codex.machina.ex.homini.repository.PasswordTokenRepository;
 import com.codex.machina.ex.homini.repository.UserRepository;
 import com.codex.machina.ex.homini.repository.VerificationTokenRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import java.util.Calendar;
-import java.util.Optional;
-import java.util.UUID;
+import java.util.*;
 
 @Service
-public class UserServiceImplementation implements UserService
+public class UserServiceImplementation implements UserService, UserDetailsService
 {
     @Autowired
     private UserRepository userRepository;
@@ -43,6 +46,29 @@ public class UserServiceImplementation implements UserService
         return user;
     }
 
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException
+    {
+        User user = userRepository.findByUsername(username);
+        if(user == null)
+        {
+            throw new UsernameNotFoundException("User not found");
+        }
+        return new org.springframework.security.core.userdetails.User(
+                user.getUsername(),
+                user.getPassword(),
+                getAuthorities(List.of(user.getRole()))
+        );
+    }
+    private Collection<? extends GrantedAuthority> getAuthorities(List<String> roles)
+    {
+        List<GrantedAuthority> authorities = new ArrayList<>();
+        for(String role: roles)
+        {
+            authorities.add(new SimpleGrantedAuthority(role));
+        }
+        return authorities;
+    }
     @Override
     public void saveVerificationTokenForUser(String token, User user)
     {
@@ -83,6 +109,12 @@ public class UserServiceImplementation implements UserService
     public User findUserByEmail(String email)
     {
         return userRepository.findByEmail(email);
+    }
+
+    @Override
+    public User getUserByUsername(String username)
+    {
+        return userRepository.findByUsername(username);
     }
 
     @Override

@@ -1,43 +1,62 @@
 package com.codex.machina.ex.homini.config;
 
+import com.codex.machina.ex.homini.filter.CustomAuthenticationFilter;
+import com.codex.machina.ex.homini.filter.CustomAuthorizationFilter;
 import org.springframework.context.annotation.Bean;
-import org.springframework.security.config.Customizer;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @EnableWebSecurity
-public class SecurityConfig
+public class SecurityConfig extends WebSecurityConfigurerAdapter
 {
     private static final String[] WHITE_LIST_URLS =
+            {
+                    "/register",
+                    "/resendVerificationToken",
+                    "/verifyRegistration"
+            };
+    private UserDetailsService userDetailsService;
+    private BCryptPasswordEncoder passwordEncoder;
+
+    public SecurityConfig(UserDetailsService userDetailsService, BCryptPasswordEncoder passwordEncoder)
     {
-            "/register",
-            "/resendVerificationToken",
-            "/verifyRegistration"
-    };
-    @Bean
-    public PasswordEncoder passwordEncoder()
-    {
-        return new BCryptPasswordEncoder(11);
+        this.userDetailsService = userDetailsService;
+        this.passwordEncoder = passwordEncoder;
     }
-    @Bean
-    SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception
+
+    @Override
+    protected void configure(AuthenticationManagerBuilder auth) throws Exception
     {
-        http
-                .cors()
-                .and()
-                .csrf()
-                .disable()
-                .authorizeHttpRequests()
+        auth.userDetailsService(userDetailsService).passwordEncoder(passwordEncoder);
+    }
+
+    @Override
+    protected void configure(HttpSecurity http) throws Exception
+    {
+        http.csrf().disable();
+        http.cors();
+        http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+        http.authorizeHttpRequests()
                 .antMatchers(WHITE_LIST_URLS)
                 .permitAll()
-                .antMatchers("/api/**").authenticated()
-                .and()
-                .oauth2Login(oauth2login -> oauth2login.loginPage("/oauth2/authorization/api-client-oidc"))
-                .oauth2Client(Customizer.withDefaults())
+                .antMatchers("/api/**")
+                .authenticated()
         ;
-        return http.build();
+        http.addFilter(new CustomAuthenticationFilter(authenticationManagerBean()));
+        http.addFilterBefore(new CustomAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class);
+    }
+
+    @Bean
+    @Override
+    public AuthenticationManager authenticationManagerBean() throws Exception
+    {
+        return super.authenticationManagerBean();
     }
 }

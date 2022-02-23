@@ -13,6 +13,7 @@ public interface UserService
     String validateVerificationToken(String token);
     VerificationToken generateNewVerificationToken(String oldToken);
     User findUserByEmail(String email);
+    User getUserByUsername(String username);
     void createPasswordResetTokenForUser(User user, String token);
     String validatePasswordToken(String token);
     Optional<User> getUserByPasswordToken(String token);

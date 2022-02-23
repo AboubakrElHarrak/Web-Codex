@@ -23,7 +23,6 @@ public class ArticleController
         return articleService.fetchArticleByTitle(title);
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/articles")
     public List<String> findArticleBySearch(@RequestParam(value = "search_query", required = false) String searchQuery)
             throws ArticleNotFoundException, IOException
