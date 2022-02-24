@@ -19,7 +19,7 @@ public class CommentController {
 	@Autowired
 	private CommentService commentService;
 	
-	@PostMapping(path = "/articles/add-comment/{title}")
+	@PostMapping(path = "api/add-comment/{title}")
 	public String addNewComment(@PathVariable("title") String title, @RequestBody CommentModel comment) {
 		commentService.addNewComment(title, comment);
 		return "new comment added";

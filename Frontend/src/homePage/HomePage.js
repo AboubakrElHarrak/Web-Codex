@@ -6,6 +6,7 @@ import BarreRech from './BarreRech/BarreRech';
 import { parse } from 'json-in-order';
 import back from './keyboard-key.png';
 import './HomePage.css';
+import Comment from '../comment/comment';
 
 const ReadMore = ({ children }) => {
     const text = children;
@@ -215,6 +216,7 @@ export default function HomePage() {
                           })}
                           </div>             
                           : 
+                          <React.Fragment>
                           <div className="card mb-3 my-4">
                               <div className="card-body">
                                 <div className="upper-part">
@@ -245,6 +247,10 @@ export default function HomePage() {
                                 <p className="card-text"><small className="text-muted">Source : <a target="_blank" rel="noreferrer" href={currentArticle.get("url")}>{currentArticle.get("url")}</a></small></p>
                               </div>
                             </div>
+                            <div className="card mb-3 my-4">
+                            <Comment articleTitle={currentArticle.get("title")}/>
+                            </div>
+                            </React.Fragment>
                        }   
                     </div>
                 </section> 
