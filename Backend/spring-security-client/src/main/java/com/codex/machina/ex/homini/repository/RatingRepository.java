@@ -12,7 +12,6 @@ public interface RatingRepository extends JpaRepository<Rating, Long>
 {
     Rating findByUserAndArticle(User user, Article article);
     List<Rating> findAllByOrderByUser();
-    // NOTE (KARIM) : Add avg aggregation query to return the avg of ratings
     @Query("SELECT avg(r.rating) FROM Rating AS r")
     List<Double> getAvgTimeSpent();
     }

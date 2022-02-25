@@ -4,7 +4,6 @@ import com.codex.machina.ex.homini.error.ArticleNotFoundException;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Map;
 
 public interface ArticleService
 {
