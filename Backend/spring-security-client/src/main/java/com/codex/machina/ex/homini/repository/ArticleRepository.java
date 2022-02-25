@@ -1,6 +1,9 @@
 package com.codex.machina.ex.homini.repository;
 
 import com.codex.machina.ex.homini.entity.Article;
+
+import java.util.Optional;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
