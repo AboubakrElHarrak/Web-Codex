@@ -143,7 +143,6 @@ export default function HomePage() {
   },[]);
 
   const fetchArticles = async () => {
-    // NOTE (KARIM) : When the recommendation system will be implemented we will have to take into account the fact that we are logged in
     if(!query && getCurrentUser())
     {
       const response = await fetch("http://localhost:8080/api/recommend", {
