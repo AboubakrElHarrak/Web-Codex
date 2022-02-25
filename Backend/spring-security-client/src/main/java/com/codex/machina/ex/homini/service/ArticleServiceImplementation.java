@@ -19,6 +19,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 
 @Service
 public class ArticleServiceImplementation implements ArticleService
@@ -56,6 +57,17 @@ public class ArticleServiceImplementation implements ArticleService
     }
 
     @Override
+    public String fetchArticleById(Long id) throws ArticleNotFoundException, IOException
+    {
+        Optional<Article> article = articleRepository.findById(id);
+        if(!article.isPresent())
+        {
+            throw new ArticleNotFoundException("Article Not Available");
+        }
+        return fetchArticleByTitle(article.get().getTitle());
+    }
+
+    @Override
     public List<String> findArticleBySearch(String searchQuery) throws ArticleNotFoundException, IOException {
         SearchRequest searchRequest = new SearchRequest();
         searchRequest.indices("codex_articles");
@@ -82,13 +94,13 @@ public class ArticleServiceImplementation implements ArticleService
     }
 
     @Override
-    public List<String> fetchArticles() throws ArticleNotFoundException, IOException
+    public List<String> fetchArticles(int size) throws ArticleNotFoundException, IOException
     {
         SearchRequest searchRequest = new SearchRequest();
         searchRequest.indices("codex_articles");
         SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
         searchSourceBuilder.query();
-        searchSourceBuilder.size(5);
+        searchSourceBuilder.size(size);
         searchRequest.source(searchSourceBuilder);
         List<String> documents = new ArrayList<>();
         SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);
