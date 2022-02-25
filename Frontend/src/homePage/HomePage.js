@@ -248,7 +248,7 @@ export default function HomePage() {
                               </div>
                             </div>
                             <div className="card mb-3 my-4">
-                            <Comment articleTitle={currentArticle.get("title")}/>
+                            <Comment articleTitle={currentArticle.get("title")} currentUser_={getCurrentUser()}/>
                             </div>
                             </React.Fragment>
                        }   

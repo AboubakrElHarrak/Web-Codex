@@ -12,7 +12,22 @@ public class Comment
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "comment_sequence")
     private long commentId;
     private String content;
-    private Date post_date;
+    public long getLikes() {
+		return likes;
+	}
+	public void incLikes(long likes) {
+		this.likes += likes;
+	}
+	public long getDislikes() {
+		return dislikes;
+	}
+	public void incDislikes(long dislikes) {
+		this.dislikes += dislikes;
+	}
+
+	private Date post_date;
+    private long likes = 0;
+    private long dislikes = 0;
     
     @ManyToOne
     @JoinColumn(name = "userId", referencedColumnName = "userId")

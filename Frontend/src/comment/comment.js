@@ -1,10 +1,14 @@
 import { parse } from "json-in-order";
 import React, { useState } from "react";
+import { Navigate } from "react-router-dom";
 import './comment.css'
+import Popup from "./Popup/Popup";
 
 export default function Comment(args) {
 
     const [comments, setComments] = useState();
+    const [Connected, setConnected] = useState(true);
+    const [isEmpty, setIsEmpty] = useState(false);
 
     const fetchComments = async () => {
         const endpoint = "http://localhost:8080/articles/"+args.articleTitle+"/get-comments";
@@ -14,23 +18,76 @@ export default function Comment(args) {
         return comments;
     }
 
-    const handleClick = () => {
-      const comment_content = document.getElementById("comment_content").value;
-      const endpoint_ = "http://localhost:8080/api/add-comment/"+args.articleTitle;
-      fetch(endpoint_, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(
-          {
-            "userId": 1,
-            "content":  comment_content
+    const handleClick = async () => {
+      if (args.currentUser_) {
+        setConnected(true);
+        const comment_content = document.getElementById("comment_content").value;
+        if (comment_content !== "") {
+          setIsEmpty(false);
+          const endpoint_ = "http://localhost:8080/api/add-comment/"+args.articleTitle;
+          const response = await fetch(endpoint_, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "Authorization": "Bearer " + args.currentUser_["access_token"]
+            },
+            body: JSON.stringify(
+              {
+                "content":  comment_content
+              }
+            )
+          });      
+          const data = await response.text();
+          if (data.includes("The Token has expired")) {
+            refreshToken();
           }
-        )
-    });
-      console.log();
+        }
+        else {
+          setIsEmpty(true);
+        }
+      }
+      else {
+        setConnected(false);
+      }
     }
+
+    const togglePopup  = () => {
+      setConnected(true);
+    }
+    const handleLike = (e) => {
+      var id = e.currentTarget.value;
+      console.log(id);
+      fetch("http://localhost:8080/like-comment/"+id, {
+        method: "POST"
+      });
+    }
+    const handleDislike = (e) => {
+      var id = e.currentTarget.value;
+      console.log(id);
+      fetch("http://localhost:8080/dislike-comment/"+id, {
+        method: "POST"
+      });
+    }
+  const refreshToken = async () => {
+    const response = await fetch("http://localhost:8080/jwtTokenRefresh",{
+      method: "GET",
+      headers: {
+        "Authorization": "Bearer " + args.currentUser_["refresh_token"] 
+      },
+      redirect: "follow"
+    });
+    if(response.ok)
+    {
+      const data = await response.json();
+      localStorage.removeItem("user");
+      localStorage.setItem("user", JSON.stringify(data));
+    }
+    else
+    {
+      Navigate("/form");
+      window.location.reload();
+    }
+  }
 
     if (!comments) {
         fetchComments().then((value) => {setComments(value)});
@@ -57,11 +114,14 @@ export default function Comment(args) {
                 </div>
                 <p style={{display: "flex", margin: 10}}>{comment_.get("content")}</p>
                 <div className="pad-ver">
-                  <div style={{display : "table-cell"}} className="btn-group">
-                    <a className="btn btn-sm btn-default btn-hover-success" href="#"><i className="fa fa-thumbs-up"></i></a>
-                    <a className="btn btn-sm btn-default btn-hover-danger" href="#"><i className="fa fa-thumbs-down"></i></a>
+                  <div style={{display : "table-row"}} className="btn-group">
+                    <button style={{display : "table-cell"}} className="btn btn-sm btn-default btn-hover-danger" value={comment_.get("commentId")} onClick={(e) => handleLike(e)}><i className="fa fa-thumbs-up"></i></button>
+                    <p style={{marginLeft: 0, display : "table-cell"}}>{comment_.get("likes")}</p>
+                    <button style={{display : "table-cell"}} className="btn btn-sm btn-default btn-hover-danger" value={comment_.get("commentId")} onClick={(e) => handleDislike(e)}><i className="fa fa-thumbs-down"></i></button>
+                    <p style={{marginLeft: 5, display : "table-cell"}}>{comment_.get("dislikes")}</p>
+                  
+                  {/*<a style={{display : "table-cell"}} className="btn btn-sm btn-default btn-hover-primary">Reply</a>*/}
                   </div>
-                  <a style={{display : "table-cell"}} className="btn btn-sm btn-default btn-hover-primary" href="#">Reply</a>
                 </div>
                 <hr/>
         
@@ -82,6 +142,7 @@ export default function Comment(args) {
         <div className="panel">
         <div className="panel-body">
             <textarea id="comment_content" className="form-control" rows="3" placeholder="Add a comment..."></textarea>
+            {isEmpty && <label style={{color: "#da292e"}} className='col-sm-2 col-form-label'>Comment can't be empty</label>}
             <div className="mar-top clearfix">
             <button className="btn btn-sm btn-primary pull-right" onClick={handleClick}><i style={{marginRight :10}} className="fa fa-paper-plane"></i>Comment</button>
             </div>
@@ -89,11 +150,18 @@ export default function Comment(args) {
         </div>
 
         {/*List of comments*/}
-        <div>
+        <div style={{maxHeight: 400, overflow: "overlay"}}>
           {commentList}
         </div>
         
         </div>
+                <div id="dialog_">
+                  {!Connected &&
+                  <Popup
+                  handleClose={togglePopup} />
+                  }
+                </div>
         </div>
+        
     );
 }

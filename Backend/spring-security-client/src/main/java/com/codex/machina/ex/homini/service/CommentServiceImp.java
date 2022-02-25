@@ -1,6 +1,7 @@
 package com.codex.machina.ex.homini.service;
 
 import java.util.Date;
+import java.util.Iterator;
 
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,22 +24,33 @@ public class CommentServiceImp implements CommentService {
 	@Autowired
 	UserRepository userRepository;
 	@Override
-	public Comment addNewComment(String title, CommentModel comment) {
+	public Comment addNewComment(String title, CommentModel comment, String username) {
 		Comment c = new Comment();
-		Article article = articleRepository.findByTitle(title).get();
+		Article article = articleRepository.findByTitle(title);
 		c.setArticle(article);
 		c.setContent(comment.getContent());
 		c.setPost_date(new Date());
-		Long userId = comment.getUserId();
-		User user = userRepository.findById(userId).get();
+		User user = userRepository.findByUsername(username);
 		c.setUser(user);
 	    commentRepository.save(c);
 		return c;
 	}
 	
+	public void likeComment(Long id) {
+		Comment c = commentRepository.findById(id).get();
+		c.incLikes(1);
+		commentRepository.save(c);
+	}
+	
+	public void dislikeComment(Long id) {
+		Comment c = commentRepository.findById(id).get();
+		c.incDislikes(1);
+		commentRepository.save(c);
+	}
+	
 	@Override
 	public Iterable<Comment> getArticleComments(String title) {
-		Article article = articleRepository.findByTitle(title).get();
+		Article article = articleRepository.findByTitle(title);
 		return commentRepository.findByArticle(article);
 	}
 }
