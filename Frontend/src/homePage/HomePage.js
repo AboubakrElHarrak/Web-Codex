@@ -143,8 +143,31 @@ export default function HomePage() {
   },[]);
 
   const fetchArticles = async () => {
-    // NOTE (KARIM) : When the recommendation system will be implemented we will have to take into account the fact that we are logged in
-    const endpoint = query === null ? "http://localhost:8080/articles" : `http://localhost:8080/articles?search_query=${query}`;
+    if(!query && getCurrentUser())
+    {
+      const response = await fetch("http://localhost:8080/api/recommend", {
+        method: "GET",
+        headers: {
+          "Authorization": "Bearer " + getCurrentUser()["access_token"]
+        },
+        redirect: "follow"
+      });
+      const data = await response.text();
+      if(data.includes("The Token has expired"))
+      {
+        refreshToken();
+        fetchArticles();
+      }
+      else
+      {
+        const arr = parse(data);
+        const articles = arr.map( article => {
+          return parse(article);
+        });
+        return articles;
+      }
+    }
+    const endpoint =  query === null ? "http://localhost:8080/articles" : `http://localhost:8080/articles?search_query=${query}`;
     const response = await fetch(endpoint);
     const data = await response.text();
     const arr = parse(data);
