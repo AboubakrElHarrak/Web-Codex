@@ -1,5 +1,7 @@
 package com.codex.machina.ex.homini.service;
 
+import java.util.List;
+
 import com.codex.machina.ex.homini.Model.CommentModel;
 import com.codex.machina.ex.homini.entity.Article;
 import com.codex.machina.ex.homini.entity.Comment;
@@ -9,4 +11,6 @@ public interface CommentService {
 	Iterable<Comment> getArticleComments(String title, Long nb);
 	void likeComment(Long id);
 	void dislikeComment(Long id);
+	List <Comment> fetchComments();
+	
 }

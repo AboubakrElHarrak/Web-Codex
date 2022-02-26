@@ -11,6 +11,7 @@ import com.codex.machina.ex.homini.entity.VerificationToken;
 import com.codex.machina.ex.homini.event.RegistrationCompleteEvent;
 import com.codex.machina.ex.homini.service.EmailSenderService;
 import com.codex.machina.ex.homini.service.UserService;
+import com.codex.machina.ex.homini.repository.UserRepository;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationEventPublisher;
@@ -35,6 +36,7 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 @RestController
 public class RegistrationController
 {
+	
     @Autowired
     private UserService userService;
     @Autowired
@@ -186,5 +188,9 @@ public class RegistrationController
                 "CODEX Account Password Reset Mail");
         System.out.println("Click the link to reset your password : { " + url + " }");
         return url;
+    }
+    @GetMapping("/users")
+    public java.util.List<User> getAllUsers(){
+    	return userService.fetchUsers();
     }
 }

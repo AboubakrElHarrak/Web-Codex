@@ -4,6 +4,7 @@ import com.codex.machina.ex.homini.Model.UserModel;
 import com.codex.machina.ex.homini.entity.User;
 import com.codex.machina.ex.homini.entity.VerificationToken;
 
+import java.util.List;
 import java.util.Optional;
 
 public interface UserService
@@ -19,4 +20,5 @@ public interface UserService
     Optional<User> getUserByPasswordToken(String token);
     void changePassword(User user, String newPassword);
     boolean checkIfoldPasswordisValid(User user, String oldPassword);
+    List <User> fetchUsers();
 }

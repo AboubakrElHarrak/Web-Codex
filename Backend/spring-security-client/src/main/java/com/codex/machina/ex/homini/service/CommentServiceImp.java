@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.List;
 
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -63,5 +64,9 @@ public class CommentServiceImp implements CommentService {
 			}
 		}
 		return commentList_;
+	}
+	@Override
+	public List<Comment> fetchComments(){
+		return commentRepository.findAll();
 	}
 }
