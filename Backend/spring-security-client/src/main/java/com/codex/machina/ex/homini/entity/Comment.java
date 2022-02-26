@@ -12,8 +12,23 @@ public class Comment
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "comment_sequence")
     private long commentId;
     private String content;
-    private Date post_date;
+    public long getLikes() {
+		return likes;
+	}
+	public void incLikes(long likes) {
+		this.likes += likes;
+	}
+	public long getDislikes() {
+		return dislikes;
+	}
+	public void incDislikes(long dislikes) {
+		this.dislikes += dislikes;
+	}
 
+	private Date post_date;
+    private long likes = 0;
+    private long dislikes = 0;
+    
     @ManyToOne
     @JoinColumn(name = "userId", referencedColumnName = "userId")
     private User user;
@@ -24,15 +39,22 @@ public class Comment
 
     public Comment()
     {}
-    public Comment(long commentId, String content, Date post_date, User user)
+    public Comment(long commentId, String content, Date post_date, User user, Article article)
     {
         this.commentId = commentId;
         this.content = content;
         this.post_date = post_date;
         this.user = user;
+        this.article = article;
     }
 
-    public long getCommentId()
+    public Article getArticle() {
+		return article;
+	}
+	public void setArticle(Article article) {
+		this.article = article;
+	}
+	public long getCommentId()
     {
         return commentId;
     }
