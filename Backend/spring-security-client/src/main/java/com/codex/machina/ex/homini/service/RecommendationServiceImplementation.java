@@ -25,6 +25,10 @@ public class RecommendationServiceImplementation implements RecommendationServic
     public List<Long> getPredictions(String username)
     {
         fillInputData();
+        if(inputData == null)
+        {
+            return null;
+        }
         buildDiffAndFreqMat(inputData);
         predict(inputData, username);
         int numberOfRecs = isRelevant(username);
@@ -49,22 +53,29 @@ public class RecommendationServiceImplementation implements RecommendationServic
     {
         Double avgTimeSpent = ratingRepository.getAvgTimeSpent().get(0);
         List<Rating> ratings = ratingRepository.findAllByOrderByUser();
-        inputData = new HashMap<>();
-        for(Rating rating : ratings)
+        if(ratings.size() > 0)
         {
-            String username = rating.getUser().getUsername();
-            Double metric = rating.getRating() / avgTimeSpent;
-            if(inputData.containsKey(username))
+            inputData = new HashMap<>();
+            for(Rating rating : ratings)
             {
-                Map<Long, Double> info = inputData.get(username);
-                info.put(rating.getArticle().getArticleId(),metric);
+                String username = rating.getUser().getUsername();
+                Double metric = rating.getRating() / avgTimeSpent;
+                if(inputData.containsKey(username))
+                {
+                    Map<Long, Double> info = inputData.get(username);
+                    info.put(rating.getArticle().getArticleId(),metric);
+                }
+                else
+                {
+                    HashMap<Long,Double> info = new HashMap<>();
+                    info.put(rating.getArticle().getArticleId(), metric);
+                    inputData.put(username, info);
+                }
             }
-            else
-            {
-                HashMap<Long,Double> info = new HashMap<>();
-                info.put(rating.getArticle().getArticleId(), metric);
-                inputData.put(username, info);
-            }
+        }
+        else
+        {
+            inputData = null;
         }
     }
 
