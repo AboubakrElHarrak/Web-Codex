@@ -160,4 +160,8 @@ public class UserServiceImplementation implements UserService, UserDetailsServic
     {
         return passwordEncoder.matches(oldPassword, user.getPassword());
     }
+    @Override
+    public List<User> fetchUsers(){
+    	return userRepository.findAll();
+    }
 }

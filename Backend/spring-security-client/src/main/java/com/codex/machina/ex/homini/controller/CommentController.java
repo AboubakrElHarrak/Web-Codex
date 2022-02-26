@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.codex.machina.ex.homini.Model.CommentModel;
 import com.codex.machina.ex.homini.entity.Article;
 import com.codex.machina.ex.homini.entity.Comment;
+import com.codex.machina.ex.homini.entity.User;
 import com.codex.machina.ex.homini.service.CommentService;
 import com.codex.machina.ex.homini.service.CommentServiceImp;
 
@@ -44,4 +45,8 @@ public class CommentController {
 	  public Iterable<Comment> getArticleComments(@PathVariable("title") String title, @PathVariable("nb") Long nb) {
 	    return commentService.getArticleComments(title, nb);
 	  }
+	 @GetMapping("/comments")
+	    public java.util.List<Comment> getAllComments(){
+	    	return commentService.fetchComments();
+	    }
 }
