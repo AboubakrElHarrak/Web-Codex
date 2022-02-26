@@ -13,4 +13,5 @@ public interface CommentService {
 	void dislikeComment(Long id);
 	List <Comment> fetchComments();
 	
+	int getCommentsCount(String title);
 }

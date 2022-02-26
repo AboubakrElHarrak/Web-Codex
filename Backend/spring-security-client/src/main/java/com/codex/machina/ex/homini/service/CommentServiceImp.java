@@ -69,4 +69,11 @@ public class CommentServiceImp implements CommentService {
 	public List<Comment> fetchComments(){
 		return commentRepository.findAll();
 	}
+	@Override
+	public int getCommentsCount(String title) {
+		Article article = articleRepository.findByTitle(title);
+		ArrayList<Comment> commentList = commentRepository.findByArticle(article);
+		return commentList.size();
+
+	}
 }

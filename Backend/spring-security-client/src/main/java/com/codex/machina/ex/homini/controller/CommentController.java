@@ -49,4 +49,9 @@ public class CommentController {
 	    public java.util.List<Comment> getAllComments(){
 	    	return commentService.fetchComments();
 	    }
+	
+	@GetMapping(path = "/articles/{title}/get-comments-count/")
+	public int getCommentsCount(@PathVariable("title") String title) {
+		return commentService.getCommentsCount(title);
+	}
 }
