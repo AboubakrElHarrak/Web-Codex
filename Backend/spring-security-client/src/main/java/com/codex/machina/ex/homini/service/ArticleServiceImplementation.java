@@ -96,28 +96,13 @@ public class ArticleServiceImplementation implements ArticleService
     @Override
     public List<String> fetchArticles(int size) throws ArticleNotFoundException, IOException
     {
-        SearchRequest searchRequest = new SearchRequest();
-        searchRequest.indices("codex_articles");
-        SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
-        searchSourceBuilder.query();
-        searchSourceBuilder.size(size);
-        searchRequest.source(searchSourceBuilder);
-        List<String> documents = new ArrayList<>();
-        SearchResponse searchResponse = client.search(searchRequest, RequestOptions.DEFAULT);
-        if(searchResponse.getHits().getTotalHits().value == 0)
+        List<String> articles = new ArrayList<>();
+        List<Long> ids = articleRepository.randomArticles();
+        for(int i = 0; i < size; i++)
         {
-            throw new ArticleNotFoundException("Sorry No Articles Available at the moment !");
+            articles.add(fetchArticleById(ids.get(i)));
         }
-        else if(searchResponse.getHits().getTotalHits().value > 0)
-        {
-            SearchHit[] searchHits = searchResponse.getHits().getHits();
-            for(SearchHit hit : searchHits)
-            {
-                documents.add(hit.getSourceAsString());
-            }
-            return documents;
-        }
-        return null;
+        return articles;
     }
 
     @Override
