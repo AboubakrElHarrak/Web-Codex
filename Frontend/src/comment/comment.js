@@ -15,6 +15,19 @@ export default function Comment(args) {
 
     const [commentsLikes, setCommentsLikes] = useState([]);
 
+    const [commentsCount, setCommentsCount] = useState();
+
+    const [ii, setii] = useState(0);
+
+    const fetchCommentsCount = async () => {
+      const response = await fetch("http://localhost:8080/articles/"+args.articleTitle+"/get-comments-count/");
+      const commentsCount = await response.text();
+      return commentsCount;
+    }
+    if (!commentsCount) {
+      fetchCommentsCount().then((value) => {setCommentsCount(value)});
+    }
+
     const fetchComments = async (nb) => {
         const endpoint = "http://localhost:8080/articles/"+args.articleTitle+"/get-comments/"+nb;
         const response = await fetch(endpoint);
@@ -102,6 +115,8 @@ export default function Comment(args) {
   }
 
   const showMoreComments = () => {
+    setii(ii+1);
+    console.log(ii);
     setCommentNb(commentNb+5);
     fetchComments(commentNb).then((value) => {setComments(value)});
   }
@@ -173,8 +188,9 @@ export default function Comment(args) {
 
         {/*List of comments*/}
         <div>
+          <h3>Comments({commentsCount})</h3>
           {commentList}
-          <a onClick={showMoreComments} type="button" style={{margin: 10, textDecoration: "underline"}}>Show more comments</a>
+          {commentsCount!=0 && (commentsCount-commentNb+5) >= 0 && <a onClick={showMoreComments} type="button" style={{margin: 10, textDecoration: "underline"}}>Show more comments({(ii <= 1 ? (commentsCount-5) : (commentsCount-commentNb+5))})</a>}
         </div>
         
         </div>
