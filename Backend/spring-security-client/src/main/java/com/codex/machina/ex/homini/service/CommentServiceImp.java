@@ -1,7 +1,9 @@
 package com.codex.machina.ex.homini.service;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Iterator;
+import java.util.LinkedList;
 
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,8 +51,17 @@ public class CommentServiceImp implements CommentService {
 	}
 	
 	@Override
-	public Iterable<Comment> getArticleComments(String title) {
+	public Iterable<Comment> getArticleComments(String title, Long nb) {
 		Article article = articleRepository.findByTitle(title);
-		return commentRepository.findByArticle(article);
+		ArrayList<Comment> commentList = commentRepository.findByArticle(article);
+		ArrayList<Comment> commentList_ = new ArrayList<Comment>();
+		for (int i = 0; i < nb; i++) {
+			if (commentList.iterator().hasNext()) {
+				Comment cc = commentList.iterator().next();
+				commentList_.add(cc);
+				commentList.remove(0);
+			}
+		}
+		return commentList_;
 	}
 }

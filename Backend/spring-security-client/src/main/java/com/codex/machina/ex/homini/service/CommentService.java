@@ -6,7 +6,7 @@ import com.codex.machina.ex.homini.entity.Comment;
 
 public interface CommentService {
 	Comment addNewComment(String title, CommentModel comment, String username);
-	Iterable<Comment> getArticleComments(String title);
+	Iterable<Comment> getArticleComments(String title, Long nb);
 	void likeComment(Long id);
 	void dislikeComment(Long id);
 }

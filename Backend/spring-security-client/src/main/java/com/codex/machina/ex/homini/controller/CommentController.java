@@ -40,8 +40,8 @@ public class CommentController {
 		return "Comment disliked";
 	}
 	
-	@GetMapping(path="/articles/{title}/get-comments")
-	  public Iterable<Comment> getArticleComments(@PathVariable("title") String title) {
-	    return commentService.getArticleComments(title);
+	@GetMapping(path="/articles/{title}/get-comments/{nb}")
+	  public Iterable<Comment> getArticleComments(@PathVariable("title") String title, @PathVariable("nb") Long nb) {
+	    return commentService.getArticleComments(title, nb);
 	  }
 }

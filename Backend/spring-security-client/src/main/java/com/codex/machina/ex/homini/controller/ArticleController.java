@@ -57,6 +57,7 @@ public class ArticleController
         ratingService.saveRatingForArticleAndUser(ratingModel.getRating(),ratingModel.getTitle(), principal.getName());
         return "success";
     }
+    
     @GetMapping("/api/recommend")
     public List<String> getRecommendations(Principal principal) throws ArticleNotFoundException, IOException
     {

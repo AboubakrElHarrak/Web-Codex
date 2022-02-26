@@ -9,9 +9,14 @@ export default function Comment(args) {
     const [comments, setComments] = useState();
     const [Connected, setConnected] = useState(true);
     const [isEmpty, setIsEmpty] = useState(false);
+    const [commentNb, setCommentNb] = useState(5);
+    const [likes_, setLikes_] = useState(0);
+    const [likedCommentid, setlikedCommentid] = useState();
 
-    const fetchComments = async () => {
-        const endpoint = "http://localhost:8080/articles/"+args.articleTitle+"/get-comments";
+    const [commentsLikes, setCommentsLikes] = useState([]);
+
+    const fetchComments = async (nb) => {
+        const endpoint = "http://localhost:8080/articles/"+args.articleTitle+"/get-comments/"+nb;
         const response = await fetch(endpoint);
         const data = await response.text();
         const comments = parse(data);
@@ -55,8 +60,15 @@ export default function Comment(args) {
       setConnected(true);
     }
     const handleLike = (e) => {
+      setLikes_(1);
       var id = e.currentTarget.value;
-      console.log(id);
+        for (var comment_id of commentsLikes_) {
+          if (comment_id.id == id) {
+            comment_id.likes++;
+          }
+        }
+        setCommentsLikes(commentsLikes_);
+      console.log(id, likedCommentid);
       fetch("http://localhost:8080/like-comment/"+id, {
         method: "POST"
       });
@@ -89,11 +101,22 @@ export default function Comment(args) {
     }
   }
 
+  const showMoreComments = () => {
+    setCommentNb(commentNb+5);
+    fetchComments(commentNb).then((value) => {setComments(value)});
+  }
+
     if (!comments) {
-        fetchComments().then((value) => {setComments(value)});
+        fetchComments(5).then((value) => {setComments(value)});
     }
 
     var commentList = [];
+    var commentsLikes_ = [];
+    if (comments) {
+      for (var comment_ of comments) {
+        commentsLikes_.push({"id":comment_.get("commentId"), "likes":comment_.get("likes")});
+      }
+    }
     if (comments) {
         for (var comment_ of comments) {
           const style_ = {
@@ -104,7 +127,6 @@ export default function Comment(args) {
           const time = date[1].split(".");
             const element = <div className="panel">
             <div className="panel-body">
-        
             <div className="media-block">
               <a className="media-left" href="#"><img className="img-circle img-sm" alt="Profile Picture" src="https://cdn-icons-png.flaticon.com/512/149/149071.png"/></a>
               <div className="media-body">
@@ -116,7 +138,7 @@ export default function Comment(args) {
                 <div className="pad-ver">
                   <div style={{display : "table-row"}} className="btn-group">
                     <button style={{display : "table-cell"}} className="btn btn-sm btn-default btn-hover-danger" value={comment_.get("commentId")} onClick={(e) => handleLike(e)}><i className="fa fa-thumbs-up"></i></button>
-                    <p style={{marginLeft: 0, display : "table-cell"}}>{comment_.get("likes")}</p>
+                    <p style={{marginLeft: 0, display : "table-cell"}}>{commentsLikes_.filter(js => js.id == comment_.get("commentId")).map(js => js.likes)}</p>
                     <button style={{display : "table-cell"}} className="btn btn-sm btn-default btn-hover-danger" value={comment_.get("commentId")} onClick={(e) => handleDislike(e)}><i className="fa fa-thumbs-down"></i></button>
                     <p style={{marginLeft: 5, display : "table-cell"}}>{comment_.get("dislikes")}</p>
                   
@@ -150,8 +172,9 @@ export default function Comment(args) {
         </div>
 
         {/*List of comments*/}
-        <div style={{maxHeight: 400, overflow: "overlay"}}>
+        <div>
           {commentList}
+          <a onClick={showMoreComments} type="button" style={{margin: 10, textDecoration: "underline"}}>Show more comments</a>
         </div>
         
         </div>
